@@ -24,6 +24,7 @@
     "verifiedOn": "2026-10-30",
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
+  "newSinceLastRun": [],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -43,7 +44,8 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-angular-developer-at-isio-4483453415",
       "notes": "Posted today. Senior IC role in a pensions/investment consultancy.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4474785765",
@@ -63,7 +65,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-acorn-group-4474785765",
       "notes": "Insurance company, in-house squad; mid-level.",
       "clearance": "None stated",
-      "clearanceNote": "DBS and financial checks only, not security clearance"
+      "clearanceNote": "DBS and financial checks only, not security clearance",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4478371896",
@@ -83,7 +86,8 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-acorn-group-4478371896",
       "notes": "Senior version of the Acorn role above; React Native a bonus.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4480025750",
@@ -103,7 +107,8 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-maxwell-bond-4480025750",
       "notes": "Greenfield product team at a Liverpool tech business.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4483858525",
@@ -123,7 +128,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-nology-4483858525",
       "notes": "Government-style stack (GDS components).",
       "clearance": "None stated",
-      "clearanceNote": "GDS experience desirable; doesn't mention clearance"
+      "clearanceNote": "GDS experience desirable; doesn't mention clearance",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4417247817",
@@ -143,7 +149,8 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-front-end-developer-esc-or-edv-clearance-required-at-ibm-4417247817",
       "notes": "Requires eSC/eDV clearance eligibility. Older job ID suggests a repost.",
       "clearance": "eSC / eDV – eligible to obtain",
-      "clearanceNote": "must be eligible for enhanced SC or enhanced DV; BPSS screening first; SC/DV vetting may also apply"
+      "clearanceNote": "must be eligible for enhanced SC or enhanced DV; BPSS screening first; SC/DV vetting may also apply",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4477067783",
@@ -163,7 +170,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-digital-gurus-4477067783",
       "notes": "A/B testing focus; around 3 years' experience asked for.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4478501938",
@@ -183,7 +191,8 @@
       "url": "https://uk.linkedin.com/jobs/view/%F0%9F%8C%B3-front-end-developer-uk-government-contract-%F0%9F%8C%B3-at-areti-group-b-corp%E2%84%A2-4478501938",
       "notes": "UK Government experience essential. May be the same programme as the _nology and Opus roles.",
       "clearance": "None stated",
-      "clearanceNote": "UK Government experience essential; doesn't mention clearance"
+      "clearanceNote": "UK Government experience essential; doesn't mention clearance",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4476771253",
@@ -203,7 +212,8 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-formula-4476771253",
       "notes": "Marketing site work, CRO and A/B tests.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "reed-57481500",
@@ -223,7 +233,8 @@
       "url": "https://www.reed.co.uk/jobs/front-end-developer/57481500",
       "notes": "In-house digital/ecommerce team.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "reed-57417227",
@@ -243,7 +254,8 @@
       "url": "https://www.reed.co.uk/jobs/frontend-developer/57417227",
       "notes": "Reed also has a duplicate listing (57418077). Listing closes 30 Oct.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "reed-57422837",
@@ -263,7 +275,8 @@
       "url": "https://www.reed.co.uk/jobs/frontend-developer-inside-ir35-once-or-twice-a-week-onsite-in-manchester-leeds-or-newcastle/57422837",
       "notes": "Government experience required. Short listing text.",
       "clearance": "None stated",
-      "clearanceNote": "Government experience required; doesn't mention clearance"
+      "clearanceNote": "Government experience required; doesn't mention clearance",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "reed-57401714",
@@ -283,7 +296,8 @@
       "url": "https://www.reed.co.uk/jobs/senior-front-end-developer/57401714",
       "notes": "Also on Totaljobs (20 Oct). Bonus and annual pay review.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "totaljobs-108212675",
@@ -303,7 +317,8 @@
       "url": "https://www.totaljobs.com/job/frontend-software-developer/hackajob-ltd-job108212675",
       "notes": "In-Play sports betting product team.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4484917843",
@@ -323,7 +338,8 @@
       "url": "https://uk.linkedin.com/jobs/view/react-front-end-developer-at-ocean-technologies-group-4484917843",
       "notes": "Mid-level. You don't need to be based in the North West.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "totaljobs-108161057",
@@ -343,7 +359,8 @@
       "url": "https://www.totaljobs.com/job/frontend-developer/damia-group-ltd-job108161057",
       "notes": "Need SC clearance before you start. UK-wide.",
       "clearance": "SC",
-      "clearanceNote": "must be SC cleared before you start; the ad also mentions SC/DV vetting and clearance sponsorship"
+      "clearanceNote": "must be SC cleared before you start; the ad also mentions SC/DV vetting and clearance sponsorship",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4478665732",
@@ -363,7 +380,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-pertemps-network-group-4478665732",
       "notes": "Portfolio-led creative dev role.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4481900110",
@@ -383,7 +401,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-haystack-4481900110",
       "notes": "Showed up in North West searches. Doesn't say where the job is based.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4472071428",
@@ -403,7 +422,8 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-applications-developer-react-native-at-pets-at-home-4472071428",
       "notes": "Mobile, not web, but the React and TypeScript skills carry over.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4476375514",
@@ -423,7 +443,8 @@
       "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-react-java-at-computer-futures-4476375514",
       "notes": "Java is essential. Reposted on Totaljobs on 29 Oct.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "totaljobs-108175696",
@@ -443,7 +464,8 @@
       "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-vue3-typescript/cytix-job108175696",
       "notes": "Full-stack role at a security startup.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4480037196",
@@ -463,7 +485,8 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-fullstack-engineer-go-react-at-createfuture-4480037196",
       "notes": "Consultancy. Go backend is a big part of the role.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "id": "linkedin-4481757846",
@@ -483,7 +506,9 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-python-react-at-boost-talent-ltd-4481757846",
       "notes": "Strong Python backend needed.",
       "clearance": "None stated",
-      "clearanceNote": ""
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     }
-  ]
+  ],
+  "closed": []
 }

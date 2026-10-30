@@ -3,48 +3,219 @@
   "$id": "jobs.schema.json",
   "title": "Frontend Developer roles – North West England",
   "type": "object",
-  "required": ["updatedAt", "sources", "jobs"],
+  "required": [
+    "updatedAt",
+    "sources",
+    "jobs",
+    "newSinceLastRun",
+    "closed"
+  ],
   "properties": {
-    "$schema": { "type": "string" },
-    "updatedAt": { "type": "string", "format": "date-time", "description": "ISO 8601 time this file was last regenerated" },
-    "region": { "type": "string" },
+    "$schema": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 time this file was last regenerated"
+    },
+    "region": {
+      "type": "string"
+    },
     "sources": {
       "type": "object",
-      "required": ["searched"],
+      "required": [
+        "searched"
+      ],
       "properties": {
-        "searched": { "type": "array", "items": { "type": "string" } },
-        "blocked": { "type": "array", "items": { "type": "string" } },
-        "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
-        "verifiedOn": { "type": "string", "format": "date" },
-        "notes": { "type": "string" }
+        "searched": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "blocked": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "verifiedOn": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": "string"
+        }
       }
     },
-    "jobs": { "type": "array", "items": { "$ref": "#/$defs/job" } }
+    "newSinceLastRun": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "description": "ids of jobs first discovered in the most recent refresh run"
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/job"
+      }
+    },
+    "closed": {
+      "type": "array",
+      "description": "Postings that disappeared or closed in the last 30 days (pruned after 30 days)",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/job"
+          },
+          {
+            "type": "object",
+            "required": [
+              "closedAt"
+            ]
+          }
+        ]
+      }
+    }
   },
   "$defs": {
     "job": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "title", "company", "via", "location", "mode", "modeNote", "contract", "contractNote", "salary", "posted", "stack", "kind", "source", "url", "notes", "clearance", "clearanceNote"],
+      "required": [
+        "id",
+        "title",
+        "company",
+        "via",
+        "location",
+        "mode",
+        "modeNote",
+        "contract",
+        "contractNote",
+        "salary",
+        "posted",
+        "stack",
+        "kind",
+        "source",
+        "url",
+        "notes",
+        "clearance",
+        "clearanceNote",
+        "firstSeen"
+      ],
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-z]+-[0-9]+$", "description": "<source>-<board job id>, stable across refreshes" },
-        "title": { "type": "string", "minLength": 1 },
-        "company": { "type": "string", "minLength": 1 },
-        "via": { "enum": ["Agency", "Direct", "Platform"] },
-        "location": { "type": "string" },
-        "mode": { "enum": ["Hybrid", "Remote", "Office", "Not stated"] },
-        "modeNote": { "type": "string" },
-        "contract": { "enum": ["Permanent", "Contract", "Freelance", "Fixed-term", "Not stated"] },
-        "contractNote": { "type": "string" },
-        "salary": { "type": "string", "description": "As written in the posting, e.g. '£45,000–£55,000', '£430/day', or 'Not stated'" },
-        "posted": { "type": "string", "format": "date" },
-        "stack": { "type": "string" },
-        "kind": { "enum": ["Frontend", "Adjacent"] },
-        "source": { "type": "string" },
-        "url": { "type": "string", "format": "uri" },
-        "notes": { "type": "string" },
-        "clearance": { "enum": ["None stated", "BPSS", "CTC", "SC", "DV", "eSC / eDV – eligible to obtain", "Clearance required – level not stated", "Eligible to obtain"] },
-        "clearanceNote": { "type": "string" }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+-[0-9]+$",
+          "description": "<source>-<board job id>, stable across refreshes"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "company": {
+          "type": "string",
+          "minLength": 1
+        },
+        "via": {
+          "enum": [
+            "Agency",
+            "Direct",
+            "Platform"
+          ]
+        },
+        "location": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "Hybrid",
+            "Remote",
+            "Office",
+            "Not stated"
+          ]
+        },
+        "modeNote": {
+          "type": "string"
+        },
+        "contract": {
+          "enum": [
+            "Permanent",
+            "Contract",
+            "Freelance",
+            "Fixed-term",
+            "Not stated"
+          ]
+        },
+        "contractNote": {
+          "type": "string"
+        },
+        "salary": {
+          "type": "string",
+          "description": "As written in the posting, e.g. '£45,000–£55,000', '£430/day', or 'Not stated'"
+        },
+        "posted": {
+          "type": "string",
+          "format": "date"
+        },
+        "stack": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "Frontend",
+            "Adjacent"
+          ]
+        },
+        "source": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "clearance": {
+          "enum": [
+            "None stated",
+            "BPSS",
+            "CTC",
+            "SC",
+            "DV",
+            "eSC / eDV – eligible to obtain",
+            "Clearance required – level not stated",
+            "Eligible to obtain"
+          ]
+        },
+        "clearanceNote": {
+          "type": "string"
+        },
+        "firstSeen": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this id was first discovered. Set once, never overwritten by later refreshes"
+        },
+        "closedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When a refresh found the posting closed or gone (only on items in `closed`)"
+        },
+        "closedReason": {
+          "type": "string",
+          "description": "Why it was dropped, e.g. 'HTTP 404' or 'page says \"No longer accepting applications\"'"
+        }
       }
     }
   }

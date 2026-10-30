@@ -8,7 +8,7 @@ The site loads `jobs.json` when the page opens (`HttpClient`, with a `?t=` cache
 
 ## Each hourly run
 
-1. **Load** the current `jobs.json`. Each posting's `id` (`<source>-<board job id>`, e.g. `reed-57481500`) stays the same between runs, so it's the key for merging old and new data.
+1. **Load** the current `jobs.json`. Each posting's `id` (`<source>-<board job id>`, e.g. `reed-57481500`) stays the same between runs, so it's the key for merging old and new data. Never edit `firstSeen` by hand. The script owns it.
 
 2. **Re-search the sources** for postings from the last 30 days:
    - **Tavily** (`user-Tavily` → `tavily_search`). Example queries:
@@ -44,10 +44,17 @@ The site loads `jobs.json` when the page opens (`HttpClient`, with a `?t=` cache
 
 5. **Filter.** Keep only North West England postings (Greater Manchester, Merseyside, Cheshire, Lancashire, Cumbria) or UK-wide remote ones. Leave out duplicates (the same role and company on another board: keep the one with more detail), trainee or course ads, and EU-only remote roles.
 
-6. **Verify and drop closed postings**: `node scripts/verify-jobs.mjs`.
-   - It re-fetches every URL and drops a posting on HTTP 404/410, a redirect away from the job id (Reed/Totaljobs), or closed wording such as "No longer accepting applications".
+6. **Merge, verify and close**: write every posting found in steps 2–5 (open ones only, with the same field set and their stable `id`) to a temp file such as `/tmp/candidates.json` (a JSON array). Then run `node scripts/verify-jobs.mjs --candidates /tmp/candidates.json`. The script matches postings by `id`:
+   - **Known id**: the fresh field values replace the old ones, but `firstSeen` is **kept** and never overwritten.
+   - **Id in `closed`** (the posting came back): it moves back to `jobs` with its original `firstSeen`. It isn't counted as new.
+   - **Unknown id**: `firstSeen` = now, and the id goes into `newSinceLastRun`.
+   - A posting already in `jobs` but missing from this run's search results is **not** closed just because search missed it. It stays until its own URL shows it's closed.
+   - `newSinceLastRun` is replaced on every run. It lists only the ids first found in that run, and is `[]` if there are none.
+   - It then re-fetches every open posting's URL and **moves** a posting to the `closed` array (with `closedAt` = now and a `closedReason`) on HTTP 404/410, a redirect away from the job id (Reed/Totaljobs), or closed wording such as "No longer accepting applications".
    - A posting it can't check (blocked or timed out) is kept and logged. It isn't dropped on a guess.
+   - Entries in `closed` older than 30 days (by `closedAt`) are removed.
    - It sets `updatedAt` to the current ISO time, recounts `sources.counts`, and writes the file atomically.
+   - `--no-fetch` runs only the merge step, for testing offline.
    - Use `--dry-run` to see the results without writing anything.
 
 7. **Validate against the schema** before publishing: `npx ajv-cli@5 validate --spec=draft2020 -c ajv-formats -s public/jobs.schema.json -d public/jobs.json`. If it fails, **don't publish**. Keep the last good file.
@@ -56,7 +63,11 @@ The site loads `jobs.json` when the page opens (`HttpClient`, with a `?t=` cache
    - GitHub Pages: commit `jobs.json` to the deployed branch. With the included Actions workflow, a push redeploys in about 1 minute. Or use a scheduled workflow (`on: schedule: cron: '0 * * * *'`) that runs steps 6–7 itself.
    - Netlify/Cloudflare: upload the file again with their CLI.
 
-9. **Report**: postings added, dropped (with the reason) and unverifiable, plus the new `updatedAt`.
+9. **Report**: new postings (`newSinceLastRun`), postings moved to `closed` (with the reason), reopened postings and unverifiable ones, plus the new `updatedAt`.
+
+## How the site uses these fields
+- **New badge**: shown when `firstSeen` is less than 24 hours before the visitor's current time. The browser works this out and rechecks every minute, so the badge disappears on its own without a refresh. There's also a "New only" filter, a "Newest discovered" sort (by `firstSeen`) and a "New (24h)" count in the summary.
+- **Recently closed**: a collapsed section listing `closed` (newest `closedAt` first), with the reason and the source link.
 
 ## Notes
 - Run times are UTC (`updatedAt` ends in `Z`). The site shows them in UK time.

@@ -1,9 +1,9 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
-import { Job, JobsFile, salaryValue } from './jobs';
+import { Job, JobsFile, isNew, salaryValue } from './jobs';
 
-type Sort = 'newest' | 'salary' | 'company';
+type Sort = 'newest' | 'discovered' | 'salary' | 'company';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +24,13 @@ export class App {
   readonly via = signal('All');
   readonly clearance = signal('All');
   readonly sort = signal<Sort>('newest');
+  readonly newOnly = signal(false);
+  /** Time used for the 24-hour 'New' window; refreshed on each load and every minute. */
+  readonly now = signal(Date.now());
 
   readonly jobs = computed(() => this.data()?.jobs ?? []);
+  readonly closed = computed(() => [...(this.data()?.closed ?? [])].sort((a, b) => (b.closedAt ?? '').localeCompare(a.closedAt ?? '')));
+  readonly newIds = computed(() => new Set(this.jobs().filter(j => isNew(j, this.now())).map(j => j.id)));
   readonly opts = computed(() => {
     const uniq = (f: (j: Job) => string) => [...new Set(this.jobs().map(f))].sort();
     return { mode: uniq(j => j.mode), contract: uniq(j => j.contract), clearance: uniq(j => j.clearance) };
@@ -38,11 +43,13 @@ export class App {
       (this.contract() === 'All' || j.contract === this.contract()) &&
       (this.kind() === 'All' || j.kind === this.kind()) &&
       (this.via() === 'All' || j.via === this.via()) &&
+      (!this.newOnly() || this.newIds().has(j.id)) &&
       (this.clearance() === 'All' || (this.clearance() === 'Any' ? j.clearance !== 'None stated' : j.clearance === this.clearance())) &&
       (!q || [j.title, j.company, j.location, j.stack, j.notes, j.salary].join(' ').toLowerCase().includes(q)));
     const s = this.sort();
     return [...r].sort((a, b) =>
-      s === 'salary' ? salaryValue(b.salary) - salaryValue(a.salary)
+      s === 'discovered' ? b.firstSeen.localeCompare(a.firstSeen) || b.posted.localeCompare(a.posted)
+      : s === 'salary' ? salaryValue(b.salary) - salaryValue(a.salary)
       : s === 'company' ? a.company.localeCompare(b.company)
       : b.posted.localeCompare(a.posted));
   });
@@ -51,6 +58,7 @@ export class App {
     const c = (f: (j: Job) => boolean) => this.jobs().filter(f).length;
     return [
       { label: 'Postings', value: this.jobs().length },
+      { label: 'New (24h)', value: this.newIds().size },
       { label: 'Hybrid', value: c(j => j.mode === 'Hybrid') },
       { label: 'Remote', value: c(j => j.mode === 'Remote') },
       { label: 'Office-only', value: c(j => j.mode === 'Office') },
@@ -61,21 +69,25 @@ export class App {
     ];
   });
 
-  constructor() { this.load(); }
+  constructor() {
+    this.load();
+    const t = setInterval(() => this.now.set(Date.now()), 60_000);
+    inject(DestroyRef).onDestroy(() => clearInterval(t));
+  }
 
   load() {
     this.loading.set(true);
     this.error.set(null);
     // Relative URL so it works under any base path; cache-buster so an hourly refresh shows immediately.
     this.http.get<JobsFile>(`jobs.json?t=${Date.now()}`).subscribe({
-      next: d => { this.data.set(d); this.loading.set(false); },
+      next: d => { this.now.set(Date.now()); this.data.set(d); this.loading.set(false); },
       error: () => { this.error.set('Could not load jobs.json.'); this.loading.set(false); },
     });
   }
 
   reset() {
     this.q.set(''); this.mode.set('All'); this.contract.set('All'); this.kind.set('All');
-    this.via.set('All'); this.clearance.set('All'); this.sort.set('newest');
+    this.via.set('All'); this.clearance.set('All'); this.sort.set('newest'); this.newOnly.set(false);
   }
 
   val(e: Event) { return (e.target as HTMLInputElement | HTMLSelectElement).value; }
