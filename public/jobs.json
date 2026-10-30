@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T14:14:15.876Z",
+  "updatedAt": "2026-10-30T15:12:32.083Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 17,
+      "LinkedIn": 18,
       "Reed": 4,
       "Totaljobs": 3
     },
@@ -25,7 +25,7 @@
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4485308571"
+    "linkedin-4483451585"
   ],
   "jobs": [
     {
@@ -531,6 +531,27 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-30T14:14:15.876Z"
+    },
+    {
+      "id": "linkedin-4483451585",
+      "title": "Junior Full Stack Engineer (.Net/Angular) - contract",
+      "company": "Brookwood Recruitment (client not named)",
+      "via": "Agency",
+      "location": "Manchester",
+      "mode": "Hybrid",
+      "modeNote": "4 days per week onsite in Manchester",
+      "contract": "Contract",
+      "contractNote": "6 months, inside IR35, PAYE through umbrella",
+      "salary": "£334/day",
+      "posted": "2026-10-30",
+      "stack": ".NET Core, ASP.NET, C#, Web API, Angular, SQL Server",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4483451585",
+      "notes": "Junior full-stack contract with Angular front end; AI-assisted development tools mentioned as desirable.",
+      "clearance": "Eligible to obtain",
+      "clearanceNote": "must be eligible for BPSS clearance",
+      "firstSeen": "2026-10-30T15:12:32.083Z"
     }
   ],
   "closed": []
