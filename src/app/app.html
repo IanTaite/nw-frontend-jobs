@@ -1,12 +1,12 @@
-<a href="#results" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:px-3 focus:py-2 focus:rounded focus:shadow">Skip to results</a>
-<div class="min-h-screen bg-slate-50 text-slate-900">
-  <header class="bg-white border-b border-slate-200">
+<a href="#results" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-surface focus:text-ink focus:px-3 focus:py-2 focus:rounded focus:shadow">Skip to results</a>
+<div class="min-h-screen bg-canvas text-ink">
+  <header class="bg-brand text-brand-fg border-b-4 border-accent-ring">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
       <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">Frontend Developer roles – North West England</h1>
-      <p class="mt-1 text-slate-600">Work mode, contract type and security clearance for each posting, taken from the posting itself. Anything a posting doesn't give is marked "Not stated".</p>
+      <p class="mt-1 text-brand-muted">Work mode, contract type and security clearance for each posting, taken from the posting itself. Anything a posting doesn't give is marked "Not stated".</p>
       @if (data(); as d) {
-        <p class="mt-2 text-sm text-slate-500">Last updated
-          <time [attr.datetime]="d.updatedAt" class="font-medium text-slate-700">{{ d.updatedAt | date: 'd MMM y, HH:mm' : 'Europe/London' }} (UK time)</time>
+        <p class="mt-2 text-sm text-brand-muted">Last updated
+          <time [attr.datetime]="d.updatedAt" class="font-medium text-brand-fg">{{ d.updatedAt | date: 'd MMM y, HH:mm' : 'Europe/London' }} (UK time)</time>
         </p>
       }
     </div>
@@ -14,9 +14,9 @@
 
   <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
     @if (loading()) {
-      <p role="status" class="text-slate-600">Loading postings…</p>
+      <p role="status" class="text-ink-soft">Loading postings…</p>
     } @else if (error()) {
-      <div role="alert" class="rounded-lg border border-red-200 bg-red-50 p-4 text-red-800">
+      <div role="alert" class="rounded-lg border border-danger-line bg-danger-bg p-4 text-danger-fg">
         {{ error() }} <button type="button" (click)="load()" class="ml-2 underline font-medium">Try again</button>
       </div>
     } @else {
@@ -24,77 +24,77 @@
         <h2 id="summary-h" class="sr-only">Summary</h2>
         <dl class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-9">
           @for (c of counts(); track c.label) {
-            <div class="rounded-lg border border-slate-200 bg-white p-3">
-              <dt class="text-xs font-medium uppercase tracking-wide text-slate-500">{{ c.label }}</dt>
-              <dd class="mt-1 text-2xl font-semibold">{{ c.value }}</dd>
+            <div class="rounded-lg border border-line bg-surface p-3 shadow-sm">
+              <dt class="text-xs font-medium uppercase tracking-wide text-ink-faint">{{ c.label }}</dt>
+              <dd class="mt-1 text-2xl font-semibold" [class]="c.tone">{{ c.value }}</dd>
             </div>
           }
         </dl>
       </section>
 
-      <section aria-labelledby="filters-h" class="mt-6 rounded-lg border border-slate-200 bg-white p-4">
+      <section aria-labelledby="filters-h" class="mt-6 rounded-lg border border-line bg-surface p-4 shadow-sm">
         <h2 id="filters-h" class="sr-only">Search and filters</h2>
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
           <label class="flex flex-col gap-1 text-sm font-medium sm:col-span-2 lg:col-span-4 xl:col-span-1">Search
             <input type="search" [value]="q()" (input)="q.set(val($event))" placeholder="Title, company, stack…"
-              class="rounded-md border border-slate-300 px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring" />
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Work mode
-            <select [value]="mode()" (change)="mode.set(val($event))" class="rounded-md border border-slate-300 bg-white px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select [value]="mode()" (change)="mode.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               @for (o of opts().mode; track o) { <option [value]="o">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Contract
-            <select [value]="contract()" (change)="contract.set(val($event))" class="rounded-md border border-slate-300 bg-white px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select [value]="contract()" (change)="contract.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               @for (o of opts().contract; track o) { <option [value]="o">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Security clearance
-            <select [value]="clearance()" (change)="clearance.set(val($event))" class="rounded-md border border-slate-300 bg-white px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select [value]="clearance()" (change)="clearance.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               <option value="Any">Any clearance needed</option>
               @for (o of opts().clearance; track o) { <option [value]="o">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Role type
-            <select [value]="kind()" (change)="kind.set(val($event))" class="rounded-md border border-slate-300 bg-white px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select [value]="kind()" (change)="kind.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="Frontend">Frontend</option><option value="Adjacent">Full-stack / mobile</option>
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Posted by
-            <select [value]="via()" (change)="via.set(val($event))" class="rounded-md border border-slate-300 bg-white px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select [value]="via()" (change)="via.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="Direct">Direct employer</option><option value="Agency">Recruiter agency</option><option value="Platform">Hiring platform</option>
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Sort by
-            <select [value]="sort()" (change)="sort.set($any(val($event)))" class="rounded-md border border-slate-300 bg-white px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select [value]="sort()" (change)="sort.set($any(val($event)))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="newest">Newest posted</option><option value="discovered">Newest discovered</option><option value="salary">Salary (highest)</option><option value="company">Company (A–Z)</option>
             </select>
           </label>
         </div>
         <div class="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm">
           <label class="inline-flex items-center gap-2 font-medium">
-            <input type="checkbox" [checked]="newOnly()" (change)="newOnly.set($any($event.target).checked)" class="h-4 w-4 rounded border-slate-300 accent-emerald-700 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-            New only <span class="font-normal text-slate-500">(first seen in the last 24 hours)</span>
+            <input type="checkbox" [checked]="newOnly()" (change)="newOnly.set($any($event.target).checked)" class="h-4 w-4 rounded border-line-strong accent-new focus:outline-none focus:ring-2 focus:ring-accent-ring" />
+            New only <span class="font-normal text-ink-faint">(first seen in the last 24 hours)</span>
           </label>
-          <p aria-live="polite" class="text-slate-600">Showing {{ filtered().length }} of {{ jobs().length }} postings</p>
-          <button type="button" (click)="reset()" class="rounded-md border border-slate-300 px-3 py-1.5 font-medium hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">Reset filters</button>
+          <p aria-live="polite" class="text-ink-soft">Showing {{ filtered().length }} of {{ jobs().length }} postings</p>
+          <button type="button" (click)="reset()" class="rounded-md border border-line-strong px-3 py-1.5 font-medium hover:bg-accent-soft focus:outline-none focus:ring-2 focus:ring-accent-ring">Reset filters</button>
         </div>
       </section>
 
       <section id="results" aria-labelledby="results-h" class="mt-6">
         <h2 id="results-h" class="sr-only">Postings</h2>
         @if (filtered().length === 0) {
-          <p class="rounded-lg border border-slate-200 bg-white p-6 text-center text-slate-600">No postings match these filters.</p>
+          <p class="rounded-lg border border-line bg-surface p-6 text-center text-ink-soft shadow-sm">No postings match these filters.</p>
         }
 
         <!-- Table on large screens -->
-        <div class="hidden overflow-x-auto rounded-lg border border-slate-200 bg-white lg:block" [class.lg:hidden]="filtered().length === 0">
-          <table class="min-w-full divide-y divide-slate-200 text-sm">
+        <div class="hidden overflow-x-auto rounded-lg border border-line bg-surface shadow-sm lg:block" [class.lg:hidden]="filtered().length === 0">
+          <table class="min-w-full divide-y divide-line text-sm">
             <caption class="sr-only">Frontend developer postings</caption>
-            <thead class="bg-slate-100 text-left text-xs font-semibold uppercase tracking-wide text-slate-600">
+            <thead class="bg-brand text-left text-xs font-semibold uppercase tracking-wide text-brand-fg">
               <tr>
                 <th scope="col" class="px-3 py-2">Role</th><th scope="col" class="px-3 py-2">Location</th>
                 <th scope="col" class="px-3 py-2">Work mode</th><th scope="col" class="px-3 py-2">Contract</th>
@@ -102,25 +102,25 @@
                 <th scope="col" class="px-3 py-2">Posted</th><th scope="col" class="px-3 py-2">Source</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-slate-100 align-top">
+            <tbody class="divide-y divide-line align-top">
               @for (j of filtered(); track j.id) {
-                <tr class="hover:bg-slate-50">
+                <tr class="hover:bg-accent-soft/50">
                   <td class="px-3 py-3 max-w-xs">
-                    <div class="font-semibold">{{ j.title }} @if (newIds().has(j.id)) { <span class="ml-1 inline-block rounded bg-emerald-100 px-1.5 py-0.5 align-middle text-xs font-semibold text-emerald-800" [attr.title]="'First seen ' + (j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London') + ' (UK time)'">New<span class="sr-only">, first seen {{ j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London' }} UK time</span></span> }</div>
-                    <div class="text-slate-600">{{ j.company }} · {{ viaLabel(j.via) }}</div>
-                    <div class="mt-1 text-xs text-slate-500">{{ j.stack }}</div>
-                    @if (j.notes) { <div class="mt-1 text-xs text-slate-500 italic">{{ j.notes }}</div> }
+                    <div class="font-semibold">{{ j.title }} @if (newIds().has(j.id)) { <span class="ml-1 inline-block rounded bg-new-bg px-1.5 py-0.5 align-middle text-xs font-semibold text-new-fg" [attr.title]="'First seen ' + (j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London') + ' (UK time)'">New<span class="sr-only">, first seen {{ j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London' }} UK time</span></span> }</div>
+                    <div class="text-ink-soft">{{ j.company }} · {{ viaLabel(j.via) }}</div>
+                    <div class="mt-1 text-xs text-ink-faint">{{ j.stack }}</div>
+                    @if (j.notes) { <div class="mt-1 text-xs text-ink-faint italic">{{ j.notes }}</div> }
                   </td>
                   <td class="px-3 py-3">{{ j.location }}</td>
                   <td class="px-3 py-3">{{ withNote(j.mode, j.modeNote) }}</td>
                   <td class="px-3 py-3">{{ withNote(j.contract, j.contractNote) }}</td>
                   <td class="px-3 py-3">
-                    <span class="inline-block rounded px-2 py-0.5 text-xs font-medium" [class]="j.clearance === 'None stated' ? 'bg-slate-100 text-slate-700' : 'bg-amber-100 text-amber-900'">{{ j.clearance }}</span>
-                    @if (j.clearanceNote) { <div class="mt-1 text-xs text-slate-500">{{ j.clearanceNote }}</div> }
+                    <span class="inline-block rounded px-2 py-0.5 text-xs font-medium" [class]="j.clearance === 'None stated' ? 'bg-canvas text-ink-soft' : 'bg-warn-bg text-warn-fg'">{{ j.clearance }}</span>
+                    @if (j.clearanceNote) { <div class="mt-1 text-xs text-ink-faint">{{ j.clearanceNote }}</div> }
                   </td>
                   <td class="px-3 py-3 whitespace-nowrap">{{ j.salary }}</td>
                   <td class="px-3 py-3 whitespace-nowrap"><time [attr.datetime]="j.posted">{{ j.posted | date: 'd MMM y' }}</time></td>
-                  <td class="px-3 py-3"><a [href]="j.url" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-700 underline hover:text-indigo-900">{{ j.source }}<span class="sr-only"> posting for {{ j.title }} at {{ j.company }} (opens in new tab)</span></a></td>
+                  <td class="px-3 py-3"><a [href]="j.url" target="_blank" rel="noopener noreferrer" class="font-medium text-accent underline hover:text-accent-hover">{{ j.source }}<span class="sr-only"> posting for {{ j.title }} at {{ j.company }} (opens in new tab)</span></a></td>
                 </tr>
               }
             </tbody>
@@ -130,34 +130,34 @@
         <!-- Cards on small screens -->
         <ul class="grid gap-3 lg:hidden">
           @for (j of filtered(); track j.id) {
-            <li class="rounded-lg border border-slate-200 bg-white p-4">
-              <h3 class="font-semibold">{{ j.title }} @if (newIds().has(j.id)) { <span class="ml-1 inline-block rounded bg-emerald-100 px-1.5 py-0.5 align-middle text-xs font-semibold text-emerald-800" [attr.title]="'First seen ' + (j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London') + ' (UK time)'">New<span class="sr-only">, first seen {{ j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London' }} UK time</span></span> }</h3>
-              <p class="text-sm text-slate-600">{{ j.company }} · {{ viaLabel(j.via) }}</p>
+            <li class="rounded-lg border border-line bg-surface p-4 shadow-sm">
+              <h3 class="font-semibold">{{ j.title }} @if (newIds().has(j.id)) { <span class="ml-1 inline-block rounded bg-new-bg px-1.5 py-0.5 align-middle text-xs font-semibold text-new-fg" [attr.title]="'First seen ' + (j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London') + ' (UK time)'">New<span class="sr-only">, first seen {{ j.firstSeen | date: 'd MMM y, HH:mm' : 'Europe/London' }} UK time</span></span> }</h3>
+              <p class="text-sm text-ink-soft">{{ j.company }} · {{ viaLabel(j.via) }}</p>
               <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
-                <dt class="text-slate-500">Location</dt><dd>{{ j.location }}</dd>
-                <dt class="text-slate-500">Work mode</dt><dd>{{ withNote(j.mode, j.modeNote) }}</dd>
-                <dt class="text-slate-500">Contract</dt><dd>{{ withNote(j.contract, j.contractNote) }}</dd>
-                <dt class="text-slate-500">Clearance</dt><dd>{{ withNote(j.clearance, j.clearanceNote) }}</dd>
-                <dt class="text-slate-500">Salary</dt><dd>{{ j.salary }}</dd>
-                <dt class="text-slate-500">Posted</dt><dd><time [attr.datetime]="j.posted">{{ j.posted | date: 'd MMM y' }}</time></dd>
-                <dt class="text-slate-500">Stack</dt><dd>{{ j.stack }}</dd>
+                <dt class="text-ink-faint">Location</dt><dd>{{ j.location }}</dd>
+                <dt class="text-ink-faint">Work mode</dt><dd>{{ withNote(j.mode, j.modeNote) }}</dd>
+                <dt class="text-ink-faint">Contract</dt><dd>{{ withNote(j.contract, j.contractNote) }}</dd>
+                <dt class="text-ink-faint">Clearance</dt><dd>{{ withNote(j.clearance, j.clearanceNote) }}</dd>
+                <dt class="text-ink-faint">Salary</dt><dd>{{ j.salary }}</dd>
+                <dt class="text-ink-faint">Posted</dt><dd><time [attr.datetime]="j.posted">{{ j.posted | date: 'd MMM y' }}</time></dd>
+                <dt class="text-ink-faint">Stack</dt><dd>{{ j.stack }}</dd>
               </dl>
-              @if (j.notes) { <p class="mt-2 text-sm text-slate-600 italic">{{ j.notes }}</p> }
-              <a [href]="j.url" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block font-medium text-indigo-700 underline">View on {{ j.source }}<span class="sr-only"> (opens in new tab)</span></a>
+              @if (j.notes) { <p class="mt-2 text-sm text-ink-soft italic">{{ j.notes }}</p> }
+              <a [href]="j.url" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block font-medium text-accent underline hover:text-accent-hover">View on {{ j.source }}<span class="sr-only"> (opens in new tab)</span></a>
             </li>
           }
         </ul>
       </section>
 
       @if (closed().length) {
-        <details class="mt-6 rounded-lg border border-slate-200 bg-white">
-          <summary class="cursor-pointer px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg">Recently closed ({{ closed().length }}) <span class="font-normal text-sm text-slate-500">– removed in the last 30 days</span></summary>
-          <ul class="divide-y divide-slate-100 border-t border-slate-200 text-sm">
+        <details class="mt-6 rounded-lg border border-line bg-surface shadow-sm">
+          <summary class="cursor-pointer px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-accent-ring rounded-lg">Recently closed ({{ closed().length }}) <span class="font-normal text-sm text-ink-faint">– removed in the last 30 days</span></summary>
+          <ul class="divide-y divide-line border-t border-line text-sm">
             @for (j of closed(); track j.id) {
               <li class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-2">
-                <span><span class="font-medium">{{ j.title }}</span> <span class="text-slate-600">· {{ j.company }} · {{ j.location }}</span></span>
-                <span class="text-slate-500">Closed <time [attr.datetime]="j.closedAt">{{ j.closedAt | date: 'd MMM y, HH:mm' : 'Europe/London' }}</time>@if (j.closedReason) { <span> ({{ j.closedReason }})</span> }
-                  · <a [href]="j.url" target="_blank" rel="noopener noreferrer" class="text-indigo-700 underline">{{ j.source }}<span class="sr-only"> posting for {{ j.title }} (opens in new tab)</span></a></span>
+                <span><span class="font-medium">{{ j.title }}</span> <span class="text-ink-soft">· {{ j.company }} · {{ j.location }}</span></span>
+                <span class="text-ink-faint">Closed <time [attr.datetime]="j.closedAt">{{ j.closedAt | date: 'd MMM y, HH:mm' : 'Europe/London' }}</time>@if (j.closedReason) { <span> ({{ j.closedReason }})</span> }
+                  · <a [href]="j.url" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:text-accent-hover">{{ j.source }}<span class="sr-only"> posting for {{ j.title }} (opens in new tab)</span></a></span>
               </li>
             }
           </ul>
@@ -165,9 +165,9 @@
       }
 
       @if (data(); as d) {
-        <footer class="mt-8 border-t border-slate-200 pt-4 text-sm text-slate-600">
-          <p><span class="font-medium">Sources searched:</span> {{ d.sources.searched.join(', ') }}.</p>
-          @if (d.sources.blocked?.length) { <p class="mt-1"><span class="font-medium">Could not be searched:</span> {{ d.sources.blocked!.join(', ') }}.</p> }
+        <footer class="mt-8 border-t border-line pt-4 text-sm text-ink-soft">
+          <p><span class="font-medium text-ink">Sources searched:</span> {{ d.sources.searched.join(', ') }}.</p>
+          @if (d.sources.blocked?.length) { <p class="mt-1"><span class="font-medium text-ink">Could not be searched:</span> {{ d.sources.blocked!.join(', ') }}.</p> }
           @if (d.sources.notes) { <p class="mt-1">{{ d.sources.notes }}</p> }
           <p class="mt-1">"New" marks roles first found in the last 24 hours. Salary sorting treats day rates as roughly 220 working days a year. Postings with no salary go last.</p>
         </footer>

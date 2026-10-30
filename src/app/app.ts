@@ -57,15 +57,15 @@ export class App {
   readonly counts = computed(() => {
     const c = (f: (j: Job) => boolean) => this.jobs().filter(f).length;
     return [
-      { label: 'Postings', value: this.jobs().length },
-      { label: 'New (24h)', value: this.newIds().size },
-      { label: 'Hybrid', value: c(j => j.mode === 'Hybrid') },
-      { label: 'Remote', value: c(j => j.mode === 'Remote') },
-      { label: 'Office-only', value: c(j => j.mode === 'Office') },
-      { label: 'Permanent', value: c(j => j.contract === 'Permanent') },
-      { label: 'Contract', value: c(j => j.contract === 'Contract') },
-      { label: 'Direct employer', value: c(j => j.via === 'Direct') },
-      { label: 'Clearance needed', value: c(j => j.clearance !== 'None stated') },
+      { label: 'Postings', value: this.jobs().length, tone: 'text-brand-mid' },
+      { label: 'New (24h)', value: this.newIds().size, tone: 'text-new' },
+      { label: 'Hybrid', value: c(j => j.mode === 'Hybrid'), tone: 'text-ink' },
+      { label: 'Remote', value: c(j => j.mode === 'Remote'), tone: 'text-ink' },
+      { label: 'Office-only', value: c(j => j.mode === 'Office'), tone: 'text-ink' },
+      { label: 'Permanent', value: c(j => j.contract === 'Permanent'), tone: 'text-ink' },
+      { label: 'Contract', value: c(j => j.contract === 'Contract'), tone: 'text-ink' },
+      { label: 'Direct employer', value: c(j => j.via === 'Direct'), tone: 'text-ink' },
+      { label: 'Clearance needed', value: c(j => j.clearance !== 'None stated'), tone: 'text-warn-fg' },
     ];
   });
 
