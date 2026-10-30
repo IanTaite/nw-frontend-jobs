@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T13:10:52.278Z",
+  "updatedAt": "2026-10-30T14:14:15.876Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -17,14 +17,16 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 16,
+      "LinkedIn": 17,
       "Reed": 4,
       "Totaljobs": 3
     },
     "verifiedOn": "2026-10-30",
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4485308571"
+  ],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -508,6 +510,27 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
+    },
+    {
+      "id": "linkedin-4485308571",
+      "title": "Fullstack Camunda Developer",
+      "company": "eTeam (client not named)",
+      "via": "Agency",
+      "location": "Knutsford, Cheshire",
+      "mode": "Hybrid",
+      "modeNote": "\"2-3 days onsite/week\"",
+      "contract": "Contract",
+      "contractNote": "until 31/05/2027, PAYE through umbrella",
+      "salary": "£537/day",
+      "posted": "2026-10-30",
+      "stack": "Camunda 8, Java, Spring Boot, React, Redux, SQL, OpenShift",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4485308571",
+      "notes": "Lending origination workflows in banking; React UIs for user tasks.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T14:14:15.876Z"
     }
   ],
   "closed": []
