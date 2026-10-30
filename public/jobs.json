@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T15:12:32.083Z",
+  "updatedAt": "2026-10-30T16:07:39.719Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 18,
+      "LinkedIn": 21,
       "Reed": 4,
       "Totaljobs": 3
     },
@@ -25,7 +25,9 @@
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4483451585"
+    "linkedin-4477304325",
+    "linkedin-4480679673",
+    "linkedin-4471774180"
   ],
   "jobs": [
     {
@@ -552,6 +554,69 @@
       "clearance": "Eligible to obtain",
       "clearanceNote": "must be eligible for BPSS clearance",
       "firstSeen": "2026-10-30T15:12:32.083Z"
+    },
+    {
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "id": "linkedin-4477304325",
+      "title": "Frontend Engineer",
+      "company": "System1",
+      "via": "Direct",
+      "location": "UK (remote)",
+      "mode": "Remote",
+      "modeNote": "\"UK, remote with occasional travel\"",
+      "salary": "Not stated",
+      "posted": "2026-10-15",
+      "stack": "TypeScript, React",
+      "url": "https://uk.linkedin.com/jobs/view/frontend-engineer-at-system1-4477304325",
+      "notes": "First frontend engineer on System1's AI platform; posting mentions a competitive salary and bonus but no figure.",
+      "firstSeen": "2026-10-30T16:07:39.719Z"
+    },
+    {
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "id": "linkedin-4480679673",
+      "title": "Sr. Engineer - Front End (Remote, GBR)",
+      "company": "CrowdStrike",
+      "via": "Direct",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Remote, GBR\"; \"distributed, remote-first\"",
+      "salary": "Not stated",
+      "posted": "2026-10-23",
+      "stack": "JavaScript, React, Ember.js, HTML, CSS, Tailwind CSS, Playwright",
+      "url": "https://uk.linkedin.com/jobs/view/sr-engineer-front-end-remote-gbr-at-crowdstrike-4480679673",
+      "notes": "Falcon Complete Core Engineering team.",
+      "firstSeen": "2026-10-30T16:07:39.719Z"
+    },
+    {
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "id": "linkedin-4471774180",
+      "title": "Senior Frontend Developer",
+      "company": "trg. (client: a YC-backed AI startup)",
+      "via": "Agency",
+      "location": "UK / Europe (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote across the UK Europe\"; US overlap meeting (6pm UK) about twice a week",
+      "salary": "£80k–£130k + equity",
+      "posted": "2026-10-28",
+      "stack": "React, TypeScript, Next.js",
+      "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-trg-4471774180",
+      "notes": "Salary given as circa £80k–£130k+ depending on level/location, plus equity.",
+      "firstSeen": "2026-10-30T16:07:39.719Z"
     }
   ],
   "closed": []
