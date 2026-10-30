@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T16:07:39.719Z",
+  "updatedAt": "2026-10-30T17:13:13.563Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 21,
+      "LinkedIn": 23,
       "Reed": 4,
       "Totaljobs": 3
     },
@@ -25,9 +25,8 @@
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4477304325",
-    "linkedin-4480679673",
-    "linkedin-4471774180"
+    "linkedin-4483397172",
+    "linkedin-4464226866"
   ],
   "jobs": [
     {
@@ -617,6 +616,48 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-trg-4471774180",
       "notes": "Salary given as circa £80k–£130k+ depending on level/location, plus equity.",
       "firstSeen": "2026-10-30T16:07:39.719Z"
+    },
+    {
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "via": "Direct",
+      "mode": "Remote",
+      "id": "linkedin-4483397172",
+      "title": "Front-end Developer - Tebex",
+      "company": "Overwolf",
+      "location": "United Kingdom (remote)",
+      "modeNote": "\"remote-first position, open to UK residents only\"",
+      "posted": "2026-10-26",
+      "stack": "Vue.js, TypeScript, HTML, CSS, Vitest, Playwright",
+      "url": "https://uk.linkedin.com/jobs/view/front-end-developer-tebex-at-overwolf-4483397172",
+      "notes": "Tebex front end team (game monetisation platform).",
+      "firstSeen": "2026-10-30T17:13:13.563Z"
+    },
+    {
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "via": "Direct",
+      "mode": "Remote",
+      "id": "linkedin-4464226866",
+      "title": "Senior Frontend Engineer",
+      "company": "Intermedia Intelligent Communications",
+      "location": "United Kingdom (remote)",
+      "modeNote": "\"primarily remote\"; occasional visits to the Bristol office or London",
+      "posted": "2026-10-24",
+      "stack": "JavaScript, TypeScript, React or Angular, HTML, CSS",
+      "url": "https://uk.linkedin.com/jobs/view/senior-frontend-engineer-at-intermedia-intelligent-communications-4464226866",
+      "notes": "Senior IC role on real-time conversational web experiences; 8+ years experience asked.",
+      "firstSeen": "2026-10-30T17:13:13.563Z"
     }
   ],
   "closed": []
