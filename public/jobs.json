@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T20:12:00.094Z",
+  "updatedAt": "2026-10-30T21:07:45.745Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -17,14 +17,17 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 26,
+      "LinkedIn": 28,
       "Reed": 4,
       "Totaljobs": 3
     },
     "verifiedOn": "2026-10-30",
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4483487132",
+    "linkedin-4485362469"
+  ],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -718,6 +721,48 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-30T19:12:43.795Z"
+    },
+    {
+      "id": "linkedin-4483487132",
+      "title": "Senior Frontend Engineer",
+      "company": "Understanding Recruitment (client: unnamed fintech)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Remote | London office available\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-30",
+      "stack": "React, TypeScript, JavaScript, design systems, automated testing, AI coding tools",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4483487132",
+      "notes": "Recruiter for a fast-growing fintech building a stablecoin-native business banking alternative.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T21:07:45.745Z"
+    },
+    {
+      "id": "linkedin-4485362469",
+      "title": "Senior React Developer",
+      "company": "Cpl",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Location: Remote\"",
+      "contract": "Contract",
+      "contractNote": "\"12 Months Inside IR35\"",
+      "salary": "Up to £55,000",
+      "posted": "2026-10-30",
+      "stack": "React, TypeScript, JavaScript, HTML, CSS, Redux/MobX/React Query, Jest, Cypress, Webpack, Rsbuild, CI/CD",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4485362469",
+      "notes": "12-month contract, inside IR35; 5+ years' commercial frontend experience asked for.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T21:07:45.745Z"
     }
   ],
   "closed": []
