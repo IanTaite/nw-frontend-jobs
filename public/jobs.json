@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T17:13:13.563Z",
+  "updatedAt": "2026-10-30T18:05:46.626Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 23,
+      "LinkedIn": 25,
       "Reed": 4,
       "Totaljobs": 3
     },
@@ -25,8 +25,8 @@
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4483397172",
-    "linkedin-4464226866"
+    "linkedin-4427219420",
+    "linkedin-4403602815"
   ],
   "jobs": [
     {
@@ -658,6 +658,48 @@
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-engineer-at-intermedia-intelligent-communications-4464226866",
       "notes": "Senior IC role on real-time conversational web experiences; 8+ years experience asked.",
       "firstSeen": "2026-10-30T17:13:13.563Z"
+    },
+    {
+      "company": "Ashby",
+      "via": "Direct",
+      "location": "Manchester",
+      "mode": "Remote",
+      "modeNote": "\"Our remote, low-meeting, high-ownership culture\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "stack": "TypeScript, React, CSS, GraphQL, Node.js, Postgres, Redis",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "id": "linkedin-4427219420",
+      "title": "Design Engineer - UK",
+      "salary": "£56K - £149K",
+      "posted": "2026-10-20",
+      "url": "https://uk.linkedin.com/jobs/view/design-engineer-uk-at-ashby-4427219420",
+      "notes": "Mid and senior levels in one posting. Role combines UI/UX design and frontend implementation on Ashby’s design system.",
+      "firstSeen": "2026-10-30T18:05:46.626Z"
+    },
+    {
+      "company": "Ashby",
+      "via": "Direct",
+      "location": "Manchester",
+      "mode": "Remote",
+      "modeNote": "\"Our remote, low-meeting, high-ownership culture\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "stack": "TypeScript, React, CSS, GraphQL, Node.js, Postgres, Redis",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "id": "linkedin-4403602815",
+      "title": "Staff Design Engineer - UK",
+      "salary": "£151K - £246K",
+      "posted": "2026-10-30",
+      "url": "https://uk.linkedin.com/jobs/view/staff-design-engineer-uk-at-ashby-4403602815",
+      "notes": "Staff-level design engineering: UI/UX design plus frontend implementation and design system work.",
+      "firstSeen": "2026-10-30T18:05:46.626Z"
     }
   ],
   "closed": []
