@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "jobs.schema.json",
+  "title": "Frontend Developer roles – North West England",
+  "type": "object",
+  "required": ["updatedAt", "sources", "jobs"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "updatedAt": { "type": "string", "format": "date-time", "description": "ISO 8601 time this file was last regenerated" },
+    "region": { "type": "string" },
+    "sources": {
+      "type": "object",
+      "required": ["searched"],
+      "properties": {
+        "searched": { "type": "array", "items": { "type": "string" } },
+        "blocked": { "type": "array", "items": { "type": "string" } },
+        "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+        "verifiedOn": { "type": "string", "format": "date" },
+        "notes": { "type": "string" }
+      }
+    },
+    "jobs": { "type": "array", "items": { "$ref": "#/$defs/job" } }
+  },
+  "$defs": {
+    "job": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "company", "via", "location", "mode", "modeNote", "contract", "contractNote", "salary", "posted", "stack", "kind", "source", "url", "notes", "clearance", "clearanceNote"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z]+-[0-9]+$", "description": "<source>-<board job id>, stable across refreshes" },
+        "title": { "type": "string", "minLength": 1 },
+        "company": { "type": "string", "minLength": 1 },
+        "via": { "enum": ["Agency", "Direct", "Platform"] },
+        "location": { "type": "string" },
+        "mode": { "enum": ["Hybrid", "Remote", "Office", "Not stated"] },
+        "modeNote": { "type": "string" },
+        "contract": { "enum": ["Permanent", "Contract", "Freelance", "Fixed-term", "Not stated"] },
+        "contractNote": { "type": "string" },
+        "salary": { "type": "string", "description": "As written in the posting, e.g. '£45,000–£55,000', '£430/day', or 'Not stated'" },
+        "posted": { "type": "string", "format": "date" },
+        "stack": { "type": "string" },
+        "kind": { "enum": ["Frontend", "Adjacent"] },
+        "source": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "notes": { "type": "string" },
+        "clearance": { "enum": ["None stated", "BPSS", "CTC", "SC", "DV", "eSC / eDV – eligible to obtain", "Clearance required – level not stated", "Eligible to obtain"] },
+        "clearanceNote": { "type": "string" }
+      }
+    }
+  }
+}
