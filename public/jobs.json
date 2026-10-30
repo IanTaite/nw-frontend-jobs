@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T18:05:46.626Z",
+  "updatedAt": "2026-10-30T19:12:43.795Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 25,
+      "LinkedIn": 26,
       "Reed": 4,
       "Totaljobs": 3
     },
@@ -25,8 +25,7 @@
     "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4427219420",
-    "linkedin-4403602815"
+    "linkedin-4469858012"
   ],
   "jobs": [
     {
@@ -700,6 +699,27 @@
       "url": "https://uk.linkedin.com/jobs/view/staff-design-engineer-uk-at-ashby-4403602815",
       "notes": "Staff-level design engineering: UI/UX design plus frontend implementation and design system work.",
       "firstSeen": "2026-10-30T18:05:46.626Z"
+    },
+    {
+      "id": "linkedin-4469858012",
+      "title": "CRO Developer",
+      "company": "Harnham (client not named)",
+      "via": "Agency",
+      "location": "Manchester",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid - Manchester (2-3x days per week)\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£40,000",
+      "posted": "2026-10-19",
+      "stack": "HTML, CSS, JavaScript; Optimizely, VWO, AB Tasty, Convert, Dynamic Yield or similar",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/cro-developer-at-harnham-4469858012",
+      "notes": "Builds A/B and multivariate tests; bonus scheme mentioned.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T19:12:43.795Z"
     }
   ],
   "closed": []
