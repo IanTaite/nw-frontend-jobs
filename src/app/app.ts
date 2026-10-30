@@ -1,7 +1,7 @@
 import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
-import { Job, JobsFile, isNew, salaryValue } from './jobs';
+import { Job, JobsFile, salaryValue } from './jobs';
 
 type Sort = 'newest' | 'discovered' | 'salary' | 'company';
 
@@ -30,7 +30,7 @@ export class App {
 
   readonly jobs = computed(() => this.data()?.jobs ?? []);
   readonly closed = computed(() => [...(this.data()?.closed ?? [])].sort((a, b) => (b.closedAt ?? '').localeCompare(a.closedAt ?? '')));
-  readonly newIds = computed(() => new Set(this.jobs().filter(j => isNew(j, this.now())).map(j => j.id)));
+  readonly newIds = computed(() => new Set(this.data()?.newSinceLastRun ?? []));
   readonly opts = computed(() => {
     const uniq = (f: (j: Job) => string) => [...new Set(this.jobs().map(f))].sort();
     return { mode: uniq(j => j.mode), contract: uniq(j => j.contract), clearance: uniq(j => j.clearance) };
@@ -58,7 +58,7 @@ export class App {
     const c = (f: (j: Job) => boolean) => this.jobs().filter(f).length;
     return [
       { label: 'Postings', value: this.jobs().length, tone: 'text-brand-mid' },
-      { label: 'New (24h)', value: this.newIds().size, tone: 'text-new' },
+      { label: 'New this refresh', value: this.newIds().size, tone: 'text-new' },
       { label: 'Hybrid', value: c(j => j.mode === 'Hybrid'), tone: 'text-ink' },
       { label: 'Remote', value: c(j => j.mode === 'Remote'), tone: 'text-ink' },
       { label: 'Office-only', value: c(j => j.mode === 'Office'), tone: 'text-ink' },

@@ -77,7 +77,7 @@
         <div class="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm">
           <label class="inline-flex items-center gap-2 font-medium">
             <input type="checkbox" [checked]="newOnly()" (change)="newOnly.set($any($event.target).checked)" class="h-4 w-4 rounded border-line-strong accent-new focus:outline-none focus:ring-2 focus:ring-accent-ring" />
-            New only <span class="font-normal text-ink-faint">(first seen in the last 24 hours)</span>
+            New only <span class="font-normal text-ink-faint">(not in the previous refresh)</span>
           </label>
           <p aria-live="polite" class="text-ink-soft">Showing {{ filtered().length }} of {{ jobs().length }} postings</p>
           <button type="button" (click)="reset()" class="rounded-md border border-line-strong px-3 py-1.5 font-medium hover:bg-accent-soft focus:outline-none focus:ring-2 focus:ring-accent-ring">Reset filters</button>
@@ -169,7 +169,7 @@
           <p><span class="font-medium text-ink">Sources searched:</span> {{ d.sources.searched.join(', ') }}.</p>
           @if (d.sources.blocked?.length) { <p class="mt-1"><span class="font-medium text-ink">Could not be searched:</span> {{ d.sources.blocked!.join(', ') }}.</p> }
           @if (d.sources.notes) { <p class="mt-1">{{ d.sources.notes }}</p> }
-          <p class="mt-1">"New" marks roles first found in the last 24 hours. Salary sorting treats day rates as roughly 220 working days a year. Postings with no salary go last.</p>
+          <p class="mt-1">"New" marks roles that were not in the previous refresh; roles already known are unmarked. Salary sorting treats day rates as roughly 220 working days a year. Postings with no salary go last.</p>
         </footer>
       }
     }

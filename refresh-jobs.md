@@ -66,7 +66,7 @@ The site loads `jobs.json` when the page opens (`HttpClient`, with a `?t=` cache
 9. **Report**: new postings (`newSinceLastRun`), postings moved to `closed` (with the reason), reopened postings and unverifiable ones, plus the new `updatedAt`.
 
 ## How the site uses these fields
-- **New badge**: shown when `firstSeen` is less than 24 hours before the visitor's current time. The browser works this out and rechecks every minute, so the badge disappears on its own without a refresh. There's also a "New only" filter, a "Newest discovered" sort (by `firstSeen`) and a "New (24h)" count in the summary.
+- **New badge**: shown only for ids listed in `newSinceLastRun`, i.e. roles that were not in the previous refresh. Known roles are unmarked on the next refresh. There's also a "New only" filter, a "Newest discovered" sort (by `firstSeen`) and a "New this refresh" count in the summary.
 - **Recently closed**: a collapsed section listing `closed` (newest `closedAt` first), with the reason and the source link.
 
 ## Notes
