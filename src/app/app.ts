@@ -1,7 +1,7 @@
 import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
-import { Job, JobsFile, salaryValue } from './jobs';
+import { Job, JobsFile, REGION_LABEL, salaryValue } from './jobs';
 
 type Sort = 'newest' | 'discovered' | 'salary' | 'company';
 
@@ -18,6 +18,7 @@ export class App {
   readonly loading = signal(true);
 
   readonly q = signal('');
+  readonly region = signal('All');
   readonly mode = signal('All');
   readonly contract = signal('All');
   readonly kind = signal('All');
@@ -39,6 +40,7 @@ export class App {
   readonly filtered = computed(() => {
     const q = this.q().trim().toLowerCase();
     const r = this.jobs().filter(j =>
+      (this.region() === 'All' || j.region === this.region()) &&
       (this.mode() === 'All' || j.mode === this.mode()) &&
       (this.contract() === 'All' || j.contract === this.contract()) &&
       (this.kind() === 'All' || j.kind === this.kind()) &&
@@ -59,6 +61,8 @@ export class App {
     return [
       { label: 'Postings', value: this.jobs().length, tone: 'text-brand-mid' },
       { label: 'New this refresh', value: this.newIds().size, tone: 'text-new' },
+      { label: 'North West', value: c(j => j.region === 'north-west'), tone: 'text-ink' },
+      { label: 'Remote UK', value: c(j => j.region === 'remote-uk'), tone: 'text-ink' },
       { label: 'Hybrid', value: c(j => j.mode === 'Hybrid'), tone: 'text-ink' },
       { label: 'Remote', value: c(j => j.mode === 'Remote'), tone: 'text-ink' },
       { label: 'Office-only', value: c(j => j.mode === 'Office'), tone: 'text-ink' },
@@ -86,11 +90,12 @@ export class App {
   }
 
   reset() {
-    this.q.set(''); this.mode.set('All'); this.contract.set('All'); this.kind.set('All');
+    this.q.set(''); this.region.set('All'); this.mode.set('All'); this.contract.set('All'); this.kind.set('All');
     this.via.set('All'); this.clearance.set('All'); this.sort.set('newest'); this.newOnly.set(false);
   }
 
   val(e: Event) { return (e.target as HTMLInputElement | HTMLSelectElement).value; }
   viaLabel(v: string) { return v === 'Direct' ? 'Direct employer' : v === 'Agency' ? 'Recruiter agency' : 'Hiring platform'; }
+  regionLabel(r?: string) { return r ? REGION_LABEL[r as keyof typeof REGION_LABEL] ?? r : ''; }
   withNote(v: string, n: string) { return n ? `${v} (${n})` : v; }
 }

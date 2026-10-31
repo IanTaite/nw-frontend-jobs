@@ -1,10 +1,15 @@
 export interface Job {
   id: string; title: string; company: string; via: 'Agency' | 'Direct' | 'Platform'; location: string;
+  /** Search scope; optional so older data stays valid. */
+  region?: Region;
   mode: string; modeNote: string; contract: string; contractNote: string; salary: string; posted: string;
   stack: string; kind: 'Frontend' | 'Adjacent'; source: string; url: string; notes: string;
   clearance: string; clearanceNote: string;
   firstSeen: string; closedAt?: string; closedReason?: string;
 }
+export type Region = 'north-west' | 'remote-uk';
+export const REGION_LABEL: Record<Region, string> = { 'north-west': 'North West', 'remote-uk': 'Remote UK' };
+
 export interface JobsFile {
   updatedAt: string; region?: string;
   sources: { searched: string[]; blocked?: string[]; counts?: Record<string, number>; verifiedOn?: string; notes?: string };

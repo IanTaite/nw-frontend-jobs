@@ -54,6 +54,17 @@ const data = JSON.parse(readFileSync(inFile, 'utf8'));
 data.closed ??= [];
 const strip = ({ closedAt, closedReason, ...j }) => j;
 
+// Search scope per role: 'north-west' (based in North West England, any work mode) or
+// 'remote-uk' (fully remote, open to UK-based candidates, not tied to the North West).
+// Set `region` on candidates; when it's missing, keep the known value or infer it from location/mode.
+const NW = /manchester|liverpool|merseyside|cheshire|lancashire|cumbria|salford|stockport|bolton|wigan|oldham|rochdale|bury|trafford|warrington|chester|crewe|macclesfield|knutsford|alderley|handforth|wilmslow|preston|blackpool|blackburn|burnley|accrington|lancaster|carlisle|kendal|st helens|wirral|birkenhead|southport|runcorn|widnes|\bm\d|\bsk\d|north west/i;
+const UK_WIDE = /\b(uk|united kingdom)\b|incl\./i;
+export function inferRegion(j) {
+  if (NW.test(j.location) && !(j.mode === 'Remote' && UK_WIDE.test(j.location))) return 'north-west';
+  return 'remote-uk';
+}
+const withRegion = (c, prev) => ({ ...c, region: c.region ?? prev?.region ?? inferRegion(c) });
+
 // 1. Merge candidates by id.
 const byId = new Map(data.jobs.map(j => [j.id, j]));
 const closedById = new Map(data.closed.map(j => [j.id, j]));
@@ -67,15 +78,17 @@ if (candFile) {
     const known = byId.get(c.id);
     const wasClosed = closedById.get(c.id);
     if (known) {
-      byId.set(c.id, { ...strip(c), firstSeen: known.firstSeen });               // never overwrite firstSeen
+      byId.set(c.id, { ...withRegion(strip(c), known), firstSeen: known.firstSeen });               // never overwrite firstSeen
     } else if (wasClosed) {
-      byId.set(c.id, { ...strip(c), firstSeen: wasClosed.firstSeen });           // reopened
+      byId.set(c.id, { ...withRegion(strip(c), wasClosed), firstSeen: wasClosed.firstSeen });           // reopened
       closedById.delete(c.id); reopened.push(c.id);
     } else {
-      byId.set(c.id, { ...strip(c), firstSeen: now }); newIds.push(c.id);        // newly discovered
+      byId.set(c.id, { ...withRegion(strip(c)), firstSeen: now }); newIds.push(c.id);        // newly discovered
     }
   }
 }
+// Any job missing region gets one inferred (old data), logged so it can be checked.
+for (const j of byId.values()) if (!j.region) { j.region = inferRegion(j); console.warn(`region inferred for ${j.id}: ${j.region}`); }
 // Any job missing firstSeen (hand-added) is treated as discovered now.
 for (const j of byId.values()) if (!j.firstSeen) { j.firstSeen = now; if (!newIds.includes(j.id)) newIds.push(j.id); }
 
