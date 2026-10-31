@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-31T20:12:11.424Z",
+  "updatedAt": "2026-10-31T21:13:59.966Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -18,14 +18,17 @@
       "Totaljobs/CWJobs search (results page blocked on 31 Oct 2026; existing listings kept)"
     ],
     "counts": {
-      "LinkedIn": 42,
+      "LinkedIn": 44,
       "Reed": 7,
       "Totaljobs": 3
     },
     "verifiedOn": "2026-10-31",
     "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4484121126",
+    "linkedin-4484053225"
+  ],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -1170,6 +1173,50 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-31T19:07:38.794Z"
+    },
+    {
+      "id": "linkedin-4484121126",
+      "title": "Staff Engineer (Full Stack)",
+      "company": "Digital Waffle (client: a UK SaaS business, not named)",
+      "via": "Agency",
+      "location": "Manchester or Portsmouth",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"UK Remote-First / Hybrid (Portsmouth or Manchester)\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£80,000 - £100,000",
+      "posted": "2026-10-28",
+      "stack": "TypeScript, Node.js microservices, Vue.js, Redis, SQL Server, SingleStore, AWS, CI/CD",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/staff-engineer-at-digital-waffle-4484121126",
+      "notes": "Staff/Principal/Lead full-stack role; hands-on technical leadership on customer-facing SaaS products.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T21:13:59.966Z"
+    },
+    {
+      "id": "linkedin-4484053225",
+      "title": "Senior Frontend Engineer (Vue.js)",
+      "company": "Netrolynx AI (client: Method Grid)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"This is a remote role\"; quarterly two-day team Summit in Bath",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-27",
+      "stack": "Vue.js, HTML, CSS, JavaScript, TDD/BDD (some PHP/Python debugging a plus)",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-netrolynx-ai-4484053225",
+      "notes": "Listed as 'Frontend Developer'; the description is for a Senior Frontend Engineer at UK SaaS company Method Grid.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T21:13:59.966Z"
     }
   ],
   "closed": [
