@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-31T10:08:51.262Z",
+  "updatedAt": "2026-10-31T11:04:44.209Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -25,11 +25,7 @@
     "verifiedOn": "2026-10-31",
     "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [
-    "linkedin-4483024574",
-    "linkedin-4482200855",
-    "linkedin-4481876040"
-  ],
+  "newSinceLastRun": [],
   "jobs": [
     {
       "id": "linkedin-4483453415",
