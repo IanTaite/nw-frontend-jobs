@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-31T14:11:13.843Z",
+  "updatedAt": "2026-10-31T15:08:48.149Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -18,7 +18,7 @@
       "Totaljobs/CWJobs search (results page blocked on 31 Oct 2026; existing listings kept)"
     ],
     "counts": {
-      "LinkedIn": 40,
+      "LinkedIn": 41,
       "Reed": 7,
       "Totaljobs": 3
     },
@@ -26,12 +26,7 @@
     "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "reed-57418420",
-    "reed-57486774",
-    "reed-57509355",
-    "reed-57429571",
-    "linkedin-4482524143",
-    "linkedin-4484447005"
+    "linkedin-4483009440"
   ],
   "jobs": [
     {
@@ -1133,6 +1128,28 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-31T14:11:13.843Z"
+    },
+    {
+      "id": "linkedin-4483009440",
+      "title": "Image-to-Code / Visual Reconstruction Engineer",
+      "company": "Pasiflora AI",
+      "via": "Direct",
+      "location": "Remote (global, candidates may be located anywhere; LinkedIn location United Kingdom)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote and open to candidates anywhere in the world\"",
+      "contract": "Contract",
+      "contractNote": "\"Global | Contract\"; project-based, on your own schedule; LinkedIn lists full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-29",
+      "stack": "HTML/CSS, JavaScript/TypeScript, React, SVG/Canvas (Python, Pillow, NumPy preferred)",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4483009440",
+      "notes": "Contract work on a live AI training project: recreating visual references in code with pixel-level accuracy. Mid-level to senior, 3+ years.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T15:08:48.149Z"
     }
   ],
   "closed": [
