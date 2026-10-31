@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-31T07:07:14.561Z",
+  "updatedAt": "2026-10-31T08:05:56.588Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -18,7 +18,7 @@
       "Totaljobs/CWJobs search (results page blocked on 31 Oct 2026; existing listings kept)"
     ],
     "counts": {
-      "LinkedIn": 30,
+      "LinkedIn": 32,
       "Reed": 3,
       "Totaljobs": 3
     },
@@ -26,8 +26,8 @@
     "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4478512116",
-    "linkedin-4484831106"
+    "linkedin-4484448465",
+    "linkedin-4481885491"
   ],
   "jobs": [
     {
@@ -785,6 +785,48 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-31T07:07:14.561Z"
+    },
+    {
+      "id": "linkedin-4484448465",
+      "title": "UI Lead Frontend Engineer",
+      "company": "DNS Info Ltd",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Remote\"",
+      "contract": "Contract",
+      "contractNote": "Inside IR35",
+      "salary": "Not stated",
+      "posted": "2026-10-28",
+      "stack": "React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Adobe Experience Manager (AEM), GraphQL, REST, Jest, React Testing Library, Playwright/Cypress, AWS, Claude Code",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4484448465",
+      "notes": "Lead-level UI role (10+ years) focused on React/Next.js with AEM integration and AI-assisted development.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T08:05:56.588Z"
+    },
+    {
+      "id": "linkedin-4481885491",
+      "title": "Frontend UI / AEM Engineer",
+      "company": "X4 Technology (client not named)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Fully Remote\"",
+      "contract": "Contract",
+      "contractNote": "6 months (extendable), inside IR35",
+      "salary": "£450/day",
+      "posted": "2026-10-27",
+      "stack": "React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Adobe Experience Manager (AEM), GraphQL, REST, AWS, Claude Code",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4481885491",
+      "notes": "10+ years frontend experience required; start November 2026.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T08:05:56.588Z"
     }
   ],
   "closed": [
