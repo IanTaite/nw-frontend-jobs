@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-30T21:07:45.745Z",
+  "updatedAt": "2026-10-31T07:07:14.561Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -14,19 +14,20 @@
       "Indeed UK (403)",
       "Adzuna (403)",
       "Jobserve (error)",
-      "Technojobs (empty page)"
+      "Technojobs (empty page)",
+      "Totaljobs/CWJobs search (results page blocked on 31 Oct 2026; existing listings kept)"
     ],
     "counts": {
-      "LinkedIn": 28,
-      "Reed": 4,
+      "LinkedIn": 30,
+      "Reed": 3,
       "Totaljobs": 3
     },
-    "verifiedOn": "2026-10-30",
-    "notes": "Every source URL was opened and checked on 30 Oct 2026. Details not given in a posting are marked \"Not stated\"."
+    "verifiedOn": "2026-10-31",
+    "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4483487132",
-    "linkedin-4485362469"
+    "linkedin-4478512116",
+    "linkedin-4484831106"
   ],
   "jobs": [
     {
@@ -235,27 +236,6 @@
       "source": "Reed",
       "url": "https://www.reed.co.uk/jobs/front-end-developer/57481500",
       "notes": "In-house digital/ecommerce team.",
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "firstSeen": "2026-10-30T13:10:52Z"
-    },
-    {
-      "id": "reed-57417227",
-      "title": "Frontend Developer",
-      "company": "The Portfolio Group (client not named)",
-      "via": "Agency",
-      "location": "Manchester",
-      "mode": "Office",
-      "modeNote": "\"Office Based\"",
-      "contract": "Permanent",
-      "contractNote": "permanent",
-      "salary": "£45,000–£55,000",
-      "posted": "2026-10-02",
-      "stack": "React, TypeScript, React Query, Tailwind, GraphQL",
-      "kind": "Frontend",
-      "source": "Reed",
-      "url": "https://www.reed.co.uk/jobs/frontend-developer/57417227",
-      "notes": "Reed also has a duplicate listing (57418077). Listing closes 30 Oct.",
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -763,7 +743,73 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-30T21:07:45.745Z"
+    },
+    {
+      "id": "linkedin-4478512116",
+      "title": "Senior Frontend Engineer (React, TypeScript)",
+      "company": "Pathfinder Recruitment (client: unnamed fintech)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote in the UK\"; UK-based candidates for a face-to-face final interview",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£70,000–£100,000",
+      "posted": "2026-10-14",
+      "stack": "React, TypeScript, WebSockets/streaming APIs; Next.js, Node.js, REST, GraphQL a plus",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4478512116",
+      "notes": "AI productivity product team at an established fintech (chat, documents, scheduling UIs).",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T07:07:14.561Z"
+    },
+    {
+      "id": "linkedin-4484831106",
+      "title": "Senior Frontend Engineer – Acquisition",
+      "company": "Jobgether (for an unnamed partner company)",
+      "via": "Platform",
+      "location": "United Kingdom",
+      "mode": "Remote",
+      "modeNote": "\"Remote-first environment\", globally distributed team",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-30",
+      "stack": "TypeScript, React, iOS/Android mobile, Go/C++/Rust, HTML, CSS, Tailwind, REST, WebSockets, SQL, GCP",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4484831106",
+      "notes": "Brokerage/trading API products (dashboards, cash management). Salary described only as competitive, plus stock options.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T07:07:14.561Z"
     }
   ],
-  "closed": []
+  "closed": [
+    {
+      "id": "reed-57417227",
+      "title": "Frontend Developer",
+      "company": "The Portfolio Group (client not named)",
+      "via": "Agency",
+      "location": "Manchester",
+      "mode": "Office",
+      "modeNote": "\"Office Based\"",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "salary": "£45,000–£55,000",
+      "posted": "2026-10-02",
+      "stack": "React, TypeScript, React Query, Tailwind, GraphQL",
+      "kind": "Frontend",
+      "source": "Reed",
+      "url": "https://www.reed.co.uk/jobs/frontend-developer/57417227",
+      "notes": "Reed also has a duplicate listing (57418077). Listing closes 30 Oct.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z",
+      "closedAt": "2026-10-31T07:07:14.561Z",
+      "closedReason": "HTTP 404"
+    }
+  ]
 }
