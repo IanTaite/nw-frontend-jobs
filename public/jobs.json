@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-31T18:11:50.403Z",
+  "updatedAt": "2026-10-31T19:07:38.794Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -18,14 +18,16 @@
       "Totaljobs/CWJobs search (results page blocked on 31 Oct 2026; existing listings kept)"
     ],
     "counts": {
-      "LinkedIn": 41,
+      "LinkedIn": 42,
       "Reed": 7,
       "Totaljobs": 3
     },
     "verifiedOn": "2026-10-31",
     "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4475484114"
+  ],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -1148,6 +1150,28 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-31T15:08:48.149Z"
+    },
+    {
+      "id": "linkedin-4475484114",
+      "title": "Team Lead - Full Stack",
+      "company": "Debenhams Group",
+      "via": "Direct",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"based out of our central Manchester office 3 days per week\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-29",
+      "stack": "React, Node.js, AWS, Terraform, GitHub Actions, PostgreSQL, MySQL, DocumentDB, DynamoDB, SNS/SQS/EventBridge",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/team-lead-full-stack-at-debenhams-group-4475484114",
+      "notes": "Leads a team of four building internal apps; hands-on lead plus people management, 5+ years incl. 3 leading.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T19:07:38.794Z"
     }
   ],
   "closed": [
