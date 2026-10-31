@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-31T09:07:31.273Z",
+  "updatedAt": "2026-10-31T10:08:51.262Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -18,7 +18,7 @@
       "Totaljobs/CWJobs search (results page blocked on 31 Oct 2026; existing listings kept)"
     ],
     "counts": {
-      "LinkedIn": 35,
+      "LinkedIn": 38,
       "Reed": 3,
       "Totaljobs": 3
     },
@@ -26,9 +26,9 @@
     "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4484075782",
-    "linkedin-4482546495",
-    "linkedin-4483866010"
+    "linkedin-4483024574",
+    "linkedin-4482200855",
+    "linkedin-4481876040"
   ],
   "jobs": [
     {
@@ -891,6 +891,69 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-31T09:07:31.273Z"
+    },
+    {
+      "id": "linkedin-4483024574",
+      "title": "UI Frontend Lead engineer – AEM & AI",
+      "company": "Mphasis",
+      "via": "Direct",
+      "location": "United Kingdom (London or remote)",
+      "mode": "Remote",
+      "modeNote": "\"UK (London or Remote)\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-29",
+      "stack": "React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Adobe Experience Manager (AEM), GraphQL, REST, Jest, React Testing Library, Playwright/Cypress, AWS, Claude Code",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4483024574",
+      "notes": "Lead role asking for 10–15+ years; banking/financial services industry listed.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T10:08:51.262Z"
+    },
+    {
+      "id": "linkedin-4482200855",
+      "title": "UI Front End Lead Engineer – AEM & Generative AI (Claude)",
+      "company": "PRACYVA",
+      "via": "Agency",
+      "location": "United Kingdom",
+      "mode": "Not stated",
+      "modeNote": "",
+      "contract": "Contract",
+      "contractNote": "listed as contract",
+      "salary": "Not stated",
+      "posted": "2026-10-27",
+      "stack": "React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Adobe Experience Manager (AEM), GraphQL, REST, Jest, React Testing Library, Playwright/Cypress, AWS, Claude Code",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4482200855",
+      "notes": "Lead role, 10+ years asked. Posting does not say where the job is based beyond United Kingdom.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T10:08:51.262Z"
+    },
+    {
+      "id": "linkedin-4481876040",
+      "title": "UX/UI Engineer",
+      "company": "Explore Group (client not named)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Location: Remote\", UK time zone hours",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-27",
+      "stack": "TypeScript, React, Storybook, Figma, Playwright, Node.js, HTML, CSS",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4481876040",
+      "notes": "Design-led role at an early-stage fintech that also writes production front-end code (component library, design system).",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T10:08:51.262Z"
     }
   ],
   "closed": [
