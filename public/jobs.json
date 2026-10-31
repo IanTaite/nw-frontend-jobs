@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-10-31T08:05:56.588Z",
+  "updatedAt": "2026-10-31T09:07:31.273Z",
   "region": "North West England",
   "sources": {
     "searched": [
@@ -18,7 +18,7 @@
       "Totaljobs/CWJobs search (results page blocked on 31 Oct 2026; existing listings kept)"
     ],
     "counts": {
-      "LinkedIn": 32,
+      "LinkedIn": 35,
       "Reed": 3,
       "Totaljobs": 3
     },
@@ -26,8 +26,9 @@
     "notes": "Open postings were re-checked on 31 Oct 2026; 3 Totaljobs pages timed out and were kept unchanged. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4484448465",
-    "linkedin-4481885491"
+    "linkedin-4484075782",
+    "linkedin-4482546495",
+    "linkedin-4483866010"
   ],
   "jobs": [
     {
@@ -827,6 +828,69 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-31T08:05:56.588Z"
+    },
+    {
+      "id": "linkedin-4484075782",
+      "title": "Junior Frontend Developer (React, TypeScript, Shopify)",
+      "company": "Measmerize",
+      "via": "Direct",
+      "location": "United Kingdom (remote, anywhere in Europe)",
+      "mode": "Remote",
+      "modeNote": "\"Remote, from anywhere in Europe\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-29",
+      "stack": "React, TypeScript, JavaScript, HTML, CSS/SCSS, GraphQL, Shopify (Polaris), Vitest, Playwright",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/junior-frontend-developer-react-typescript-shopify-at-measmerize-4484075782",
+      "notes": "Junior role on a Shopify app for an AI size-and-fit tool; reports to the CTO.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T09:07:31.273Z"
+    },
+    {
+      "id": "linkedin-4482546495",
+      "title": "Senior Full Stack Engineer, Front-end Focus - Growth",
+      "company": "ZOE",
+      "via": "Direct",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote, open to candidates based in the UK, Ireland, Spain or Germany\"; quarterly offsites at the London office",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-28",
+      "stack": "TypeScript, React, Next.js, GraphQL; Kotlin/Spring Boot or Python backend",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-front-end-focus-growth-at-zoe-4482546495",
+      "notes": "Senior IC on the Growth team (zoe.com landing pages, checkout, A/B tests).",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T09:07:31.273Z"
+    },
+    {
+      "id": "linkedin-4483866010",
+      "title": "Lead UI Frontend Engineer",
+      "company": "Dabster",
+      "via": "Direct",
+      "location": "United Kingdom (remote)",
+      "mode": "Remote",
+      "modeNote": "\"UK – Remote\"",
+      "contract": "Contract",
+      "contractNote": "listed as contract",
+      "salary": "Not stated",
+      "posted": "2026-10-28",
+      "stack": "React, Next.js, TypeScript, Adobe Experience Manager (AEM), GraphQL, AWS, Claude Code",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/lead-ui-frontend-engineer-at-dabster-4483866010",
+      "notes": "Lead role, 10+ years' experience asked; banking industry listed.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-10-31T09:07:31.273Z"
     }
   ],
   "closed": [
