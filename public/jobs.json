@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-01T08:12:19.953Z",
+  "updatedAt": "2026-11-01T08:45:55.670Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,12 +19,17 @@
     "counts": {
       "LinkedIn": 44,
       "Reed": 7,
-      "Totaljobs": 4
+      "Totaljobs": 8
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "totaljobs-108041842",
+    "totaljobs-108063105",
+    "totaljobs-108159582",
+    "totaljobs-108180933"
+  ],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -1235,6 +1240,94 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-11-01T07:50:21.295Z"
+    },
+    {
+      "id": "totaljobs-108041842",
+      "title": "Junior Shopify Developer",
+      "company": "Morson Edge (client not named)",
+      "via": "Agency",
+      "location": "Manchester (M3)",
+      "region": "north-west",
+      "mode": "Office",
+      "modeNote": "Totaljobs tags it on-site; the ad does not state a work pattern",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "salary": "Up to £45,000",
+      "posted": "2026-09-25",
+      "stack": "Shopify / Shopify Plus, Liquid, HTML, CSS, JavaScript, Figma",
+      "kind": "Frontend",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/junior-shopify-developer/morson-edge-job108041842",
+      "notes": "Bespoke Shopify theme and storefront development for a digital agency team. Needs 1+ years Shopify theme experience.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-11-01T08:45:55.670Z"
+    },
+    {
+      "id": "totaljobs-108063105",
+      "title": "Senior Full Stack Engineer - Java / Angular - Remote",
+      "company": "Morson Edge (client not named)",
+      "via": "Agency",
+      "location": "UK – fully remote (listed under Manchester)",
+      "region": "north-west",
+      "mode": "Remote",
+      "modeNote": "\"UK – Fully Remote\"; \"Fully remote anywhere in the UK\"",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "salary": "Up to £85,000",
+      "posted": "2026-09-30",
+      "stack": "Angular, TypeScript, Java, REST APIs, AWS",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-java-angular-remote/morson-edge-job108063105",
+      "notes": "Product-focused tech organisation. Asks for excellent Angular and strong TypeScript alongside strong Java.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-11-01T08:45:55.670Z"
+    },
+    {
+      "id": "totaljobs-108159582",
+      "title": "Full Stack Software Developer",
+      "company": "Data Careers (client: a technology consultancy, not named)",
+      "via": "Agency",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "3 days a week onsite in Manchester",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "salary": "£80,000–£90,000 + benefits",
+      "posted": "2026-10-13",
+      "stack": "JavaScript, React, Node.js, AWS",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/full-stack-software-developer/data-careers-job108159582",
+      "notes": "Secure cloud-based knowledge platform in a highly controlled customer environment.",
+      "clearance": "DV",
+      "clearanceNote": "\"DV Cleared Full Stack Developer\"; skills list DV Clearance",
+      "firstSeen": "2026-11-01T08:45:55.670Z"
+    },
+    {
+      "id": "totaljobs-108180933",
+      "title": "Full Stack Software Developer",
+      "company": "Pave Talent Partners (client not named)",
+      "via": "Agency",
+      "location": "Liverpool",
+      "region": "north-west",
+      "mode": "Office",
+      "modeNote": "Totaljobs tags it on-site; the ad does not state a work pattern",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "salary": "£40,000",
+      "posted": "2026-10-15",
+      "stack": "React, TypeScript, C#, .NET",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/full-stack-software-developer/pave-talent-partners-limited-job108180933",
+      "notes": "About a 50/50 split between front-end and back-end work, for an asset-tracking software business.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-11-01T08:45:55.670Z"
     }
   ],
   "closed": [
