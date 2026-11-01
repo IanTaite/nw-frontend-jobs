@@ -24,9 +24,9 @@
         <h2 id="summary-h" class="sr-only">Summary</h2>
         <dl class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-11">
           @for (c of counts(); track c.label) {
-            <div class="rounded-lg border border-line bg-surface p-3 shadow-sm">
+            <div class="flex flex-col rounded-lg border border-line bg-surface p-3 shadow-sm">
               <dt class="text-xs font-medium uppercase tracking-wide text-ink-faint">{{ c.label }}</dt>
-              <dd class="mt-1 text-2xl font-semibold" [class]="c.tone">{{ c.value }}</dd>
+              <dd class="mt-auto pt-1 text-2xl font-semibold tabular-nums" [class]="c.tone">{{ c.value }}</dd>
             </div>
           }
         </dl>
