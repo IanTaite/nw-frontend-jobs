@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-01T09:04:32.000Z",
+  "updatedAt": "2026-11-01T10:05:01.439Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -24,10 +24,7 @@
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [
-    "totaljobs-108080132",
-    "totaljobs-108246862"
-  ],
+  "newSinceLastRun": [],
   "jobs": [
     {
       "id": "linkedin-4483453415",
