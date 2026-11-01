@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-01T08:45:55.670Z",
+  "updatedAt": "2026-11-01T09:04:32.000Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,16 +19,14 @@
     "counts": {
       "LinkedIn": 44,
       "Reed": 7,
-      "Totaljobs": 8
+      "Totaljobs": 10
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "totaljobs-108041842",
-    "totaljobs-108063105",
-    "totaljobs-108159582",
-    "totaljobs-108180933"
+    "totaljobs-108080132",
+    "totaljobs-108246862"
   ],
   "jobs": [
     {
@@ -1328,6 +1326,50 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-11-01T08:45:55.670Z"
+    },
+    {
+      "id": "totaljobs-108080132",
+      "title": "Senior React/Next.js Developer (SC Cleared)",
+      "company": "Henderson Scott (client not named)",
+      "via": "Agency",
+      "location": "Remote (UK-based)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote-based working within the UK\"",
+      "contract": "Contract",
+      "contractNote": "6 months + extension, inside IR35",
+      "salary": "£500–£525/day",
+      "posted": "2026-10-05",
+      "stack": "React, Next.js, AWS, AWS Cloudscape design system",
+      "kind": "Frontend",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/senior-react-next-js-dev-sc-cleared/henderson-scott-job108080132",
+      "notes": "Senior front-end contractor building UIs for secure digital services.",
+      "clearance": "SC",
+      "clearanceNote": "Active SC clearance essential",
+      "firstSeen": "2026-11-01T09:04:32.000Z"
+    },
+    {
+      "id": "totaljobs-108246862",
+      "title": "React Developer",
+      "company": "European Software Solutions (UK) Limited",
+      "via": "Direct",
+      "location": "Remote (listed under London)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"remote contract role\"",
+      "contract": "Contract",
+      "contractNote": "listed as temporary contract",
+      "salary": "£350/day",
+      "posted": "2026-10-28",
+      "stack": "React, JavaScript, HTML, CSS, REST APIs, Git",
+      "kind": "Frontend",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/react-developer/european-software-solutions-uk-limited-job108246862",
+      "notes": "Short posting; it does not say whether the role is for a client.",
+      "clearance": "Clearance required – level not stated",
+      "clearanceNote": "\"Active security clearance is mandatory\"",
+      "firstSeen": "2026-11-01T09:04:32.000Z"
     }
   ],
   "closed": [
