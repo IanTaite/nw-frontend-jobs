@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-01T07:13:33.253Z",
+  "updatedAt": "2026-11-01T07:50:21.295Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,12 +19,14 @@
     "counts": {
       "LinkedIn": 44,
       "Reed": 7,
-      "Totaljobs": 3
+      "Totaljobs": 4
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "totaljobs-108135577"
+  ],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -342,16 +344,16 @@
       "location": "UK (incl. Manchester, Liverpool)",
       "region": "remote-uk",
       "mode": "Remote",
-      "modeNote": "text says remote; Totaljobs tag says on-site",
+      "modeNote": "advert text says \"Remote\"; Totaljobs tag says On-site; city list includes Manchester and Liverpool",
       "contract": "Contract",
       "contractNote": "temporary, 3 months rolling, inside IR35",
       "salary": "£400–£500/day",
       "posted": "2026-10-13",
-      "stack": "Not detailed in snippet",
+      "stack": "Angular, Agentic AI (OpenAI, Anthropic or Copilot)",
       "kind": "Frontend",
       "source": "Totaljobs",
       "url": "https://www.totaljobs.com/job/frontend-developer/damia-group-ltd-job108161057",
-      "notes": "Need SC clearance before you start. UK-wide.",
+      "notes": "Global IT consultancy, government end client. 3 months rolling, inside IR35. Remote per advert text, but the Totaljobs tag says on-site.",
       "clearance": "SC",
       "clearanceNote": "must be SC cleared before you start; the ad also mentions SC/DV vetting and clearance sponsorship",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -1213,6 +1215,28 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-10-31T21:13:59.966Z"
+    },
+    {
+      "id": "totaljobs-108135577",
+      "title": "Senior Frontend Engineer (Remote)",
+      "company": "vidIQ (listed on Totaljobs as VividQ)",
+      "via": "Direct",
+      "location": "Remote (UK; listed under South East towns)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"remote position open to candidates worldwide\"; Totaljobs tag Remote, applicant location GB",
+      "contract": "Permanent",
+      "contractNote": "Totaljobs tag permanent; advert says engagement structure depends on location",
+      "salary": "80,000–150,000 (currency not stated)",
+      "posted": "2026-10-11",
+      "stack": "React, Next.js, TypeScript, Vite, Tailwind",
+      "kind": "Frontend",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/senior-frontend-engineer-remote/vividq-job108135577",
+      "notes": "Frontend-leaning role with some backend work; AI-powered features for YouTube creators. Geo-based pay.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-11-01T07:50:21.295Z"
     }
   ],
   "closed": [
