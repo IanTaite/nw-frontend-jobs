@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-01T10:05:01.439Z",
+  "updatedAt": "2026-11-01T10:36:58.151Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,14 +17,16 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 44,
+      "LinkedIn": 45,
       "Reed": 7,
       "Totaljobs": 10
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4485955095"
+  ],
   "jobs": [
     {
       "id": "linkedin-4483453415",
@@ -1367,6 +1369,28 @@
       "clearance": "Clearance required – level not stated",
       "clearanceNote": "\"Active security clearance is mandatory\"",
       "firstSeen": "2026-11-01T09:04:32.000Z"
+    },
+    {
+      "id": "linkedin-4485955095",
+      "title": "Frontend Developer",
+      "company": "_nology",
+      "via": "Direct",
+      "location": "Manchester, Leeds, Sheffield or Newcastle",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"hybrid working, with location options in Manchester, Leeds, Sheffield or Newcastle\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-11-01",
+      "stack": "TypeScript, Playwright, Nunjucks/Mustache, GDS components, Docker, GitLab CI/CD/Jenkins/GitHub",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4485955095",
+      "notes": "Posted on LinkedIn under AgileGrid Solutions; the ad says _nology is hiring. Accessible digital services with GDS styling. Manchester is one of four location options.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-11-01T10:36:58.151Z"
     }
   ],
   "closed": [
