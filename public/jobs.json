@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-01T10:36:58.151Z",
+  "updatedAt": "2026-11-01T11:55:01.640Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 45,
+      "LinkedIn": 47,
       "Reed": 7,
       "Totaljobs": 10
     },
@@ -25,7 +25,8 @@
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4485955095"
+    "linkedin-4485933776",
+    "linkedin-4485946642"
   ],
   "jobs": [
     {
@@ -1391,6 +1392,50 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "firstSeen": "2026-11-01T10:36:58.151Z"
+    },
+    {
+      "id": "linkedin-4485933776",
+      "title": "Frontend Developer",
+      "company": "Acorn Group",
+      "via": "Direct",
+      "location": "Liverpool",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Liverpool City Centre HQ / Hybrid (3 days in office)\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£45,000–£55,000",
+      "posted": "2026-11-01",
+      "stack": "React, Next.js, TypeScript, Nginx, Docker, Azure, Sentry, PostHog",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4485933776",
+      "notes": "Acorn Insurance; cross-functional squad, builds responsive web apps and contributes to a shared component library. Salary depends on experience.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-11-01T11:55:01.640Z"
+    },
+    {
+      "id": "linkedin-4485946642",
+      "title": "Angular Developer",
+      "company": "Netrolynx AI (for Cathcart Technology's client)",
+      "via": "Agency",
+      "location": "Bath or fully remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"can be performed on a hybrid or fully remote basis\" (hybrid option is Bath)",
+      "contract": "Contract",
+      "contractNote": "initial three-month contract, outside IR35, strong possibility of extension",
+      "salary": "£400–£450/day plus VAT",
+      "posted": "2026-11-01",
+      "stack": "Angular, TypeScript, RxJS, HTML, CSS, REST APIs, automated testing, CI/CD",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4485946642",
+      "notes": "Analytics application for critical decision-making at a fast-growing software organisation; urgent, high-priority project.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "firstSeen": "2026-11-01T11:55:01.640Z"
     }
   ],
   "closed": [
