@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-02T18:28:06.621Z",
+  "updatedAt": "2026-11-02T20:23:29.028Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,14 +17,17 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 54,
+      "LinkedIn": 56,
       "Reed": 8,
       "Totaljobs": 15
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4485772456",
+    "linkedin-4484777781"
+  ],
   "jobs": [
     {
       "clearance": "None stated",
@@ -49,7 +52,8 @@
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
-        "LinkedIn search: remote UK"
+        "LinkedIn search: remote UK",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1942,11 +1946,11 @@
       "title": "Staff/Lead Front-end Engineer",
       "url": "https://www.totaljobs.com/job/lead-front-end-engineer/mimica-job108104139",
       "via": "Direct",
-      "aiLevel": 0,
-      "aiNote": "AI process-intelligence product; nothing on using AI coding tools",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "AI process-intelligence product; nothing on using AI coding tools",
       "firstSeen": "2026-11-02T12:28:35.088Z"
     },
     {
@@ -1998,7 +2002,8 @@
       "via": "Agency",
       "foundVia": [
         "LinkedIn search: Manchester",
-        "LinkedIn search: remote UK"
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -2112,6 +2117,60 @@
         "Totaljobs search"
       ],
       "firstSeen": "2026-11-02T16:20:04.914Z"
+    },
+    {
+      "id": "linkedin-4485772456",
+      "title": "Java / Angular Software Engineer",
+      "company": "Vix Technology",
+      "via": "Direct",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Not stated",
+      "modeNote": "",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-11-02",
+      "stack": "Angular, TypeScript, Java, REST APIs, AWS, CI/CD",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/java-angular-software-engineer-at-vix-technology-4485772456",
+      "notes": "Two full-stack roles on the Pulse team (transport tech); work mode not stated.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 0,
+      "aiNote": "No mention of AI tools or AI usage in the posting.",
+      "firstSeen": "2026-11-02T20:23:29.028Z"
+    },
+    {
+      "id": "linkedin-4484777781",
+      "title": "Frontend Engineer (UK)",
+      "company": "BJAK",
+      "via": "Direct",
+      "location": "Remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"This role is remote, but candidates must be based in UK\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-29",
+      "stack": "React, Next.js, multi-step forms, SEO, WCAG",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/frontend-engineer-uk-at-bjak-4484777781",
+      "notes": "Insurance comparison platform; LinkedIn labels it entry level but the ad asks for real career highlights. Fast 1-week process.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "aiLevel": 0,
+      "aiNote": "Product is an 'AI-driven insurance automation platform', but nothing on AI tool use in development.",
+      "firstSeen": "2026-11-02T20:23:29.028Z"
     }
   ],
   "closed": [
