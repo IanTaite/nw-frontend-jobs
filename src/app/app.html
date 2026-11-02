@@ -36,7 +36,7 @@
         <h2 id="filters-h" class="sr-only">Search and filters</h2>
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8">
           <label class="flex flex-col gap-1 text-sm font-medium sm:col-span-2 lg:col-span-4 xl:col-span-1">Search
-            <input type="search" [value]="q()" (input)="q.set(val($event))" placeholder="Title, company, stack…"
+            <input type="search" [value]="searchText()" (input)="onSearch(val($event))" placeholder="Title, company, stack…"
               class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring" />
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Region
@@ -47,20 +47,20 @@
           <label class="flex flex-col gap-1 text-sm font-medium">Work mode
             <select [value]="mode()" (change)="mode.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
-              @for (o of opts().mode; track o) { <option [value]="o">{{ o }}</option> }
+              @for (o of opts().mode; track o) { <option [value]="o" [selected]="o === mode()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Contract
             <select [value]="contract()" (change)="contract.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
-              @for (o of opts().contract; track o) { <option [value]="o">{{ o }}</option> }
+              @for (o of opts().contract; track o) { <option [value]="o" [selected]="o === contract()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Security clearance
             <select [value]="clearance()" (change)="clearance.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               <option value="Any">Any clearance needed</option>
-              @for (o of opts().clearance; track o) { <option [value]="o">{{ o }}</option> }
+              @for (o of opts().clearance; track o) { <option [value]="o" [selected]="o === clearance()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col gap-1 text-sm font-medium">Role type
