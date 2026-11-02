@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-02T11:21:32.596Z",
+  "updatedAt": "2026-11-02T12:28:35.088Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,14 +17,19 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 55,
-      "Reed": 6,
-      "Totaljobs": 11
+      "LinkedIn": 54,
+      "Reed": 7,
+      "Totaljobs": 13
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "reed-57430808",
+    "reed-57434311",
+    "totaljobs-108104139",
+    "totaljobs-108087862"
+  ],
   "jobs": [
     {
       "clearance": "None stated",
@@ -46,6 +51,11 @@
       "title": "Senior Angular Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-angular-developer-at-isio-4483453415",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -94,30 +104,10 @@
       "title": "Senior Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-acorn-group-4478371896",
       "via": "Direct",
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-10-30T13:10:52Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "Maxwell Bond (client not named)",
-      "contract": "Not stated",
-      "contractNote": "listed full-time",
-      "id": "linkedin-4480025750",
-      "kind": "Frontend",
-      "location": "Liverpool city centre",
-      "mode": "Hybrid",
-      "modeNote": "hybrid, days not stated",
-      "notes": "Greenfield product team at a Liverpool tech business.",
-      "posted": "2026-10-22",
-      "region": "north-west",
-      "salary": "Up to £75,000",
-      "source": "LinkedIn",
-      "stack": "React, TypeScript, Next.js",
-      "title": "Senior Frontend Developer",
-      "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-maxwell-bond-4480025750",
-      "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -169,6 +159,11 @@
       "title": "Senior Front End Developer (eSC/eDV clearance)",
       "url": "https://uk.linkedin.com/jobs/view/senior-front-end-developer-esc-or-edv-clearance-required-at-ibm-4417247817",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -244,6 +239,9 @@
       "title": "Senior Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-formula-4476771253",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "aiLevel": 3,
       "aiNote": "Requires \"using AI tooling such as Claude Code in your day-to-day workflow\"",
       "claudeMention": "Using AI tooling such as Claude Code in your day-to-day workflow",
@@ -269,6 +267,10 @@
       "title": "Front End Developer",
       "url": "https://www.reed.co.uk/jobs/front-end-developer/57481500",
       "via": "Direct",
+      "foundVia": [
+        "Reed search",
+        "Reed search: remote"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -293,6 +295,10 @@
       "title": "Frontend Developer (inside IR35)",
       "url": "https://www.reed.co.uk/jobs/frontend-developer-inside-ir35-once-or-twice-a-week-onsite-in-manchester-leeds-or-newcastle/57422837",
       "via": "Agency",
+      "foundVia": [
+        "Reed search",
+        "Reed search: remote"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -317,6 +323,10 @@
       "title": "Senior Front End Developer",
       "url": "https://www.reed.co.uk/jobs/senior-front-end-developer/57401714",
       "via": "Agency",
+      "foundVia": [
+        "Reed search",
+        "Reed search: remote"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -342,7 +352,8 @@
       "url": "https://www.totaljobs.com/job/frontend-software-developer/hackajob-ltd-job108212675",
       "via": "Platform",
       "foundVia": [
-        "Totaljobs search"
+        "Totaljobs search",
+        "Tavily"
       ],
       "aiLevel": 2,
       "aiNote": "Asks for \"working knowledge of AI and how it can support software development\"",
@@ -368,6 +379,10 @@
       "title": "React Front-End Developer",
       "url": "https://uk.linkedin.com/jobs/view/react-front-end-developer-at-ocean-technologies-group-4484917843",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -640,6 +655,9 @@
       "title": "Frontend Engineer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-engineer-at-system1-4477304325",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 4,
       "aiNote": "\"Engineer through Claude Code day to day\", building your own skills and subagents; \"genuinely AI-native\", owning every line",
       "claudeMention": "Daily use of Claude Code, building your own skills and subagents",
@@ -665,6 +683,10 @@
       "title": "Sr. Engineer - Front End (Remote, GBR)",
       "url": "https://uk.linkedin.com/jobs/view/sr-engineer-front-end-remote-gbr-at-crowdstrike-4480679673",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "\"We use an AI-first mindset as a force multiplier\"; wants proven experience using AI to streamline workflows",
       "firstSeen": "2026-10-30T16:07:39.719Z"
@@ -689,6 +711,10 @@
       "title": "Senior Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-trg-4471774180",
       "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "\"Using modern AI development tools to ship significantly faster\" (also builds AI product UIs)",
       "firstSeen": "2026-10-30T16:07:39.719Z"
@@ -713,6 +739,9 @@
       "title": "Front-end Developer - Tebex",
       "url": "https://uk.linkedin.com/jobs/view/front-end-developer-tebex-at-overwolf-4483397172",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 2,
       "aiNote": "Asks for \"ability to leverage AI workflows in an efficient manner to assist with development\"",
       "firstSeen": "2026-10-30T17:13:13.563Z"
@@ -737,6 +766,10 @@
       "title": "Senior Frontend Engineer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-engineer-at-intermedia-intelligent-communications-4464226866",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T17:13:13.563Z"
@@ -956,6 +989,9 @@
       "title": "Frontend UI / AEM Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4481885491",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "aiLevel": 3,
       "aiNote": "Drive adoption of AI-assisted development with Claude and Claude Code; hands-on Claude Code experience required",
       "claudeMention": "Drive adoption of AI-assisted development practices using Anthropic Claude and Claude Code",
@@ -981,6 +1017,10 @@
       "title": "Junior Frontend Developer (React, TypeScript, Shopify)",
       "url": "https://uk.linkedin.com/jobs/view/junior-frontend-developer-react-typescript-shopify-at-measmerize-4484075782",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "\"Use AI coding tools every day. We use Claude Code a lot\", and expect you to understand every line it writes",
       "claudeMention": "\"We use Claude Code a lot, and we expect you to understand every line it writes for you\"",
@@ -1130,6 +1170,9 @@
       "title": "Senior React Developer / Senior Front End Developer",
       "url": "https://www.reed.co.uk/jobs/senior-react-developer-senior-front-end-developer/57418420",
       "via": "Agency",
+      "foundVia": [
+        "Reed search: remote"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-31T14:11:13.843Z"
@@ -1154,32 +1197,11 @@
       "title": "Full Stack Developer (.NET React)",
       "url": "https://www.reed.co.uk/jobs/full-stack-developer-net-react/57486774",
       "via": "Agency",
+      "foundVia": [
+        "Reed search: remote"
+      ],
       "aiLevel": 4,
       "aiNote": "Engineering function \"uses agentic AI tools throughout its development process\"",
-      "firstSeen": "2026-10-31T14:11:13.843Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "Carousel Consultancy (client: a FinTech, not named)",
-      "contract": "Permanent",
-      "contractNote": "full-time",
-      "id": "reed-57429571",
-      "kind": "Frontend",
-      "location": "London hybrid or UK/Europe remote",
-      "mode": "Remote",
-      "modeNote": "\"London hybrid or UK / European remote working basis\"",
-      "notes": "Remote from the UK is offered as an option alongside London hybrid.",
-      "posted": "2026-10-06",
-      "region": "remote-uk",
-      "salary": "£70,000–£100,000 (DoE)",
-      "source": "Reed",
-      "stack": "React, TypeScript, AWS (beneficial)",
-      "title": "Frontend Engineer - FinTech AI Platform",
-      "url": "https://www.reed.co.uk/jobs/frontend-engineer-fintech-ai-platform/57429571",
-      "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "Builds a FinTech AI platform; nothing on using AI tools",
       "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
@@ -1202,6 +1224,9 @@
       "title": "Frontend-Leaning Full Stack Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4482524143",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "aiLevel": 2,
       "aiNote": "\"Exposure to ... AI-assisted development workflows would be highly beneficial\" (also builds AI-powered products)",
       "firstSeen": "2026-10-31T14:11:13.843Z"
@@ -1226,6 +1251,9 @@
       "title": "Frontend Engineer (Brain team)",
       "url": "https://uk.linkedin.com/jobs/view/4484447005",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: remote UK"
+      ],
       "aiLevel": 4,
       "aiNote": "\"AI first by default, we're building our SDLC around AI Assisted engineering\"",
       "firstSeen": "2026-10-31T14:11:13.843Z"
@@ -1377,6 +1405,9 @@
       "title": "Junior Shopify Developer",
       "url": "https://www.totaljobs.com/job/junior-shopify-developer/morson-edge-job108041842",
       "via": "Agency",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-01T08:45:55.670Z"
@@ -1401,6 +1432,9 @@
       "title": "Senior Full Stack Engineer - Java / Angular - Remote",
       "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-java-angular-remote/morson-edge-job108063105",
       "via": "Agency",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-01T08:45:55.670Z"
@@ -1426,7 +1460,8 @@
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/data-careers-job108159582",
       "via": "Agency",
       "foundVia": [
-        "Totaljobs search"
+        "Totaljobs search",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1453,7 +1488,8 @@
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/pave-talent-partners-limited-job108180933",
       "via": "Agency",
       "foundVia": [
-        "Totaljobs search"
+        "Totaljobs search",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1507,7 +1543,8 @@
       "url": "https://www.totaljobs.com/job/react-developer/european-software-solutions-uk-limited-job108246862",
       "via": "Direct",
       "foundVia": [
-        "Totaljobs search"
+        "Totaljobs search",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1561,7 +1598,9 @@
       "url": "https://uk.linkedin.com/jobs/view/4485933776",
       "via": "Direct",
       "foundVia": [
-        "Tavily"
+        "Tavily",
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1851,9 +1890,177 @@
       "aiLevel": 0,
       "aiNote": "No mention of AI use",
       "firstSeen": "2026-11-02T10:31:51.956Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Reed in Partnership",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "id": "reed-57430808",
+      "kind": "Frontend",
+      "location": "UK (remote; listed under London)",
+      "mode": "Remote",
+      "modeNote": "Reed tags it remote; \"collaborating effectively within a remote team\"",
+      "notes": "In-house dev team at Reed in Partnership (public-sector employment services); greenfield and existing projects.",
+      "posted": "2026-10-07",
+      "region": "remote-uk",
+      "salary": "£55,000–£65,000",
+      "source": "Reed",
+      "stack": "React, Redux, REST APIs, Jest/React Testing Library, GitHub, Jira, Azure (desirable)",
+      "title": "React Developer",
+      "url": "https://www.reed.co.uk/jobs/react-developer/57430808",
+      "via": "Direct",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search: remote"
+      ],
+      "firstSeen": "2026-11-02T12:28:35.088Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "DBCharles Recruitment (client: UK transport-sector software business)",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "id": "reed-57434311",
+      "kind": "Adjacent",
+      "location": "UK (remote; listed under Henley-on-Thames)",
+      "mode": "Remote",
+      "modeNote": "\"Monday to Friday remote position\"; \"Must be UK based\"",
+      "notes": "Reports to the Lead Developer in a team of ~10; hours 8:00–16:00. Strong Node.js plus Vue, Angular or React.",
+      "posted": "2026-10-07",
+      "region": "remote-uk",
+      "salary": "£40,000–£45,000",
+      "source": "Reed",
+      "stack": "Node.js, Vue.js / Angular / React, MySQL, REST APIs, Git",
+      "title": "Full Stack Developer - Node / Vue / React",
+      "url": "https://www.reed.co.uk/jobs/full-stack-developer-node-vue-react/57434311",
+      "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search: remote"
+      ],
+      "firstSeen": "2026-11-02T12:28:35.088Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Mimica",
+      "contract": "Not stated",
+      "contractNote": "",
+      "id": "totaljobs-108104139",
+      "kind": "Frontend",
+      "location": "Remote (European time zones; listed under Glasgow)",
+      "mode": "Remote",
+      "modeNote": "\"This is a fully remote position\"; candidates in European time zones (UTC-1 to UTC+3) or US East/UTC-3",
+      "notes": "Staff/Lead IC on the Mapper Team; data-visualisation and real-time graph-editing UIs. 8+ years asked.",
+      "posted": "2026-10-07",
+      "region": "remote-uk",
+      "salary": "Not stated",
+      "source": "Totaljobs",
+      "stack": "React, state management, front-end performance, graph/canvas rendering (bonus), some backend",
+      "title": "Staff/Lead Front-end Engineer",
+      "url": "https://www.totaljobs.com/job/lead-front-end-engineer/mimica-job108104139",
+      "via": "Direct",
+      "aiLevel": 0,
+      "aiNote": "AI process-intelligence product; nothing on using AI coding tools",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-02T12:28:35.088Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "G.R.E. Recruitment (client: exotic-animal wholesaler)",
+      "contract": "Not stated",
+      "contractNote": "",
+      "id": "totaljobs-108087862",
+      "kind": "Adjacent",
+      "location": "UK (fully remote; optional Essex office)",
+      "mode": "Remote",
+      "modeNote": "\"Fully Remote\"; \"Open to applicants in the UK Only\"",
+      "notes": "New B2B team with 3 other WordPress/WooCommerce developers. 3+ yrs WordPress, 2+ yrs WooCommerce. No sponsorship.",
+      "posted": "2026-10-06",
+      "region": "remote-uk",
+      "salary": "£30,000–£40,000",
+      "source": "Totaljobs",
+      "stack": "WordPress, WooCommerce, PHP, JavaScript, HTML, CSS",
+      "title": "WordPress Developer - Fully Remote",
+      "url": "https://www.totaljobs.com/job/wordpress-developer-fully-remote/g-r-e-recruitment-limited-job108087862",
+      "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-02T12:28:35.088Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Maxwell Bond (client not named)",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "id": "linkedin-4480025750",
+      "kind": "Frontend",
+      "location": "Liverpool city centre",
+      "mode": "Hybrid",
+      "modeNote": "hybrid, days not stated",
+      "notes": "Greenfield product team at a Liverpool tech business.",
+      "posted": "2026-10-22",
+      "region": "north-west",
+      "salary": "Up to £75,000",
+      "source": "LinkedIn",
+      "stack": "React, TypeScript, Next.js",
+      "title": "Senior Frontend Developer",
+      "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-maxwell-bond-4480025750",
+      "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z",
+      "closedAt": "2026-11-02T12:28:35.088Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Carousel Consultancy (client: a FinTech, not named)",
+      "contract": "Permanent",
+      "contractNote": "full-time",
+      "id": "reed-57429571",
+      "kind": "Frontend",
+      "location": "London hybrid or UK/Europe remote",
+      "mode": "Remote",
+      "modeNote": "\"London hybrid or UK / European remote working basis\"",
+      "notes": "Remote from the UK is offered as an option alongside London hybrid.",
+      "posted": "2026-10-06",
+      "region": "remote-uk",
+      "salary": "£70,000–£100,000 (DoE)",
+      "source": "Reed",
+      "stack": "React, TypeScript, AWS (beneficial)",
+      "title": "Frontend Engineer - FinTech AI Platform",
+      "url": "https://www.reed.co.uk/jobs/frontend-engineer-fintech-ai-platform/57429571",
+      "via": "Agency",
+      "foundVia": [
+        "Reed search: remote"
+      ],
+      "aiLevel": 0,
+      "aiNote": "Builds a FinTech AI platform; nothing on using AI tools",
+      "firstSeen": "2026-10-31T14:11:13.843Z",
+      "closedAt": "2026-11-02T12:28:35.088Z",
+      "closedReason": "HTTP 404"
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
