@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-02T08:18:37.626Z",
+  "updatedAt": "2026-11-02T09:27:33.383Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 48,
+      "LinkedIn": 52,
       "Reed": 7,
       "Totaljobs": 10
     },
@@ -25,7 +25,10 @@
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4441993066"
+    "linkedin-4485458442",
+    "linkedin-4485468327",
+    "linkedin-4484307060",
+    "linkedin-4485692558"
   ],
   "jobs": [
     {
@@ -136,6 +139,9 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-nology-4483858525",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -180,6 +186,9 @@
       "title": "Frontend Developer (CRO & Experimentation)",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-digital-gurus-4477067783",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -312,6 +321,9 @@
       "title": "Frontend Software Developer",
       "url": "https://www.totaljobs.com/job/frontend-software-developer/hackajob-ltd-job108212675",
       "via": "Platform",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -356,6 +368,9 @@
       "title": "Frontend Developer",
       "url": "https://www.totaljobs.com/job/frontend-developer/damia-group-ltd-job108161057",
       "via": "Agency",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -466,6 +481,9 @@
       "title": "Senior Full Stack Engineer (Vue3, TypeScript)",
       "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-vue3-typescript/cytix-job108175696",
       "via": "Direct",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -1060,6 +1078,9 @@
       "title": "Software Developer (React.JS, Node.JS, Git, REST API, Web Security, OWASP)",
       "url": "https://www.reed.co.uk/jobs/software-developer-reactjs-nodejs-git-rest-api-web-security-owasp/57509355",
       "via": "Agency",
+      "foundVia": [
+        "Reed search: remote"
+      ],
       "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
@@ -1214,6 +1235,9 @@
       "title": "Senior Frontend Engineer (Vue.js)",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-netrolynx-ai-4484053225",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "firstSeen": "2026-10-31T21:13:59.966Z"
     },
     {
@@ -1236,6 +1260,9 @@
       "title": "Senior Frontend Engineer (Remote)",
       "url": "https://www.totaljobs.com/job/senior-frontend-engineer-remote/vividq-job108135577",
       "via": "Direct",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-11-01T07:50:21.295Z"
     },
     {
@@ -1302,6 +1329,9 @@
       "title": "Full Stack Software Developer",
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/data-careers-job108159582",
       "via": "Agency",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
@@ -1324,6 +1354,9 @@
       "title": "Full Stack Software Developer",
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/pave-talent-partners-limited-job108180933",
       "via": "Agency",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
@@ -1346,6 +1379,9 @@
       "title": "Senior React/Next.js Developer (SC Cleared)",
       "url": "https://www.totaljobs.com/job/senior-react-next-js-dev-sc-cleared/henderson-scott-job108080132",
       "via": "Agency",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-11-01T09:04:32.000Z"
     },
     {
@@ -1368,6 +1404,9 @@
       "title": "React Developer",
       "url": "https://www.totaljobs.com/job/react-developer/european-software-solutions-uk-limited-job108246862",
       "via": "Direct",
+      "foundVia": [
+        "Totaljobs search"
+      ],
       "firstSeen": "2026-11-01T09:04:32.000Z"
     },
     {
@@ -1412,6 +1451,9 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485933776",
       "via": "Direct",
+      "foundVia": [
+        "Tavily"
+      ],
       "firstSeen": "2026-11-01T11:55:01.640Z"
     },
     {
@@ -1456,7 +1498,118 @@
       "title": "Vice President, Full-Stack Engineer",
       "url": "https://uk.linkedin.com/jobs/view/vice-president-full-stack-engineer-at-bny-4441993066",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
       "firstSeen": "2026-11-02T08:18:37.626Z"
+    },
+    {
+      "id": "linkedin-4485458442",
+      "title": "Portal Front-End Developer",
+      "company": "Jobgether (for an unnamed partner company)",
+      "via": "Platform",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote contract opportunity within Europe\"; team on UK working hours",
+      "contract": "Contract",
+      "contractNote": "short fixed-scope contract engagement (about 18 days of work listed)",
+      "salary": "Not stated",
+      "posted": "2026-11-02",
+      "stack": "React, Next.js, TypeScript, React Testing Library/Playwright, AWS, Payload CMS",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/portal-front-end-developer-at-jobgether-4485458442",
+      "notes": "Short MVP project building a participant portal and a small admin portal for a brain health programme.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
+      "firstSeen": "2026-11-02T09:27:33.383Z"
+    },
+    {
+      "id": "linkedin-4485468327",
+      "title": "Senior Design Engineer",
+      "company": "Jobgether (for an unnamed partner company)",
+      "via": "Platform",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote-first working arrangements across Europe\"; optional Oslo office or co-working pass",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-11-02",
+      "stack": "React, TypeScript, HTML, CSS, Figma, design systems",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-design-engineer-at-jobgether-4485468327",
+      "notes": "Design-engineering role in an energy-tech company; 5+ years building UIs and a portfolio required.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
+      "firstSeen": "2026-11-02T09:27:33.383Z"
+    },
+    {
+      "id": "linkedin-4484307060",
+      "title": "Senior Full Stack Engineer",
+      "company": "Oliver Bernard (for a global technology company)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully Remote | UK based\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Up to £100k + annual bonus + equity",
+      "posted": "2026-11-01",
+      "stack": "C#, .NET, React, TypeScript, AWS/Azure, MongoDB, SQL",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-at-oliver-bernard-4484307060",
+      "notes": "Full-stack role on high-scale real-time data and ML systems; includes mentoring.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
+      "firstSeen": "2026-11-02T09:27:33.383Z"
+    },
+    {
+      "id": "linkedin-4485692558",
+      "title": "Senior Full Stack Engineer – .NET and React",
+      "company": "Netrolynx AI (for Tenth Revolution Group's retail client)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote\"",
+      "contract": "Contract",
+      "contractNote": "6 months, outside IR35",
+      "salary": "Up to £350/day",
+      "posted": "2026-11-01",
+      "stack": "React, TypeScript, C#/.NET, Azure",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-react-at-netrolynx-ai-4485692558",
+      "notes": "Listed on LinkedIn as \"Full Stack Developer - React\"; ecommerce order fulfilment platform.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-02T09:27:33.383Z"
     }
   ],
   "closed": [
