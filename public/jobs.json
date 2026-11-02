@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-02T14:26:20.320Z",
+  "updatedAt": "2026-11-02T16:20:04.914Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,13 +19,15 @@
     "counts": {
       "LinkedIn": 54,
       "Reed": 8,
-      "Totaljobs": 13
+      "Totaljobs": 15
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4486175369"
+    "linkedin-4483536689",
+    "totaljobs-108272508",
+    "totaljobs-108048107"
   ],
   "jobs": [
     {
@@ -130,7 +132,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-nology-4483858525",
       "via": "Agency",
       "foundVia": [
-        "Tavily"
+        "Tavily",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -186,7 +189,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-digital-gurus-4477067783",
       "via": "Agency",
       "foundVia": [
-        "Tavily"
+        "Tavily",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -482,6 +486,9 @@
       "title": "Senior App Developer (React Native)",
       "url": "https://uk.linkedin.com/jobs/view/senior-applications-developer-react-native-at-pets-at-home-4472071428",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -582,6 +589,9 @@
       "title": "Senior Full Stack Engineer (Python/React)",
       "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-python-react-at-boost-talent-ltd-4481757846",
       "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "Says it is not an AI/ML or prompt engineering role; nothing on AI coding tools",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -609,31 +619,6 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T14:14:15.876Z"
-    },
-    {
-      "clearance": "Eligible to obtain",
-      "clearanceNote": "must be eligible for BPSS clearance",
-      "company": "Brookwood Recruitment (client not named)",
-      "contract": "Contract",
-      "contractNote": "6 months, inside IR35, PAYE through umbrella",
-      "id": "linkedin-4483451585",
-      "kind": "Adjacent",
-      "location": "Manchester",
-      "mode": "Hybrid",
-      "modeNote": "4 days per week onsite in Manchester",
-      "notes": "Junior full-stack contract with Angular front end; AI-assisted development tools mentioned as desirable.",
-      "posted": "2026-10-30",
-      "region": "north-west",
-      "salary": "£334/day",
-      "source": "LinkedIn",
-      "stack": ".NET Core, ASP.NET, C#, Web API, Angular, SQL Server",
-      "title": "Junior Full Stack Engineer (.Net/Angular) - contract",
-      "url": "https://uk.linkedin.com/jobs/view/4483451585",
-      "via": "Agency",
-      "aiLevel": 2,
-      "aiNote": "Desirable: AI-assisted dev tools (Copilot, Windsurf, Claude) and agentic development; \"exposure to\" AI-enabled practices",
-      "claudeMention": "Desirable: \"AI-assisted development tools such as GitHub Copilot, Windsurf, Claude, or similar\"",
-      "firstSeen": "2026-10-30T15:12:32.083Z"
     },
     {
       "clearance": "None stated",
@@ -795,6 +780,9 @@
       "title": "Design Engineer - UK",
       "url": "https://uk.linkedin.com/jobs/view/design-engineer-uk-at-ashby-4427219420",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
       "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\"",
@@ -820,6 +808,9 @@
       "title": "Staff Design Engineer - UK",
       "url": "https://uk.linkedin.com/jobs/view/staff-design-engineer-uk-at-ashby-4403602815",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
       "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\"",
@@ -896,6 +887,9 @@
       "title": "Senior React Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485362469",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T21:07:45.745Z"
@@ -1978,11 +1972,11 @@
       "title": "WordPress Developer - Fully Remote",
       "url": "https://www.totaljobs.com/job/wordpress-developer-fully-remote/g-r-e-recruitment-limited-job108087862",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-02T12:28:35.088Z"
     },
     {
@@ -2005,11 +1999,12 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-regional-recruitment-4486175369",
       "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
       "aiLevel": 0,
       "aiNote": "",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "firstSeen": "2026-11-02T14:26:20.320Z"
     },
     {
@@ -2039,9 +2034,117 @@
       "aiLevel": 0,
       "aiNote": "Builds a FinTech AI platform; nothing on using AI tools",
       "firstSeen": "2026-10-31T14:11:13.843Z"
+    },
+    {
+      "id": "linkedin-4483536689",
+      "title": "React Developer – SC Cleared",
+      "company": "AgileGrid Solutions (recruiting for Square One Resources; public sector client not named)",
+      "location": "UK Remote",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"UK Remote\"",
+      "contract": "Contract",
+      "contractNote": "Initial contract to 31 March 2027, possible extension; inside IR35",
+      "salary": "£400–£500/day",
+      "posted": "2026-10-26",
+      "stack": "React, JavaScript, TypeScript, REST APIs, automated testing; Pega/Pega Constellation, React SDK, CI/CD a plus",
+      "via": "Agency",
+      "kind": "Frontend",
+      "clearance": "SC",
+      "clearanceNote": "Active UK SC clearance mandatory",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/react-developer-at-agilegrid-solutions-4483536689",
+      "notes": "Public sector digital transformation programme; GDS experience advantageous.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-02T16:20:04.914Z"
+    },
+    {
+      "id": "totaljobs-108272508",
+      "title": "Full Stack Developer Engineer",
+      "company": "ECS Recruitment Group (client not named)",
+      "location": "Fully Remote",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Location: Fully Remote\"",
+      "contract": "Contract",
+      "contractNote": "Outside IR35, start ASAP",
+      "salary": "£450–£500/day",
+      "posted": "2026-11-02",
+      "stack": "Python, FastAPI, JavaScript, React, SQL, PostgreSQL, AWS, CI/CD; Docker and AWS ECS desirable",
+      "via": "Agency",
+      "kind": "Adjacent",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/full-stack-developer-engineer/ecs-job108272508",
+      "notes": "Cyber DevOps team building internal tools; React frontend alongside Python backend. Cyber security experience highly desirable.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-02T16:20:04.914Z"
+    },
+    {
+      "id": "totaljobs-108048107",
+      "title": "Senior Frontend Engineer (Vue), Create: Repository Management",
+      "company": "GitLab",
+      "location": "Remote (listed under Redruth, Cornwall)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"All of our roles are remote\"; team works across Europe and North America",
+      "contract": "Permanent",
+      "contractNote": "listed full-time; full-time employee benefits described",
+      "salary": "Competitive",
+      "posted": "2026-09-26",
+      "stack": "Vue.js, GraphQL, JavaScript, HTML, CSS, Jest",
+      "via": "Direct",
+      "kind": "Frontend",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/senior-frontend-engineer-vue-create-repository-management/gitlab-job108048107",
+      "notes": "Source Code stage; includes Tier 2 on-call. Some roles may carry location-based eligibility requirements.",
+      "aiLevel": 3,
+      "aiNote": "All staff expected to use AI daily; \"use AI agents for well-scoped work... critically review their output\"; wants a track record with AI coding agents",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-02T16:20:04.914Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "Eligible to obtain",
+      "clearanceNote": "must be eligible for BPSS clearance",
+      "company": "Brookwood Recruitment (client not named)",
+      "contract": "Contract",
+      "contractNote": "6 months, inside IR35, PAYE through umbrella",
+      "id": "linkedin-4483451585",
+      "kind": "Adjacent",
+      "location": "Manchester",
+      "mode": "Hybrid",
+      "modeNote": "4 days per week onsite in Manchester",
+      "notes": "Junior full-stack contract with Angular front end; AI-assisted development tools mentioned as desirable.",
+      "posted": "2026-10-30",
+      "region": "north-west",
+      "salary": "£334/day",
+      "source": "LinkedIn",
+      "stack": ".NET Core, ASP.NET, C#, Web API, Angular, SQL Server",
+      "title": "Junior Full Stack Engineer (.Net/Angular) - contract",
+      "url": "https://uk.linkedin.com/jobs/view/4483451585",
+      "via": "Agency",
+      "aiLevel": 2,
+      "aiNote": "Desirable: AI-assisted dev tools (Copilot, Windsurf, Claude) and agentic development; \"exposure to\" AI-enabled practices",
+      "claudeMention": "Desirable: \"AI-assisted development tools such as GitHub Copilot, Windsurf, Claude, or similar\"",
+      "firstSeen": "2026-10-30T15:12:32.083Z",
+      "closedAt": "2026-11-02T16:20:04.914Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
