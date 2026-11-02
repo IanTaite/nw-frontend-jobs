@@ -16,7 +16,7 @@ import { ThemeMode, ThemeService } from './theme';
           (click)="theme.mode.set(o.mode)"
           [attr.aria-pressed]="theme.mode() === o.mode"
           [title]="o.label"
-          class="rounded-md p-1.5 text-brand-muted hover:text-brand-fg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-ring aria-pressed:bg-brand-fg/15 aria-pressed:text-brand-fg"
+          class="rounded-md p-1.5 text-brand-muted hover:text-brand-fg focus-visible:ring-2 focus-visible:ring-accent-ring focus-visible:outline-hidden aria-pressed:bg-brand-fg/15 aria-pressed:text-brand-fg aria-pressed:outline-1 aria-pressed:outline-brand-fg/70"
         >
           <svg
             aria-hidden="true"

@@ -8,9 +8,9 @@
   --color-surface: #fffcf6;
   --color-ink: #1c2d31;
   --color-ink-soft: #4d5e62;
-  --color-ink-faint: #6b7b7e;
+  --color-ink-faint: #5b6b6e;
   --color-line: #ddd5c6;
-  --color-line-strong: #c9bfad;
+  --color-line-strong: #8c8270;
   --color-brand: #103c40;
   --color-brand-mid: #16575c;
   --color-brand-fg: #e6f3f2;
@@ -75,7 +75,7 @@ body {
     --color-ink-soft: #b3c4c2;
     --color-ink-faint: #93a8a6;
     --color-line: #26383b;
-    --color-line-strong: #3b5155;
+    --color-line-strong: #5d777b;
     --color-brand: #0a2b2e;
     --color-brand-mid: #6cc9c0;
     --color-brand-fg: #e6f3f2;
@@ -96,5 +96,14 @@ body {
 
   .dark select:not([multiple]) {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23b3c4c2' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+  }
+
+  /* Windows High Contrast / forced colours: the chevron image ignores the user's palette, so use the native arrow. */
+  @media (forced-colors: active) {
+    select:not([multiple]),
+    .dark select:not([multiple]) {
+      appearance: auto;
+      background-image: none;
+    }
   }
 }

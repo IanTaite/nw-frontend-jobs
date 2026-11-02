@@ -40,60 +40,60 @@
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-7">
           <label class="flex flex-col gap-1 text-sm font-medium sm:col-span-2 lg:col-span-7">Search
             <input type="search" [value]="searchText()" (input)="onSearch(val($event))" placeholder="Title, company, stack…"
-              class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring" />
+              class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring" />
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Region
-            <select [value]="region()" (change)="region.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="region()" (change)="region.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="north-west">North West</option><option value="remote-uk">Remote UK</option>
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Work mode
-            <select [value]="mode()" (change)="mode.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="mode()" (change)="mode.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               @for (o of opts().mode; track o) { <option [value]="o" [selected]="o === mode()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Contract
-            <select [value]="contract()" (change)="contract.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="contract()" (change)="contract.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               @for (o of opts().contract; track o) { <option [value]="o" [selected]="o === contract()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Security clearance
-            <select [value]="clearance()" (change)="clearance.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="clearance()" (change)="clearance.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               <option value="Any">Any clearance needed</option>
               @for (o of opts().clearance; track o) { <option [value]="o" [selected]="o === clearance()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Role type
-            <select [value]="kind()" (change)="kind.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="kind()" (change)="kind.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="Frontend">Frontend</option><option value="Adjacent">Full-stack / mobile</option>
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Posted by
-            <select [value]="via()" (change)="via.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="via()" (change)="via.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="Direct">Direct employer</option><option value="Agency">Recruiter agency</option><option value="Platform">Hiring platform</option>
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Sort by
-            <select [value]="sort()" (change)="sort.set($any(val($event)))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="sort()" (change)="sort.set($any(val($event)))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="newest">Newest posted</option><option value="discovered">Newest discovered</option><option value="salary">Salary (highest)</option><option value="company">Company (A–Z)</option><option value="ai">AI usage (highest)</option>
             </select>
           </label>
         </div>
         <div class="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm">
           <label class="inline-flex items-center gap-2 font-medium">
-            <input type="checkbox" [checked]="newOnly()" (change)="newOnly.set($any($event.target).checked)" class="h-4 w-4 rounded border-line-strong accent-new focus:outline-none focus:ring-2 focus:ring-accent-ring" />
+            <input type="checkbox" [checked]="newOnly()" (change)="newOnly.set($any($event.target).checked)" class="h-4 w-4 rounded border-line-strong accent-new focus:outline-hidden focus:ring-2 focus:ring-accent-ring" />
             New only <span class="font-normal text-ink-faint">(not in the previous refresh)</span>
           </label>
           <label class="inline-flex items-center gap-2 font-medium">AI usage
-            <select [value]="aiMin()" (change)="aiMin.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-2 py-1 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="aiMin()" (change)="aiMin.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-2 py-1 font-normal focus:outline-hidden focus:ring-2 focus:ring-accent-ring">
               <option value="All">Any</option><option value="1">Stated (any level)</option><option value="2">AI optional or more</option><option value="3">AI-assisted or more</option><option value="4">AI-first or more</option><option value="5">Agent-led</option>
             </select>
           </label>
           <p aria-live="polite" class="text-ink-soft">Showing {{ filtered().length }} of {{ jobs().length }} postings</p>
-          <button type="button" (click)="reset()" class="rounded-md border border-line-strong px-3 py-1.5 font-medium hover:bg-accent-soft focus:outline-none focus:ring-2 focus:ring-accent-ring">Reset filters</button>
+          <button type="button" (click)="reset()" class="rounded-md border border-line-strong px-3 py-1.5 font-medium hover:bg-accent-soft focus:outline-hidden focus:ring-2 focus:ring-accent-ring">Reset filters</button>
         </div>
       </section>
 
@@ -121,7 +121,7 @@
                 <dt class="text-ink-faint">AI usage</dt><dd><span class="inline-flex items-center gap-1.5 rounded px-2 py-0.5 text-xs font-medium" [class]="(j.aiLevel ?? 0) >= 3 ? 'bg-accent-soft text-accent' : 'bg-canvas text-ink-soft'" [attr.title]="j.aiNote || null"><span aria-hidden="true" class="inline-flex gap-0.5">@for (d of aiDots; track d) { <span class="h-1.5 w-1.5 rounded-full" [class]="d <= (j.aiLevel ?? 0) ? 'bg-current' : 'bg-line-strong'"></span> }</span>{{ aiLabel(j.aiLevel) }}<span class="sr-only"> (AI usage level {{ j.aiLevel ?? 0 }} of 5)</span></span>@if (j.claudeMention) { <span class="ml-1 inline-block rounded bg-accent-soft px-2 py-0.5 text-xs font-medium text-accent" [attr.title]="'Mentions Claude: ' + j.claudeMention">Claude<span class="sr-only">, posting mentions Claude: {{ j.claudeMention }}</span></span> }@if (j.aiNote) { <div class="mt-0.5 text-xs text-ink-faint">{{ j.aiNote }}</div> }</dd>
               </dl>
               @if (j.notes) { <p class="mt-2 text-sm text-ink-soft italic">{{ j.notes }}</p> }
-              <a [href]="j.url" target="_blank" rel="noopener noreferrer" class="mt-auto self-start pt-3 inline-block font-medium text-accent underline hover:text-accent-hover">View on {{ j.source }}<span class="sr-only"> (opens in new tab)</span></a>
+              <a [href]="j.url" target="_blank" rel="noopener noreferrer" class="mt-auto self-start pt-3 inline-block font-medium text-accent underline hover:text-accent-hover">View on {{ j.source }}<span class="sr-only"> posting for {{ j.title }} at {{ j.company }} (opens in new tab)</span></a>
             </li>
           }
         </ul>
@@ -129,7 +129,7 @@
 
       @if (closed().length) {
         <details class="mt-6 rounded-lg border border-line bg-surface shadow-sm">
-          <summary class="cursor-pointer px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-accent-ring rounded-lg">Recently closed ({{ closed().length }}) <span class="font-normal text-sm text-ink-faint">– removed in the last 30 days</span></summary>
+          <summary class="cursor-pointer px-4 py-3 font-semibold focus:outline-hidden focus:ring-2 focus:ring-accent-ring rounded-lg">Recently closed ({{ closed().length }}) <span class="font-normal text-sm text-ink-faint">– removed in the last 30 days</span></summary>
           <ul class="divide-y divide-line border-t border-line text-sm">
             @for (j of closed(); track j.id) {
               <li class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-2">
@@ -141,15 +141,16 @@
           </ul>
         </details>
       }
-
-      @if (data(); as d) {
-        <footer class="mt-8 border-t border-line pt-4 text-sm text-ink-soft">
-          <p><span class="font-medium text-ink">Sources searched:</span> {{ d.sources.searched.join(', ') }}.</p>
-          @if (d.sources.blocked?.length) { <p class="mt-1"><span class="font-medium text-ink">Could not be searched:</span> {{ d.sources.blocked!.join(', ') }}.</p> }
-          @if (d.sources.notes) { <p class="mt-1">{{ d.sources.notes }}</p> }
-          <p class="mt-1">"New" marks roles that were not in the previous refresh; roles already known are unmarked. Salary sorting treats day rates as roughly 220 working days a year. Postings with no salary go last.</p>
-        </footer>
-      }
     }
   </main>
+  @if (data(); as d) {
+    <footer class="mx-auto max-w-7xl px-4 pb-8 sm:px-6">
+      <div class="mt-2 border-t border-line pt-4 text-sm text-ink-soft">
+        <p><span class="font-medium text-ink">Sources searched:</span> {{ d.sources.searched.join(', ') }}.</p>
+        @if (d.sources.blocked?.length) { <p class="mt-1"><span class="font-medium text-ink">Could not be searched:</span> {{ d.sources.blocked!.join(', ') }}.</p> }
+        @if (d.sources.notes) { <p class="mt-1">{{ d.sources.notes }}</p> }
+        <p class="mt-1">"New" marks roles that were not in the previous refresh; roles already known are unmarked. Salary sorting treats day rates as roughly 220 working days a year. Postings with no salary go last.</p>
+      </div>
+    </footer>
+  }
 </div>
