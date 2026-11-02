@@ -2,7 +2,10 @@
 <div class="min-h-screen bg-canvas text-ink">
   <header class="bg-brand text-brand-fg border-b-4 border-accent-ring">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
-      <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">Frontend Developer roles – North West England plus remote UK</h1>
+      <div class="flex items-start justify-between gap-4">
+        <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">Frontend Developer roles – North West England plus remote UK</h1>
+        <app-theme-toggle />
+      </div>
       <p class="mt-1 text-brand-muted">Roles based in North West England, plus fully remote roles open to UK residents. Work mode, contract type and security clearance for each posting, taken from the posting itself. Anything a posting doesn't give is marked "Not stated".</p>
       @if (data(); as d) {
         <p class="mt-2 text-sm text-brand-muted">Last updated

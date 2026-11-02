@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { AI_LABEL, Job, JobsFile, REGION_LABEL, Region, salaryValue } from './jobs';
 import { QueryParam, flagParam, stringParam, syncQueryParams } from './query-params';
+import { ThemeToggle } from './theme-toggle';
 
 const SORTS = ['newest', 'discovered', 'salary', 'company', 'ai'] as const;
 type Sort = (typeof SORTS)[number];
@@ -19,7 +20,7 @@ const SEARCH_DEBOUNCE_MS = 300;
 
 @Component({
   selector: 'app-root',
-  imports: [DatePipe],
+  imports: [DatePipe, ThemeToggle],
   templateUrl: './app.html',
 })
 export class App {
