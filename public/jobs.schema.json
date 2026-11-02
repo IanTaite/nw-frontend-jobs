@@ -223,6 +223,13 @@
         "closedReason": {
           "type": "string",
           "description": "Why it was dropped, e.g. 'HTTP 404' or 'page says \"No longer accepting applications\"'"
+        },
+        "foundVia": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "How the role was found, e.g. \"LinkedIn search: Manchester\" or \"Tavily\". Stored for analysis only; never shown in the UI."
         }
       }
     }

@@ -64,6 +64,13 @@ export function inferRegion(j) {
   return 'remote-uk';
 }
 const withRegion = (c, prev) => ({ ...c, region: c.region ?? prev?.region ?? inferRegion(c) });
+// foundVia: how a role was found (e.g. "LinkedIn search: Manchester", "Tavily", "Reed search"). Stored only, never shown in the UI.
+// Accumulates across runs (union with earlier values); it is not removed when a later run finds the role another way.
+const withFoundVia = (c, prev) => {
+  const all = [...new Set([...(prev?.foundVia ?? []), ...(c.foundVia ?? [])])];
+  const { foundVia, ...rest } = c;
+  return all.length ? { ...rest, foundVia: all } : rest;
+};
 
 // 1. Merge candidates by id.
 const byId = new Map(data.jobs.map(j => [j.id, j]));
@@ -78,9 +85,9 @@ if (candFile) {
     const known = byId.get(c.id);
     const wasClosed = closedById.get(c.id);
     if (known) {
-      byId.set(c.id, { ...withRegion(strip(c), known), firstSeen: known.firstSeen });               // never overwrite firstSeen
+      byId.set(c.id, { ...withFoundVia(withRegion(strip(c), known), known), firstSeen: known.firstSeen });               // never overwrite firstSeen
     } else if (wasClosed) {
-      byId.set(c.id, { ...withRegion(strip(c), wasClosed), firstSeen: wasClosed.firstSeen });           // reopened
+      byId.set(c.id, { ...withFoundVia(withRegion(strip(c), wasClosed), wasClosed), firstSeen: wasClosed.firstSeen });           // reopened
       closedById.delete(c.id); reopened.push(c.id);
     } else {
       byId.set(c.id, { ...withRegion(strip(c)), firstSeen: now }); newIds.push(c.id);        // newly discovered
@@ -94,7 +101,15 @@ for (const j of byId.values()) if (!j.firstSeen) { j.firstSeen = now; if (!newId
 
 // 2. Verify every open posting.
 const results = [];
-for (const job of byId.values()) { results.push(await check(job)); if (!noFetch) await new Promise(r => setTimeout(r, 800)); }
+// One at a time. LinkedIn is paced slowly (3-5 s between pages) and a 429 gets one retry after a longer wait; the rest keep the short delay.
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+for (const job of byId.values()) {
+  const li = /linkedin/.test(job.url);
+  let r = await check(job);
+  if (li && !noFetch && r.status === 'unknown' && /429/.test(r.why ?? '')) { await sleep(20000); r = await check(job); }
+  results.push(r);
+  if (!noFetch) await sleep(li ? 3000 + Math.random() * 2000 : 800);
+}
 for (const r of results) console.log(`${r.status.padEnd(7)} ${r.job.id.padEnd(22)} ${r.job.company}${r.why ? ' — ' + r.why : ''}${newIds.includes(r.job.id) ? ' [NEW]' : ''}`);
 
 const keep = results.filter(r => r.status === 'open' || r.status === 'unknown').map(r => r.job);

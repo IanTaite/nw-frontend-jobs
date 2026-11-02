@@ -90,3 +90,9 @@ Leave out:
 - Run times are UTC (`updatedAt` ends in `Z`). The site shows them in UK time.
 - Posted dates are `YYYY-MM-DD`. For a relative date such as "3 days ago", work it out from the run date.
 - Salary sorting treats day rates as × 220 working days.
+
+
+## How roles are found (`foundVia`) and LinkedIn pacing
+
+- Every candidate carries an optional `foundVia` array saying how the run found it, for example `"LinkedIn search: Manchester"`, `"LinkedIn search: remote UK"`, `"Reed search"`, `"Totaljobs search"`, `"Tavily"` or `"Tavily extract"`. `verify-jobs.mjs` merges it with earlier values, so it grows over time. It is stored only. The UI must never show it. Existing roles have no `foundVia` until a later run finds them again; don't invent it.
+- LinkedIn is fetched **one page at a time** with a 3-5 second pause between pages, in the run's searches and in the posting checks. No parallel batches on LinkedIn. After a 429, wait 20 seconds and retry once, then keep the role open and log it. Other sources can still run in parallel with each other.
