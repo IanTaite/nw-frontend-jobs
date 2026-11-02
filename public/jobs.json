@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-02T09:27:33.383Z",
+  "updatedAt": "2026-11-02T10:31:51.956Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,18 +17,18 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 52,
-      "Reed": 7,
-      "Totaljobs": 10
+      "LinkedIn": 55,
+      "Reed": 6,
+      "Totaljobs": 11
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4485458442",
-    "linkedin-4485468327",
-    "linkedin-4484307060",
-    "linkedin-4485692558"
+    "linkedin-4476008012",
+    "linkedin-4485476037",
+    "linkedin-4484320937",
+    "totaljobs-108206689"
   ],
   "jobs": [
     {
@@ -51,9 +51,9 @@
       "title": "Senior Angular Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-angular-developer-at-isio-4483453415",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -75,9 +75,9 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-acorn-group-4474785765",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -99,9 +99,9 @@
       "title": "Senior Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-acorn-group-4478371896",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -123,9 +123,9 @@
       "title": "Senior Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-maxwell-bond-4480025750",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -147,12 +147,12 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-nology-4483858525",
       "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
-      "firstSeen": "2026-10-30T13:10:52Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "eSC / eDV – eligible to obtain",
@@ -174,9 +174,9 @@
       "title": "Senior Front End Developer (eSC/eDV clearance)",
       "url": "https://uk.linkedin.com/jobs/view/senior-front-end-developer-esc-or-edv-clearance-required-at-ibm-4417247817",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -198,12 +198,12 @@
       "title": "Frontend Developer (CRO & Experimentation)",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-digital-gurus-4477067783",
       "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
-      "firstSeen": "2026-10-30T13:10:52Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -225,9 +225,9 @@
       "title": "Front End Developer – UK Government",
       "url": "https://uk.linkedin.com/jobs/view/%F0%9F%8C%B3-front-end-developer-uk-government-contract-%F0%9F%8C%B3-at-areti-group-b-corp%E2%84%A2-4478501938",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -249,10 +249,10 @@
       "title": "Senior Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-formula-4476771253",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 3,
       "aiNote": "Requires \"using AI tooling such as Claude Code in your day-to-day workflow\"",
-      "claudeMention": "Using AI tooling such as Claude Code in your day-to-day workflow"
+      "claudeMention": "Using AI tooling such as Claude Code in your day-to-day workflow",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -274,9 +274,9 @@
       "title": "Front End Developer",
       "url": "https://www.reed.co.uk/jobs/front-end-developer/57481500",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -298,9 +298,9 @@
       "title": "Frontend Developer (inside IR35)",
       "url": "https://www.reed.co.uk/jobs/frontend-developer-inside-ir35-once-or-twice-a-week-onsite-in-manchester-leeds-or-newcastle/57422837",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -322,9 +322,9 @@
       "title": "Senior Front End Developer",
       "url": "https://www.reed.co.uk/jobs/senior-front-end-developer/57401714",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -346,12 +346,12 @@
       "title": "Frontend Software Developer",
       "url": "https://www.totaljobs.com/job/frontend-software-developer/hackajob-ltd-job108212675",
       "via": "Platform",
+      "aiLevel": 2,
+      "aiNote": "Asks for \"working knowledge of AI and how it can support software development\"",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-10-30T13:10:52Z",
-      "aiLevel": 2,
-      "aiNote": "Asks for \"working knowledge of AI and how it can support software development\""
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -373,9 +373,9 @@
       "title": "React Front-End Developer",
       "url": "https://uk.linkedin.com/jobs/view/react-front-end-developer-at-ocean-technologies-group-4484917843",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "SC",
@@ -397,12 +397,12 @@
       "title": "Frontend Developer",
       "url": "https://www.totaljobs.com/job/frontend-developer/damia-group-ltd-job108161057",
       "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "Asks for agentic AI development experience (OpenAI, Anthropic or Copilot frameworks); nothing on using AI tools to code",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-10-30T13:10:52Z",
-      "aiLevel": 0,
-      "aiNote": "Asks for agentic AI development experience (OpenAI, Anthropic or Copilot frameworks); nothing on using AI tools to code"
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -424,9 +424,9 @@
       "title": "Senior Frontend Engineer / Creative Developer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-pertemps-network-group-4478665732",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 3,
-      "aiNote": "\"Leveraging AI-powered development workflows\"; wants strong understanding of modern AI development workflows"
+      "aiNote": "\"Leveraging AI-powered development workflows\"; wants strong understanding of modern AI development workflows",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -448,9 +448,9 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-haystack-4481900110",
       "via": "Platform",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -472,9 +472,9 @@
       "title": "Senior App Developer (React Native)",
       "url": "https://uk.linkedin.com/jobs/view/senior-applications-developer-react-native-at-pets-at-home-4472071428",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -496,9 +496,9 @@
       "title": "Full Stack Engineer – React & Java",
       "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-react-java-at-computer-futures-4476375514",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -520,13 +520,13 @@
       "title": "Senior Full Stack Engineer (Vue3, TypeScript)",
       "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-vue3-typescript/cytix-job108175696",
       "via": "Direct",
+      "aiLevel": 2,
+      "aiNote": "Lists \"Claude Tokens\" as a benefit; nothing else on how AI tools are used",
+      "claudeMention": "Benefits list includes \"Claude Tokens\"",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-10-30T13:10:52Z",
-      "aiLevel": 2,
-      "aiNote": "Lists \"Claude Tokens\" as a benefit; nothing else on how AI tools are used",
-      "claudeMention": "Benefits list includes \"Claude Tokens\""
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -548,9 +548,9 @@
       "title": "Senior Fullstack Engineer (Go/React)",
       "url": "https://uk.linkedin.com/jobs/view/senior-fullstack-engineer-go-react-at-createfuture-4480037196",
       "via": "Direct",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 4,
-      "aiNote": "\"AI-native consulting partner\"; role helps embed AI and automation in delivery and implement AI-driven engineering approaches"
+      "aiNote": "\"AI-native consulting partner\"; role helps embed AI and automation in delivery and implement AI-driven engineering approaches",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -572,9 +572,9 @@
       "title": "Senior Full Stack Engineer (Python/React)",
       "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-python-react-at-boost-talent-ltd-4481757846",
       "via": "Agency",
-      "firstSeen": "2026-10-30T13:10:52Z",
       "aiLevel": 0,
-      "aiNote": "Says it is not an AI/ML or prompt engineering role; nothing on AI coding tools"
+      "aiNote": "Says it is not an AI/ML or prompt engineering role; nothing on AI coding tools",
+      "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
       "clearance": "None stated",
@@ -596,9 +596,9 @@
       "title": "Fullstack Camunda Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485308571",
       "via": "Agency",
-      "firstSeen": "2026-10-30T14:14:15.876Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T14:14:15.876Z"
     },
     {
       "clearance": "Eligible to obtain",
@@ -620,10 +620,10 @@
       "title": "Junior Full Stack Engineer (.Net/Angular) - contract",
       "url": "https://uk.linkedin.com/jobs/view/4483451585",
       "via": "Agency",
-      "firstSeen": "2026-10-30T15:12:32.083Z",
       "aiLevel": 2,
       "aiNote": "Desirable: AI-assisted dev tools (Copilot, Windsurf, Claude) and agentic development; \"exposure to\" AI-enabled practices",
-      "claudeMention": "Desirable: \"AI-assisted development tools such as GitHub Copilot, Windsurf, Claude, or similar\""
+      "claudeMention": "Desirable: \"AI-assisted development tools such as GitHub Copilot, Windsurf, Claude, or similar\"",
+      "firstSeen": "2026-10-30T15:12:32.083Z"
     },
     {
       "clearance": "None stated",
@@ -645,10 +645,10 @@
       "title": "Frontend Engineer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-engineer-at-system1-4477304325",
       "via": "Direct",
-      "firstSeen": "2026-10-30T16:07:39.719Z",
       "aiLevel": 4,
       "aiNote": "\"Engineer through Claude Code day to day\", building your own skills and subagents; \"genuinely AI-native\", owning every line",
-      "claudeMention": "Daily use of Claude Code, building your own skills and subagents"
+      "claudeMention": "Daily use of Claude Code, building your own skills and subagents",
+      "firstSeen": "2026-10-30T16:07:39.719Z"
     },
     {
       "clearance": "None stated",
@@ -670,9 +670,9 @@
       "title": "Sr. Engineer - Front End (Remote, GBR)",
       "url": "https://uk.linkedin.com/jobs/view/sr-engineer-front-end-remote-gbr-at-crowdstrike-4480679673",
       "via": "Direct",
-      "firstSeen": "2026-10-30T16:07:39.719Z",
       "aiLevel": 3,
-      "aiNote": "\"We use an AI-first mindset as a force multiplier\"; wants proven experience using AI to streamline workflows"
+      "aiNote": "\"We use an AI-first mindset as a force multiplier\"; wants proven experience using AI to streamline workflows",
+      "firstSeen": "2026-10-30T16:07:39.719Z"
     },
     {
       "clearance": "None stated",
@@ -694,9 +694,9 @@
       "title": "Senior Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-developer-at-trg-4471774180",
       "via": "Agency",
-      "firstSeen": "2026-10-30T16:07:39.719Z",
       "aiLevel": 3,
-      "aiNote": "\"Using modern AI development tools to ship significantly faster\" (also builds AI product UIs)"
+      "aiNote": "\"Using modern AI development tools to ship significantly faster\" (also builds AI product UIs)",
+      "firstSeen": "2026-10-30T16:07:39.719Z"
     },
     {
       "clearance": "None stated",
@@ -718,9 +718,9 @@
       "title": "Front-end Developer - Tebex",
       "url": "https://uk.linkedin.com/jobs/view/front-end-developer-tebex-at-overwolf-4483397172",
       "via": "Direct",
-      "firstSeen": "2026-10-30T17:13:13.563Z",
       "aiLevel": 2,
-      "aiNote": "Asks for \"ability to leverage AI workflows in an efficient manner to assist with development\""
+      "aiNote": "Asks for \"ability to leverage AI workflows in an efficient manner to assist with development\"",
+      "firstSeen": "2026-10-30T17:13:13.563Z"
     },
     {
       "clearance": "None stated",
@@ -742,9 +742,9 @@
       "title": "Senior Frontend Engineer",
       "url": "https://uk.linkedin.com/jobs/view/senior-frontend-engineer-at-intermedia-intelligent-communications-4464226866",
       "via": "Direct",
-      "firstSeen": "2026-10-30T17:13:13.563Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T17:13:13.563Z"
     },
     {
       "clearance": "None stated",
@@ -766,10 +766,10 @@
       "title": "Design Engineer - UK",
       "url": "https://uk.linkedin.com/jobs/view/design-engineer-uk-at-ashby-4427219420",
       "via": "Direct",
-      "firstSeen": "2026-10-30T18:05:46.626Z",
       "aiLevel": 3,
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
-      "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\""
+      "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\"",
+      "firstSeen": "2026-10-30T18:05:46.626Z"
     },
     {
       "clearance": "None stated",
@@ -791,10 +791,10 @@
       "title": "Staff Design Engineer - UK",
       "url": "https://uk.linkedin.com/jobs/view/staff-design-engineer-uk-at-ashby-4403602815",
       "via": "Direct",
-      "firstSeen": "2026-10-30T18:05:46.626Z",
       "aiLevel": 3,
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
-      "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\""
+      "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\"",
+      "firstSeen": "2026-10-30T18:05:46.626Z"
     },
     {
       "clearance": "None stated",
@@ -816,9 +816,9 @@
       "title": "CRO Developer",
       "url": "https://uk.linkedin.com/jobs/view/cro-developer-at-harnham-4469858012",
       "via": "Agency",
-      "firstSeen": "2026-10-30T19:12:43.795Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T19:12:43.795Z"
     },
     {
       "clearance": "None stated",
@@ -840,9 +840,9 @@
       "title": "Senior Frontend Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4483487132",
       "via": "Agency",
-      "firstSeen": "2026-10-30T21:07:45.745Z",
       "aiLevel": 3,
-      "aiNote": "Requires \"practical fluency with AI coding tools and agentic development workflows\""
+      "aiNote": "Requires \"practical fluency with AI coding tools and agentic development workflows\"",
+      "firstSeen": "2026-10-30T21:07:45.745Z"
     },
     {
       "clearance": "None stated",
@@ -864,9 +864,9 @@
       "title": "Senior React Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485362469",
       "via": "Agency",
-      "firstSeen": "2026-10-30T21:07:45.745Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-30T21:07:45.745Z"
     },
     {
       "clearance": "None stated",
@@ -888,9 +888,9 @@
       "title": "Senior Frontend Engineer (React, TypeScript)",
       "url": "https://uk.linkedin.com/jobs/view/4478512116",
       "via": "Agency",
-      "firstSeen": "2026-10-31T07:07:14.561Z",
       "aiLevel": 0,
-      "aiNote": "Builds AI features into a product (streaming AI responses); nothing on using AI coding tools"
+      "aiNote": "Builds AI features into a product (streaming AI responses); nothing on using AI coding tools",
+      "firstSeen": "2026-10-31T07:07:14.561Z"
     },
     {
       "clearance": "None stated",
@@ -912,9 +912,9 @@
       "title": "Senior Frontend Engineer – Acquisition",
       "url": "https://uk.linkedin.com/jobs/view/4484831106",
       "via": "Platform",
-      "firstSeen": "2026-10-31T07:07:14.561Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-31T07:07:14.561Z"
     },
     {
       "clearance": "None stated",
@@ -936,10 +936,10 @@
       "title": "UI Lead Frontend Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4484448465",
       "via": "Agency",
-      "firstSeen": "2026-10-31T08:05:56.588Z",
       "aiLevel": 3,
       "aiNote": "Requires practical experience with Claude and Claude Code for AI-assisted development; use GenAI to speed up delivery",
-      "claudeMention": "Practical experience with Anthropic Claude and Claude Code for AI-assisted development"
+      "claudeMention": "Practical experience with Anthropic Claude and Claude Code for AI-assisted development",
+      "firstSeen": "2026-10-31T08:05:56.588Z"
     },
     {
       "clearance": "None stated",
@@ -961,10 +961,10 @@
       "title": "Frontend UI / AEM Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4481885491",
       "via": "Agency",
-      "firstSeen": "2026-10-31T08:05:56.588Z",
       "aiLevel": 3,
       "aiNote": "Drive adoption of AI-assisted development with Claude and Claude Code; hands-on Claude Code experience required",
-      "claudeMention": "Drive adoption of AI-assisted development practices using Anthropic Claude and Claude Code"
+      "claudeMention": "Drive adoption of AI-assisted development practices using Anthropic Claude and Claude Code",
+      "firstSeen": "2026-10-31T08:05:56.588Z"
     },
     {
       "clearance": "None stated",
@@ -986,10 +986,10 @@
       "title": "Junior Frontend Developer (React, TypeScript, Shopify)",
       "url": "https://uk.linkedin.com/jobs/view/junior-frontend-developer-react-typescript-shopify-at-measmerize-4484075782",
       "via": "Direct",
-      "firstSeen": "2026-10-31T09:07:31.273Z",
       "aiLevel": 3,
       "aiNote": "\"Use AI coding tools every day. We use Claude Code a lot\", and expect you to understand every line it writes",
-      "claudeMention": "\"We use Claude Code a lot, and we expect you to understand every line it writes for you\""
+      "claudeMention": "\"We use Claude Code a lot, and we expect you to understand every line it writes for you\"",
+      "firstSeen": "2026-10-31T09:07:31.273Z"
     },
     {
       "clearance": "None stated",
@@ -1011,9 +1011,9 @@
       "title": "Senior Full Stack Engineer, Front-end Focus - Growth",
       "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-front-end-focus-growth-at-zoe-4482546495",
       "via": "Direct",
-      "firstSeen": "2026-10-31T09:07:31.273Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-31T09:07:31.273Z"
     },
     {
       "clearance": "None stated",
@@ -1035,10 +1035,10 @@
       "title": "Lead UI Frontend Engineer",
       "url": "https://uk.linkedin.com/jobs/view/lead-ui-frontend-engineer-at-dabster-4483866010",
       "via": "Direct",
-      "firstSeen": "2026-10-31T09:07:31.273Z",
       "aiLevel": 3,
       "aiNote": "Wants expertise in GenAI tools such as Claude and Claude Code for development (title: \"AEM & Generative AI (Claude)\")",
-      "claudeMention": "Title: \"UI Frontend Lead Engineer – AEM & Generative AI (Claude)\"; Claude and Claude Code"
+      "claudeMention": "Title: \"UI Frontend Lead Engineer – AEM & Generative AI (Claude)\"; Claude and Claude Code",
+      "firstSeen": "2026-10-31T09:07:31.273Z"
     },
     {
       "clearance": "None stated",
@@ -1060,10 +1060,10 @@
       "title": "UI Frontend Lead engineer – AEM & AI",
       "url": "https://uk.linkedin.com/jobs/view/4483024574",
       "via": "Direct",
-      "firstSeen": "2026-10-31T10:08:51.262Z",
       "aiLevel": 3,
       "aiNote": "Wants AI-powered development tools such as Claude and Claude Code (heading: \"AEM & Generative AI (Claude)\")",
-      "claudeMention": "Heading: \"AEM & Generative AI (Claude)\"; AI dev tools such as Anthropic Claude and Claude Code"
+      "claudeMention": "Heading: \"AEM & Generative AI (Claude)\"; AI dev tools such as Anthropic Claude and Claude Code",
+      "firstSeen": "2026-10-31T10:08:51.262Z"
     },
     {
       "clearance": "None stated",
@@ -1085,10 +1085,10 @@
       "title": "UI Front End Lead Engineer – AEM & Generative AI (Claude)",
       "url": "https://uk.linkedin.com/jobs/view/4482200855",
       "via": "Agency",
-      "firstSeen": "2026-10-31T10:08:51.262Z",
       "aiLevel": 3,
       "aiNote": "Requires practical experience with Claude and Claude Code for AI-assisted development; use GenAI to speed up delivery",
-      "claudeMention": "Title \"AEM & Generative AI (Claude)\"; practical experience with Claude and Claude Code"
+      "claudeMention": "Title \"AEM & Generative AI (Claude)\"; practical experience with Claude and Claude Code",
+      "firstSeen": "2026-10-31T10:08:51.262Z"
     },
     {
       "clearance": "None stated",
@@ -1110,10 +1110,10 @@
       "title": "UX/UI Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4481876040",
       "via": "Agency",
-      "firstSeen": "2026-10-31T10:08:51.262Z",
       "aiLevel": 2,
       "aiNote": "Desirable: AI-assisted design/dev tools (Claude, Cursor, Figma Make); builds prototypes incl. with AI-assisted tools",
-      "claudeMention": "Desirable: \"AI assisted design and development tools such as Claude, Cursor or Figma Make\""
+      "claudeMention": "Desirable: \"AI assisted design and development tools such as Claude, Cursor or Figma Make\"",
+      "firstSeen": "2026-10-31T10:08:51.262Z"
     },
     {
       "clearance": "Eligible to obtain",
@@ -1135,9 +1135,9 @@
       "title": "Senior React Developer / Senior Front End Developer",
       "url": "https://www.reed.co.uk/jobs/senior-react-developer-senior-front-end-developer/57418420",
       "via": "Agency",
-      "firstSeen": "2026-10-31T14:11:13.843Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
       "clearance": "None stated",
@@ -1159,36 +1159,9 @@
       "title": "Full Stack Developer (.NET React)",
       "url": "https://www.reed.co.uk/jobs/full-stack-developer-net-react/57486774",
       "via": "Agency",
-      "firstSeen": "2026-10-31T14:11:13.843Z",
       "aiLevel": 4,
-      "aiNote": "Engineering function \"uses agentic AI tools throughout its development process\""
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "4Square Recruitment (client: a cyber security consultancy)",
-      "contract": "Permanent",
-      "contractNote": "full-time",
-      "id": "reed-57509355",
-      "kind": "Adjacent",
-      "location": "Remote (UK)",
-      "mode": "Remote",
-      "modeNote": "\"Remote | Full-time\"",
-      "notes": "Full-stack; around 3–4+ years JavaScript experience asked for.",
-      "posted": "2026-10-30",
-      "region": "remote-uk",
-      "salary": "£40,000–£50,000",
-      "source": "Reed",
-      "stack": "React, Node.js, JavaScript, REST APIs, SQL/NoSQL",
-      "title": "Software Developer (React.JS, Node.JS, Git, REST API, Web Security, OWASP)",
-      "url": "https://www.reed.co.uk/jobs/software-developer-reactjs-nodejs-git-rest-api-web-security-owasp/57509355",
-      "via": "Agency",
-      "foundVia": [
-        "Reed search: remote"
-      ],
-      "firstSeen": "2026-10-31T14:11:13.843Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "Engineering function \"uses agentic AI tools throughout its development process\"",
+      "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
       "clearance": "None stated",
@@ -1210,9 +1183,9 @@
       "title": "Frontend Engineer - FinTech AI Platform",
       "url": "https://www.reed.co.uk/jobs/frontend-engineer-fintech-ai-platform/57429571",
       "via": "Agency",
-      "firstSeen": "2026-10-31T14:11:13.843Z",
       "aiLevel": 0,
-      "aiNote": "Builds a FinTech AI platform; nothing on using AI tools"
+      "aiNote": "Builds a FinTech AI platform; nothing on using AI tools",
+      "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
       "clearance": "None stated",
@@ -1234,9 +1207,9 @@
       "title": "Frontend-Leaning Full Stack Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4482524143",
       "via": "Agency",
-      "firstSeen": "2026-10-31T14:11:13.843Z",
       "aiLevel": 2,
-      "aiNote": "\"Exposure to ... AI-assisted development workflows would be highly beneficial\" (also builds AI-powered products)"
+      "aiNote": "\"Exposure to ... AI-assisted development workflows would be highly beneficial\" (also builds AI-powered products)",
+      "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
       "clearance": "None stated",
@@ -1258,9 +1231,9 @@
       "title": "Frontend Engineer (Brain team)",
       "url": "https://uk.linkedin.com/jobs/view/4484447005",
       "via": "Direct",
-      "firstSeen": "2026-10-31T14:11:13.843Z",
       "aiLevel": 4,
-      "aiNote": "\"AI first by default, we're building our SDLC around AI Assisted engineering\""
+      "aiNote": "\"AI first by default, we're building our SDLC around AI Assisted engineering\"",
+      "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
       "clearance": "None stated",
@@ -1282,9 +1255,9 @@
       "title": "Image-to-Code / Visual Reconstruction Engineer",
       "url": "https://uk.linkedin.com/jobs/view/4483009440",
       "via": "Direct",
-      "firstSeen": "2026-10-31T15:08:48.149Z",
       "aiLevel": 0,
-      "aiNote": "Contract work on an AI training project (recreating visuals in code); nothing on using AI tools"
+      "aiNote": "Contract work on an AI training project (recreating visuals in code); nothing on using AI tools",
+      "firstSeen": "2026-10-31T15:08:48.149Z"
     },
     {
       "clearance": "None stated",
@@ -1306,9 +1279,9 @@
       "title": "Team Lead - Full Stack",
       "url": "https://uk.linkedin.com/jobs/view/team-lead-full-stack-at-debenhams-group-4475484114",
       "via": "Direct",
-      "firstSeen": "2026-10-31T19:07:38.794Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-10-31T19:07:38.794Z"
     },
     {
       "clearance": "None stated",
@@ -1330,9 +1303,9 @@
       "title": "Staff Engineer (Full Stack)",
       "url": "https://uk.linkedin.com/jobs/view/staff-engineer-at-digital-waffle-4484121126",
       "via": "Agency",
-      "firstSeen": "2026-10-31T21:13:59.966Z",
       "aiLevel": 2,
-      "aiNote": "Bonus skill: \"AI-driven software development\""
+      "aiNote": "Bonus skill: \"AI-driven software development\"",
+      "firstSeen": "2026-10-31T21:13:59.966Z"
     },
     {
       "clearance": "None stated",
@@ -1354,12 +1327,12 @@
       "title": "Senior Frontend Engineer (Vue.js)",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-netrolynx-ai-4484053225",
       "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
-      "firstSeen": "2026-10-31T21:13:59.966Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-10-31T21:13:59.966Z"
     },
     {
       "clearance": "None stated",
@@ -1381,13 +1354,13 @@
       "title": "Senior Frontend Engineer (Remote)",
       "url": "https://www.totaljobs.com/job/senior-frontend-engineer-remote/vividq-job108135577",
       "via": "Direct",
+      "aiLevel": 4,
+      "aiNote": "\"AI-native team\"; uses AI every day from writing and reviewing code to testing; Claude Code, Cursor, Copilot daily",
+      "claudeMention": "\"You'll use tools like Claude Code, Cursor, and GitHub Copilot every day\"",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-11-01T07:50:21.295Z",
-      "aiLevel": 4,
-      "aiNote": "\"AI-native team\"; uses AI every day from writing and reviewing code to testing; Claude Code, Cursor, Copilot daily",
-      "claudeMention": "\"You'll use tools like Claude Code, Cursor, and GitHub Copilot every day\""
+      "firstSeen": "2026-11-01T07:50:21.295Z"
     },
     {
       "clearance": "None stated",
@@ -1409,9 +1382,9 @@
       "title": "Junior Shopify Developer",
       "url": "https://www.totaljobs.com/job/junior-shopify-developer/morson-edge-job108041842",
       "via": "Agency",
-      "firstSeen": "2026-11-01T08:45:55.670Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
       "clearance": "None stated",
@@ -1433,9 +1406,9 @@
       "title": "Senior Full Stack Engineer - Java / Angular - Remote",
       "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-java-angular-remote/morson-edge-job108063105",
       "via": "Agency",
-      "firstSeen": "2026-11-01T08:45:55.670Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
       "clearance": "DV",
@@ -1457,12 +1430,12 @@
       "title": "Full Stack Software Developer",
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/data-careers-job108159582",
       "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-11-01T08:45:55.670Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
       "clearance": "None stated",
@@ -1484,12 +1457,12 @@
       "title": "Full Stack Software Developer",
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/pave-talent-partners-limited-job108180933",
       "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-11-01T08:45:55.670Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
       "clearance": "SC",
@@ -1511,12 +1484,12 @@
       "title": "Senior React/Next.js Developer (SC Cleared)",
       "url": "https://www.totaljobs.com/job/senior-react-next-js-dev-sc-cleared/henderson-scott-job108080132",
       "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-11-01T09:04:32.000Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-11-01T09:04:32.000Z"
     },
     {
       "clearance": "Clearance required – level not stated",
@@ -1538,12 +1511,12 @@
       "title": "React Developer",
       "url": "https://www.totaljobs.com/job/react-developer/european-software-solutions-uk-limited-job108246862",
       "via": "Direct",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-11-01T09:04:32.000Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-11-01T09:04:32.000Z"
     },
     {
       "clearance": "None stated",
@@ -1565,9 +1538,12 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485955095",
       "via": "Direct",
-      "firstSeen": "2026-11-01T10:36:58.151Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-01T10:36:58.151Z"
     },
     {
       "clearance": "None stated",
@@ -1589,12 +1565,12 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485933776",
       "via": "Direct",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
-      "firstSeen": "2026-11-01T11:55:01.640Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-11-01T11:55:01.640Z"
     },
     {
       "clearance": "None stated",
@@ -1616,9 +1592,9 @@
       "title": "Angular Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485946642",
       "via": "Agency",
-      "firstSeen": "2026-11-01T11:55:01.640Z",
       "aiLevel": 0,
-      "aiNote": ""
+      "aiNote": "",
+      "firstSeen": "2026-11-01T11:55:01.640Z"
     },
     {
       "clearance": "None stated",
@@ -1640,14 +1616,14 @@
       "title": "Vice President, Full-Stack Engineer",
       "url": "https://uk.linkedin.com/jobs/view/vice-president-full-stack-engineer-at-bny-4441993066",
       "via": "Direct",
+      "aiLevel": 0,
+      "aiNote": "Only a company-wide line about teams harnessing AI; nothing on AI use in development",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK"
       ],
-      "firstSeen": "2026-11-02T08:18:37.626Z",
-      "aiLevel": 0,
-      "aiNote": "Description not re-read yet"
+      "firstSeen": "2026-11-02T08:18:37.626Z"
     },
     {
       "id": "linkedin-4485458442",
@@ -1669,14 +1645,14 @@
       "notes": "Short MVP project building a participant portal and a small admin portal for a brain health programme.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK"
       ],
-      "firstSeen": "2026-11-02T09:27:33.383Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-11-02T09:27:33.383Z"
     },
     {
       "id": "linkedin-4485468327",
@@ -1698,14 +1674,14 @@
       "notes": "Design-engineering role in an energy-tech company; 5+ years building UIs and a portfolio required.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "aiLevel": 3,
+      "aiNote": "Requires recent practical experience using AI in design and engineering workflows; help shape the team's use of AI",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK"
       ],
-      "firstSeen": "2026-11-02T09:27:33.383Z",
-      "aiLevel": 3,
-      "aiNote": "Requires recent practical experience using AI in design and engineering workflows; help shape the team's use of AI"
+      "firstSeen": "2026-11-02T09:27:33.383Z"
     },
     {
       "id": "linkedin-4484307060",
@@ -1727,14 +1703,14 @@
       "notes": "Full-stack role on high-scale real-time data and ML systems; includes mentoring.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK"
       ],
-      "firstSeen": "2026-11-02T09:27:33.383Z",
-      "aiLevel": 0,
-      "aiNote": ""
+      "firstSeen": "2026-11-02T09:27:33.383Z"
     },
     {
       "id": "linkedin-4485692558",
@@ -1756,15 +1732,155 @@
       "notes": "Listed on LinkedIn as \"Full Stack Developer - React\"; ecommerce order fulfilment platform.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "aiLevel": 4,
+      "aiNote": "Engineering uses \"agentic AI tools throughout the development process\"",
       "foundVia": [
         "Tavily"
       ],
-      "firstSeen": "2026-11-02T09:27:33.383Z",
-      "aiLevel": 4,
-      "aiNote": "Engineering uses \"agentic AI tools throughout the development process\""
+      "firstSeen": "2026-11-02T09:27:33.383Z"
+    },
+    {
+      "id": "linkedin-4476008012",
+      "title": "Senior Fullstack Engineer – AI",
+      "company": "Oliver Bernard",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote working (UK)\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Up to £110k",
+      "posted": "2026-11-02",
+      "stack": "Node.js, TypeScript, React, AWS, LLM/AI applications",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-fullstack-engineer-%E2%80%93-ai-at-oliver-bernard-4476008012",
+      "notes": "Owns AI-powered product features end to end for a business serving highly regulated industries.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "Builds LLM/AI products, but says nothing about using AI tools to write code",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "firstSeen": "2026-11-02T10:31:51.956Z"
+    },
+    {
+      "id": "linkedin-4485476037",
+      "title": "Senior Full-Stack Developer",
+      "company": "RedRock Resourcing (for a large retail business)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote working\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Competitive (not stated)",
+      "posted": "2026-11-02",
+      "stack": "C#/.NET, React, TypeScript, Next.js, SQL Server, Azure, Docker, Kubernetes, GraphQL",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-developer-at-redrock-resourcing-4485476037",
+      "notes": "Several senior full-stack hires for an in-house retail engineering team; staff discount mentioned.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "No mention of AI use",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
+      "firstSeen": "2026-11-02T10:31:51.956Z"
+    },
+    {
+      "id": "linkedin-4484320937",
+      "title": "Full Stack Engineer",
+      "company": "Forward Role Recruitment (for a Tech for Good startup)",
+      "via": "Agency",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Manchester hybrid (typically 3 days per week)\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£50,000 - £60,000 DOE",
+      "posted": "2026-11-02",
+      "stack": "React, TypeScript, JavaScript, React Native (nice to have), PostgreSQL (nice to have)",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-at-forward-role-recruitment-4484320937",
+      "notes": "Mostly greenfield work on a platform for booking children's activities; small team.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 2,
+      "aiNote": "AI tools are a nice-to-have; \"AI-friendly engineering culture\"",
+      "claudeMention": "Experience using AI-assisted development tools such as Claude or Copilot",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
+      "firstSeen": "2026-11-02T10:31:51.956Z"
+    },
+    {
+      "id": "totaljobs-108206689",
+      "title": "Senior Software Engineer (£80k + benefits)",
+      "company": "Morson Edge (for a FinTech business)",
+      "via": "Agency",
+      "location": "Manchester (M2)",
+      "region": "north-west",
+      "mode": "Remote",
+      "modeNote": "\"remote first working\"; Manchester-based role",
+      "contract": "Not stated",
+      "contractNote": "",
+      "salary": "£60k - 80k per year + benefits",
+      "posted": "2026-10-19",
+      "stack": "C#, .NET, PostgreSQL, React, AWS, GraphQL, REST",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/senior-software-engineer-80k-benefits/morson-edge-job108206689",
+      "notes": "Back-end-leaning full-stack role in a small in-house team; React listed in skills.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "No mention of AI use",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-02T10:31:51.956Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "4Square Recruitment (client: a cyber security consultancy)",
+      "contract": "Permanent",
+      "contractNote": "full-time",
+      "id": "reed-57509355",
+      "kind": "Adjacent",
+      "location": "Remote (UK)",
+      "mode": "Remote",
+      "modeNote": "\"Remote | Full-time\"",
+      "notes": "Full-stack; around 3–4+ years JavaScript experience asked for.",
+      "posted": "2026-10-30",
+      "region": "remote-uk",
+      "salary": "£40,000–£50,000",
+      "source": "Reed",
+      "stack": "React, Node.js, JavaScript, REST APIs, SQL/NoSQL",
+      "title": "Software Developer (React.JS, Node.JS, Git, REST API, Web Security, OWASP)",
+      "url": "https://www.reed.co.uk/jobs/software-developer-reactjs-nodejs-git-rest-api-web-security-owasp/57509355",
+      "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search: remote"
+      ],
+      "firstSeen": "2026-10-31T14:11:13.843Z",
+      "closedAt": "2026-11-02T10:31:51.956Z",
+      "closedReason": "HTTP 404"
+    },
     {
       "id": "reed-57417227",
       "title": "Frontend Developer",
