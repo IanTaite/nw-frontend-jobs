@@ -1,9 +1,9 @@
 import { Component, DestroyRef, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
-import { Job, JobsFile, REGION_LABEL, salaryValue } from './jobs';
+import { AI_LABEL, Job, JobsFile, REGION_LABEL, salaryValue } from './jobs';
 
-type Sort = 'newest' | 'discovered' | 'salary' | 'company';
+type Sort = 'newest' | 'discovered' | 'salary' | 'company' | 'ai';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +24,8 @@ export class App {
   readonly kind = signal('All');
   readonly via = signal('All');
   readonly clearance = signal('All');
+  /** Minimum AI usage level ('All' = no filter). */
+  readonly aiMin = signal('All');
   readonly sort = signal<Sort>('newest');
   readonly newOnly = signal(false);
   /** Time used for the 24-hour 'New' window; refreshed on each load and every minute. */
@@ -46,6 +48,7 @@ export class App {
       (this.kind() === 'All' || j.kind === this.kind()) &&
       (this.via() === 'All' || j.via === this.via()) &&
       (!this.newOnly() || this.newIds().has(j.id)) &&
+      (this.aiMin() === 'All' || (j.aiLevel ?? 0) >= Number(this.aiMin())) &&
       (this.clearance() === 'All' || (this.clearance() === 'Any' ? j.clearance !== 'None stated' : j.clearance === this.clearance())) &&
       (!q || [j.title, j.company, j.location, j.stack, j.notes, j.salary].join(' ').toLowerCase().includes(q)));
     const s = this.sort();
@@ -53,6 +56,7 @@ export class App {
       s === 'discovered' ? b.firstSeen.localeCompare(a.firstSeen) || b.posted.localeCompare(a.posted)
       : s === 'salary' ? salaryValue(b.salary) - salaryValue(a.salary)
       : s === 'company' ? a.company.localeCompare(b.company)
+      : s === 'ai' ? (b.aiLevel ?? 0) - (a.aiLevel ?? 0) || b.posted.localeCompare(a.posted)
       : b.posted.localeCompare(a.posted));
   });
 
@@ -91,11 +95,13 @@ export class App {
 
   reset() {
     this.q.set(''); this.region.set('All'); this.mode.set('All'); this.contract.set('All'); this.kind.set('All');
-    this.via.set('All'); this.clearance.set('All'); this.sort.set('newest'); this.newOnly.set(false);
+    this.via.set('All'); this.clearance.set('All'); this.sort.set('newest'); this.newOnly.set(false); this.aiMin.set('All');
   }
 
   val(e: Event) { return (e.target as HTMLInputElement | HTMLSelectElement).value; }
   viaLabel(v: string) { return v === 'Direct' ? 'Direct employer' : v === 'Agency' ? 'Recruiter agency' : 'Hiring platform'; }
   regionLabel(r?: string) { return r ? REGION_LABEL[r as keyof typeof REGION_LABEL] ?? r : ''; }
+  readonly aiDots = [1, 2, 3, 4, 5];
+  aiLabel(l?: number) { return AI_LABEL[l ?? 0] ?? AI_LABEL[0]; }
   withNote(v: string, n: string) { return n ? `${v} (${n})` : v; }
 }

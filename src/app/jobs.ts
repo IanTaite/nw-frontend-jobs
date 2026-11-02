@@ -6,9 +6,16 @@ export interface Job {
   stack: string; kind: 'Frontend' | 'Adjacent'; source: string; url: string; notes: string;
   clearance: string; clearanceNote: string;
   firstSeen: string; closedAt?: string; closedReason?: string;
+  /** Expected use of AI tools in the job, 0-5, judged from the posting text. */
+  aiLevel?: number; aiNote?: string;
+  /** Quote of where the posting mentions Claude; absent when it doesn't. */
+  claudeMention?: string;
 }
 export type Region = 'north-west' | 'remote-uk';
 export const REGION_LABEL: Record<Region, string> = { 'north-west': 'North West', 'remote-uk': 'Remote UK' };
+
+/** Labels for aiLevel (0 = posting doesn't say). */
+export const AI_LABEL = ['AI: not stated', 'No AI / not allowed', 'AI optional', 'AI-assisted', 'AI-first', 'Agent-led'];
 
 export interface JobsFile {
   updatedAt: string; region?: string;

@@ -230,6 +230,20 @@
             "type": "string"
           },
           "description": "How the role was found, e.g. \"LinkedIn search: Manchester\" or \"Tavily\". Stored for analysis only; never shown in the UI."
+        },
+        "aiLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Expected use of AI tools in doing the job, judged subjectively from the posting text: 0 not stated, 1 none / not allowed, 2 occasional assist (optional / nice-to-have), 3 AI-assisted (routine daily use), 4 AI-first (work mainly through AI tools/agents), 5 agent-led (agents do most of the work; humans review and verify)"
+        },
+        "aiNote": {
+          "type": "string",
+          "description": "Why aiLevel was chosen, quoting or closely paraphrasing the posting (short). Empty only for level 0 when the posting is silent"
+        },
+        "claudeMention": {
+          "type": "string",
+          "description": "Short quote or close paraphrase of where the posting mentions Claude (Claude, Claude Code, Claude API/Opus/Sonnet). Omitted when the posting doesn't mention Claude"
         }
       }
     }

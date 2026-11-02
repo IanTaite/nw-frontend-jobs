@@ -72,6 +72,14 @@ const withFoundVia = (c, prev) => {
   return all.length ? { ...rest, foundVia: all } : rest;
 };
 
+// aiLevel/aiNote: expected use of AI tools (0-5) judged from the description. A candidate that carries them
+// replaces the old values; a candidate without them keeps the earlier rating.
+// claudeMention follows the same rule: it is re-judged whenever the candidate carries an aiLevel (a fresh read
+// of the description), otherwise the earlier value is kept.
+const withAi = (c, prev) => (c.aiLevel === undefined && prev?.aiLevel !== undefined)
+  ? { ...c, aiLevel: prev.aiLevel, aiNote: prev.aiNote ?? '', ...(c.claudeMention === undefined && prev.claudeMention !== undefined ? { claudeMention: prev.claudeMention } : {}) }
+  : c;
+
 // 1. Merge candidates by id.
 const byId = new Map(data.jobs.map(j => [j.id, j]));
 const closedById = new Map(data.closed.map(j => [j.id, j]));
@@ -85,9 +93,9 @@ if (candFile) {
     const known = byId.get(c.id);
     const wasClosed = closedById.get(c.id);
     if (known) {
-      byId.set(c.id, { ...withFoundVia(withRegion(strip(c), known), known), firstSeen: known.firstSeen });               // never overwrite firstSeen
+      byId.set(c.id, { ...withAi(withFoundVia(withRegion(strip(c), known), known), known), firstSeen: known.firstSeen });               // never overwrite firstSeen
     } else if (wasClosed) {
-      byId.set(c.id, { ...withFoundVia(withRegion(strip(c), wasClosed), wasClosed), firstSeen: wasClosed.firstSeen });           // reopened
+      byId.set(c.id, { ...withAi(withFoundVia(withRegion(strip(c), wasClosed), wasClosed), wasClosed), firstSeen: wasClosed.firstSeen });           // reopened
       closedById.delete(c.id); reopened.push(c.id);
     } else {
       byId.set(c.id, { ...withRegion(strip(c)), firstSeen: now }); newIds.push(c.id);        // newly discovered

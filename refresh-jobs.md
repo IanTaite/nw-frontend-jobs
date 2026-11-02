@@ -82,6 +82,7 @@ Leave out:
 9. **Report**: new postings (`newSinceLastRun`), postings moved to `closed` (with the reason), reopened postings and unverifiable ones, plus the new `updatedAt`.
 
 ## How the site uses these fields
+- **AI usage**: see "AI usage rating" below.
 - **Region**: a "Region" filter (All / North West / Remote UK), a region label on each role, and North West / Remote UK counts in the summary. Roles without `region` count under All only.
 - **New badge**: shown only for ids listed in `newSinceLastRun`, i.e. roles that were not in the previous refresh. Known roles are unmarked on the next refresh. There's also a "New only" filter, a "Newest discovered" sort (by `firstSeen`) and a "New this refresh" count in the summary.
 - **Recently closed**: a collapsed section listing `closed` (newest `closedAt` first), with the reason and the source link.
@@ -96,3 +97,27 @@ Leave out:
 
 - Every candidate carries an optional `foundVia` array saying how the run found it, for example `"LinkedIn search: Manchester"`, `"LinkedIn search: remote UK"`, `"Reed search"`, `"Totaljobs search"`, `"Tavily"` or `"Tavily extract"`. `verify-jobs.mjs` merges it with earlier values, so it grows over time. It is stored only. The UI must never show it. Existing roles have no `foundVia` until a later run finds them again; don't invent it.
 - LinkedIn is fetched **one page at a time** with a 3-5 second pause between pages, in the run's searches and in the posting checks. No parallel batches on LinkedIn. After a 429, wait 20 seconds and retry once, then keep the role open and log it. Other sources can still run in parallel with each other.
+
+## AI usage rating (`aiLevel`, `aiNote`)
+
+Every role carries an optional `aiLevel` (integer 0-5) and `aiNote` (short string). They describe how much the job is expected to **use AI tools to do the work**, judged subjectively from the posting's full description. They do not describe whether the product being built is an AI product. A frontend role on an AI product with no mention of AI tooling stays at 0. Mention the product side in `aiNote` only if it affects the rating.
+
+| Level | Label (UI) | Meaning |
+|---|---|---|
+| 0 | AI: not stated | The posting says nothing about AI tools or usage. This is the default; don't guess. |
+| 1 | No AI / not allowed | The posting says AI tools are not used or not permitted. |
+| 2 | AI optional | AI tools are mentioned as optional or a nice-to-have (e.g. "familiarity with Copilot"). |
+| 3 | AI-assisted | AI coding tools are a normal part of the daily workflow (Copilot, Cursor, Claude Code used routinely; "AI-enabled team"). |
+| 4 | AI-first | Engineers are expected to work mainly through AI tools/agents, build AI-driven workflows, "AI-native"; humans steer and refine. |
+| 5 | Agent-led | Agents and sub-agents do most of the work; humans mainly review and verify. |
+
+- `aiNote` says why, quoting or closely paraphrasing the posting (about 160 characters at most). It is `""` only for level 0 when the posting is silent. If the description couldn't be fetched, use level 0 with `aiNote: "Description not re-read yet"` so a later run fills it in.
+- **For every new or changed candidate, the run must read the full description (step 3) and set `aiLevel` and `aiNote`.** Known roles keep their earlier rating: `verify-jobs.mjs` copies the previous `aiLevel`/`aiNote` onto a known (or reopened) id when the candidate doesn't carry them, and a candidate that does carry them replaces the old values. So only include them on a known role when its description has changed or it still has "Description not re-read yet".
+- The site shows a 0-5 dot scale with the label on each role, the note as a secondary line (and tooltip), an "AI usage" minimum-level filter and an "AI usage (highest)" sort.
+
+### Claude mentions (`claudeMention`)
+
+- For every new or changed role, also search the full description for Claude (Claude, Claude Code, Claude API, Opus, Sonnet, "Anthropic's Claude"). Plain "Anthropic" with no link to Claude doesn't count, and nor do unrelated words.
+- If found, set `claudeMention` to a short quote or close paraphrase (about 120 characters at most). Omit the field when there is no mention.
+- It is kept through the merge like `aiLevel`: a candidate carrying a fresh `aiLevel` is treated as a fresh read, so give it `claudeMention` too if there is one; a candidate without `aiLevel` keeps the earlier `claudeMention`.
+- The site shows a small "Claude" tag next to the AI badge, with the quote as a tooltip.
