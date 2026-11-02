@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "format": "oxfmt \"src/**/*.ts\" \"src/**/*.css\"",
+    "format:check": "oxfmt --check \"src/**/*.ts\" \"src/**/*.css\""
   },
   "private": true,
   "dependencies": {
@@ -24,8 +26,8 @@
     "@angular/cli": "^22.2.5",
     "@angular/compiler-cli": "^22.2.0",
     "@tailwindcss/postcss": "^4.3.3",
+    "oxfmt": "^0.75.0",
     "postcss": "^8.5.32",
-    "prettier": "^3.8.1",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2"
   }

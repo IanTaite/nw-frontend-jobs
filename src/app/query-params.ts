@@ -14,19 +14,29 @@ export interface QueryParam {
 
 /** A string signal. Pass `allowed` to restrict the values accepted from the URL. */
 export function stringParam<T extends string>(
-  key: string, state: WritableSignal<T>, defaultValue: T, allowed?: readonly T[],
+  key: string,
+  state: WritableSignal<T>,
+  defaultValue: T,
+  allowed?: readonly T[],
 ): QueryParam {
   return {
-    key, defaultValue,
+    key,
+    defaultValue,
     read: () => state(),
-    write: raw => state.set(raw as T),
-    isValid: allowed && (raw => raw === defaultValue || (allowed as readonly string[]).includes(raw)),
+    write: (raw) => state.set(raw as T),
+    isValid:
+      allowed && ((raw) => raw === defaultValue || (allowed as readonly string[]).includes(raw)),
   };
 }
 
 /** A boolean signal, written as `key=1` when true and omitted when false. */
 export function flagParam(key: string, state: WritableSignal<boolean>): QueryParam {
-  return { key, defaultValue: '', read: () => (state() ? '1' : ''), write: raw => state.set(raw === '1' || raw === 'true') };
+  return {
+    key,
+    defaultValue: '',
+    read: () => (state() ? '1' : ''),
+    write: (raw) => state.set(raw === '1' || raw === 'true'),
+  };
 }
 
 /**

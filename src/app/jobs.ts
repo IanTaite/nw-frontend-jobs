@@ -1,25 +1,59 @@
 export interface Job {
-  id: string; title: string; company: string; via: 'Agency' | 'Direct' | 'Platform'; location: string;
+  id: string;
+  title: string;
+  company: string;
+  via: 'Agency' | 'Direct' | 'Platform';
+  location: string;
   /** Search scope; optional so older data stays valid. */
   region?: Region;
-  mode: string; modeNote: string; contract: string; contractNote: string; salary: string; posted: string;
-  stack: string; kind: 'Frontend' | 'Adjacent'; source: string; url: string; notes: string;
-  clearance: string; clearanceNote: string;
-  firstSeen: string; closedAt?: string; closedReason?: string;
+  mode: string;
+  modeNote: string;
+  contract: string;
+  contractNote: string;
+  salary: string;
+  posted: string;
+  stack: string;
+  kind: 'Frontend' | 'Adjacent';
+  source: string;
+  url: string;
+  notes: string;
+  clearance: string;
+  clearanceNote: string;
+  firstSeen: string;
+  closedAt?: string;
+  closedReason?: string;
   /** Expected use of AI tools in the job, 0-5, judged from the posting text. */
-  aiLevel?: number; aiNote?: string;
+  aiLevel?: number;
+  aiNote?: string;
   /** Quote of where the posting mentions Claude; absent when it doesn't. */
   claudeMention?: string;
 }
 export type Region = 'north-west' | 'remote-uk';
-export const REGION_LABEL: Record<Region, string> = { 'north-west': 'North West', 'remote-uk': 'Remote UK' };
+export const REGION_LABEL: Record<Region, string> = {
+  'north-west': 'North West',
+  'remote-uk': 'Remote UK',
+};
 
 /** Labels for aiLevel (0 = posting doesn't say). */
-export const AI_LABEL = ['AI: not stated', 'No AI / not allowed', 'AI optional', 'AI-assisted', 'AI-first', 'Agent-led'];
+export const AI_LABEL = [
+  'AI: not stated',
+  'No AI / not allowed',
+  'AI optional',
+  'AI-assisted',
+  'AI-first',
+  'Agent-led',
+];
 
 export interface JobsFile {
-  updatedAt: string; region?: string;
-  sources: { searched: string[]; blocked?: string[]; counts?: Record<string, number>; verifiedOn?: string; notes?: string };
+  updatedAt: string;
+  region?: string;
+  sources: {
+    searched: string[];
+    blocked?: string[];
+    counts?: Record<string, number>;
+    verifiedOn?: string;
+    notes?: string;
+  };
   newSinceLastRun?: string[];
   jobs: Job[];
   closed?: Job[];

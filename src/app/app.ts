@@ -1,4 +1,12 @@
-import { Component, DestroyRef, WritableSignal, computed, inject, linkedSignal, signal } from '@angular/core';
+import {
+  Component,
+  DestroyRef,
+  WritableSignal,
+  computed,
+  inject,
+  linkedSignal,
+  signal,
+} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { AI_LABEL, Job, JobsFile, REGION_LABEL, Region, salaryValue } from './jobs';
@@ -40,32 +48,54 @@ export class App {
   private readonly now = signal(Date.now());
 
   protected readonly jobs = computed(() => this.data()?.jobs ?? []);
-  protected readonly closed = computed(() => [...(this.data()?.closed ?? [])].sort((a, b) => (b.closedAt ?? '').localeCompare(a.closedAt ?? '')));
+  protected readonly closed = computed(() =>
+    [...(this.data()?.closed ?? [])].sort((a, b) =>
+      (b.closedAt ?? '').localeCompare(a.closedAt ?? ''),
+    ),
+  );
   protected readonly newIds = computed(() => new Set(this.data()?.newSinceLastRun ?? []));
   protected readonly opts = computed(() => {
     const uniq = (f: (j: Job) => string) => [...new Set(this.jobs().map(f))].sort();
-    return { mode: uniq(j => j.mode), contract: uniq(j => j.contract), clearance: uniq(j => j.clearance) };
+    return {
+      mode: uniq((j) => j.mode),
+      contract: uniq((j) => j.contract),
+      clearance: uniq((j) => j.clearance),
+    };
   });
 
   protected readonly filtered = computed(() => {
     const q = this.q().trim().toLowerCase();
-    const r = this.jobs().filter(j =>
-      (this.region() === 'All' || j.region === this.region()) &&
-      (this.mode() === 'All' || j.mode === this.mode()) &&
-      (this.contract() === 'All' || j.contract === this.contract()) &&
-      (this.kind() === 'All' || j.kind === this.kind()) &&
-      (this.via() === 'All' || j.via === this.via()) &&
-      (!this.newOnly() || this.newIds().has(j.id)) &&
-      (this.aiMin() === 'All' || (j.aiLevel ?? 0) >= Number(this.aiMin())) &&
-      (this.clearance() === 'All' || (this.clearance() === 'Any' ? j.clearance !== 'None stated' : j.clearance === this.clearance())) &&
-      (!q || [j.title, j.company, j.location, j.stack, j.notes, j.salary].join(' ').toLowerCase().includes(q)));
+    const r = this.jobs().filter(
+      (j) =>
+        (this.region() === 'All' || j.region === this.region()) &&
+        (this.mode() === 'All' || j.mode === this.mode()) &&
+        (this.contract() === 'All' || j.contract === this.contract()) &&
+        (this.kind() === 'All' || j.kind === this.kind()) &&
+        (this.via() === 'All' || j.via === this.via()) &&
+        (!this.newOnly() || this.newIds().has(j.id)) &&
+        (this.aiMin() === 'All' || (j.aiLevel ?? 0) >= Number(this.aiMin())) &&
+        (this.clearance() === 'All' ||
+          (this.clearance() === 'Any'
+            ? j.clearance !== 'None stated'
+            : j.clearance === this.clearance())) &&
+        (!q ||
+          [j.title, j.company, j.location, j.stack, j.notes, j.salary]
+            .join(' ')
+            .toLowerCase()
+            .includes(q)),
+    );
     const s = this.sort();
     return [...r].sort((a, b) =>
-      s === 'discovered' ? b.firstSeen.localeCompare(a.firstSeen) || b.posted.localeCompare(a.posted)
-      : s === 'salary' ? salaryValue(b.salary) - salaryValue(a.salary)
-      : s === 'company' ? a.company.localeCompare(b.company)
-      : s === 'ai' ? (b.aiLevel ?? 0) - (a.aiLevel ?? 0) || b.posted.localeCompare(a.posted)
-      : b.posted.localeCompare(a.posted));
+      s === 'discovered'
+        ? b.firstSeen.localeCompare(a.firstSeen) || b.posted.localeCompare(a.posted)
+        : s === 'salary'
+          ? salaryValue(b.salary) - salaryValue(a.salary)
+          : s === 'company'
+            ? a.company.localeCompare(b.company)
+            : s === 'ai'
+              ? (b.aiLevel ?? 0) - (a.aiLevel ?? 0) || b.posted.localeCompare(a.posted)
+              : b.posted.localeCompare(a.posted),
+    );
   });
 
   protected readonly counts = computed(() => {
@@ -73,15 +103,19 @@ export class App {
     return [
       { label: 'Postings', value: this.jobs().length, tone: 'text-brand-mid' },
       { label: 'New this refresh', value: this.newIds().size, tone: 'text-new' },
-      { label: 'North West', value: c(j => j.region === 'north-west'), tone: 'text-ink' },
-      { label: 'Remote UK', value: c(j => j.region === 'remote-uk'), tone: 'text-ink' },
-      { label: 'Hybrid', value: c(j => j.mode === 'Hybrid'), tone: 'text-ink' },
-      { label: 'Remote', value: c(j => j.mode === 'Remote'), tone: 'text-ink' },
-      { label: 'Office-only', value: c(j => j.mode === 'Office'), tone: 'text-ink' },
-      { label: 'Permanent', value: c(j => j.contract === 'Permanent'), tone: 'text-ink' },
-      { label: 'Contract', value: c(j => j.contract === 'Contract'), tone: 'text-ink' },
-      { label: 'Direct employer', value: c(j => j.via === 'Direct'), tone: 'text-ink' },
-      { label: 'Clearance needed', value: c(j => j.clearance !== 'None stated'), tone: 'text-warn-fg' },
+      { label: 'North West', value: c((j) => j.region === 'north-west'), tone: 'text-ink' },
+      { label: 'Remote UK', value: c((j) => j.region === 'remote-uk'), tone: 'text-ink' },
+      { label: 'Hybrid', value: c((j) => j.mode === 'Hybrid'), tone: 'text-ink' },
+      { label: 'Remote', value: c((j) => j.mode === 'Remote'), tone: 'text-ink' },
+      { label: 'Office-only', value: c((j) => j.mode === 'Office'), tone: 'text-ink' },
+      { label: 'Permanent', value: c((j) => j.contract === 'Permanent'), tone: 'text-ink' },
+      { label: 'Contract', value: c((j) => j.contract === 'Contract'), tone: 'text-ink' },
+      { label: 'Direct employer', value: c((j) => j.via === 'Direct'), tone: 'text-ink' },
+      {
+        label: 'Clearance needed',
+        value: c((j) => j.clearance !== 'None stated'),
+        tone: 'text-warn-fg',
+      },
     ];
   });
 
@@ -103,7 +137,10 @@ export class App {
     syncQueryParams(this.queryParams);
     this.load();
     const t = setInterval(() => this.now.set(Date.now()), 60_000);
-    inject(DestroyRef).onDestroy(() => { clearInterval(t); clearTimeout(this.searchTimer); });
+    inject(DestroyRef).onDestroy(() => {
+      clearInterval(t);
+      clearTimeout(this.searchTimer);
+    });
   }
 
   protected load() {
@@ -111,8 +148,16 @@ export class App {
     this.error.set(null);
     // Relative URL so it works under any base path; cache-buster so an hourly refresh shows immediately.
     this.http.get<JobsFile>(`jobs.json?t=${Date.now()}`).subscribe({
-      next: d => { this.now.set(Date.now()); this.data.set(d); this.dropUnknownOptions(); this.loading.set(false); },
-      error: () => { this.error.set('Could not load jobs.json.'); this.loading.set(false); },
+      next: (d) => {
+        this.now.set(Date.now());
+        this.data.set(d);
+        this.dropUnknownOptions();
+        this.loading.set(false);
+      },
+      error: () => {
+        this.error.set('Could not load jobs.json.');
+        this.loading.set(false);
+      },
     });
   }
 
@@ -133,16 +178,32 @@ export class App {
   /** Mode, contract and clearance options come from the data, so a URL value not in it falls back to 'All'. */
   private dropUnknownOptions() {
     const o = this.opts();
-    const check = (s: WritableSignal<string>, known: string[]) => { if (s() !== 'All' && !known.includes(s())) s.set('All'); };
+    const check = (s: WritableSignal<string>, known: string[]) => {
+      if (s() !== 'All' && !known.includes(s())) s.set('All');
+    };
     check(this.mode, o.mode);
     check(this.contract, o.contract);
     check(this.clearance, ['Any', ...o.clearance]);
   }
 
-  protected val(e: Event) { return (e.target as HTMLInputElement | HTMLSelectElement).value; }
-  protected viaLabel(v: string) { return v === 'Direct' ? 'Direct employer' : v === 'Agency' ? 'Recruiter agency' : 'Hiring platform'; }
-  protected regionLabel(r?: string) { return r ? REGION_LABEL[r as keyof typeof REGION_LABEL] ?? r : ''; }
+  protected val(e: Event) {
+    return (e.target as HTMLInputElement | HTMLSelectElement).value;
+  }
+  protected viaLabel(v: string) {
+    return v === 'Direct'
+      ? 'Direct employer'
+      : v === 'Agency'
+        ? 'Recruiter agency'
+        : 'Hiring platform';
+  }
+  protected regionLabel(r?: string) {
+    return r ? (REGION_LABEL[r as keyof typeof REGION_LABEL] ?? r) : '';
+  }
   protected readonly aiDots = [1, 2, 3, 4, 5];
-  protected aiLabel(l?: number) { return AI_LABEL[l ?? 0] ?? AI_LABEL[0]; }
-  protected withNote(v: string, n: string) { return n ? `${v} (${n})` : v; }
+  protected aiLabel(l?: number) {
+    return AI_LABEL[l ?? 0] ?? AI_LABEL[0];
+  }
+  protected withNote(v: string, n: string) {
+    return n ? `${v} (${n})` : v;
+  }
 }
