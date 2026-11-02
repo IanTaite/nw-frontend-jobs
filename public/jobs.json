@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-02T10:31:51.956Z",
+  "updatedAt": "2026-11-02T11:21:32.596Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -24,12 +24,7 @@
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [
-    "linkedin-4476008012",
-    "linkedin-4485476037",
-    "linkedin-4484320937",
-    "totaljobs-108206689"
-  ],
+  "newSinceLastRun": [],
   "jobs": [
     {
       "clearance": "None stated",
@@ -147,11 +142,11 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-nology-4483858525",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -198,11 +193,11 @@
       "title": "Frontend Developer (CRO & Experimentation)",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-digital-gurus-4477067783",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -346,11 +341,11 @@
       "title": "Frontend Software Developer",
       "url": "https://www.totaljobs.com/job/frontend-software-developer/hackajob-ltd-job108212675",
       "via": "Platform",
-      "aiLevel": 2,
-      "aiNote": "Asks for \"working knowledge of AI and how it can support software development\"",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 2,
+      "aiNote": "Asks for \"working knowledge of AI and how it can support software development\"",
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -397,11 +392,11 @@
       "title": "Frontend Developer",
       "url": "https://www.totaljobs.com/job/frontend-developer/damia-group-ltd-job108161057",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "Asks for agentic AI development experience (OpenAI, Anthropic or Copilot frameworks); nothing on using AI tools to code",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "Asks for agentic AI development experience (OpenAI, Anthropic or Copilot frameworks); nothing on using AI tools to code",
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -520,12 +515,12 @@
       "title": "Senior Full Stack Engineer (Vue3, TypeScript)",
       "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-vue3-typescript/cytix-job108175696",
       "via": "Direct",
-      "aiLevel": 2,
-      "aiNote": "Lists \"Claude Tokens\" as a benefit; nothing else on how AI tools are used",
-      "claudeMention": "Benefits list includes \"Claude Tokens\"",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 2,
+      "aiNote": "Lists \"Claude Tokens\" as a benefit; nothing else on how AI tools are used",
+      "claudeMention": "Benefits list includes \"Claude Tokens\"",
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -1327,11 +1322,11 @@
       "title": "Senior Frontend Engineer (Vue.js)",
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-netrolynx-ai-4484053225",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-10-31T21:13:59.966Z"
     },
     {
@@ -1354,12 +1349,12 @@
       "title": "Senior Frontend Engineer (Remote)",
       "url": "https://www.totaljobs.com/job/senior-frontend-engineer-remote/vividq-job108135577",
       "via": "Direct",
-      "aiLevel": 4,
-      "aiNote": "\"AI-native team\"; uses AI every day from writing and reviewing code to testing; Claude Code, Cursor, Copilot daily",
-      "claudeMention": "\"You'll use tools like Claude Code, Cursor, and GitHub Copilot every day\"",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 4,
+      "aiNote": "\"AI-native team\"; uses AI every day from writing and reviewing code to testing; Claude Code, Cursor, Copilot daily",
+      "claudeMention": "\"You'll use tools like Claude Code, Cursor, and GitHub Copilot every day\"",
       "firstSeen": "2026-11-01T07:50:21.295Z"
     },
     {
@@ -1430,11 +1425,11 @@
       "title": "Full Stack Software Developer",
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/data-careers-job108159582",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
@@ -1457,11 +1452,11 @@
       "title": "Full Stack Software Developer",
       "url": "https://www.totaljobs.com/job/full-stack-software-developer/pave-talent-partners-limited-job108180933",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
@@ -1484,11 +1479,11 @@
       "title": "Senior React/Next.js Developer (SC Cleared)",
       "url": "https://www.totaljobs.com/job/senior-react-next-js-dev-sc-cleared/henderson-scott-job108080132",
       "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-01T09:04:32.000Z"
     },
     {
@@ -1511,11 +1506,11 @@
       "title": "React Developer",
       "url": "https://www.totaljobs.com/job/react-developer/european-software-solutions-uk-limited-job108246862",
       "via": "Direct",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-01T09:04:32.000Z"
     },
     {
@@ -1538,11 +1533,11 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485955095",
       "via": "Direct",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-01T10:36:58.151Z"
     },
     {
@@ -1565,11 +1560,11 @@
       "title": "Frontend Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485933776",
       "via": "Direct",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-01T11:55:01.640Z"
     },
     {
@@ -1592,6 +1587,9 @@
       "title": "Angular Developer",
       "url": "https://uk.linkedin.com/jobs/view/4485946642",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-01T11:55:01.640Z"
@@ -1616,13 +1614,13 @@
       "title": "Vice President, Full-Stack Engineer",
       "url": "https://uk.linkedin.com/jobs/view/vice-president-full-stack-engineer-at-bny-4441993066",
       "via": "Direct",
-      "aiLevel": 0,
-      "aiNote": "Only a company-wide line about teams harnessing AI; nothing on AI use in development",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK"
       ],
+      "aiLevel": 0,
+      "aiNote": "Only a company-wide line about teams harnessing AI; nothing on AI use in development",
       "firstSeen": "2026-11-02T08:18:37.626Z"
     },
     {
@@ -1645,13 +1643,13 @@
       "notes": "Short MVP project building a participant portal and a small admin portal for a brain health programme.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-02T09:27:33.383Z"
     },
     {
@@ -1674,13 +1672,13 @@
       "notes": "Design-engineering role in an energy-tech company; 5+ years building UIs and a portfolio required.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 3,
-      "aiNote": "Requires recent practical experience using AI in design and engineering workflows; help shape the team's use of AI",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK"
       ],
+      "aiLevel": 3,
+      "aiNote": "Requires recent practical experience using AI in design and engineering workflows; help shape the team's use of AI",
       "firstSeen": "2026-11-02T09:27:33.383Z"
     },
     {
@@ -1703,13 +1701,14 @@
       "notes": "Full-stack role on high-scale real-time data and ML systems; includes mentoring.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
-        "LinkedIn search: remote UK"
+        "LinkedIn search: remote UK",
+        "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-02T09:27:33.383Z"
     },
     {
@@ -1732,11 +1731,11 @@
       "notes": "Listed on LinkedIn as \"Full Stack Developer - React\"; ecommerce order fulfilment platform.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 4,
-      "aiNote": "Engineering uses \"agentic AI tools throughout the development process\"",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 4,
+      "aiNote": "Engineering uses \"agentic AI tools throughout the development process\"",
       "firstSeen": "2026-11-02T09:27:33.383Z"
     },
     {
@@ -1759,11 +1758,12 @@
       "notes": "Owns AI-powered product features end to end for a business serving highly regulated industries.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
+      ],
       "aiLevel": 0,
       "aiNote": "Builds LLM/AI products, but says nothing about using AI tools to write code",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "firstSeen": "2026-11-02T10:31:51.956Z"
     },
     {
@@ -1786,12 +1786,13 @@
       "notes": "Several senior full-stack hires for an in-house retail engineering team; staff discount mentioned.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "No mention of AI use",
       "foundVia": [
         "LinkedIn search: Manchester",
-        "LinkedIn search: remote UK"
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Liverpool"
       ],
+      "aiLevel": 0,
+      "aiNote": "No mention of AI use",
       "firstSeen": "2026-11-02T10:31:51.956Z"
     },
     {
@@ -1814,13 +1815,14 @@
       "notes": "Mostly greenfield work on a platform for booking children's activities; small team.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Liverpool"
+      ],
       "aiLevel": 2,
       "aiNote": "AI tools are a nice-to-have; \"AI-friendly engineering culture\"",
       "claudeMention": "Experience using AI-assisted development tools such as Claude or Copilot",
-      "foundVia": [
-        "LinkedIn search: Manchester",
-        "LinkedIn search: remote UK"
-      ],
       "firstSeen": "2026-11-02T10:31:51.956Z"
     },
     {
@@ -1843,11 +1845,11 @@
       "notes": "Back-end-leaning full-stack role in a small in-house team; React listed in skills.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "No mention of AI use",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "No mention of AI use",
       "firstSeen": "2026-11-02T10:31:51.956Z"
     }
   ],
