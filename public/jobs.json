@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-02T16:20:04.914Z",
+  "updatedAt": "2026-11-02T18:28:06.621Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -24,11 +24,7 @@
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [
-    "linkedin-4483536689",
-    "totaljobs-108272508",
-    "totaljobs-108048107"
-  ],
+  "newSinceLastRun": [],
   "jobs": [
     {
       "clearance": "None stated",
@@ -1020,7 +1016,8 @@
       "via": "Direct",
       "foundVia": [
         "LinkedIn search: Liverpool",
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "Tavily"
       ],
       "aiLevel": 3,
       "aiNote": "\"Use AI coding tools every day. We use Claude Code a lot\", and expect you to understand every line it writes",
@@ -2055,11 +2052,11 @@
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/react-developer-at-agilegrid-solutions-4483536689",
       "notes": "Public sector digital transformation programme; GDS experience advantageous.",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-02T16:20:04.914Z"
     },
     {
@@ -2082,11 +2079,11 @@
       "source": "Totaljobs",
       "url": "https://www.totaljobs.com/job/full-stack-developer-engineer/ecs-job108272508",
       "notes": "Cyber DevOps team building internal tools; React frontend alongside Python backend. Cyber security experience highly desirable.",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-02T16:20:04.914Z"
     },
     {
@@ -2118,6 +2115,35 @@
     }
   ],
   "closed": [
+    {
+      "id": "linkedin-4484928414",
+      "title": "React Developer",
+      "company": "iXceed Solutions",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Location: Remote\"",
+      "contract": "Contract",
+      "contractNote": "\"Employment Type: Contract\"",
+      "salary": "Not stated",
+      "posted": "2026-10-29",
+      "stack": "React, TypeScript, JavaScript (ES6+), HTML5, CSS3, SASS, REST APIs, Jest, React Testing Library, Cypress",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/react-developer-at-ixceed-solutions-4484928414",
+      "notes": "Senior React / lead developer contract; Pega Constellation or Pega DX API experience desirable. Posted by IT services/staffing firm iXceed; the ad doesn't name an end client.",
+      "clearance": "None stated",
+      "clearanceNote": "active SC clearance or UK government/public sector experience listed as desirable, not required",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-02T18:28:06.621Z",
+      "closedAt": "2026-11-02T18:28:06.621Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "Eligible to obtain",
       "clearanceNote": "must be eligible for BPSS clearance",
