@@ -40,41 +40,41 @@
               class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring" />
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Region
-            <select [value]="region()" (change)="region.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="region()" (change)="region.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="north-west">North West</option><option value="remote-uk">Remote UK</option>
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Work mode
-            <select [value]="mode()" (change)="mode.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="mode()" (change)="mode.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               @for (o of opts().mode; track o) { <option [value]="o" [selected]="o === mode()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Contract
-            <select [value]="contract()" (change)="contract.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="contract()" (change)="contract.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               @for (o of opts().contract; track o) { <option [value]="o" [selected]="o === contract()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Security clearance
-            <select [value]="clearance()" (change)="clearance.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="clearance()" (change)="clearance.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option>
               <option value="Any">Any clearance needed</option>
               @for (o of opts().clearance; track o) { <option [value]="o" [selected]="o === clearance()">{{ o }}</option> }
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Role type
-            <select [value]="kind()" (change)="kind.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="kind()" (change)="kind.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="Frontend">Frontend</option><option value="Adjacent">Full-stack / mobile</option>
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Posted by
-            <select [value]="via()" (change)="via.set(val($event))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="via()" (change)="via.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">All</option><option value="Direct">Direct employer</option><option value="Agency">Recruiter agency</option><option value="Platform">Hiring platform</option>
             </select>
           </label>
           <label class="flex flex-col justify-between gap-1 text-sm font-medium">Sort by
-            <select [value]="sort()" (change)="sort.set($any(val($event)))" class="rounded-md border border-line-strong bg-surface px-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="sort()" (change)="sort.set($any(val($event)))" class="rounded-md border border-line-strong bg-surface pl-3 py-2 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="newest">Newest posted</option><option value="discovered">Newest discovered</option><option value="salary">Salary (highest)</option><option value="company">Company (A–Z)</option><option value="ai">AI usage (highest)</option>
             </select>
           </label>
@@ -85,7 +85,7 @@
             New only <span class="font-normal text-ink-faint">(not in the previous refresh)</span>
           </label>
           <label class="inline-flex items-center gap-2 font-medium">AI usage
-            <select [value]="aiMin()" (change)="aiMin.set(val($event))" class="rounded-md border border-line-strong bg-surface px-2 py-1 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
+            <select [value]="aiMin()" (change)="aiMin.set(val($event))" class="rounded-md border border-line-strong bg-surface pl-2 py-1 font-normal focus:outline-none focus:ring-2 focus:ring-accent-ring">
               <option value="All">Any</option><option value="1">Stated (any level)</option><option value="2">AI optional or more</option><option value="3">AI-assisted or more</option><option value="4">AI-first or more</option><option value="5">Agent-led</option>
             </select>
           </label>
