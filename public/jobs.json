@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-01T17:53:42.246Z",
+  "updatedAt": "2026-11-02T08:18:37.626Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,14 +17,16 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 47,
+      "LinkedIn": 48,
       "Reed": 7,
       "Totaljobs": 10
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4441993066"
+  ],
   "jobs": [
     {
       "clearance": "None stated",
@@ -1433,6 +1435,28 @@
       "url": "https://uk.linkedin.com/jobs/view/4485946642",
       "via": "Agency",
       "firstSeen": "2026-11-01T11:55:01.640Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "BNY",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "id": "linkedin-4441993066",
+      "kind": "Adjacent",
+      "location": "Manchester",
+      "mode": "Not stated",
+      "modeNote": "",
+      "notes": "Vice President level full-stack role: Angular/TypeScript front end with Java Spring Boot microservices.",
+      "posted": "2026-11-01",
+      "region": "north-west",
+      "salary": "Not stated",
+      "source": "LinkedIn",
+      "stack": "Angular, TypeScript, HTML, CSS, JavaScript, Java, Spring Boot, CosmosDB, Kafka",
+      "title": "Vice President, Full-Stack Engineer",
+      "url": "https://uk.linkedin.com/jobs/view/vice-president-full-stack-engineer-at-bny-4441993066",
+      "via": "Direct",
+      "firstSeen": "2026-11-02T08:18:37.626Z"
     }
   ],
   "closed": [
