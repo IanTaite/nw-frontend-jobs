@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T12:29:42.906Z",
+  "updatedAt": "2026-11-03T14:26:21.576Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,15 +17,16 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 65,
+      "LinkedIn": 64,
       "Reed": 10,
-      "Totaljobs": 21
+      "Totaljobs": 22
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "totaljobs-108197201"
+    "linkedin-4484366320",
+    "totaljobs-108275522"
   ],
   "jobs": [
     {
@@ -521,57 +522,6 @@
       "aiLevel": 4,
       "aiNote": "\"AI-native consulting partner\"; role helps embed AI and automation in delivery and implement AI-driven engineering approaches",
       "firstSeen": "2026-10-30T13:10:52Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "Boost Talent (client not named)",
-      "contract": "Not stated",
-      "contractNote": "listed full-time",
-      "id": "linkedin-4481757846",
-      "kind": "Adjacent",
-      "location": "Manchester or Croydon",
-      "mode": "Hybrid",
-      "modeNote": "2 days a week",
-      "notes": "Strong Python backend needed.",
-      "posted": "2026-10-20",
-      "region": "north-west",
-      "salary": "Not stated",
-      "source": "LinkedIn",
-      "stack": "React, TypeScript, Python, AWS",
-      "title": "Senior Full Stack Engineer (Python/React)",
-      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-python-react-at-boost-talent-ltd-4481757846",
-      "via": "Agency",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
-      "aiLevel": 0,
-      "aiNote": "Says it is not an AI/ML or prompt engineering role; nothing on AI coding tools",
-      "firstSeen": "2026-10-30T13:10:52Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "eTeam (client not named)",
-      "contract": "Contract",
-      "contractNote": "until 31/05/2027, PAYE through umbrella",
-      "id": "linkedin-4485308571",
-      "kind": "Adjacent",
-      "location": "Knutsford, Cheshire",
-      "mode": "Hybrid",
-      "modeNote": "\"2-3 days onsite/week\"",
-      "notes": "Lending origination workflows in banking; React UIs for user tasks.",
-      "posted": "2026-10-30",
-      "region": "north-west",
-      "salary": "£537/day",
-      "source": "LinkedIn",
-      "stack": "Camunda 8, Java, Spring Boot, React, Redux, SQL, OpenShift",
-      "title": "Fullstack Camunda Developer",
-      "url": "https://uk.linkedin.com/jobs/view/4485308571",
-      "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-10-30T14:14:15.876Z"
     },
     {
       "clearance": "None stated",
@@ -2492,9 +2442,6 @@
       "source": "LinkedIn",
       "posted": "2026-11-02",
       "url": "https://uk.linkedin.com/jobs/view/lead-software-engineer-at-royal-london-4486189741",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4486189741",
       "company": "Royal London",
       "location": "Alderley Park, Cheshire (or Glasgow)",
@@ -2506,9 +2453,12 @@
       "salary": "Not stated",
       "stack": "Angular, C#/.NET, Azure",
       "kind": "Adjacent",
+      "title": "Lead Software Engineer",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
-      "title": "Lead Software Engineer",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2668,15 +2618,125 @@
       "kind": "Adjacent",
       "source": "Totaljobs",
       "url": "https://www.totaljobs.com/job/creative-developer/frontify-ag-job108197201",
-      "aiLevel": 0,
-      "aiNote": "No mention of AI tools for development; AI is only mentioned for the product and for interview transcription.",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 0,
+      "aiNote": "No mention of AI tools for development; AI is only mentioned for the product and for interview transcription.",
       "firstSeen": "2026-11-03T12:29:42.906Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Mostly Node work on a new operations platform: test coverage, data model refactoring and remediation; frontend is Angular (React/Vue fine). Two hires.",
+      "id": "linkedin-4484366320",
+      "title": "Senior Full Stack Engineer - Angular/Node/GCP",
+      "company": "Wave Works (for an unnamed client)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote\"; LinkedIn location England, United Kingdom",
+      "contract": "Contract",
+      "contractNote": "immediate start; length not stated",
+      "salary": "£600/day (umbrella)",
+      "posted": "2026-11-02",
+      "stack": "Node.js, TypeScript, Angular, GCP (Firebase, Firestore)",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-angular-node-gcp-at-wave-works-4484366320",
+      "aiLevel": 4,
+      "aiNote": "Team \"uses Claude Code heavily across the build, including for UI work\"; you should be keen to work this way.",
+      "claudeMention": "\"The team uses Claude Code heavily across the build, including for UI work\"",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-03T14:26:21.576Z"
+    },
+    {
+      "clearance": "Eligible to obtain",
+      "clearanceNote": "\"it is a requirement to obtain Security Check (SC) clearance\"",
+      "notes": "Found via CWJobs. Consulting role building GenAI proofs of concept (RAG, agents) for clients and scaling them to production.",
+      "id": "totaljobs-108275522",
+      "title": "GenAI Full Stack Engineer - Managing Consultant",
+      "company": "83zero Limited (for an unnamed client)",
+      "via": "Agency",
+      "location": "Manchester (or London / Newcastle / Glasgow)",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid / 2 x days per week - Travel to client site\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£65,000 - £80,000 plus benefits",
+      "posted": "2026-11-03",
+      "stack": "React, TypeScript, Next.js/Vite, Python (FastAPI) or Express, LangChain/LangGraph, AWS/Azure, Docker/Kubernetes",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/genai-full-stack-engineer-managing-consultant/83zero-limited-job108275522",
+      "aiLevel": 0,
+      "aiNote": "Builds GenAI/LLM products (RAG, agents) but says nothing about using AI tools to code.",
+      "foundVia": [
+        "CWJobs search"
+      ],
+      "firstSeen": "2026-11-03T14:26:21.576Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Boost Talent (client not named)",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "id": "linkedin-4481757846",
+      "kind": "Adjacent",
+      "location": "Manchester or Croydon",
+      "mode": "Hybrid",
+      "modeNote": "2 days a week",
+      "notes": "Strong Python backend needed.",
+      "posted": "2026-10-20",
+      "region": "north-west",
+      "salary": "Not stated",
+      "source": "LinkedIn",
+      "stack": "React, TypeScript, Python, AWS",
+      "title": "Senior Full Stack Engineer (Python/React)",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-python-react-at-boost-talent-ltd-4481757846",
+      "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 0,
+      "aiNote": "Says it is not an AI/ML or prompt engineering role; nothing on AI coding tools",
+      "firstSeen": "2026-10-30T13:10:52Z",
+      "closedAt": "2026-11-03T14:26:21.576Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "eTeam (client not named)",
+      "contract": "Contract",
+      "contractNote": "until 31/05/2027, PAYE through umbrella",
+      "id": "linkedin-4485308571",
+      "kind": "Adjacent",
+      "location": "Knutsford, Cheshire",
+      "mode": "Hybrid",
+      "modeNote": "\"2-3 days onsite/week\"",
+      "notes": "Lending origination workflows in banking; React UIs for user tasks.",
+      "posted": "2026-10-30",
+      "region": "north-west",
+      "salary": "£537/day",
+      "source": "LinkedIn",
+      "stack": "Camunda 8, Java, Spring Boot, React, Redux, SQL, OpenShift",
+      "title": "Fullstack Camunda Developer",
+      "url": "https://uk.linkedin.com/jobs/view/4485308571",
+      "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-10-30T14:14:15.876Z",
+      "closedAt": "2026-11-03T14:26:21.576Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
