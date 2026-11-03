@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T10:18:26.339Z",
+  "updatedAt": "2026-11-03T10:26:17.817Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 66,
+      "LinkedIn": 65,
       "Reed": 10,
       "Totaljobs": 20
     },
@@ -26,7 +26,6 @@
   },
   "newSinceLastRun": [
     "linkedin-4469319124",
-    "linkedin-4484463021",
     "totaljobs-108169882",
     "totaljobs-108170110"
   ],
@@ -2589,34 +2588,7 @@
       "kind": "Adjacent",
       "aiLevel": 0,
       "aiNote": "Bonus for experience on AI-powered products; nothing on using AI tools to code.",
-      "firstSeen": "2026-11-03T10:18:26.339Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "notes": "Front end of an analytics application. Posted date estimated from \"5 days ago\".",
-      "via": "Agency",
-      "source": "LinkedIn",
-      "posted": "2026-10-29",
-      "url": "https://uk.linkedin.com/jobs/view/4484463021",
-      "foundVia": [
-        "Tavily"
-      ],
-      "id": "linkedin-4484463021",
-      "title": "Angular Developer",
-      "company": "Netrolynx AI (recruiting for Cathcart Technology; client not named)",
-      "location": "Bath (or fully remote)",
-      "region": "remote-uk",
-      "mode": "Remote",
-      "modeNote": "\"based in Bath and can be completed on a hybrid or fully remote basis\"",
-      "contract": "Contract",
-      "contractNote": "3 months, outside IR35, strong possibility of extension",
-      "salary": "£400–£450 per day plus VAT",
-      "stack": "Angular, TypeScript, RxJS, REST APIs",
-      "kind": "Frontend",
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-03T10:18:26.339Z"
+      "firstSeen": "2026-11-03T10:26:17.817Z"
     },
     {
       "clearance": "None stated",
@@ -2643,7 +2615,7 @@
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-11-03T10:18:26.339Z"
+      "firstSeen": "2026-11-03T10:26:17.817Z"
     },
     {
       "clearance": "Eligible to obtain",
@@ -2670,7 +2642,7 @@
       "foundVia": [
         "Totaljobs search"
       ],
-      "firstSeen": "2026-11-03T10:18:26.339Z"
+      "firstSeen": "2026-11-03T10:26:17.817Z"
     }
   ],
   "closed": [
@@ -2702,7 +2674,7 @@
       "aiLevel": 2,
       "aiNote": "Asks for \"working knowledge of AI and how it can support software development\"",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "closedAt": "2026-11-03T10:18:26.339Z",
+      "closedAt": "2026-11-03T10:26:17.817Z",
       "closedReason": "HTTP 410"
     },
     {
@@ -2731,7 +2703,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "closedAt": "2026-11-03T10:18:26.339Z",
+      "closedAt": "2026-11-03T10:26:17.817Z",
       "closedReason": "page says \"No longer accepting applications\""
     },
     {
@@ -2761,7 +2733,7 @@
       "aiLevel": 0,
       "aiNote": "Builds LLM/AI products, but says nothing about using AI tools to write code",
       "firstSeen": "2026-11-02T10:31:51.956Z",
-      "closedAt": "2026-11-03T10:18:26.339Z",
+      "closedAt": "2026-11-03T10:26:17.817Z",
       "closedReason": "page says \"No longer accepting applications\""
     },
     {
