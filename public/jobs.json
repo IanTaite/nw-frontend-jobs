@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T10:26:17.817Z",
+  "updatedAt": "2026-11-03T12:29:42.906Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,15 +19,13 @@
     "counts": {
       "LinkedIn": 65,
       "Reed": 10,
-      "Totaljobs": 20
+      "Totaljobs": 21
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4469319124",
-    "totaljobs-108169882",
-    "totaljobs-108170110"
+    "totaljobs-108197201"
   ],
   "jobs": [
     {
@@ -217,6 +215,9 @@
       "title": "Front End Developer – UK Government",
       "url": "https://uk.linkedin.com/jobs/view/%F0%9F%8C%B3-front-end-developer-uk-government-contract-%F0%9F%8C%B3-at-areti-group-b-corp%E2%84%A2-4478501938",
       "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -2007,7 +2008,8 @@
       "notes": "Cyber DevOps team building internal tools; React frontend alongside Python backend. Cyber security experience highly desirable.",
       "foundVia": [
         "Totaljobs search",
-        "CWJobs search"
+        "CWJobs search",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -2310,7 +2312,8 @@
       "stack": "C#, ASP.NET Core, React, TypeScript, Azure",
       "kind": "Adjacent",
       "foundVia": [
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -2352,9 +2355,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-23",
       "url": "https://uk.linkedin.com/jobs/view/intermediate-fullstack-engineer-ruby-vue-js-growth-at-gitlab-4483124376",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4483124376",
       "title": "Intermediate Fullstack Engineer (Ruby/Vue.js), Growth",
       "company": "GitLab",
@@ -2367,6 +2367,10 @@
       "salary": "Not stated",
       "stack": "Ruby on Rails, Vue.js",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
+      ],
       "aiLevel": 3,
       "aiNote": "\"all team members expected to incorporate AI into their daily workflows\"; AI described as \"a core productivity multiplier\".",
       "firstSeen": "2026-11-03T08:32:48.386Z"
@@ -2461,9 +2465,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-21",
       "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-at-aerocloud-4478986446",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4478986446",
       "title": "Full Stack Developer",
       "company": "AeroCloud",
@@ -2476,6 +2477,9 @@
       "salary": "Competitive (not stated)",
       "stack": "TypeScript, React, Storybook, Node.js, MongoDB Atlas, AWS",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
@@ -2570,10 +2574,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-15",
       "url": "https://uk.linkedin.com/jobs/view/fullstack-software-developer-at-intermedia-intelligent-communications-4469319124",
-      "foundVia": [
-        "LinkedIn search: Manchester",
-        "LinkedIn search: Liverpool"
-      ],
       "id": "linkedin-4469319124",
       "title": "Fullstack Software Developer",
       "company": "Intermedia Intelligent Communications",
@@ -2586,6 +2586,10 @@
       "salary": "Not stated",
       "stack": "JavaScript/TypeScript, Angular/AngularJS, React, Node.js",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
+      ],
       "aiLevel": 0,
       "aiNote": "Bonus for experience on AI-powered products; nothing on using AI tools to code.",
       "firstSeen": "2026-11-03T10:26:17.817Z"
@@ -2643,6 +2647,33 @@
         "Totaljobs search"
       ],
       "firstSeen": "2026-11-03T10:26:17.817Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "In-house Growth Marketing role building campaign landing pages, Webflow/HubSpot assets and marketing integrations; asks for 3-5 years across frontend and backend.",
+      "id": "totaljobs-108197201",
+      "title": "Creative Developer",
+      "company": "Frontify AG",
+      "via": "Direct",
+      "location": "Remote - UK (or London office)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"You can work remotely from anywhere in the UK or on-site in our London office\"",
+      "contract": "Permanent",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-17",
+      "stack": "HTML, CSS, JavaScript, Webflow, HubSpot CMS (HubL), Node.js/Python/PHP, Zapier, Figma",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/creative-developer/frontify-ag-job108197201",
+      "aiLevel": 0,
+      "aiNote": "No mention of AI tools for development; AI is only mentioned for the product and for interview transcription.",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-03T12:29:42.906Z"
     }
   ],
   "closed": [
