@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T10:08:26.091Z",
+  "updatedAt": "2026-11-03T10:18:26.339Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,12 +19,17 @@
     "counts": {
       "LinkedIn": 66,
       "Reed": 10,
-      "Totaljobs": 19
+      "Totaljobs": 20
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4469319124",
+    "linkedin-4484463021",
+    "totaljobs-108169882",
+    "totaljobs-108170110"
+  ],
   "jobs": [
     {
       "clearance": "None stated",
@@ -332,35 +337,6 @@
     {
       "clearance": "None stated",
       "clearanceNote": "",
-      "company": "Hackajob (client: an online gambling company)",
-      "contract": "Permanent",
-      "contractNote": "permanent",
-      "id": "totaljobs-108212675",
-      "kind": "Frontend",
-      "location": "Manchester (M2)",
-      "mode": "Hybrid",
-      "modeNote": "hybrid WFH policy",
-      "notes": "In-Play sports betting product team.",
-      "posted": "2026-10-20",
-      "region": "north-west",
-      "salary": "Competitive (not stated)",
-      "source": "Totaljobs",
-      "stack": "React, TypeScript, JavaScript, HTML5, CSS",
-      "title": "Frontend Software Developer",
-      "url": "https://www.totaljobs.com/job/frontend-software-developer/hackajob-ltd-job108212675",
-      "via": "Platform",
-      "foundVia": [
-        "Totaljobs search",
-        "Tavily",
-        "CWJobs search"
-      ],
-      "aiLevel": 2,
-      "aiNote": "Asks for \"working knowledge of AI and how it can support software development\"",
-      "firstSeen": "2026-10-30T13:10:52Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
       "company": "OneOcean (Ocean Technologies Group)",
       "contract": "Not stated",
       "contractNote": "listed full-time",
@@ -380,7 +356,8 @@
       "via": "Direct",
       "foundVia": [
         "LinkedIn search: Liverpool",
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -439,33 +416,6 @@
       ],
       "aiLevel": 3,
       "aiNote": "\"Leveraging AI-powered development workflows\"; wants strong understanding of modern AI development workflows",
-      "firstSeen": "2026-10-30T13:10:52Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "Haystack (client not named)",
-      "contract": "Not stated",
-      "contractNote": "listed full-time",
-      "id": "linkedin-4481900110",
-      "kind": "Frontend",
-      "location": "United Kingdom",
-      "mode": "Not stated",
-      "modeNote": "",
-      "notes": "Showed up in North West searches. Doesn't say where the job is based.",
-      "posted": "2026-10-23",
-      "region": "remote-uk",
-      "salary": "£40,000–£45,000",
-      "source": "LinkedIn",
-      "stack": "JavaScript, modern frontend",
-      "title": "Frontend Developer",
-      "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-haystack-4481900110",
-      "via": "Platform",
-      "foundVia": [
-        "LinkedIn search: Liverpool"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -893,7 +843,8 @@
       "via": "Agency",
       "foundVia": [
         "Tavily",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1053,6 +1004,9 @@
       "title": "Senior Full Stack Engineer, Front-end Focus - Growth",
       "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-front-end-focus-growth-at-zoe-4482546495",
       "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-31T09:07:31.273Z"
@@ -1103,7 +1057,8 @@
       "url": "https://uk.linkedin.com/jobs/view/4482200855",
       "via": "Agency",
       "foundVia": [
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 3,
       "aiNote": "Requires practical experience with Claude and Claude Code for AI-assisted development; use GenAI to speed up delivery",
@@ -1131,7 +1086,8 @@
       "url": "https://uk.linkedin.com/jobs/view/4481876040",
       "via": "Agency",
       "foundVia": [
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 2,
       "aiNote": "Desirable: AI-assisted design/dev tools (Claude, Cursor, Figma Make); builds prototypes incl. with AI-assisted tools",
@@ -1510,7 +1466,8 @@
       "url": "https://www.totaljobs.com/job/senior-react-next-js-dev-sc-cleared/henderson-scott-job108080132",
       "via": "Agency",
       "foundVia": [
-        "Totaljobs search"
+        "Totaljobs search",
+        "CWJobs search"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1653,7 +1610,8 @@
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
-        "LinkedIn search: remote UK"
+        "LinkedIn search: remote UK",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1744,34 +1702,6 @@
       "aiLevel": 4,
       "aiNote": "Engineering uses \"agentic AI tools throughout the development process\"",
       "firstSeen": "2026-11-02T09:27:33.383Z"
-    },
-    {
-      "id": "linkedin-4476008012",
-      "title": "Senior Fullstack Engineer – AI",
-      "company": "Oliver Bernard",
-      "via": "Agency",
-      "location": "United Kingdom (remote)",
-      "region": "remote-uk",
-      "mode": "Remote",
-      "modeNote": "\"Remote working (UK)\"",
-      "contract": "Not stated",
-      "contractNote": "listed full-time",
-      "salary": "Up to £110k",
-      "posted": "2026-11-02",
-      "stack": "Node.js, TypeScript, React, AWS, LLM/AI applications",
-      "kind": "Adjacent",
-      "source": "LinkedIn",
-      "url": "https://uk.linkedin.com/jobs/view/senior-fullstack-engineer-%E2%80%93-ai-at-oliver-bernard-4476008012",
-      "notes": "Owns AI-powered product features end to end for a business serving highly regulated industries.",
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "foundVia": [
-        "LinkedIn search: Manchester",
-        "LinkedIn search: Liverpool"
-      ],
-      "aiLevel": 0,
-      "aiNote": "Builds LLM/AI products, but says nothing about using AI tools to write code",
-      "firstSeen": "2026-11-02T10:31:51.956Z"
     },
     {
       "id": "linkedin-4485476037",
@@ -1964,7 +1894,8 @@
       "url": "https://www.totaljobs.com/job/wordpress-developer-fully-remote/g-r-e-recruitment-limited-job108087862",
       "via": "Agency",
       "foundVia": [
-        "Totaljobs search"
+        "Totaljobs search",
+        "CWJobs search"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -1993,7 +1924,8 @@
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -2130,7 +2062,8 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "foundVia": [
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 0,
       "aiNote": "No mention of AI tools or AI usage in the posting.",
@@ -2183,12 +2116,12 @@
       "kind": "Frontend",
       "source": "Reed",
       "url": "https://www.reed.co.uk/jobs/web-developer/57411198",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Reed search",
         "Reed search: remote"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2211,11 +2144,11 @@
       "kind": "Adjacent",
       "source": "Reed",
       "url": "https://www.reed.co.uk/jobs/full-stack-engineer/57440904",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Reed search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2231,8 +2164,6 @@
       "kind": "Adjacent",
       "source": "Totaljobs",
       "posted": "2026-10-08",
-      "aiLevel": 3,
-      "aiNote": "\"AI assisted engineering\" listed in required skills; company described as \"at the forefront of AI-native software engineering\".",
       "id": "totaljobs-108111790",
       "title": "Senior Fullstack Engineer, £500pd (Outside IR35)",
       "modeNote": "\"remote-first\"; must be UK based",
@@ -2244,6 +2175,8 @@
         "Totaljobs search",
         "CWJobs search"
       ],
+      "aiLevel": 3,
+      "aiNote": "\"AI assisted engineering\" listed in required skills; company described as \"at the forefront of AI-native software engineering\".",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2259,8 +2192,6 @@
       "kind": "Adjacent",
       "source": "Totaljobs",
       "posted": "2026-10-08",
-      "aiLevel": 3,
-      "aiNote": "\"AI assisted engineering\" listed in required skills; company described as \"at the forefront of AI-native software engineering\".",
       "id": "totaljobs-108111795",
       "title": "Senior Fullstack Engineer (£82k + benefits)",
       "modeNote": "\"benefits including remote working\"; must be UK based",
@@ -2272,6 +2203,8 @@
         "Totaljobs search",
         "CWJobs search"
       ],
+      "aiLevel": 3,
+      "aiNote": "\"AI assisted engineering\" listed in required skills; company described as \"at the forefront of AI-native software engineering\".",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2294,12 +2227,13 @@
       "kind": "Adjacent",
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-at-hf-4452445214",
-      "aiLevel": 0,
-      "aiNote": "Builds AI product features (ELI, Azure OpenAI) but says nothing about using AI coding tools.",
       "foundVia": [
         "LinkedIn search: Manchester",
-        "Totaljobs search"
+        "Totaljobs search",
+        "LinkedIn search: Liverpool"
       ],
+      "aiLevel": 0,
+      "aiNote": "Builds AI product features (ELI, Azure OpenAI) but says nothing about using AI coding tools.",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2322,11 +2256,11 @@
       "kind": "Adjacent",
       "source": "Totaljobs",
       "url": "https://www.totaljobs.com/job/senior-full-stack-developer/spliit-ltd-job108189944",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2349,11 +2283,11 @@
       "kind": "Adjacent",
       "source": "Totaljobs",
       "url": "https://www.totaljobs.com/job/full-stack-developer/maximus-inc-american-company-job108203207",
-      "aiLevel": 0,
-      "aiNote": "Asks for experience integrating AI services (Textract, Bedrock) into products; no mention of AI coding tools.",
       "foundVia": [
         "CWJobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "Asks for experience integrating AI services (Textract, Bedrock) into products; no mention of AI coding tools.",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2364,9 +2298,6 @@
       "source": "LinkedIn",
       "posted": "2026-11-02",
       "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-developer-at-truenorth%C2%AE-4486185517",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4486185517",
       "title": "Senior Full Stack Developer",
       "company": "TrueNorth®",
@@ -2379,6 +2310,9 @@
       "salary": "£65,000–£70,000",
       "stack": "C#, ASP.NET Core, React, TypeScript, Azure",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
@@ -2391,10 +2325,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-20",
       "url": "https://uk.linkedin.com/jobs/view/software-engineer-frontend-at-phorest-software-4478909466",
-      "foundVia": [
-        "LinkedIn search: Liverpool",
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4478909466",
       "title": "Software Engineer - Frontend",
       "company": "Phorest Software",
@@ -2407,6 +2337,10 @@
       "salary": "Not stated",
       "stack": "Ember.js, JavaScript, Tailwind CSS, GraphQL/Apollo, Node.js",
       "kind": "Frontend",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
@@ -2446,9 +2380,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-20",
       "url": "https://uk.linkedin.com/jobs/view/senior-software-engineer-javascript-vue-uk-at-dayshape-4481560241",
-      "foundVia": [
-        "LinkedIn search: remote UK"
-      ],
       "id": "linkedin-4481560241",
       "title": "Senior Software Engineer - JavaScript/Vue (UK)",
       "company": "Dayshape",
@@ -2461,6 +2392,9 @@
       "salary": "£50,000–£60,000",
       "stack": "JavaScript, Vue",
       "kind": "Frontend",
+      "foundVia": [
+        "LinkedIn search: remote UK"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
@@ -2473,9 +2407,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-19",
       "url": "https://uk.linkedin.com/jobs/view/software-engineer-at-trakd-4481218591",
-      "foundVia": [
-        "LinkedIn search: Liverpool"
-      ],
       "id": "linkedin-4481218591",
       "title": "Software Engineer",
       "company": "TRAKD",
@@ -2488,6 +2419,10 @@
       "salary": "£45,000 + equity",
       "stack": "React, TypeScript, PostgreSQL, AI/LLM tooling",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "Asks for \"Hands-on use of AI tools in your development workflow\" and to \"Use AI tools to speed up your own development\".",
       "firstSeen": "2026-11-03T08:32:48.386Z"
@@ -2500,9 +2435,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-08",
       "url": "https://uk.linkedin.com/jobs/view/full-stack-software-engineer-mid-level-at-recourse-ai-4477153542",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4477153542",
       "title": "Full-Stack Software Engineer (mid-level)",
       "company": "Recourse AI",
@@ -2515,6 +2447,9 @@
       "salary": "Not stated",
       "stack": "React, TypeScript, Python (FastAPI/Django)",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "Asks for \"practical experience applying best practices when working with AI coding assistants\".",
       "firstSeen": "2026-11-03T08:32:48.386Z"
@@ -2581,9 +2516,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-28",
       "url": "https://uk.linkedin.com/jobs/view/senior-software-engineer-at-royal-london-4476542000",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4476542000",
       "company": "Royal London",
       "location": "Alderley Park, Cheshire (or Glasgow)",
@@ -2595,9 +2527,13 @@
       "salary": "Not stated",
       "stack": "Angular, C#/.NET, Azure",
       "kind": "Adjacent",
+      "title": "Senior Software Engineer",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
+      ],
       "aiLevel": 0,
       "aiNote": "",
-      "title": "Senior Software Engineer",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -2608,9 +2544,6 @@
       "source": "LinkedIn",
       "posted": "2026-10-26",
       "url": "https://uk.linkedin.com/jobs/view/senior-web-developer-at-mirai-talent-4472726595",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "id": "linkedin-4472726595",
       "title": "Senior Web Developer",
       "company": "Mirai Talent",
@@ -2623,12 +2556,214 @@
       "salary": "Not stated",
       "stack": "WordPress, Next.js, React, PHP, JavaScript, SQL",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 3,
       "aiNote": "Role helps shape \"how AI, automation and agentic workflows are rolled out across the agency\".",
       "firstSeen": "2026-11-03T08:32:48.386Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Real-time contact-centre metrics dashboards and backend services. Same company as the Senior Frontend Engineer role already listed.",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "posted": "2026-10-15",
+      "url": "https://uk.linkedin.com/jobs/view/fullstack-software-developer-at-intermedia-intelligent-communications-4469319124",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
+      ],
+      "id": "linkedin-4469319124",
+      "title": "Fullstack Software Developer",
+      "company": "Intermedia Intelligent Communications",
+      "location": "United Kingdom",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"While primarily remote, this role requires occasional visits to the Bristol office or London\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "stack": "JavaScript/TypeScript, Angular/AngularJS, React, Node.js",
+      "kind": "Adjacent",
+      "aiLevel": 0,
+      "aiNote": "Bonus for experience on AI-powered products; nothing on using AI tools to code.",
+      "firstSeen": "2026-11-03T10:18:26.339Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Front end of an analytics application. Posted date estimated from \"5 days ago\".",
+      "via": "Agency",
+      "source": "LinkedIn",
+      "posted": "2026-10-29",
+      "url": "https://uk.linkedin.com/jobs/view/4484463021",
+      "foundVia": [
+        "Tavily"
+      ],
+      "id": "linkedin-4484463021",
+      "title": "Angular Developer",
+      "company": "Netrolynx AI (recruiting for Cathcart Technology; client not named)",
+      "location": "Bath (or fully remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"based in Bath and can be completed on a hybrid or fully remote basis\"",
+      "contract": "Contract",
+      "contractNote": "3 months, outside IR35, strong possibility of extension",
+      "salary": "£400–£450 per day plus VAT",
+      "stack": "Angular, TypeScript, RxJS, REST APIs",
+      "kind": "Frontend",
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-03T10:18:26.339Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Ratings Technology team at Fitch Ratings; asks for 12+ years experience and expert Python backend skills.",
+      "id": "totaljobs-108169882",
+      "title": "Lead Software Engineer, Full-Stack Applications - AI Fluent (Manchester)",
+      "company": "Fitch Group",
+      "via": "Direct",
+      "location": "Manchester (or London)",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Work from premier offices in London, Manchester, or Toronto with hybrid flexibility\"",
+      "contract": "Permanent",
+      "contractNote": "listed full-time",
+      "salary": "Competitive (not stated)",
+      "posted": "2026-10-14",
+      "stack": "Python, React, TypeScript, AWS/Azure, Docker/Kubernetes",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/lead-software-engineer-full-stack-applications-ai-fluent-manchester/fitch-group-job108169882",
+      "aiLevel": 3,
+      "aiNote": "Role is to \"promote approved AI tools and responsible usage patterns\" and improve developer productivity with AI.",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-03T10:18:26.339Z"
+    },
+    {
+      "clearance": "Eligible to obtain",
+      "clearanceNote": "\"hold an active SC (Security Check) Clearance or be eligible for such level of clearance\"",
+      "notes": "Consulting role building GenAI proofs of concept for clients; may involve time away from home.",
+      "id": "totaljobs-108170110",
+      "title": "GenAI Full Stack Engineer - Consultant / Senior Consultant - Digital Excellence",
+      "company": "Capgemini Invent",
+      "via": "Direct",
+      "location": "Manchester (or London / Glasgow)",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"We embed hybrid working\"; office base London, Manchester or Glasgow, and must be \"fully flexible in terms of assignment location\"",
+      "contract": "Permanent",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-14",
+      "stack": "React, TypeScript, Next.js/Vite, Python (FastAPI) or Express, LangChain, AWS/Azure",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/genai-full-stack-engineer-consultant-senior-consultant-digital-excellence/capgemini-invent-job108170110",
+      "aiLevel": 0,
+      "aiNote": "Builds GenAI/LLM products (RAG, agents) but says nothing about using AI tools to code.",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-03T10:18:26.339Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Hackajob (client: an online gambling company)",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "id": "totaljobs-108212675",
+      "kind": "Frontend",
+      "location": "Manchester (M2)",
+      "mode": "Hybrid",
+      "modeNote": "hybrid WFH policy",
+      "notes": "In-Play sports betting product team.",
+      "posted": "2026-10-20",
+      "region": "north-west",
+      "salary": "Competitive (not stated)",
+      "source": "Totaljobs",
+      "stack": "React, TypeScript, JavaScript, HTML5, CSS",
+      "title": "Frontend Software Developer",
+      "url": "https://www.totaljobs.com/job/frontend-software-developer/hackajob-ltd-job108212675",
+      "via": "Platform",
+      "foundVia": [
+        "Totaljobs search",
+        "Tavily",
+        "CWJobs search"
+      ],
+      "aiLevel": 2,
+      "aiNote": "Asks for \"working knowledge of AI and how it can support software development\"",
+      "firstSeen": "2026-10-30T13:10:52Z",
+      "closedAt": "2026-11-03T10:18:26.339Z",
+      "closedReason": "HTTP 410"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Haystack (client not named)",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "id": "linkedin-4481900110",
+      "kind": "Frontend",
+      "location": "United Kingdom",
+      "mode": "Not stated",
+      "modeNote": "",
+      "notes": "Showed up in North West searches. Doesn't say where the job is based.",
+      "posted": "2026-10-23",
+      "region": "remote-uk",
+      "salary": "£40,000–£45,000",
+      "source": "LinkedIn",
+      "stack": "JavaScript, modern frontend",
+      "title": "Frontend Developer",
+      "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-haystack-4481900110",
+      "via": "Platform",
+      "foundVia": [
+        "LinkedIn search: Liverpool"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z",
+      "closedAt": "2026-11-03T10:18:26.339Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "id": "linkedin-4476008012",
+      "title": "Senior Fullstack Engineer – AI",
+      "company": "Oliver Bernard",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote working (UK)\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Up to £110k",
+      "posted": "2026-11-02",
+      "stack": "Node.js, TypeScript, React, AWS, LLM/AI applications",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-fullstack-engineer-%E2%80%93-ai-at-oliver-bernard-4476008012",
+      "notes": "Owns AI-powered product features end to end for a business serving highly regulated industries.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
+      ],
+      "aiLevel": 0,
+      "aiNote": "Builds LLM/AI products, but says nothing about using AI tools to write code",
+      "firstSeen": "2026-11-02T10:31:51.956Z",
+      "closedAt": "2026-11-03T10:18:26.339Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
