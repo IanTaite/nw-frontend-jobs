@@ -22,7 +22,7 @@ const CLOSED_KEEP_DAYS = 30;
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
 
 // Phrases that mean the posting is closed even if the page returns 200.
-const CLOSED = [/no longer accepting applications/i, /this job (has )?(expired|is no longer available)/i,
+const CLOSED = [/(no longer|not currently|not) accepting applications/i, /this job (has )?(expired|is no longer available)/i,
   /job (is )?no longer (live|available|advertised)/i, /position has been filled/i, /vacancy has (now )?closed/i];
 
 function checkUrl(job) {

@@ -121,3 +121,5 @@ Every role carries an optional `aiLevel` (integer 0-5) and `aiNote` (short strin
 - If found, set `claudeMention` to a short quote or close paraphrase (about 120 characters at most). Omit the field when there is no mention.
 - It is kept through the merge like `aiLevel`: a candidate carrying a fresh `aiLevel` is treated as a fresh read, so give it `claudeMention` too if there is one; a candidate without `aiLevel` keeps the earlier `claudeMention`.
 - The site shows a small "Claude" tag next to the AI badge, with the quote as a tooltip.
+
+- LinkedIn postings marked "No longer accepting applications" or "Not currently accepting applications" count as closed and must be excluded. Their wording is not always present on the public guest page, so when a posting's text or the user reports it, treat the role as closed.
