@@ -123,3 +123,5 @@ Every role carries an optional `aiLevel` (integer 0-5) and `aiNote` (short strin
 - The site shows a small "Claude" tag next to the AI badge, with the quote as a tooltip.
 
 - LinkedIn postings marked "No longer accepting applications" or "Not currently accepting applications" count as closed and must be excluded. Their wording is not always present on the public guest page, so when a posting's text or the user reports it, treat the role as closed.
+
+- `scripts/excluded.json` lists role ids to keep out (id → reason): the script closes them and ignores them if a search finds them again. Add an id there when the user reports a role as closed or unwanted.

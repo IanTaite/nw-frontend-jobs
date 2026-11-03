@@ -31,7 +31,13 @@ function checkUrl(job) {
   return m ? `https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/${m[1]}` : job.url;
 }
 
+// scripts/excluded.json: { "<job id>": "reason" } for roles the user has ruled out or seen marked closed
+// (e.g. LinkedIn "Not currently accepting applications" visible only when signed in). Never reopened by searches.
+let EXCLUDED = {};
+try { EXCLUDED = JSON.parse(readFileSync(new URL('./excluded.json', import.meta.url), 'utf8')); } catch {}
+
 async function check(job) {
+  if (EXCLUDED[job.id]) return { job, status: 'closed', why: EXCLUDED[job.id] };
   if (noFetch) return { job, status: 'unknown', why: 'not fetched (--no-fetch)' };
   try {
     const res = await fetch(checkUrl(job), { headers: { 'user-agent': UA, 'accept-language': 'en-GB' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
@@ -90,6 +96,7 @@ if (candFile) {
   const cands = Array.isArray(raw) ? raw : raw.jobs;
   for (const c of cands) {
     if (!c.id) { console.warn(`skipped candidate without id: ${c.title}`); continue; }
+    if (EXCLUDED[c.id]) { console.warn(`skipped excluded candidate ${c.id}`); continue; }
     const known = byId.get(c.id);
     const wasClosed = closedById.get(c.id);
     if (known) {

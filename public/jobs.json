@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T08:32:48.386Z",
+  "updatedAt": "2026-11-03T10:08:26.091Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,32 +17,14 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 67,
+      "LinkedIn": 66,
       "Reed": 10,
       "Totaljobs": 19
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [
-    "reed-57411198",
-    "reed-57440904",
-    "totaljobs-108111790",
-    "totaljobs-108111795",
-    "linkedin-4452445214",
-    "totaljobs-108189944",
-    "totaljobs-108203207",
-    "linkedin-4486185517",
-    "linkedin-4478909466",
-    "linkedin-4483124376",
-    "linkedin-4481560241",
-    "linkedin-4481218591",
-    "linkedin-4477153542",
-    "linkedin-4478986446",
-    "linkedin-4486189741",
-    "linkedin-4476542000",
-    "linkedin-4472726595"
-  ],
+  "newSinceLastRun": [],
   "jobs": [
     {
       "clearance": "None stated",
@@ -1622,33 +1604,6 @@
     {
       "clearance": "None stated",
       "clearanceNote": "",
-      "company": "Netrolynx AI (for Cathcart Technology's client)",
-      "contract": "Contract",
-      "contractNote": "initial three-month contract, outside IR35, strong possibility of extension",
-      "id": "linkedin-4485946642",
-      "kind": "Frontend",
-      "location": "Bath or fully remote (UK)",
-      "mode": "Remote",
-      "modeNote": "\"can be performed on a hybrid or fully remote basis\" (hybrid option is Bath)",
-      "notes": "Analytics application for critical decision-making at a fast-growing software organisation; urgent, high-priority project.",
-      "posted": "2026-11-01",
-      "region": "remote-uk",
-      "salary": "£400–£450/day plus VAT",
-      "source": "LinkedIn",
-      "stack": "Angular, TypeScript, RxJS, HTML, CSS, REST APIs, automated testing, CI/CD",
-      "title": "Angular Developer",
-      "url": "https://uk.linkedin.com/jobs/view/4485946642",
-      "via": "Agency",
-      "foundVia": [
-        "Tavily"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-01T11:55:01.640Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
       "company": "BNY",
       "contract": "Not stated",
       "contractNote": "listed full-time",
@@ -2674,6 +2629,35 @@
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Netrolynx AI (for Cathcart Technology's client)",
+      "contract": "Contract",
+      "contractNote": "initial three-month contract, outside IR35, strong possibility of extension",
+      "id": "linkedin-4485946642",
+      "kind": "Frontend",
+      "location": "Bath or fully remote (UK)",
+      "mode": "Remote",
+      "modeNote": "\"can be performed on a hybrid or fully remote basis\" (hybrid option is Bath)",
+      "notes": "Analytics application for critical decision-making at a fast-growing software organisation; urgent, high-priority project.",
+      "posted": "2026-11-01",
+      "region": "remote-uk",
+      "salary": "£400–£450/day plus VAT",
+      "source": "LinkedIn",
+      "stack": "Angular, TypeScript, RxJS, HTML, CSS, REST APIs, automated testing, CI/CD",
+      "title": "Angular Developer",
+      "url": "https://uk.linkedin.com/jobs/view/4485946642",
+      "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-01T11:55:01.640Z",
+      "closedAt": "2026-11-03T10:08:26.091Z",
+      "closedReason": "Marked \"Not currently accepting applications\" on LinkedIn (reported by user)"
+    },
     {
       "id": "linkedin-4484928414",
       "title": "React Developer",
