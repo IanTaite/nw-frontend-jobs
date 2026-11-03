@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T14:26:21.576Z",
+  "updatedAt": "2026-11-03T16:27:48.092Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,16 +17,17 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 64,
-      "Reed": 10,
-      "Totaljobs": 22
+      "LinkedIn": 65,
+      "Reed": 11,
+      "Totaljobs": 23
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4484366320",
-    "totaljobs-108275522"
+    "linkedin-4486886370",
+    "reed-57452939",
+    "totaljobs-108277445"
   ],
   "jobs": [
     {
@@ -2645,12 +2646,12 @@
       "kind": "Adjacent",
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-angular-node-gcp-at-wave-works-4484366320",
-      "aiLevel": 4,
-      "aiNote": "Team \"uses Claude Code heavily across the build, including for UI work\"; you should be keen to work this way.",
-      "claudeMention": "\"The team uses Claude Code heavily across the build, including for UI work\"",
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 4,
+      "aiNote": "Team \"uses Claude Code heavily across the build, including for UI work\"; you should be keen to work this way.",
+      "claudeMention": "\"The team uses Claude Code heavily across the build, including for UI work\"",
       "firstSeen": "2026-11-03T14:26:21.576Z"
     },
     {
@@ -2673,12 +2674,96 @@
       "kind": "Adjacent",
       "source": "Totaljobs",
       "url": "https://www.totaljobs.com/job/genai-full-stack-engineer-managing-consultant/83zero-limited-job108275522",
-      "aiLevel": 0,
-      "aiNote": "Builds GenAI/LLM products (RAG, agents) but says nothing about using AI tools to code.",
       "foundVia": [
         "CWJobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "Builds GenAI/LLM products (RAG, agents) but says nothing about using AI tools to code.",
       "firstSeen": "2026-11-03T14:26:21.576Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Government project, two UI Developers needed. Same ad is also on Totaljobs/CWJobs (job 108277576).",
+      "id": "linkedin-4486886370",
+      "title": "UI Developer",
+      "company": "iO Associates (for an unnamed consultancy)",
+      "via": "Agency",
+      "location": "United Kingdom (fully remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Location: Fully Remote\"; LinkedIn location Greater Lincoln Area",
+      "contract": "Contract",
+      "contractNote": "3 months, start end of November, inside IR35",
+      "salary": "£425 - £550/day (inside IR35)",
+      "posted": "2026-11-03",
+      "stack": "React, Next.js, HTML wireframes, API mock frameworks",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4486886370",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: North West",
+        "Totaljobs search",
+        "CWJobs search"
+      ],
+      "firstSeen": "2026-11-03T16:27:48.092Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Electricity Distribution IT & Digital team; micro-frontend and design-system work. Asks for a relevant degree or tech certifications. Needs occasional travel to Bristol.",
+      "id": "reed-57452939",
+      "title": "UI Engineer",
+      "company": "Pontoon (for an unnamed utilities client)",
+      "via": "Agency",
+      "location": "United Kingdom (remote; Reed lists Warwickshire)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote (2 days every 3 months in Bristol)\"",
+      "contract": "Contract",
+      "contractNote": "6 months, extension options",
+      "salary": "£550/day (umbrella)",
+      "posted": "2026-10-13",
+      "stack": "Angular, TypeScript, JavaScript, HTML, CSS, automated testing, Figma/Storybook",
+      "kind": "Frontend",
+      "source": "Reed",
+      "url": "https://www.reed.co.uk/jobs/ui-engineer/57452939",
+      "aiLevel": 3,
+      "aiNote": "Lists \"Spec and AI driven development\" in the ideal candidate profile, with no more detail.",
+      "foundVia": [
+        "Reed search: remote"
+      ],
+      "firstSeen": "2026-11-03T16:27:48.092Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Healthcare (NHS) software, backend-heavy; wants clinical workflow and regulated medical-device software experience.",
+      "id": "totaljobs-108277445",
+      "title": "Full Stack Developer",
+      "company": "Experis (for an unnamed client)",
+      "via": "Agency",
+      "location": "United Kingdom (remote; listed as London)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"London - remote\"",
+      "contract": "Contract",
+      "contractNote": "12 months, inside IR35, umbrella only",
+      "salary": "£630/day (inside IR35)",
+      "posted": "2026-11-03",
+      "stack": "C#, .NET 10, Azure, REST APIs, TypeScript/JavaScript, NHS Digital Design System",
+      "kind": "Adjacent",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/full-stack-developer/experis-job108277445",
+      "aiLevel": 4,
+      "aiNote": "Requires \"Confident and experienced use of AI development agents and tools in daily workflow\".",
+      "foundVia": [
+        "Totaljobs search",
+        "CWJobs search"
+      ],
+      "firstSeen": "2026-11-03T16:27:48.092Z"
     }
   ],
   "closed": [
