@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T18:27:19.908Z",
+  "updatedAt": "2026-11-03T20:23:02.618Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -2726,11 +2726,11 @@
       "kind": "Frontend",
       "source": "Reed",
       "url": "https://www.reed.co.uk/jobs/ui-engineer/57452939",
-      "aiLevel": 3,
-      "aiNote": "Lists \"Spec and AI driven development\" in the ideal candidate profile, with no more detail.",
       "foundVia": [
         "Reed search: remote"
       ],
+      "aiLevel": 3,
+      "aiNote": "Lists \"Spec and AI driven development\" in the ideal candidate profile, with no more detail.",
       "firstSeen": "2026-11-03T16:27:48.092Z"
     },
     {
