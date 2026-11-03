@@ -1,6 +1,6 @@
 <a href="#results" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-surface focus:text-ink focus:px-3 focus:py-2 focus:rounded focus:shadow">Skip to results</a>
 <div class="min-h-screen bg-canvas text-ink">
-  <header class="bg-brand text-brand-fg border-b-4 border-accent-ring">
+  <header class="bg-brand text-brand-fg border-b-4 border-accent-ring" [attr.inert]="loading() ? '' : null">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
       <div class="flex flex-col-reverse gap-3 xl:flex-row xl:items-start xl:justify-between xl:gap-4">
         <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">Frontend Developer roles – North West England plus remote UK</h1>
@@ -15,9 +15,18 @@
     </div>
   </header>
 
-  <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+  <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6" [attr.aria-busy]="loading() || null">
     @if (loading()) {
-      <p role="status" class="text-ink-soft">Loading postings…</p>
+      <!-- Loading overlay: fades in after 150ms so fast loads don't flash it -->
+      <div id="results" class="fixed inset-0 z-50 grid place-items-center bg-canvas/80 p-4 backdrop-blur-sm transition-opacity delay-150 duration-200 starting:opacity-0">
+        <div role="status" class="flex items-center gap-3 rounded-lg border border-line bg-surface px-6 py-4 shadow-lg">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="size-6 text-accent motion-safe:animate-spin">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" class="opacity-25" />
+            <path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <span class="font-medium text-ink-soft">Loading postings…</span>
+        </div>
+      </div>
     } @else if (error()) {
       <div role="alert" class="rounded-lg border border-danger-line bg-danger-bg p-4 text-danger-fg">
         {{ error() }} <button type="button" (click)="load()" class="ml-2 underline font-medium">Try again</button>
