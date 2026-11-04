@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-03T20:23:02.618Z",
+  "updatedAt": "2026-11-04T08:25:56.364Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,14 +17,17 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 65,
+      "LinkedIn": 67,
       "Reed": 11,
       "Totaljobs": 23
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4480341891",
+    "linkedin-4485728981"
+  ],
   "jobs": [
     {
       "clearance": "None stated",
@@ -410,7 +413,8 @@
       "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-pertemps-network-group-4478665732",
       "via": "Agency",
       "foundVia": [
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 3,
       "aiNote": "\"Leveraging AI-powered development workflows\"; wants strong understanding of modern AI development workflows",
@@ -818,7 +822,8 @@
       "url": "https://uk.linkedin.com/jobs/view/4478512116",
       "via": "Agency",
       "foundVia": [
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 0,
       "aiNote": "Builds AI features into a product (streaming AI responses); nothing on using AI coding tools",
@@ -2760,6 +2765,62 @@
       "aiLevel": 4,
       "aiNote": "Requires \"Confident and experienced use of AI development agents and tools in daily workflow\".",
       "firstSeen": "2026-11-03T16:27:48.092Z"
+    },
+    {
+      "id": "linkedin-4480341891",
+      "title": "Senior Software Engineer, Web Development – AI",
+      "company": "Roku",
+      "location": "Manchester",
+      "mode": "Hybrid",
+      "modeNote": "Office Monday to Thursday, Fridays generally flexible for remote",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-16",
+      "source": "LinkedIn",
+      "stack": "JavaScript/TypeScript, React, Next.js, Angular, Node.js, Express, AWS/GCP, containers, LLM/RAG",
+      "via": "Direct",
+      "kind": "Adjacent",
+      "region": "north-west",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Full-stack web role building AI-powered features into web apps and enterprise tools.",
+      "url": "https://www.linkedin.com/jobs/view/4480341891",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 3,
+      "aiNote": "Expects \"AI-assisted and agentic development workflows in day-to-day engineering\"; values Claude Code/Cursor, MCP, agent frameworks",
+      "claudeMention": "Fluency across the agentic engineering toolchain — coding harnesses like Claude Code or Cursor",
+      "firstSeen": "2026-11-04T08:25:56.364Z"
+    },
+    {
+      "id": "linkedin-4485728981",
+      "title": "UI Front End Lead Engineer – AEM & Generative AI (Claude)",
+      "company": "LanceSoft UK (client not named)",
+      "location": "UK (London or Remote)",
+      "mode": "Remote",
+      "modeNote": "Location: UK (London or Remote)",
+      "contract": "Contract",
+      "contractNote": "",
+      "salary": "Not stated",
+      "posted": "2026-11-03",
+      "source": "LinkedIn",
+      "stack": "React, Next.js, TypeScript, Adobe Experience Manager, GraphQL, Jest, Playwright/Cypress, AWS",
+      "via": "Agency",
+      "kind": "Frontend",
+      "region": "remote-uk",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Lead UI engineer, 10–15+ years, AEM integration; financial services.",
+      "url": "https://www.linkedin.com/jobs/view/4485728981",
+      "foundVia": [
+        "Tavily"
+      ],
+      "aiLevel": 3,
+      "aiNote": "Practical Claude/Claude Code use to speed UI work and define AI-assisted workflows; AI is about 10% of the role",
+      "claudeMention": "Demonstrate practical experience with Anthropic Claude and Claude Code for AI-assisted software engineering",
+      "firstSeen": "2026-11-04T08:25:56.364Z"
     }
   ],
   "closed": [
