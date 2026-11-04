@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-04T12:18:04.380Z",
+  "updatedAt": "2026-11-04T14:24:16.847Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,15 +17,16 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 67,
-      "Reed": 11,
+      "LinkedIn": 68,
+      "Reed": 12,
       "Totaljobs": 23
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4487251627"
+    "reed-57527679",
+    "linkedin-4481748870"
   ],
   "jobs": [
     {
@@ -2820,6 +2821,62 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T12:18:04.380Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Corriculo Ltd (for an unnamed client)",
+      "contract": "Permanent",
+      "contractNote": "Permanent, full-time",
+      "id": "reed-57527679",
+      "kind": "Frontend",
+      "location": "Remote (UK); Reed lists Manchester, Totaljobs lists Bristol",
+      "mode": "Remote",
+      "modeNote": "remote-first business with a fully remote UK workforce",
+      "notes": "Financial-sector product business; React or Angular with strong TypeScript; Kubernetes/AWS/Terraform a bonus. Also listed on Totaljobs/CWJobs (totaljobs-108282713).",
+      "posted": "2026-11-04",
+      "region": "remote-uk",
+      "salary": "£65,000–£75,000",
+      "source": "Reed",
+      "stack": "React or Angular, TypeScript (Kubernetes, AWS, Terraform a bonus)",
+      "title": "Senior Front End Software Developer, React, TypeScript, Remote",
+      "url": "https://www.reed.co.uk/jobs/senior-front-end-software-developer-react-typescript-remote-cor7738/57527679",
+      "via": "Agency",
+      "foundVia": [
+        "Reed search",
+        "Totaljobs search",
+        "CWJobs search"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-04T14:24:16.847Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Canopius Group",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "id": "linkedin-4481748870",
+      "kind": "Adjacent",
+      "location": "Manchester",
+      "mode": "Hybrid",
+      "modeNote": "2-3 days per week from our Manchester office",
+      "notes": "Full stack with Python; specialty (re)insurer. React/Next.js front end with Python and .NET services.",
+      "posted": "2026-10-20",
+      "region": "north-west",
+      "salary": "Not stated",
+      "source": "LinkedIn",
+      "stack": "React, Next.js, Tailwind CSS, JavaScript, Python, .NET/C#, SQL Server, Azure",
+      "title": "Full Stack Developer",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-at-canopius-group-4481748870",
+      "via": "Direct",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-04T14:24:16.847Z"
     }
   ],
   "closed": [
