@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-04T08:25:56.364Z",
+  "updatedAt": "2026-11-04T12:18:04.380Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -25,8 +25,7 @@
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4480341891",
-    "linkedin-4485728981"
+    "linkedin-4487251627"
   ],
   "jobs": [
     {
@@ -2412,33 +2411,6 @@
     {
       "clearance": "None stated",
       "clearanceNote": "",
-      "notes": "Airport operations software.",
-      "via": "Direct",
-      "source": "LinkedIn",
-      "posted": "2026-10-21",
-      "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-at-aerocloud-4478986446",
-      "id": "linkedin-4478986446",
-      "title": "Full Stack Developer",
-      "company": "AeroCloud",
-      "location": "Stockport",
-      "region": "north-west",
-      "mode": "Not stated",
-      "modeNote": "",
-      "contract": "Not stated",
-      "contractNote": "listed full-time",
-      "salary": "Competitive (not stated)",
-      "stack": "TypeScript, React, Storybook, Node.js, MongoDB Atlas, AWS",
-      "kind": "Adjacent",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-03T08:32:48.386Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
       "notes": "Posting text gives a closing date of 18 September 2026, which has passed, though the listing is still live.",
       "via": "Direct",
       "source": "LinkedIn",
@@ -2821,9 +2793,65 @@
       "aiNote": "Practical Claude/Claude Code use to speed UI work and define AI-assisted workflows; AI is about 10% of the role",
       "claudeMention": "Demonstrate practical experience with Anthropic Claude and Claude Code for AI-assisted software engineering",
       "firstSeen": "2026-11-04T08:25:56.364Z"
+    },
+    {
+      "id": "linkedin-4487251627",
+      "title": "Full Stack Engineer",
+      "company": "Annapurna (for an unnamed digital agency)",
+      "via": "Agency",
+      "location": "Manchester City Centre",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid - 2 days per week in the office\"",
+      "contract": "Permanent",
+      "contractNote": "Employment type: Permanent",
+      "salary": "Up to £45,000",
+      "posted": "2026-11-04",
+      "stack": "React, JavaScript, TypeScript, C#, .NET / .NET Core, ASP.NET MVC & Web API, SQL Server, Umbraco, Kentico, HTML, CSS, SASS",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-at-annapurna-4487251627",
+      "notes": "Mid-level full-stack role (approx. 2-5 years) at a digital agency; React front end with .NET back end and CMS work. Asks for a relevant degree, ideally 2:1.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-04T12:18:04.380Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Airport operations software.",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "posted": "2026-10-21",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-at-aerocloud-4478986446",
+      "id": "linkedin-4478986446",
+      "title": "Full Stack Developer",
+      "company": "AeroCloud",
+      "location": "Stockport",
+      "region": "north-west",
+      "mode": "Not stated",
+      "modeNote": "",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Competitive (not stated)",
+      "stack": "TypeScript, React, Storybook, Node.js, MongoDB Atlas, AWS",
+      "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-03T08:32:48.386Z",
+      "closedAt": "2026-11-04T12:18:04.380Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
