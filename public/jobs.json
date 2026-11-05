@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-05T12:26:47.510Z",
+  "updatedAt": "2026-11-05T13:55:36.420Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 81,
+      "LinkedIn": 84,
       "Reed": 12,
       "Totaljobs": 28
     },
@@ -25,8 +25,9 @@
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "linkedin-4487728797",
-    "linkedin-4486700446"
+    "linkedin-4478398571",
+    "linkedin-4487239157",
+    "linkedin-4484987883"
   ],
   "jobs": [
     {
@@ -3471,6 +3472,91 @@
         "LinkedIn search: Warrington"
       ],
       "firstSeen": "2026-11-05T12:26:47.510Z"
+    },
+    {
+      "id": "linkedin-4478398571",
+      "title": "Senior Full Stack Engineer",
+      "company": "Informed Solutions",
+      "location": "Altrincham",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid working arrangements\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-at-informed-solutions-4478398571",
+      "via": "Direct",
+      "kind": "Adjacent",
+      "stack": ".NET, Java or Python, Node.js, modern JavaScript libraries, AWS, Azure",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "posted": "2026-10-22",
+      "notes": "Public-sector #tech4good consultancy; full-stack role, frontend is 'modern JavaScript libraries'. Also on Totaljobs (job108182508).",
+      "foundVia": [
+        "browser:totaljobs",
+        "LinkedIn search"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-05T13:55:36.420Z"
+    },
+    {
+      "id": "linkedin-4487239157",
+      "title": "Software Engineer",
+      "company": "Candour (client not named)",
+      "location": "Liverpool",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Work Pattern: Hybrid\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£40,000–£60,000",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/software-engineer-at-candour-4487239157",
+      "via": "Agency",
+      "kind": "Adjacent",
+      "stack": "Python, JavaScript, TypeScript, React, SQL, CI/CD",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "posted": "2026-11-04",
+      "notes": "Python-led full-stack with React/TypeScript for a tech-for-good business. Also on Totaljobs (job108161548).",
+      "foundVia": [
+        "browser:totaljobs",
+        "LinkedIn search"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-05T13:55:36.420Z"
+    },
+    {
+      "id": "linkedin-4484987883",
+      "title": "Senior Full-Stack Engineer",
+      "company": "Lokalise",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"full-time, remote position\"; must reside in the UK, Latvia or Spain",
+      "contract": "Permanent",
+      "contractNote": "listed full-time; \"we do not engage on a B2B or contractor basis\"",
+      "salary": "Not stated",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-engineer-at-lokalise-4484987883",
+      "via": "Direct",
+      "kind": "Adjacent",
+      "stack": "React, TanStack Router, TypeScript, Node.js, Fastify, Drizzle, PostgreSQL, AWS, Vitest, Playwright",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "posted": "2026-10-30",
+      "notes": "Localisation platform; product-engineering role. Also on Indeed (jk 48a3944d1b0ce451).",
+      "foundVia": [
+        "browser:indeed",
+        "LinkedIn search"
+      ],
+      "aiLevel": 4,
+      "aiNote": "\"AI-native engineering culture\"; \"use AI throughout the development process\" and champion AI-native engineering across the SDLC",
+      "claudeMention": "\"Proficiency with AI-assisted development tools (Claude Code, Cursor, Codex, or similar)\"",
+      "firstSeen": "2026-11-05T13:55:36.420Z"
     }
   ],
   "closed": [
