@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-04T18:27:45.920Z",
+  "updatedAt": "2026-11-05T08:43:46.053Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,7 +17,7 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 77,
+      "LinkedIn": 79,
       "Reed": 12,
       "Totaljobs": 28
     },
@@ -25,13 +25,9 @@
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
   "newSinceLastRun": [
-    "totaljobs-108087876",
-    "linkedin-4472739735",
-    "linkedin-4479403485",
-    "linkedin-4483895543",
-    "linkedin-4480737630",
-    "linkedin-4486049400",
-    "linkedin-4485125860"
+    "linkedin-4487724365",
+    "linkedin-4485098552",
+    "linkedin-4486397704"
   ],
   "jobs": [
     {
@@ -143,7 +139,8 @@
       "foundVia": [
         "Tavily",
         "LinkedIn search: Manchester",
-        "LinkedIn search: Warrington"
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -456,7 +453,8 @@
       "via": "Direct",
       "foundVia": [
         "LinkedIn search: Manchester",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Preston"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -565,7 +563,8 @@
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: Liverpool",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 4,
       "aiNote": "\"Engineer through Claude Code day to day\", building your own skills and subagents; \"genuinely AI-native\", owning every line",
@@ -685,7 +684,8 @@
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -713,7 +713,8 @@
       "via": "Direct",
       "foundVia": [
         "LinkedIn search: Manchester",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 3,
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
@@ -1001,7 +1002,8 @@
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: Preston",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -2079,7 +2081,8 @@
         "LinkedIn search: Manchester",
         "LinkedIn search: Liverpool",
         "LinkedIn search: Warrington",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: remote UK"
       ],
       "aiLevel": 0,
       "aiNote": "No mention of AI tools or AI usage in the posting.",
@@ -2477,7 +2480,8 @@
       "stack": "React, TypeScript, Python (FastAPI/Django)",
       "kind": "Adjacent",
       "foundVia": [
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 3,
       "aiNote": "Asks for \"practical experience applying best practices when working with AI coding assistants\".",
@@ -2559,7 +2563,8 @@
       "stack": "WordPress, Next.js, React, PHP, JavaScript, SQL",
       "kind": "Adjacent",
       "foundVia": [
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 3,
       "aiNote": "Role helps shape \"how AI, automation and agentic workflows are rolled out across the agency\".",
@@ -2896,7 +2901,8 @@
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: Preston",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -2961,44 +2967,11 @@
       "firstSeen": "2026-11-04T14:24:16.847Z"
     },
     {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "contractNote": "",
-      "modeNote": "\"Hybrid 50% home/office based\"",
-      "notes": "Digital Team. Closing date 18 November 2026. 28 days leave plus bank holidays, up to 14% matched pension, private medical.",
-      "id": "linkedin-4487272835",
-      "title": "Senior Front End Engineer",
-      "company": "Royal London",
-      "location": "Alderley Park (Manchester area)",
-      "region": "north-west",
-      "mode": "Hybrid",
-      "contract": "Permanent",
-      "salary": "Not stated",
-      "stack": "Angular, TypeScript, JavaScript, automated testing",
-      "kind": "Frontend",
-      "via": "Direct",
-      "source": "LinkedIn",
-      "posted": "2026-11-04",
-      "url": "https://uk.linkedin.com/jobs/view/senior-front-end-engineer-at-royal-london-4487272835",
-      "foundVia": [
-        "LinkedIn search: Liverpool",
-        "LinkedIn search: remote UK",
-        "LinkedIn search: Warrington",
-        "LinkedIn search: Manchester",
-        "LinkedIn search: Preston"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-04T16:23:57.803Z"
-    },
-    {
       "clearance": "SC",
       "clearanceNote": "\"Active SC Clearance (mandatory)\"",
       "contractNote": "",
       "modeNote": "\"Occasional travel within the UK as required by the client\"",
       "notes": "At least five years of commercial web development. Works alongside Pega delivery teams.",
-      "aiLevel": 0,
-      "aiNote": "",
       "id": "linkedin-4486399189",
       "title": "React Developer (SC cleared)",
       "company": "Adroit People Limited (UK)",
@@ -3016,6 +2989,8 @@
       "foundVia": [
         "LinkedIn search: Preston"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-04T16:23:57.803Z"
     },
     {
@@ -3024,8 +2999,6 @@
       "contractNote": "",
       "modeNote": "\"Mostly remote, with a visit to the Manchester or London office once every two weeks\"",
       "notes": "Hands-on technical lead for .NET, React and Azure applications.",
-      "aiLevel": 0,
-      "aiNote": "",
       "id": "linkedin-4486189338",
       "title": "Lead Full Stack Developer",
       "company": "TrueNorth®",
@@ -3044,6 +3017,8 @@
         "LinkedIn search: Warrington",
         "LinkedIn search: Manchester"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-04T16:23:57.803Z"
     },
     {
@@ -3214,8 +3189,6 @@
       "contractNote": "listed full-time",
       "modeNote": "\"You can work remotely from anywhere in the UK or on-site in our London office\"",
       "notes": "Brand platform company. Asks for 3–5 years across frontend and backend. Home office setup budget.",
-      "aiLevel": 0,
-      "aiNote": "",
       "id": "linkedin-4479403485",
       "title": "Creative Developer",
       "company": "Frontify",
@@ -3233,6 +3206,8 @@
       "foundVia": [
         "LinkedIn search: Preston"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -3241,8 +3216,6 @@
       "contractNote": "",
       "modeNote": "",
       "notes": "Retailer in-house team building and maintaining web applications. 38.75 hours a week.",
-      "aiLevel": 0,
-      "aiNote": "",
       "id": "linkedin-4483895543",
       "title": "Full Stack Developer",
       "company": "Matalan",
@@ -3261,8 +3234,11 @@
         "LinkedIn search: Liverpool",
         "LinkedIn search: Warrington",
         "LinkedIn search: Manchester",
-        "Tavily"
+        "Tavily",
+        "LinkedIn search: Preston"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -3271,8 +3247,6 @@
       "contractNote": "listed full-time",
       "modeNote": "\"Hybrid and flexible working\"",
       "notes": "Software and cyber security consultancy; client-facing delivery across several projects.",
-      "aiLevel": 3,
-      "aiNote": "\"using AI tools to work faster while you stay in charge of every decision\"; \"We don't hire vibe coders\".",
       "id": "linkedin-4480737630",
       "title": "Senior Software Engineer",
       "company": "sprintworks (posted by Manchester Digital)",
@@ -3290,6 +3264,8 @@
       "foundVia": [
         "LinkedIn search: Manchester"
       ],
+      "aiLevel": 3,
+      "aiNote": "\"using AI tools to work faster while you stay in charge of every decision\"; \"We don't hire vibe coders\".",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -3298,8 +3274,6 @@
       "contractNote": "listed full-time",
       "modeNote": "",
       "notes": "Mid-level to senior (3–8 years). Builds the AI Quality product for contact centres.",
-      "aiLevel": 0,
-      "aiNote": "",
       "id": "linkedin-4486049400",
       "title": "Software Engineer (AI Quality)",
       "company": "ConnexAI",
@@ -3317,6 +3291,8 @@
       "foundVia": [
         "LinkedIn search: Warrington"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -3345,9 +3321,127 @@
         "LinkedIn search: Liverpool"
       ],
       "firstSeen": "2026-11-04T18:27:45.920Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "",
+      "modeNote": "\"Hybrid 50% home/office based\"",
+      "notes": "Digital Team at a mutual life, pensions and investment company. Closing date 18 November 2026.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "id": "linkedin-4487724365",
+      "title": "Senior Front End Engineer",
+      "company": "Royal London",
+      "location": "Alderley Park, Cheshire",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "contract": "Permanent",
+      "salary": "Not stated",
+      "stack": "Angular, TypeScript, JavaScript, automated testing",
+      "kind": "Frontend",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "posted": "2026-11-05",
+      "url": "https://uk.linkedin.com/jobs/view/senior-front-end-engineer-at-royal-london-4487724365",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Warrington"
+      ],
+      "firstSeen": "2026-11-05T08:43:46.053Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "listed full-time",
+      "modeNote": "\"Full time, in person at our Manchester office\"",
+      "notes": "Bootstrapped proxy infrastructure company; owns website, dashboard, apps and browser extensions. \"Any experience level welcome\".",
+      "aiLevel": 4,
+      "aiNote": "\"AI-native. You use AI tools to multiply your productivity and ship faster.\"",
+      "id": "linkedin-4485098552",
+      "title": "Full Stack Product Engineer",
+      "company": "Byteful",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Office",
+      "contract": "Not stated",
+      "salary": "Not stated",
+      "stack": "Next.js, React, UIkit, JavaScript, Tailwind CSS, ShadCN, Python, PostgreSQL, Figma",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "posted": "2026-11-04",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-product-engineer-at-byteful-4485098552",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-05T08:43:46.053Z"
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "",
+      "modeNote": "\"Office-based, with no hybrid working arrangement available\"",
+      "notes": "Mobile Career App for students; the role also builds the app's AI features (agentic assistants, job matching).",
+      "aiLevel": 0,
+      "aiNote": "",
+      "id": "linkedin-4486397704",
+      "title": "App Developer (UKMC Career App)",
+      "company": "UK Management College",
+      "location": "Manchester (College House, Abarna or Salford campuses)",
+      "region": "north-west",
+      "mode": "Office",
+      "contract": "Permanent",
+      "salary": "£32,000–£35,000",
+      "stack": "React Native, TypeScript, Python, Django",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "posted": "2026-11-04",
+      "url": "https://uk.linkedin.com/jobs/view/app-developer-at-uk-management-college-4486397704",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "firstSeen": "2026-11-05T08:43:46.053Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "",
+      "modeNote": "\"Hybrid 50% home/office based\"",
+      "notes": "Digital Team. Closing date 18 November 2026. 28 days leave plus bank holidays, up to 14% matched pension, private medical.",
+      "id": "linkedin-4487272835",
+      "title": "Senior Front End Engineer",
+      "company": "Royal London",
+      "location": "Alderley Park (Manchester area)",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "contract": "Permanent",
+      "salary": "Not stated",
+      "stack": "Angular, TypeScript, JavaScript, automated testing",
+      "kind": "Frontend",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "posted": "2026-11-04",
+      "url": "https://uk.linkedin.com/jobs/view/senior-front-end-engineer-at-royal-london-4487272835",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Preston"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-04T16:23:57.803Z",
+      "closedAt": "2026-11-05T08:43:46.053Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
