@@ -14,8 +14,10 @@
       if (t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
     } catch (e) {}
   </script>
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
   <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
