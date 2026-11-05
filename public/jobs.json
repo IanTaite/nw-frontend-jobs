@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-05T18:25:33.886Z",
+  "updatedAt": "2026-11-05T20:24:33.107Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,19 +19,23 @@
       "Technojobs"
     ],
     "counts": {
-      "LinkedIn": 94,
-      "Reed": 15,
+      "LinkedIn": 99,
+      "Reed": 18,
       "Totaljobs": 28
     },
     "verifiedOn": "2026-11-05",
-    "notes": "Scheduled refresh 16:20 UK. Reed OK. Totaljobs/CWJobs curl returned no __PRELOADED_STATE__ (blocked from box). LinkedIn guest search: 1×429 on Warrington start=25 (retried once then skipped that page). LinkedIn detail fetches: 0×429. Tavily used for NW/remote discovery. Indeed/Adzuna/Jobserve/Technojobs remain blocked from box. 28 Totaljobs/other URLs timed out on verify and were kept open."
+    "notes": "Scheduled 20:13 GMT refresh, 5 Nov 2026. Reed searched both scopes (253 distinct results); LinkedIn public guest searches found 316 distinct IDs. Tavily used for NW and remote discovery. Totaljobs and CWJobs search requests timed out in both scopes; Tavily extract also failed. Verification kept 28 uncheckable Totaljobs postings. LinkedIn: 0 search/detail 429s; 2 verification 429s on separate postings, each retried once after 20 seconds successfully. All LinkedIn requests sequential, 3–5 second gaps. Indeed/Adzuna/Jobserve/Technojobs remain previously blocked. MacBook offline; box network used."
   },
   "newSinceLastRun": [
-    "linkedin-4486157409",
-    "linkedin-4484354667",
-    "linkedin-4484868072",
-    "linkedin-4485851558",
-    "linkedin-4477895415"
+    "reed-57502161",
+    "reed-57465746",
+    "reed-57474363",
+    "linkedin-4486547042",
+    "linkedin-4480692163",
+    "linkedin-4477165166",
+    "linkedin-4463990625",
+    "linkedin-4476387989",
+    "linkedin-4485841089"
   ],
   "jobs": [
     {
@@ -461,34 +465,8 @@
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: Liverpool",
-        "LinkedIn search: Preston"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-10-30T13:10:52Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "Computer Futures (client not named)",
-      "contract": "Contract",
-      "contractNote": "contract",
-      "id": "linkedin-4476375514",
-      "kind": "Adjacent",
-      "location": "Manchester",
-      "mode": "Hybrid",
-      "modeNote": "2 days a week onsite",
-      "notes": "Java is essential. Reposted on Totaljobs on 29 Oct.",
-      "posted": "2026-10-06",
-      "region": "north-west",
-      "salary": "£557/day",
-      "source": "LinkedIn",
-      "stack": "React, TypeScript, Java, Spring Boot",
-      "title": "Full Stack Engineer – React & Java",
-      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-react-java-at-computer-futures-4476375514",
-      "via": "Agency",
-      "foundVia": [
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -667,7 +645,8 @@
         "LinkedIn search: Manchester",
         "LinkedIn search: Preston",
         "LinkedIn search: remote UK",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 2,
       "aiNote": "Asks for \"ability to leverage AI workflows in an efficient manner to assist with development\"",
@@ -3259,7 +3238,8 @@
       "posted": "2026-10-20",
       "url": "https://uk.linkedin.com/jobs/view/senior-software-engineer-at-manchester-digital-4480737630",
       "foundVia": [
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 3,
       "aiNote": "\"using AI tools to work faster while you stay in charge of every decision\"; \"We don't hire vibe coders\".",
@@ -3429,7 +3409,8 @@
         "LinkedIn search: Preston",
         "LinkedIn search: remote UK",
         "LinkedIn search: Manchester",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -3692,7 +3673,8 @@
         "LinkedIn search: remote UK",
         "LinkedIn search: Warrington",
         "LinkedIn search: Liverpool",
-        "LinkedIn search: Manchester"
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Preston"
       ],
       "aiLevel": 5,
       "aiNote": "\"Being genuinely tuned into AI tooling is core to the role… work AI-natively as a default\"; team AI infrastructure/plugins/CI",
@@ -3858,13 +3840,14 @@
       "stack": "React, TypeScript, Node.js, AWS serverless, Terraform, GraphQL/REST",
       "kind": "Adjacent",
       "notes": "Long-term central government programme.",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-05T18:25:33.886Z"
     },
     {
@@ -3887,12 +3870,12 @@
       "stack": "React, Node.js, JavaScript, REST APIs, SQL/NoSQL",
       "kind": "Adjacent",
       "notes": "Two full-stack hires for a cyber security company.",
-      "aiLevel": 3,
-      "aiNote": "\"AI Experience (Essential)\": practical use of AI-assisted coding tools for coding, debugging, testing and docs",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Preston"
       ],
+      "aiLevel": 3,
+      "aiNote": "\"AI Experience (Essential)\": practical use of AI-assisted coding tools for coding, debugging, testing and docs",
       "firstSeen": "2026-11-05T18:25:33.886Z"
     },
     {
@@ -3915,14 +3898,14 @@
       "stack": "C#, .NET 10, Angular, Azure, microservices, GraphQL, Blazor",
       "kind": "Adjacent",
       "notes": "Front-end, back-end or full-stack backgrounds; Angular needed for front-end/full-stack.",
-      "aiLevel": 2,
-      "aiNote": "Says the team explores \"emerging technologies, including AI, to improve the way we build and deliver solutions\"",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: Preston",
         "LinkedIn search: Warrington"
       ],
+      "aiLevel": 2,
+      "aiNote": "Says the team explores \"emerging technologies, including AI, to improve the way we build and deliver solutions\"",
       "firstSeen": "2026-11-05T18:25:33.886Z"
     },
     {
@@ -3945,17 +3928,293 @@
       "stack": "React, TypeScript, MobX, GraphQL/Hasura, Python, PostgreSQL, AWS",
       "kind": "Adjacent",
       "notes": "Construction takeoff SaaS; 4+ years and a CS degree asked for.",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-05T18:25:33.886Z"
+    },
+    {
+      "id": "reed-57502161",
+      "title": "Learning Technology Developer",
+      "company": "BIMM University",
+      "via": "Direct",
+      "location": "Manchester (one of seven available UK campuses)",
+      "region": "north-west",
+      "mode": "Not stated",
+      "modeNote": "\"The postholder can be based at any one of BIMM University’s seven UK campuses\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£ 39,000 - £ 50,440 per annum",
+      "posted": "2026-10-28",
+      "stack": "C#/.NET, TypeScript, React, relational databases, APIs",
+      "kind": "Adjacent",
+      "source": "Reed",
+      "url": "https://www.reed.co.uk/jobs/learning-technology-developer/57502161",
+      "notes": "Full-stack web applications and digital learning tools; Manchester campus available.",
+      "clearance": "None stated",
+      "clearanceNote": "No national security clearance stated; basic DBS disclosure required, enhanced check may apply.",
+      "aiLevel": 3,
+      "aiNote": "\"Experience using AI-assisted development tools thoughtfully and responsibly, with a focus on quality and accountability.\"",
+      "foundVia": [
+        "Reed search"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "reed-57465746",
+      "title": "Software Engineer",
+      "company": "Oliver James (client: a SaaS technology business, not named)",
+      "via": "Agency",
+      "location": "Manchester Exchange Quay, Salford",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"hybrid working 2 days on site\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£ 60,000 per annum",
+      "posted": "2026-10-16",
+      "stack": "React, TypeScript, Adobe ColdFusion/CFML, MySQL, REST APIs, AWS, Storybook",
+      "kind": "Adjacent",
+      "source": "Reed",
+      "url": "https://www.reed.co.uk/jobs/software-engineer/57465746",
+      "notes": "Genuine full-stack role; ColdFusion experience not required. AI/LLM integrations concern the product, not stated development tooling.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "reed-57474363",
+      "title": "Full Stack Data Product Engineer",
+      "company": "SF Partners (client: a global supply chain organisation, not named)",
+      "via": "Agency",
+      "location": "Warrington",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"only one day a week in office requirement\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£ 70,000 - £ 80,000 per annum",
+      "posted": "2026-10-19",
+      "stack": "React, TypeScript, Microsoft Fabric, APIs, Git, CI/CD",
+      "kind": "Adjacent",
+      "source": "Reed",
+      "url": "https://www.reed.co.uk/jobs/full-stack-data-product-engineer/57474363",
+      "notes": "Builds user-facing data applications, reusable components and workflows. AI capabilities describe the product, not developer tooling.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "linkedin-4486547042",
+      "title": "Frontend/Fullstack React Engineer with .NET knowledge",
+      "company": "Trimble Inc.",
+      "via": "Direct",
+      "location": "UK, Remote",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Location: UK, Remote\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-11-04",
+      "stack": "React, TypeScript, Vite, MUI X DataGrid, Redux Toolkit, Playwright, axe-core, .NET/C#, OData",
+      "kind": "Frontend",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/frontend-fullstack-react-engineer-with-net-knowledge-4486547042",
+      "notes": "Greenfield transportation dispatch UI; weekly production demos.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 3,
+      "aiNote": "\"daily development tooling, not optional Cursor / AI assistants\"; AI tools accelerate coding, test scaffolding and refactoring.",
+      "foundVia": [
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "linkedin-4480692163",
+      "title": "Product Engineer (Activate / Engagement)",
+      "company": "Much Better Adventures",
+      "via": "Direct",
+      "location": "Remote (UK-based)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote and flexible working\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£65,000–£80,000",
+      "posted": "2026-10-23",
+      "stack": "React, TypeScript, Python, Django; Contentful",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/product-engineer-activate-engagement-4480692163",
+      "notes": "Two Product Engineers across Activate and Engagement squads.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 4,
+      "aiNote": "\"An AI-first way of working\"; \"Hands-on experience building and orchestrating agentic workflows.\"",
+      "foundVia": [
         "LinkedIn search: Preston"
       ],
-      "firstSeen": "2026-11-05T18:25:33.886Z"
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "linkedin-4477165166",
+      "title": "Senior Software Engineer",
+      "company": "Northrop Grumman UK",
+      "via": "Direct",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Manchester – hybrid\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£44,000–£66,000 DOE",
+      "posted": "2026-10-08",
+      "stack": "Java, Spring Boot, Python or JavaScript/TypeScript, React; AWS, Docker, Kubernetes",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/senior-software-engineer-4477165166",
+      "notes": "",
+      "clearance": "Clearance required – level not stated",
+      "clearanceNote": "\"You must currently hold the highest level of UK Government clearance\"; must gain and maintain it.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "linkedin-4463990625",
+      "title": "Full Stack Developer | Public Sector - eSC/eDV Required",
+      "company": "IBM",
+      "via": "Direct",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Not stated",
+      "modeNote": "",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-25",
+      "stack": "JavaScript/TypeScript, React, Node.js, Java, Spring Boot, Python, AWS/Azure, SQL/NoSQL",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-public-sector-esc-edv-required-4463990625",
+      "notes": "",
+      "clearance": "eSC / eDV – eligible to obtain",
+      "clearanceNote": "BPSS screening; depending on project, eligibility to obtain/maintain eSC and/or eDV; nationality/residency criteria may apply.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "linkedin-4476387989",
+      "title": ".NET Full Stack Engineer – Consultant/Senior Consultant – AI and Digital Factory",
+      "company": "Capgemini Invent",
+      "via": "Direct",
+      "location": "Manchester (London/Glasgow also available)",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"We embed hybrid working in all that we do\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-10-06",
+      "stack": "ASP.NET Core, C#, React, Angular, Blazor/Razor, SQL Server, AWS/Azure, CI/CD",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/net-full-stack-engineer-consultant-senior-consultant-ai-and-digital-factory-4476387989",
+      "notes": "Manchester office base available; must be fully flexible about assignment location, including periods away from home at short notice.",
+      "clearance": "Eligible to obtain",
+      "clearanceNote": "\"hold active SC (Security Check) clearance, or be eligible to gain this level of clearance\"",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
+    },
+    {
+      "id": "linkedin-4485841089",
+      "title": "Lead Full Stack Software Engineer",
+      "company": "Tenth Revolution Group (client: an AI-driven telephony technology company, not named)",
+      "via": "Agency",
+      "location": "Manchester Area (remote)",
+      "region": "north-west",
+      "mode": "Remote",
+      "modeNote": "\"Frontend / Cloud / AI-Focused/ Remote\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Up to £110,000",
+      "posted": "2026-11-05",
+      "stack": "React, Python, AWS, APIs, microservices; Kafka, Docker, Kubernetes, Terraform",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/lead-full-stack-software-engineer-4485841089",
+      "notes": "",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 2,
+      "aiNote": "\"Interest in working with modern tools and AI-assisted development\"; AI-powered tool experience is nice to have.",
+      "foundVia": [
+        "LinkedIn search: Warrington"
+      ],
+      "firstSeen": "2026-11-05T20:24:33.107Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Computer Futures (client not named)",
+      "contract": "Contract",
+      "contractNote": "contract",
+      "id": "linkedin-4476375514",
+      "kind": "Adjacent",
+      "location": "Manchester",
+      "mode": "Hybrid",
+      "modeNote": "2 days a week onsite",
+      "notes": "Java is essential. Reposted on Totaljobs on 29 Oct.",
+      "posted": "2026-10-06",
+      "region": "north-west",
+      "salary": "£557/day",
+      "source": "LinkedIn",
+      "stack": "React, TypeScript, Java, Spring Boot",
+      "title": "Full Stack Engineer – React & Java",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-react-java-at-computer-futures-4476375514",
+      "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z",
+      "closedAt": "2026-11-05T20:24:33.107Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
