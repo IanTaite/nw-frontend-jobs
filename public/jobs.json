@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-05T16:28:25.844Z",
+  "updatedAt": "2026-11-05T18:25:33.886Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -19,7 +19,7 @@
       "Technojobs"
     ],
     "counts": {
-      "LinkedIn": 89,
+      "LinkedIn": 94,
       "Reed": 15,
       "Totaljobs": 28
     },
@@ -27,15 +27,11 @@
     "notes": "Scheduled refresh 16:20 UK. Reed OK. Totaljobs/CWJobs curl returned no __PRELOADED_STATE__ (blocked from box). LinkedIn guest search: 1×429 on Warrington start=25 (retried once then skipped that page). LinkedIn detail fetches: 0×429. Tavily used for NW/remote discovery. Indeed/Adzuna/Jobserve/Technojobs remain blocked from box. 28 Totaljobs/other URLs timed out on verify and were kept open."
   },
   "newSinceLastRun": [
-    "reed-57481436",
-    "reed-57425193",
-    "reed-57426782",
-    "linkedin-4487760767",
-    "linkedin-4475983575",
-    "linkedin-4456031749",
-    "linkedin-4470846597",
-    "linkedin-4485071516",
-    "linkedin-4477667939"
+    "linkedin-4486157409",
+    "linkedin-4484354667",
+    "linkedin-4484868072",
+    "linkedin-4485851558",
+    "linkedin-4477895415"
   ],
   "jobs": [
     {
@@ -1298,7 +1294,8 @@
       "foundVia": [
         "LinkedIn search: Preston",
         "LinkedIn search: Manchester",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 2,
       "aiNote": "Bonus skill: \"AI-driven software development\"",
@@ -2105,7 +2102,8 @@
         "LinkedIn search: Liverpool",
         "LinkedIn search: Warrington",
         "LinkedIn search: Preston",
-        "LinkedIn search: remote UK"
+        "LinkedIn search: remote UK",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "No mention of AI tools or AI usage in the posting.",
@@ -2928,7 +2926,8 @@
       "foundVia": [
         "Reed search",
         "Totaljobs search",
-        "CWJobs search"
+        "CWJobs search",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -3517,7 +3516,8 @@
       "foundVia": [
         "browser:totaljobs",
         "LinkedIn search",
-        "Tavily"
+        "Tavily",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -3546,7 +3546,9 @@
       "foundVia": [
         "browser:indeed",
         "LinkedIn search",
-        "Tavily"
+        "Tavily",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 4,
       "aiNote": "\"AI-native engineering culture\"; \"use AI throughout the development process\" and champion AI-native engineering across the SDLC",
@@ -3656,14 +3658,14 @@
       "notes": "In-Play sports platform frontend; real-time UI. Posted ~2 hours ago.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
         "LinkedIn search: Preston",
         "LinkedIn search: Warrington"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-05T16:28:25.844Z"
     },
     {
@@ -3686,15 +3688,15 @@
       "notes": "PropTech; AI-native engineering culture. Sister posting linkedin-4459928943 left out as near-duplicate.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 5,
-      "aiNote": "\"Being genuinely tuned into AI tooling is core to the role… work AI-natively as a default\"; team AI infrastructure/plugins/CI",
-      "claudeMention": "\"You work AI-natively as a default, using tools like Claude Code, plugins and skills fluently.\"",
       "foundVia": [
         "LinkedIn search: remote UK",
         "LinkedIn search: Warrington",
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester"
       ],
+      "aiLevel": 5,
+      "aiNote": "\"Being genuinely tuned into AI tooling is core to the role… work AI-natively as a default\"; team AI infrastructure/plugins/CI",
+      "claudeMention": "\"You work AI-natively as a default, using tools like Claude Code, plugins and skills fluently.\"",
       "firstSeen": "2026-11-05T16:28:25.844Z"
     },
     {
@@ -3717,11 +3719,12 @@
       "notes": "SaaS H&S/sustainability; full-stack with Angular frontend.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Warrington"
+      ],
       "aiLevel": 2,
       "aiNote": "\"Apply AI tools to accelerate design, testing, and delivery, exercising judgement to validate and take ownership of the output.\"",
-      "foundVia": [
-        "LinkedIn search: Liverpool"
-      ],
       "firstSeen": "2026-11-05T16:28:25.844Z"
     },
     {
@@ -3798,15 +3801,158 @@
       "notes": "AI voice company Studio team; global remote so UK-eligible. Companion Full-Stack Engineer posting also seen.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 3,
-      "aiNote": "Company is AI research/product (AI voice); role in Studio building product around AI capabilities",
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: Preston",
         "LinkedIn search: Liverpool",
         "LinkedIn search: Warrington"
       ],
+      "aiLevel": 3,
+      "aiNote": "Company is AI research/product (AI voice); role in Studio building product around AI capabilities",
       "firstSeen": "2026-11-05T16:28:25.844Z"
+    },
+    {
+      "id": "linkedin-4486157409",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4486157409",
+      "contract": "Contract",
+      "contractNote": "to 31 March 2027, inside IR35",
+      "clearance": "SC",
+      "clearanceNote": "Active UK SC clearance mandatory",
+      "salary": "£400–£500/day",
+      "title": "React Developer (SC cleared)",
+      "company": "Square One Resources (posted by Netrolynx AI; client: UK public sector programme)",
+      "via": "Agency",
+      "location": "Remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"UK Remote\"",
+      "posted": "2026-11-02",
+      "stack": "React, JavaScript, TypeScript, REST APIs, automated testing",
+      "kind": "Frontend",
+      "notes": "Public sector digital transformation programme; Pega/GDS experience a plus.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-05T18:25:33.886Z"
+    },
+    {
+      "id": "linkedin-4484354667",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4484354667",
+      "contract": "Contract",
+      "contractNote": "12 months, inside IR35",
+      "clearance": "SC",
+      "clearanceNote": "Must hold active SC clearance",
+      "salary": "£500/day",
+      "title": "SC Cleared Full Stack Engineer – Central Government",
+      "company": "Sellick Partnership (client: central government programme)",
+      "via": "Agency",
+      "location": "Remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully Remote\"",
+      "posted": "2026-11-02",
+      "stack": "React, TypeScript, Node.js, AWS serverless, Terraform, GraphQL/REST",
+      "kind": "Adjacent",
+      "notes": "Long-term central government programme.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Preston"
+      ],
+      "firstSeen": "2026-11-05T18:25:33.886Z"
+    },
+    {
+      "id": "linkedin-4484868072",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4484868072",
+      "contract": "Permanent",
+      "contractNote": "",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "salary": "Not stated",
+      "title": "Full Stack Developer (Software Developer)",
+      "company": "Digital Waffle (client: a cyber security business)",
+      "via": "Agency",
+      "location": "Remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"United Kingdom: Remote\"",
+      "posted": "2026-10-30",
+      "stack": "React, Node.js, JavaScript, REST APIs, SQL/NoSQL",
+      "kind": "Adjacent",
+      "notes": "Two full-stack hires for a cyber security company.",
+      "aiLevel": 3,
+      "aiNote": "\"AI Experience (Essential)\": practical use of AI-assisted coding tools for coding, debugging, testing and docs",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Preston"
+      ],
+      "firstSeen": "2026-11-05T18:25:33.886Z"
+    },
+    {
+      "id": "linkedin-4485851558",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4485851558",
+      "contract": "Permanent",
+      "contractNote": "full-time, 37.5 hours",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "salary": "Up to £50,000",
+      "title": "Software Developer (Mid-Level)",
+      "company": "Mortgage Advice Bureau",
+      "via": "Direct",
+      "location": "Bolton",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"1 day a fortnight in our Bolton office\"",
+      "posted": "2026-11-05",
+      "stack": "C#, .NET 10, Angular, Azure, microservices, GraphQL, Blazor",
+      "kind": "Adjacent",
+      "notes": "Front-end, back-end or full-stack backgrounds; Angular needed for front-end/full-stack.",
+      "aiLevel": 2,
+      "aiNote": "Says the team explores \"emerging technologies, including AI, to improve the way we build and deliver solutions\"",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
+      ],
+      "firstSeen": "2026-11-05T18:25:33.886Z"
+    },
+    {
+      "id": "linkedin-4477895415",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4477895415",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "salary": "Not stated",
+      "title": "Software Developer (Full Stack)",
+      "company": "Countfire",
+      "via": "Direct",
+      "location": "Remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"A remote-first role\"",
+      "posted": "2026-10-31",
+      "stack": "React, TypeScript, MobX, GraphQL/Hasura, Python, PostgreSQL, AWS",
+      "kind": "Adjacent",
+      "notes": "Construction takeoff SaaS; 4+ years and a CS degree asked for.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Preston"
+      ],
+      "firstSeen": "2026-11-05T18:25:33.886Z"
     }
   ],
   "closed": [
