@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-05T10:26:25.351Z",
+  "updatedAt": "2026-11-05T12:26:47.510Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -17,14 +17,17 @@
       "Technojobs (empty page)"
     ],
     "counts": {
-      "LinkedIn": 79,
+      "LinkedIn": 81,
       "Reed": 12,
       "Totaljobs": 28
     },
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [],
+  "newSinceLastRun": [
+    "linkedin-4487728797",
+    "linkedin-4486700446"
+  ],
   "jobs": [
     {
       "clearance": "None stated",
@@ -802,7 +805,8 @@
       "url": "https://uk.linkedin.com/jobs/view/4483487132",
       "via": "Agency",
       "foundVia": [
-        "Tavily"
+        "Tavily",
+        "LinkedIn search: Preston"
       ],
       "aiLevel": 3,
       "aiNote": "Requires \"practical fluency with AI coding tools and agentic development workflows\"",
@@ -3411,6 +3415,62 @@
         "LinkedIn search: Manchester"
       ],
       "firstSeen": "2026-11-05T08:43:46.053Z"
+    },
+    {
+      "id": "linkedin-4487728797",
+      "title": "Senior Software Engineer - Javascript/Vue (UK)",
+      "company": "Dayshape",
+      "location": "Remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"can be done fully remotely, as long as you are based in the UK\"; no required office days",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£50,000–£60,000",
+      "posted": "2026-11-05",
+      "stack": "JavaScript, Vue.js, Jest/Cypress/Playwright (bonus), C#/.NET, SQL Server, Azure (bonus)",
+      "via": "Direct",
+      "kind": "Frontend",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4487728797",
+      "notes": "Senior JS/Vue engineer at an Edinburgh-based resource-management SaaS scale-up; fully remote within the UK.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Preston",
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Manchester"
+      ],
+      "firstSeen": "2026-11-05T12:26:47.510Z"
+    },
+    {
+      "id": "linkedin-4486700446",
+      "title": "Software Developer",
+      "company": "IRG Digital (for an unnamed digital consultancy)",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid, 2 days per week in office\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£40,000–£45,000",
+      "posted": "2026-11-05",
+      "stack": "C#, ASP.NET Core, React, TypeScript, HTML/CSS, SQL Server, Umbraco/Contentful (desirable), Azure",
+      "via": "Agency",
+      "kind": "Adjacent",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4486700446",
+      "notes": "Mid-level full-stack .NET/React role at a Manchester digital consultancy; UK right to work required, no sponsorship.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Warrington"
+      ],
+      "firstSeen": "2026-11-05T12:26:47.510Z"
     }
   ],
   "closed": [
