@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-05T08:43:46.053Z",
+  "updatedAt": "2026-11-05T10:26:25.351Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -24,11 +24,7 @@
     "verifiedOn": "2026-11-01",
     "notes": "Open postings were re-checked on 1 Nov 2026. Details not given in a posting are marked \"Not stated\"."
   },
-  "newSinceLastRun": [
-    "linkedin-4487724365",
-    "linkedin-4485098552",
-    "linkedin-4486397704"
-  ],
+  "newSinceLastRun": [],
   "jobs": [
     {
       "clearance": "None stated",
@@ -425,7 +421,8 @@
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 3,
       "aiNote": "\"Leveraging AI-powered development workflows\"; wants strong understanding of modern AI development workflows",
@@ -480,6 +477,9 @@
       "title": "Full Stack Engineer – React & Java",
       "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-react-java-at-computer-futures-4476375514",
       "via": "Agency",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z"
@@ -714,7 +714,8 @@
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: Preston",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 3,
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
@@ -861,7 +862,8 @@
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Manchester",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Warrington"
       ],
       "aiLevel": 0,
       "aiNote": "Builds AI features into a product (streaming AI responses); nothing on using AI coding tools",
@@ -1275,7 +1277,8 @@
       "url": "https://uk.linkedin.com/jobs/view/staff-engineer-at-digital-waffle-4484121126",
       "via": "Agency",
       "foundVia": [
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 2,
       "aiNote": "Bonus skill: \"AI-driven software development\"",
@@ -2396,7 +2399,8 @@
         "LinkedIn search: Manchester",
         "LinkedIn search: Liverpool",
         "LinkedIn search: Warrington",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: remote UK"
       ],
       "aiLevel": 3,
       "aiNote": "\"all team members expected to incorporate AI into their daily workflows\"; AI described as \"a core productivity multiplier\".",
@@ -3162,8 +3166,6 @@
       "contractNote": "listed full-time",
       "modeNote": "\"This role can be worked remotely from anywhere in the UK only\"",
       "notes": "Travel data and intelligence company. No visa sponsorship; existing UK right to work needed.",
-      "aiLevel": 3,
-      "aiNote": "\"we're AI-native - tooling is part of how we develop, not an afterthought\"; expects you to \"proactively explore and adopt AI tools\".",
       "id": "linkedin-4472739735",
       "title": "Senior Fullstack Engineer",
       "company": "OAG",
@@ -3181,6 +3183,8 @@
       "foundVia": [
         "LinkedIn search: Preston"
       ],
+      "aiLevel": 3,
+      "aiNote": "\"we're AI-native - tooling is part of how we develop, not an afterthought\"; expects you to \"proactively explore and adopt AI tools\".",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -3289,7 +3293,8 @@
       "posted": "2026-11-03",
       "url": "https://uk.linkedin.com/jobs/view/software-engineer-at-connexai-4486049400",
       "foundVia": [
-        "LinkedIn search: Warrington"
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -3301,8 +3306,6 @@
       "contractNote": "",
       "modeNote": "\"Manchester (Hybrid flexibility)\"",
       "notes": "Microsoft-stack full-stack role. Must be UK based with full right to work.",
-      "aiLevel": 0,
-      "aiNote": "",
       "id": "linkedin-4485125860",
       "title": "Full Stack Engineer",
       "company": "Digital Waffle (client not named)",
@@ -3320,6 +3323,8 @@
       "foundVia": [
         "LinkedIn search: Liverpool"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -3328,8 +3333,6 @@
       "contractNote": "",
       "modeNote": "\"Hybrid 50% home/office based\"",
       "notes": "Digital Team at a mutual life, pensions and investment company. Closing date 18 November 2026.",
-      "aiLevel": 0,
-      "aiNote": "",
       "id": "linkedin-4487724365",
       "title": "Senior Front End Engineer",
       "company": "Royal London",
@@ -3351,6 +3354,8 @@
         "LinkedIn search: remote UK",
         "LinkedIn search: Warrington"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-05T08:43:46.053Z"
     },
     {
@@ -3359,8 +3364,6 @@
       "contractNote": "listed full-time",
       "modeNote": "\"Full time, in person at our Manchester office\"",
       "notes": "Bootstrapped proxy infrastructure company; owns website, dashboard, apps and browser extensions. \"Any experience level welcome\".",
-      "aiLevel": 4,
-      "aiNote": "\"AI-native. You use AI tools to multiply your productivity and ship faster.\"",
       "id": "linkedin-4485098552",
       "title": "Full Stack Product Engineer",
       "company": "Byteful",
@@ -3378,6 +3381,8 @@
       "foundVia": [
         "Tavily"
       ],
+      "aiLevel": 4,
+      "aiNote": "\"AI-native. You use AI tools to multiply your productivity and ship faster.\"",
       "firstSeen": "2026-11-05T08:43:46.053Z"
     },
     {
