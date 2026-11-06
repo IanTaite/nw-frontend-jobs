@@ -13,6 +13,7 @@ import { AI_LABEL, Job, JobsFile, REGION_LABEL, Region, salaryValue } from './jo
 import { QueryParam, flagParam, stringParam, syncQueryParams } from './query-params';
 import { ThemeToggle } from './theme-toggle';
 import { UpdateBanner } from './update-banner';
+import { frameworkClass, highlightStack } from './stack-highlight';
 
 const SORTS = ['newest', 'discovered', 'salary', 'company', 'ai'] as const;
 type Sort = (typeof SORTS)[number];
@@ -208,4 +209,6 @@ export class App {
   protected withNote(v: string, n: string) {
     return n ? `${v} (${n})` : v;
   }
+  protected readonly stackSegments = highlightStack;
+  protected readonly frameworkClass = frameworkClass;
 }
