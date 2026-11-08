@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-08T09:29:30.573Z",
+  "updatedAt": "2026-11-08T11:26:25.374Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -9,7 +9,8 @@
       "CWJobs",
       "LinkedIn",
       "Tavily",
-      "OutsideIR35"
+      "OutsideIR35",
+      "OpenTrain"
     ],
     "blocked": [
       "Totaljobs",
@@ -20,18 +21,19 @@
       "Technojobs"
     ],
     "counts": {
-      "LinkedIn": 165,
+      "LinkedIn": 166,
       "Reed": 32,
       "Totaljobs": 28,
       "OutsideIR35": 19,
-      "WeAreDevelopers": 1
+      "WeAreDevelopers": 1,
+      "OpenTrain": 1
     },
     "verifiedOn": "2026-11-08",
-    "notes": "8 Nov 2026 09:29Z refresh. Reed today and last-three-days found no new in-scope role. OutsideIR35 angular/react/typescript/javascript filters found no new open in-scope row. Staff Full Stack Engineer eO8zF4zwTN and the already listed outsideir35-8VLYpXMA6v both say they are no longer accepting applications; the live Owen Thomas copy is linkedin-4488780018. LinkedIn past-24-hours search, 4s apart: 9 pages returned 429 and were retried after 20s; 4 of those retries also returned 429 and that page was skipped. Remote UK full-stack and front-end searches stopped early because a page stayed 429 after the retry. Totaljobs and CWJobs curl timed out. Tavily read a Totaljobs React results page; detail pages timed out, and the visible rows matched roles already listed. Final verify: 25 LinkedIn URLs still HTTP 429 after one retry, kept open; WeAreDevelopers HTTP 403; 28 Totaljobs timeouts. Closed reed-57395855 (HTTP 404), outsideir35-QUsLzsc5Ho and outsideir35-8VLYpXMA6v (no longer accepting)."
+    "notes": "8 Nov 2026 11:26Z refresh. Reed today and last-three-days, and OutsideIR35 angular/react/typescript/javascript filters, found no new in-scope role. LinkedIn past-24-hours search, 4s apart: 6 pages returned 429 and were retried after 20s; 2 retries were still 429 and those queries stopped (remote UK frontend at start=25, and another earlier page). Remote UK full-stack was still full at start=150. Totaljobs and CWJobs curl timed out. Tavily returned junior ads, Indeed indexes, a US-dollar Joblet-style listing, and an OpenTrain frontend task role that names the UK. Detail fetch: Osprey Flight Solutions lead stayed 429 after one retry and was not added. Final verify: 16 LinkedIn URLs still HTTP 429, kept open; WeAreDevelopers HTTP 403; 28 Totaljobs timeouts. No postings moved to closed."
   },
   "newSinceLastRun": [
-    "linkedin-4488780018",
-    "linkedin-4488729448"
+    "linkedin-4488780077",
+    "opentrain-cmw6nscfk002v08jn8fsp2658"
   ],
   "jobs": [
     {
@@ -8654,7 +8656,10 @@
         "LinkedIn search Manchester fullstack 24h",
         "LinkedIn search Manchester frontend 24h",
         "LinkedIn search remote UK angular 24h",
-        "LinkedIn search Manchester react 24h"
+        "LinkedIn search Manchester react 24h",
+        "LinkedIn search remote UK fullstack 24h",
+        "LinkedIn search remote UK react 24h",
+        "LinkedIn search remote UK front end 24h"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -8693,17 +8698,11 @@
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/job-4488780018",
       "posted": "2026-11-08",
-      "foundVia": [
-        "LinkedIn search Preston 24h",
-        "LinkedIn search remote UK fullstack 24h"
-      ],
       "clearance": "None stated",
       "clearanceNote": "",
       "contractNote": "12 months, outside IR35",
       "modeNote": "Fully remote (UK-based)",
       "notes": "Live listing of the Owen Thomas staff contract. Earlier LinkedIn ids and both OutsideIR35 copies say they are no longer accepting applications.",
-      "aiLevel": 3,
-      "aiNote": "Supported by modern, AI-assisted development practices",
       "title": "Staff Full Stack Engineer (Contract)",
       "company": "Owen Thomas (client not named)",
       "via": "Agency",
@@ -8714,6 +8713,12 @@
       "salary": "£500–£600+/day",
       "stack": "Rust, Java, React, TypeScript, Python",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search Preston 24h",
+        "LinkedIn search remote UK fullstack 24h"
+      ],
+      "aiLevel": 3,
+      "aiNote": "Supported by modern, AI-assisted development practices",
       "firstSeen": "2026-11-08T09:29:30.573Z"
     },
     {
@@ -8721,17 +8726,11 @@
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/job-4488729448",
       "posted": "2026-11-07",
-      "foundVia": [
-        "LinkedIn search Manchester fullstack 24h",
-        "LinkedIn search Manchester react 24h"
-      ],
       "clearance": "DV",
       "clearanceNote": "must currently hold the highest level of UK Government clearance",
       "contractNote": "",
       "modeNote": "Manchester – hybrid",
       "notes": "UK citizenship required. Distinct from the senior software engineer listing that closed earlier.",
-      "aiLevel": 0,
-      "aiNote": "",
       "title": "Lead Software Engineer",
       "company": "Northrop Grumman UK",
       "via": "Direct",
@@ -8742,7 +8741,72 @@
       "salary": "£58,000–£86,000",
       "stack": "Java, Spring Boot, Maven, React, npm",
       "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search Manchester fullstack 24h",
+        "LinkedIn search Manchester react 24h",
+        "LinkedIn search remote UK fullstack 24h",
+        "LinkedIn search Manchester frontend 24h",
+        "LinkedIn search remote UK angular 24h"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-08T09:29:30.573Z"
+    },
+    {
+      "id": "linkedin-4488780077",
+      "title": "Senior Software Engineer",
+      "company": "Osprey Flight Solutions",
+      "via": "Direct",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "Remote, home-based; described as a genuinely remote role",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-11-08",
+      "stack": ".NET, C#, React",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/job-4488780077",
+      "notes": "Six-person engineering team. UK employment terms (Smart Pension, National Insurance, bank holidays, AXA). No salary figure.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search Manchester fullstack 24h",
+        "LinkedIn search Preston 24h",
+        "LinkedIn search remote UK angular 24h"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-08T11:26:25.374Z"
+    },
+    {
+      "id": "opentrain-cmw6nscfk002v08jn8fsp2658",
+      "title": "Frontend / UI Engineer (English)",
+      "company": "OpenTrain AI",
+      "via": "Platform",
+      "location": "United Kingdom (remote; one of 52 listed countries)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "Remote, project-based contractor work",
+      "contract": "Contract",
+      "contractNote": "part-time; about eight hours per approved task",
+      "salary": "$640–$800 per approved task",
+      "posted": "2026-11-07",
+      "stack": "React, TypeScript",
+      "kind": "Frontend",
+      "source": "OpenTrain",
+      "url": "https://www.opentrain.ai/jobs/frontend-ui-engineer--cmw6nscfk002v08jn8fsp2658",
+      "notes": "Creates graded frontend coding tasks and reference implementations for AI training. United Kingdom is named among the countries that can apply.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-08T11:26:25.374Z"
     }
   ],
   "closed": [
