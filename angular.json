@@ -4,7 +4,9 @@
   "cli": {
     "packageManager": "pnpm",
     "schematicCollections": [
-      "angular-eslint"
+      "@schematics/angular",
+      "angular-eslint",
+      "playwright-ng-schematics"
     ]
   },
   "newProjectRoot": "projects",
@@ -92,6 +94,17 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "e2e": {
+          "builder": "playwright-ng-schematics:playwright",
+          "options": {
+            "devServerTarget": "jobs-site:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "jobs-site:serve:production"
+            }
+          }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
