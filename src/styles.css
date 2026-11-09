@@ -1,13 +1,16 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* `dark:` follows the .dark class set by ThemeService (not just the OS setting). */
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-canvas: #f3efe6;
   --color-surface: #fffcf6;
   --color-ink: #1c2d31;
   --color-ink-soft: #4d5e62;
-  --color-ink-faint: #6b7b7e;
+  --color-ink-faint: #5b6b6e;
   --color-line: #ddd5c6;
-  --color-line-strong: #c9bfad;
+  --color-line-strong: #8c8270;
   --color-brand: #103c40;
   --color-brand-mid: #16575c;
   --color-brand-fg: #e6f3f2;
@@ -30,6 +33,10 @@ html {
   color-scheme: light;
 }
 
+html.dark {
+  color-scheme: dark;
+}
+
 body {
   margin: 0;
   background-color: var(--color-canvas);
@@ -39,4 +46,64 @@ body {
 ::selection {
   background-color: var(--color-accent-soft);
   color: var(--color-ink);
+}
+
+/*
+ * Dropdowns: replace the native arrow (which sits hard against the edge and can't be moved)
+ * with an inset chevron. Right padding lives here, so templates set only pl-* on selects.
+ */
+@layer base {
+  select:not([multiple]) {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%234d5e62' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+    background-position: right 0.625rem center;
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+    padding-right: 2.25rem;
+  }
+}
+
+/*
+ * Dark theme: the same semantic tokens with dark values, so every colour utility (bg-surface,
+ * text-ink-soft, border-line…) switches without per-element dark: variants. All text pairs meet WCAG AA (4.5:1).
+ */
+@layer base {
+  .dark {
+    --color-canvas: #0e1a1c;
+    --color-surface: #152427;
+    --color-ink: #e4ecea;
+    --color-ink-soft: #b3c4c2;
+    --color-ink-faint: #93a8a6;
+    --color-line: #26383b;
+    --color-line-strong: #5d777b;
+    --color-brand: #0a2b2e;
+    --color-brand-mid: #6cc9c0;
+    --color-brand-fg: #e6f3f2;
+    --color-brand-muted: #9cc7c3;
+    --color-accent: #5fd4c8;
+    --color-accent-hover: #8be3da;
+    --color-accent-ring: #2dd4bf;
+    --color-accent-soft: #173f3d;
+    --color-new: #4ade9b;
+    --color-new-fg: #a7f3d0;
+    --color-new-bg: #0f4a37;
+    --color-warn-fg: #fcd98a;
+    --color-warn-bg: #4a3510;
+    --color-danger-fg: #fda4af;
+    --color-danger-bg: #3a1520;
+    --color-danger-line: #7f1d2d;
+  }
+
+  .dark select:not([multiple]) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23b3c4c2' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+  }
+
+  /* Windows High Contrast / forced colours: the chevron image ignores the user's palette, so use the native arrow. */
+  @media (forced-colors: active) {
+    select:not([multiple]),
+    .dark select:not([multiple]) {
+      appearance: auto;
+      background-image: none;
+    }
+  }
 }

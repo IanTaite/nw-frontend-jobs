@@ -9,14 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with: { version: latest }
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v5 # version comes from packageManager in package.json
+      - uses: actions/setup-node@v6
         with: { node-version: 24, cache: pnpm }
       - run: pnpm install --frozen-lockfile
-      - run: pnpm exec ng build
-      - uses: actions/upload-pages-artifact@v3
+      - run: pnpm exec ng build --base-href /nw-frontend-jobs/
+      - uses: actions/upload-pages-artifact@v5
         with: { path: dist/jobs-site/browser }
   deploy:
     needs: build
@@ -24,4 +23,4 @@ jobs:
     environment: { name: github-pages, url: '${{ steps.d.outputs.page_url }}' }
     steps:
       - id: d
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

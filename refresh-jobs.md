@@ -34,6 +34,7 @@ Leave out:
      - Reed: the search page's `__NEXT_DATA__` JSON. The detail pages give `jobContractType`, `inferredJobLocationType` and `isAgency`.
      - Totaljobs and CWJobs: `__PRELOADED_STATE__["app-unifiedResultlist"]`.
      - LinkedIn: `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=frontend%20developer&location=North%20West%20England&f_TPR=r2592000`, and for remote UK `...&location=United%20Kingdom&f_WT=2&f_TPR=r2592000`.
+   - OutsideIR35 (`https://outsideir35.org.uk/`): public contract (outside IR35) board. Path filters work, e.g. `/jobs/angular`, `/jobs/react/remote`, `/jobs/typescript/remote`, `/jobs/javascript/remote`, `/jobs/react/hybrid`, `/jobs/dotnet/remote`. Pagination uses `?po=50` (offset). Individual posts are `/jobs/<slug>/<alphanumericId>` and are readable without login; some newer rows show "Unlock to Apply" (OIR35+) where the company name is hidden but the overview/requirements remain visible. `robots.txt` allows `/`. Fetch **one page at a time** with a 2–3 second gap. Board job ids are alphanumeric (e.g. `7UMLyrNRil`), so role ids look like `outsideir35-7UMLyrNRil`. Query-string title/location filters are unreliable from curl (client-side); prefer the path filters above. No public RSS/API documented — HTML listings only.
    - Indeed, Adzuna, Jobserve and Technojobs blocked the box on 30 Oct 2026. Keep listing them under `sources.blocked` until they work.
 
 3. **For each new posting**, open the posting page and read the description:
@@ -95,7 +96,7 @@ Leave out:
 
 ## How roles are found (`foundVia`) and LinkedIn pacing
 
-- Every candidate carries an optional `foundVia` array saying how the run found it, for example `"LinkedIn search: Manchester"`, `"LinkedIn search: remote UK"`, `"Reed search"`, `"Totaljobs search"`, `"Tavily"` or `"Tavily extract"`. `verify-jobs.mjs` merges it with earlier values, so it grows over time. It is stored only. The UI must never show it. Existing roles have no `foundVia` until a later run finds them again; don't invent it.
+- Every candidate carries an optional `foundVia` array saying how the run found it, for example `"LinkedIn search: Manchester"`, `"LinkedIn search: remote UK"`, `"Reed search"`, `"Totaljobs search"`, `"outsideir35.org.uk"`, `"Tavily"` or `"Tavily extract"`. `verify-jobs.mjs` merges it with earlier values, so it grows over time. It is stored only. The UI must never show it. Existing roles have no `foundVia` until a later run finds them again; don't invent it.
 - LinkedIn is fetched **one page at a time** with a 3-5 second pause between pages, in the run's searches and in the posting checks. No parallel batches on LinkedIn. After a 429, wait 20 seconds and retry once, then keep the role open and log it. Other sources can still run in parallel with each other.
 
 ## AI usage rating (`aiLevel`, `aiNote`)
@@ -121,3 +122,7 @@ Every role carries an optional `aiLevel` (integer 0-5) and `aiNote` (short strin
 - If found, set `claudeMention` to a short quote or close paraphrase (about 120 characters at most). Omit the field when there is no mention.
 - It is kept through the merge like `aiLevel`: a candidate carrying a fresh `aiLevel` is treated as a fresh read, so give it `claudeMention` too if there is one; a candidate without `aiLevel` keeps the earlier `claudeMention`.
 - The site shows a small "Claude" tag next to the AI badge, with the quote as a tooltip.
+
+- LinkedIn postings marked "No longer accepting applications" or "Not currently accepting applications" count as closed and must be excluded. Their wording is not always present on the public guest page, so when a posting's text or the user reports it, treat the role as closed.
+
+- `scripts/excluded.json` lists role ids to keep out (id → reason): the script closes them and ignores them if a search finds them again. Add an id there when the user reports a role as closed or unwanted.
