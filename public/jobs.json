@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-10T09:34:57.864Z",
+  "updatedAt": "2026-11-10T14:19:55.364Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -21,9 +21,9 @@
       "Technojobs"
     ],
     "counts": {
-      "LinkedIn": 175,
-      "Reed": 31,
-      "Totaljobs": 25,
+      "LinkedIn": 179,
+      "Reed": 32,
+      "Totaljobs": 28,
       "OutsideIR35": 20,
       "WeAreDevelopers": 1,
       "OpenTrain": 1
@@ -32,11 +32,16 @@
     "notes": "10 Nov 2026 09:35Z refresh. Reed and Totaljobs/CWJobs (last three days) responded; nothing new in scope (trainee, backend or out-of-area roles). OutsideIR35 path filters: 1 new remote React contract. LinkedIn past-48-hours search, one page at a time 3-5s apart: 20 search pages hit HTTP 429, 5 still failed after retry and were skipped; 2 posting pages (Moody's, Faculty) also skipped after retry; 4 new LinkedIn roles added. Tavily: one search 429 then succeeded on retry; nothing new beyond known roles. Final verify: 9 LinkedIn URLs HTTP 429 and WeAreDevelopers HTTP 403, all kept open; 12 moved to closed."
   },
   "newSinceLastRun": [
-    "linkedin-4488877500",
-    "linkedin-4488875842",
-    "linkedin-4489116773",
-    "linkedin-4489172139",
-    "outsideir35-dBfgAy75tn"
+    "linkedin-4485327718",
+    "linkedin-4487452912",
+    "linkedin-4488365639",
+    "linkedin-4489487115",
+    "linkedin-4483635460",
+    "totaljobs-108307131",
+    "totaljobs-108307476",
+    "totaljobs-108308664",
+    "totaljobs-108175938",
+    "reed-57552688"
   ],
   "jobs": [
     {
@@ -692,13 +697,13 @@
       "title": "Senior Full Stack Engineer (Vue3, TypeScript)",
       "url": "https://www.totaljobs.com/job/senior-full-stack-engineer-vue3-typescript/cytix-job108175696",
       "via": "Direct",
+      "aiLevel": 2,
+      "aiNote": "Lists \"Claude Tokens\" as a benefit; nothing else on how AI tools are used",
+      "claudeMention": "Benefits list includes \"Claude Tokens\"",
       "foundVia": [
         "Totaljobs search",
         "CWJobs search"
       ],
-      "aiLevel": 2,
-      "aiNote": "Lists \"Claude Tokens\" as a benefit; nothing else on how AI tools are used",
-      "claudeMention": "Benefits list includes \"Claude Tokens\"",
       "firstSeen": "2026-10-30T13:10:52Z"
     },
     {
@@ -1631,35 +1636,6 @@
       "firstSeen": "2026-11-01T08:45:55.670Z"
     },
     {
-      "clearance": "DV",
-      "clearanceNote": "\"DV Cleared Full Stack Developer\"; skills list DV Clearance",
-      "company": "Data Careers (client: a technology consultancy, not named)",
-      "contract": "Permanent",
-      "contractNote": "permanent",
-      "id": "totaljobs-108159582",
-      "kind": "Adjacent",
-      "location": "Manchester",
-      "mode": "Hybrid",
-      "modeNote": "3 days a week onsite in Manchester",
-      "notes": "Secure cloud-based knowledge platform in a highly controlled customer environment.",
-      "posted": "2026-10-13",
-      "region": "north-west",
-      "salary": "£80,000–£90,000 + benefits",
-      "source": "Totaljobs",
-      "stack": "JavaScript, React, Node.js, AWS",
-      "title": "Full Stack Software Developer",
-      "url": "https://www.totaljobs.com/job/full-stack-software-developer/data-careers-job108159582",
-      "via": "Agency",
-      "aiLevel": 0,
-      "aiNote": "",
-      "foundVia": [
-        "Totaljobs search",
-        "Tavily",
-        "CWJobs search"
-      ],
-      "firstSeen": "2026-11-01T08:45:55.670Z"
-    },
-    {
       "clearance": "None stated",
       "clearanceNote": "",
       "company": "Pave Talent Partners (client not named)",
@@ -2518,11 +2494,11 @@
       "kind": "Adjacent",
       "source": "Totaljobs",
       "url": "https://www.totaljobs.com/job/senior-full-stack-developer/spliit-ltd-job108189944",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
-      "aiLevel": 0,
-      "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z"
     },
     {
@@ -3223,11 +3199,11 @@
       "source": "Totaljobs",
       "posted": "2026-11-03",
       "url": "https://www.totaljobs.com/job/lead-software-developer/pave-talent-partners-limited-job108263662",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
-      "aiLevel": 0,
-      "aiNote": "",
       "firstSeen": "2026-11-04T16:23:57.803Z"
     },
     {
@@ -3250,11 +3226,11 @@
       "source": "Totaljobs",
       "posted": "2026-10-20",
       "url": "https://www.totaljobs.com/job/senior-front-end-developer/found-talent-limited-job108213858",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "Totaljobs search"
       ],
-      "aiLevel": 0,
-      "aiNote": "",
       "firstSeen": "2026-11-04T16:23:57.803Z"
     },
     {
@@ -3305,12 +3281,12 @@
       "source": "LinkedIn",
       "posted": "2026-10-20",
       "url": "https://uk.linkedin.com/jobs/view/senior-fullstack-engineer-at-oag-4472739735",
+      "aiLevel": 3,
+      "aiNote": "\"we're AI-native - tooling is part of how we develop, not an afterthought\"; expects you to \"proactively explore and adopt AI tools\".",
       "foundVia": [
         "LinkedIn search: Preston",
         "LinkedIn search Warrington"
       ],
-      "aiLevel": 3,
-      "aiNote": "\"we're AI-native - tooling is part of how we develop, not an afterthought\"; expects you to \"proactively explore and adopt AI tools\".",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -3361,6 +3337,8 @@
       "source": "LinkedIn",
       "posted": "2026-10-28",
       "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-at-matalan-4483895543",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Warrington",
@@ -3375,10 +3353,9 @@
         "LinkedIn search Manchester react",
         "LinkedIn search Liverpool react",
         "LinkedIn search Manchester frontend",
-        "LinkedIn search Liverpool"
+        "LinkedIn search Liverpool",
+        "LinkedIn search: remote UK"
       ],
-      "aiLevel": 0,
-      "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z"
     },
     {
@@ -7357,13 +7334,16 @@
       "salary": "Up to £55,000 + 10% pension",
       "stack": "React, Angular or Blazor/Razor, .NET",
       "kind": "Adjacent",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "LinkedIn search remote UK angular",
         "LinkedIn search remote UK frontend 24h",
-        "LinkedIn search remote UK fullstack 24h"
+        "LinkedIn search remote UK fullstack 24h",
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Manchester"
       ],
-      "aiLevel": 0,
-      "aiNote": "",
       "firstSeen": "2026-11-07T11:36:39.956Z"
     },
     {
@@ -7386,6 +7366,8 @@
       "salary": "Up to £55,000 (consultant) or up to £70,000 (senior consultant)",
       "stack": "Python (FastAPI) or TypeScript/Express, React, TypeScript, Next.js or Vite",
       "kind": "Adjacent",
+      "aiLevel": 0,
+      "aiNote": "",
       "foundVia": [
         "LinkedIn search Manchester react",
         "LinkedIn search Preston",
@@ -7399,10 +7381,10 @@
         "LinkedIn search remote UK fullstack 24h",
         "LinkedIn search Liverpool react 24h",
         "LinkedIn search remote UK react 24h",
-        "LinkedIn search Manchester react 24h"
+        "LinkedIn search Manchester react 24h",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Liverpool"
       ],
-      "aiLevel": 0,
-      "aiNote": "",
       "firstSeen": "2026-11-07T11:36:39.956Z"
     },
     {
@@ -7728,33 +7710,6 @@
       "contract": "Not stated",
       "salary": "Not stated",
       "stack": "Java, Spring, JavaScript, TypeScript, Angular",
-      "kind": "Adjacent",
-      "firstSeen": "2026-11-07T11:36:39.956Z"
-    },
-    {
-      "id": "linkedin-4487702340",
-      "source": "LinkedIn",
-      "url": "https://uk.linkedin.com/jobs/view/job-4487702340",
-      "posted": "2026-11-05",
-      "foundVia": [
-        "LinkedIn search Manchester fullstack"
-      ],
-      "clearance": "None stated",
-      "clearanceNote": "SC is mentioned; applicants without security clearance are welcome",
-      "contractNote": "listed full-time",
-      "modeNote": "Based at either the Gloucester or Manchester office",
-      "notes": "Manchester is one of two offices, so it stays in the North West scope. The title mentions DV; the text welcomes applicants without clearance.",
-      "aiLevel": 0,
-      "aiNote": "",
-      "title": "Software Engineer (DV Security Clearance)",
-      "company": "Free-Work UK (for CGI)",
-      "via": "Platform",
-      "location": "Manchester or Gloucester",
-      "region": "north-west",
-      "mode": "Office",
-      "contract": "Not stated",
-      "salary": "Not stated",
-      "stack": "Node.js, React, Material UI, Angular, Python, JavaScript",
       "kind": "Adjacent",
       "firstSeen": "2026-11-07T11:36:39.956Z"
     },
@@ -8817,7 +8772,8 @@
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Warrington",
-        "LinkedIn search: Preston"
+        "LinkedIn search: Preston",
+        "LinkedIn search: Manchester"
       ],
       "firstSeen": "2026-11-10T09:34:57.864Z"
     },
@@ -8940,9 +8896,349 @@
         "outsideir35.org.uk/jobs/vue/remote"
       ],
       "firstSeen": "2026-11-10T09:34:57.864Z"
+    },
+    {
+      "id": "linkedin-4485327718",
+      "title": "Front End Developer",
+      "company": "Bensons for Beds (posted by Netrolynx AI)",
+      "location": "Globe Centre, Accrington",
+      "region": "north-west",
+      "mode": "Not stated",
+      "modeNote": "\"Based at Globe Centre in Accrington\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "£40,000",
+      "stack": "React, Next.js, TypeScript, HTML5, CSS3, Bloomreach Content, BigCommerce",
+      "kind": "Frontend",
+      "via": "Platform",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "LinkedIn",
+      "posted": "2026-11-03",
+      "url": "https://uk.linkedin.com/jobs/view/front-end-developer-at-netrolynx-ai-4485327718",
+      "notes": "Ecommerce site for Bensons for Beds Digital team; at least two years front-end experience; bonus and benefits.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "linkedin-4487452912",
+      "title": "Senior Full Stack Developer",
+      "company": "AGNTX (client: UK central government digital service, not named)",
+      "location": "Remote (England), occasional travel to London, Manchester or Newcastle",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote, with occasional travel to London, Manchester or Newcastle\"",
+      "contract": "Contract",
+      "contractNote": "Six months initially, Inside IR35",
+      "salary": "£500/day",
+      "stack": "Java 11, Spring Boot, Maven, Node.js, React, TypeScript, Nunjucks/Freemarker, Kafka/ActiveMQ/RabbitMQ, Kong, AWS",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "Eligible to obtain",
+      "clearanceNote": "\"BPSS — no existing clearance needed\"",
+      "source": "LinkedIn",
+      "posted": "2026-11-10",
+      "url": "https://uk.linkedin.com/jobs/view/senior-full-stack-developer-at-agntx-4487452912",
+      "notes": "Two positions, SFIA 5, GOV.UK pattern front ends with Java services.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: remote UK"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "linkedin-4488365639",
+      "title": "Full Stack Engineer - Ecommerce Giant (Global household name)",
+      "company": "Ventula Consulting (client: online travel agent, not named)",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"2 days a week in the Manchester office\"",
+      "contract": "Contract",
+      "contractNote": "Initial 6 months, inside IR35",
+      "salary": "£600/day",
+      "stack": "React, JavaScript, TypeScript, micro front ends, BFF, Java web services, AWS, Agentic AI",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "LinkedIn",
+      "posted": "2026-11-10",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-ecommerce-giant-global-household-name-at-ventula-consulting-4488365639",
+      "notes": "Engage team on a new programme for a large online travel agent; front end plus Java back end.",
+      "aiLevel": 5,
+      "aiNote": "Engineers write specs and plans for AI agents; \"We would expect an AI agent to do the time consuming work of writing the code\", humans review and own it.",
+      "claudeMention": "\"using AI Agents (eg Claude, Codex and other in house agents)\"",
+      "foundVia": [
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "linkedin-4489487115",
+      "title": ".Net Full stack Developer",
+      "company": "Vantrex Infosystems (client not named)",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid role (4 Days onsite)\"",
+      "contract": "Contract",
+      "contractNote": "12+ months, Inside IR35",
+      "salary": "£300/day–£340/day",
+      "stack": "C#, .NET Core, Angular or React, microservices, Web APIs, SQL, Kafka, TDD, CI",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "LinkedIn",
+      "posted": "2026-11-10",
+      "url": "https://uk.linkedin.com/jobs/view/net-full-stack-developer-at-vantrex-infosystems-private-limited-4489487115",
+      "notes": "Banking/financial services; mostly .NET with Angular or React front end.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Manchester"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "linkedin-4483635460",
+      "title": "Full Stack Engineer",
+      "company": "Opus Recruitment Solutions (client: Reading software company, not named)",
+      "location": "Remote (UK)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Remote-first working within the UK\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Up to £80,000",
+      "stack": "C#, .NET, React, TypeScript, SQL Server, AWS, TDD",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "LinkedIn",
+      "posted": "2026-11-10",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-at-opus-recruitment-solutions-4483635460",
+      "notes": "Senior full stack on a market-leading risk management platform; mentoring and technical decisions.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Preston"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "totaljobs-108307131",
+      "title": "Senior Front End Developer (Next.JS/React)",
+      "company": "VIQU IT Recruitment (client: financial services organisation, not named)",
+      "location": "Fully remote (UK based)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Location: Fully remote – UK based\"",
+      "contract": "Contract",
+      "contractNote": "6 months initially, Outside IR35",
+      "salary": "£400–£450/day",
+      "stack": "Next.js, React, TypeScript, JavaScript, Azure, .NET, SQL Server",
+      "kind": "Frontend",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Totaljobs",
+      "posted": "2026-11-10",
+      "url": "https://www.totaljobs.com/job/senior-front-end-developer/viqu-it-recruitment-job108307131",
+      "notes": "Greenfield customer portal replacing an ageing one; shape front-end architecture and standards.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Totaljobs search",
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "totaljobs-108307476",
+      "title": "Lead Front End Architect Contract Remote",
+      "company": "Interact Consulting Limited (client not named)",
+      "location": "Fully remote (UK only)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully Remote ... Must be UK based\"",
+      "contract": "Contract",
+      "contractNote": "6–12 months, Outside IR35",
+      "salary": "£800/day",
+      "stack": "React, JavaScript, micro frontends, Google Tag Manager, analytics, consent management (GDPR, PECR)",
+      "kind": "Frontend",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Totaljobs",
+      "posted": "2026-11-10",
+      "url": "https://www.totaljobs.com/job/lead-front-end-architect-contract-remote/interact-consulting-limited-job108307476",
+      "notes": "Architecture lead for enterprise ecommerce micro frontends and GTM tracking built from scratch. Also on Reed (57552447).",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "totaljobs-108308664",
+      "title": "Senior Software Developer",
+      "company": "Innovation24 Ltd",
+      "location": "Stockport (SK6)",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "Totaljobs lists \"On-site, Hybrid\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£55,000–£62,000",
+      "stack": "C#, .NET, Azure, SQL Server, React, AngularJS, JavaScript, HTML, CSS",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Totaljobs",
+      "posted": "2026-11-10",
+      "url": "https://www.totaljobs.com/job/senior-software-developer/innovation24-ltd-job108308664",
+      "notes": "Microsoft-stack cloud apps with a web front end; mentoring juniors; IoT experience desirable.",
+      "aiLevel": 3,
+      "aiNote": "\"Leverage AI-powered development tools to improve productivity\"; wants practical experience with AI-assisted tools and an \"AI-Driven Development Mindset\".",
+      "claudeMention": "\"AI-assisted development tools such as Claude, GitHub Copilot, or similar platforms\"",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "totaljobs-108175938",
+      "title": "Full Stack Developer (Laravel & Vue 3)",
+      "company": "Crown Energy (Crown Oil)",
+      "location": "Bury, Greater Manchester",
+      "region": "north-west",
+      "mode": "Office",
+      "modeNote": "\"fully office-based position in Bury, Greater Manchester, requiring attendance five days per week\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "Not stated (competitive)",
+      "stack": "PHP 8.5, Laravel 13, Vue 3, TypeScript, GraphQL, MySQL, Docker, GitHub Actions, Claude Code",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Totaljobs",
+      "posted": "2026-10-14",
+      "url": "https://www.totaljobs.com/job/full-stack-developer-laravel-vue-3/crown-energy-job108175938",
+      "notes": "Mid-level in-house role; Vue 3 Composition API SPAs plus Laravel back end. Totaljobs lists it under East Anglia but the text says Bury.",
+      "aiLevel": 3,
+      "aiNote": "Claude Code is listed in the technology stack; agentic AI development tools desirable.",
+      "claudeMention": "Stack: \"... Microsoft Graph · Claude Code\"; desirable: \"Agentic AI development tools, such as Claude Code\"",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
+    },
+    {
+      "id": "reed-57552688",
+      "title": "Full Stack Developer (React / Next.js / AWS)",
+      "company": "Avanti (client: sports data technology company, not named)",
+      "location": "Remote (UK-based preferred)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"100% remote working (UK-based)\"",
+      "contract": "Permanent",
+      "contractNote": "",
+      "salary": "£45,000–£50,000",
+      "stack": "React, Next.js, TypeScript, JavaScript, Node.js, AWS, WebSockets",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Reed",
+      "posted": "2026-11-10",
+      "url": "https://www.reed.co.uk/jobs/full-stack-developer-react-nextjs-aws/57552688",
+      "notes": "Real-time sports analytics and live streaming dashboards; two interview stages, no coding test.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search",
+        "Tavily"
+      ],
+      "firstSeen": "2026-11-10T14:19:55.364Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "DV",
+      "clearanceNote": "\"DV Cleared Full Stack Developer\"; skills list DV Clearance",
+      "company": "Data Careers (client: a technology consultancy, not named)",
+      "contract": "Permanent",
+      "contractNote": "permanent",
+      "id": "totaljobs-108159582",
+      "kind": "Adjacent",
+      "location": "Manchester",
+      "mode": "Hybrid",
+      "modeNote": "3 days a week onsite in Manchester",
+      "notes": "Secure cloud-based knowledge platform in a highly controlled customer environment.",
+      "posted": "2026-10-13",
+      "region": "north-west",
+      "salary": "£80,000–£90,000 + benefits",
+      "source": "Totaljobs",
+      "stack": "JavaScript, React, Node.js, AWS",
+      "title": "Full Stack Software Developer",
+      "url": "https://www.totaljobs.com/job/full-stack-software-developer/data-careers-job108159582",
+      "via": "Agency",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Totaljobs search",
+        "Tavily",
+        "CWJobs search"
+      ],
+      "firstSeen": "2026-11-01T08:45:55.670Z",
+      "closedAt": "2026-11-10T14:19:55.364Z",
+      "closedReason": "HTTP 410"
+    },
+    {
+      "id": "linkedin-4487702340",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/job-4487702340",
+      "posted": "2026-11-05",
+      "foundVia": [
+        "LinkedIn search Manchester fullstack"
+      ],
+      "clearance": "None stated",
+      "clearanceNote": "SC is mentioned; applicants without security clearance are welcome",
+      "contractNote": "listed full-time",
+      "modeNote": "Based at either the Gloucester or Manchester office",
+      "notes": "Manchester is one of two offices, so it stays in the North West scope. The title mentions DV; the text welcomes applicants without clearance.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "title": "Software Engineer (DV Security Clearance)",
+      "company": "Free-Work UK (for CGI)",
+      "via": "Platform",
+      "location": "Manchester or Gloucester",
+      "region": "north-west",
+      "mode": "Office",
+      "contract": "Not stated",
+      "salary": "Not stated",
+      "stack": "Node.js, React, Material UI, Angular, Python, JavaScript",
+      "kind": "Adjacent",
+      "firstSeen": "2026-11-07T11:36:39.956Z",
+      "closedAt": "2026-11-10T14:19:55.364Z",
+      "closedReason": "HTTP 404"
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
