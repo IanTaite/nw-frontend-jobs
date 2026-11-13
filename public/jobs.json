@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-13T09:23:26.851Z",
+  "updatedAt": "2026-11-13T14:26:40.093Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -32,13 +32,9 @@
     "notes": "10 Nov 2026 09:35Z refresh. Reed and Totaljobs/CWJobs (last three days) responded; nothing new in scope (trainee, backend or out-of-area roles). OutsideIR35 path filters: 1 new remote React contract. LinkedIn past-48-hours search, one page at a time 3-5s apart: 20 search pages hit HTTP 429, 5 still failed after retry and were skipped; 2 posting pages (Moody's, Faculty) also skipped after retry; 4 new LinkedIn roles added. Tavily: one search 429 then succeeded on retry; nothing new beyond known roles. Final verify: 9 LinkedIn URLs HTTP 429 and WeAreDevelopers HTTP 403, all kept open; 12 moved to closed."
   },
   "newSinceLastRun": [
-    "reed-57560012",
-    "totaljobs-108318705",
-    "totaljobs-108318204",
-    "linkedin-4488571575",
-    "linkedin-4490348852",
-    "linkedin-4488903714",
-    "linkedin-4489555111"
+    "linkedin-4490718916",
+    "linkedin-4488252061",
+    "linkedin-4490733009"
   ],
   "jobs": [
     {
@@ -1191,33 +1187,6 @@
       ],
       "aiLevel": 4,
       "aiNote": "Engineering function \"uses agentic AI tools throughout its development process\"",
-      "firstSeen": "2026-10-31T14:11:13.843Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "company": "Tenth Revolution Group (client: an AI product business, not named)",
-      "contract": "Not stated",
-      "contractNote": "listed full-time",
-      "id": "linkedin-4482524143",
-      "kind": "Adjacent",
-      "location": "Remote (UK)",
-      "mode": "Remote",
-      "modeNote": "\"Remote (UK) - Quarterly Team Meetups\"; \"Predominately remote working\"",
-      "notes": "Frontend-leaning full-stack; fully expensed quarterly meetups.",
-      "posted": "2026-10-28",
-      "region": "remote-uk",
-      "salary": "Up to £110,000",
-      "source": "LinkedIn",
-      "stack": "React, TypeScript, Python, AWS",
-      "title": "Frontend-Leaning Full Stack Engineer",
-      "url": "https://uk.linkedin.com/jobs/view/4482524143",
-      "via": "Agency",
-      "foundVia": [
-        "Tavily"
-      ],
-      "aiLevel": 2,
-      "aiNote": "\"Exposure to ... AI-assisted development workflows would be highly beneficial\" (also builds AI-powered products)",
       "firstSeen": "2026-10-31T14:11:13.843Z"
     },
     {
@@ -2912,7 +2881,8 @@
         "LinkedIn search Preston",
         "LinkedIn search: Manchester",
         "LinkedIn search: Warrington",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: remote UK"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -6361,39 +6331,6 @@
       "firstSeen": "2026-11-07T11:36:39.956Z"
     },
     {
-      "id": "linkedin-4486232887",
-      "source": "LinkedIn",
-      "url": "https://uk.linkedin.com/jobs/view/job-4486232887",
-      "posted": "2026-11-06",
-      "clearance": "eSC / eDV – eligible to obtain",
-      "clearanceNote": "Must be eligible for SC Clearance",
-      "contractNote": "",
-      "modeNote": "Option of fully remote or hybrid, plus ad hoc client-site travel",
-      "notes": "Consultant level covering junior to mid. Not a trainee-only advert. Visa sponsorship is not available.",
-      "title": ".Net Full Stack Developer (SC Eligible)",
-      "company": "Stealth iT Consulting (client: a digital consultancy)",
-      "via": "Agency",
-      "location": "United Kingdom (remote or hybrid)",
-      "region": "remote-uk",
-      "mode": "Remote",
-      "contract": "Permanent",
-      "salary": "Up to £55,000 + 10% pension",
-      "stack": "React, Angular or Blazor/Razor, .NET",
-      "kind": "Adjacent",
-      "foundVia": [
-        "LinkedIn search remote UK angular",
-        "LinkedIn search remote UK frontend 24h",
-        "LinkedIn search remote UK fullstack 24h",
-        "LinkedIn search: Liverpool",
-        "LinkedIn search: Preston",
-        "LinkedIn search: Manchester",
-        "LinkedIn search: Warrington"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-07T11:36:39.956Z"
-    },
-    {
       "id": "linkedin-4486232890",
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/job-4486232890",
@@ -6428,7 +6365,10 @@
         "LinkedIn search remote UK react 24h",
         "LinkedIn search Manchester react 24h",
         "LinkedIn search: Preston",
-        "LinkedIn search: Liverpool"
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Manchester"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -7104,34 +7044,6 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "contractNote": "",
-      "modeNote": "\"Fully remote, with occasional in-person meetings in Chichester, London or Manchester\"",
-      "notes": "Lead the LocumDeck platform migration from legacy PHP to Laravel/React/TypeScript.",
-      "aiLevel": 3,
-      "aiNote": "\"Fluent, current use of AI coding assistants (Claude / Claude Code preferred) inside a test-driven workflow\"; AI-accelerated V2 migration.",
-      "id": "linkedin-4487735570",
-      "title": "Senior Developer",
-      "company": "NASGP (National Association of Sessional GPs)",
-      "location": "United Kingdom (remote)",
-      "region": "remote-uk",
-      "mode": "Remote",
-      "contract": "Permanent",
-      "salary": "Up to £70,000",
-      "stack": "PHP 8, Laravel, MariaDB, React, TypeScript; Azure/AWS migration, CI/CD",
-      "kind": "Adjacent",
-      "via": "Direct",
-      "source": "LinkedIn",
-      "posted": "2026-11-05",
-      "url": "https://uk.linkedin.com/jobs/view/senior-developer-at-nasgp-national-association-of-sessional-gps-4487735570",
-      "claudeMention": "AI coding assistants (Claude / Claude Code preferred)",
-      "foundVia": [
-        "LinkedIn posting re-check"
-      ],
-      "firstSeen": "2026-11-09T09:20:01.497Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "contractNote": "",
       "modeNote": "\"Fully remote within the UK\"",
       "notes": "Senior full-stack role at a product-focused organisation; same Morson Edge role also listed by Netrolynx AI (linkedin-4486157289), kept once.",
       "aiLevel": 0,
@@ -7613,7 +7525,8 @@
       "foundVia": [
         "Totaljobs search",
         "OutsideIR35 search",
-        "LinkedIn search: remote UK"
+        "LinkedIn search: remote UK",
+        "CWJobs search"
       ],
       "aiLevel": 3,
       "aiNote": "\"AI-assisted engineering\" central; needs \"Hands-on experience with Claude Code in day-to-day engineering activities\".",
@@ -8363,11 +8276,12 @@
       "notes": "Senior engineering voice in a product area alongside a CX Lead; share options; digital nomad scheme.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington"
+      ],
       "aiLevel": 4,
       "aiNote": "\"Heavy use of AI tooling is expected.\"",
-      "foundVia": [
-        "LinkedIn search: Manchester"
-      ],
       "firstSeen": "2026-11-12T09:26:52.372Z"
     },
     {
@@ -8564,7 +8478,8 @@
       "clearanceNote": "",
       "foundVia": [
         "LinkedIn search: Manchester",
-        "LinkedIn search: Warrington"
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 0,
       "aiNote": "",
@@ -8592,7 +8507,8 @@
       "clearanceNote": "",
       "foundVia": [
         "LinkedIn search: Manchester",
-        "LinkedIn search: Warrington"
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Liverpool"
       ],
       "aiLevel": 5,
       "aiNote": "\"Heavily leverages Agentic AI\": you define specs, plans and acceptance criteria for AI agents to generate code, then steer, review, test and own it.",
@@ -8646,12 +8562,12 @@
       "notes": "Main developer on an ophthalmology exam-prep platform; finishing a Vue to React/TanStack Start migration. A few hours most days.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 3,
-      "aiNote": "Wants someone \"fluent with AI-assisted development tools (Claude Code, Cursor, Copilot or similar)\"; founders use Claude Code for routine changes.",
-      "claudeMention": "\"three founders who use Claude Code for routine changes\"; \"a custom MCP server for Claude\"",
       "foundVia": [
         "LinkedIn search: Preston"
       ],
+      "aiLevel": 3,
+      "aiNote": "Wants someone \"fluent with AI-assisted development tools (Claude Code, Cursor, Copilot or similar)\"; founders use Claude Code for routine changes.",
+      "claudeMention": "\"three founders who use Claude Code for routine changes\"; \"a custom MCP server for Claude\"",
       "firstSeen": "2026-11-12T14:21:56.354Z"
     },
     {
@@ -8729,11 +8645,11 @@
       "notes": "UI Developer for web, PWA and Electron desktop apps; end-to-end ownership from requirements to production support. Reed shows \"Competitive salary\".",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 4,
-      "aiNote": "\"AI native development\": proficient with Cursor, GitHub Copilot and agentic AI workflows; plans first, then uses AI to accelerate execution and reviews all AI output.",
       "foundVia": [
         "Reed search: remote"
       ],
+      "aiLevel": 4,
+      "aiNote": "\"AI native development\": proficient with Cursor, GitHub Copilot and agentic AI workflows; plans first, then uses AI to accelerate execution and reviews all AI output.",
       "firstSeen": "2026-11-13T09:23:26.851Z"
     },
     {
@@ -8756,11 +8672,11 @@
       "notes": "Front-end engineer in a multi-disciplinary product team with a strong focus on accessibility, performance and responsive design.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "CWJobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-13T09:23:26.851Z"
     },
     {
@@ -8783,11 +8699,11 @@
       "notes": "Senior full-stack role that owns front-end development across the company's websites and apps; mentors a junior front-end developer. Also on Totaljobs as \"Senior Web Developer\" and on LinkedIn.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "CWJobs search"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-13T09:23:26.851Z"
     },
     {
@@ -8810,11 +8726,12 @@
       "notes": "New high-volume Pricing & Billing platform in a large transformation programme; mainly C#/.NET with working React/TypeScript front-end changes. Same role also on OutsideIR35.",
       "clearance": "None stated",
       "clearanceNote": "",
+      "foundVia": [
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Preston"
+      ],
       "aiLevel": 3,
       "aiNote": "Requires \"practical experience using AI development tools to support coding, testing and code review\".",
-      "foundVia": [
-        "LinkedIn search: Liverpool"
-      ],
       "firstSeen": "2026-11-13T09:23:26.851Z"
     },
     {
@@ -8837,14 +8754,15 @@
       "notes": "Cloud-based Angular and .NET full-stack engineering in a self-managing team with frequent releases; reviews code and mentors.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "Only says interest in AI and emerging technologies is highly desirable; nothing on using AI tools to do the work.",
       "foundVia": [
         "LinkedIn search: Preston",
         "LinkedIn search: Manchester",
         "LinkedIn search: remote UK",
-        "LinkedIn search: Warrington"
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Liverpool"
       ],
+      "aiLevel": 0,
+      "aiNote": "Only says interest in AI and emerging technologies is highly desirable; nothing on using AI tools to do the work.",
       "firstSeen": "2026-11-13T09:23:26.851Z"
     },
     {
@@ -8867,12 +8785,12 @@
       "notes": "Builds web apps and digital tools for learning, teaching and assessment, including AI-enabled tools for students and staff.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 3,
-      "aiNote": "Wants \"experience using AI-assisted development tools thoughtfully and responsibly, with a focus on quality and accountability\".",
       "foundVia": [
         "LinkedIn search: Manchester",
         "LinkedIn search: Warrington"
       ],
+      "aiLevel": 3,
+      "aiNote": "Wants \"experience using AI-assisted development tools thoughtfully and responsibly, with a focus on quality and accountability\".",
       "firstSeen": "2026-11-13T09:23:26.851Z"
     },
     {
@@ -8895,18 +8813,203 @@
       "notes": "Owns frontend architecture and design system for AI-powered operating-room workflow software used by clinical teams. Early-stage equity.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool",
         "LinkedIn search: Preston",
         "LinkedIn search: remote UK",
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Manchester"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-13T09:23:26.851Z"
+    },
+    {
+      "id": "linkedin-4490718916",
+      "title": "Lead Front-End Developer",
+      "company": "BD Talent (client: growing FinTech business, not named)",
+      "location": "Central Stockport, Greater Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid, 3 office days\" in central Stockport",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Up to £60,000",
+      "posted": "2026-11-13",
+      "stack": "React, Umbraco 7+, HTML, CSS, JavaScript, TypeScript, Vite, component libraries, Azure DevOps, Octopus Deploy CI/CD",
+      "kind": "Frontend",
+      "via": "Agency",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4490718916",
+      "notes": "Leads a team of two front-end developers; owns websites, the React buying journey and a shared Umbraco/React component library for 5+ product launches in 2027. Works with Marketing, CRO and SEO.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 4,
+      "aiNote": "Wants to \"change how front end development gets done, using AI and automation\" as a key focus; evaluate AI coding tools and make AI \"part of everyday work\".",
+      "foundVia": [
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: remote UK"
+      ],
+      "firstSeen": "2026-11-13T14:26:40.093Z"
+    },
+    {
+      "id": "linkedin-4488252061",
+      "title": "Java React Full Stack Developer",
+      "company": "Randstad Digital (client not named)",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Hybrid (2 day per week in office)\"",
+      "contract": "Contract",
+      "contractNote": "6 months with possible extension",
+      "salary": "Not stated",
+      "posted": "2026-11-12",
+      "stack": "TypeScript (server side), React, AWS, microservices, event-driven architecture, API design, unit/integration/E2E testing, CI/CD, observability",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4488252061",
+      "notes": "Full-stack contract, 5+ years; nice to have e-commerce, search/ranking, user-generated content, reviews or recommendation engines, A/B testing. Title says Java but the text asks for TypeScript on the server.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester",
         "LinkedIn search: Warrington"
       ],
-      "firstSeen": "2026-11-13T09:23:26.851Z"
+      "firstSeen": "2026-11-13T14:26:40.093Z"
+    },
+    {
+      "id": "linkedin-4490733009",
+      "title": "Full-Stack Engineer (Frontend Leaning) - ElevenAI",
+      "company": "ElevenLabs",
+      "location": "United Kingdom (global remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"remote-first, so it can be executed globally\", must work in GMT-5 to GMT+8; optional London office",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-11-13",
+      "stack": "JavaScript, TypeScript, web/desktop/mobile front ends, APIs, streaming connections; bonus real-time audio/streaming UIs",
+      "kind": "Frontend",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4490733009",
+      "notes": "Builds the product experience of ElevenAI, a voice-first assistant for dictation, meetings and notes, across web, desktop and mobile. Small team, live product.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 3,
+      "aiNote": "Company value \"AI first: We use AI to move faster with higher-quality results... from engineering to growth\"; no specific tools named.",
+      "foundVia": [
+        "LinkedIn search: remote UK",
+        "LinkedIn search: Warrington",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Liverpool"
+      ],
+      "firstSeen": "2026-11-13T14:26:40.093Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "company": "Tenth Revolution Group (client: an AI product business, not named)",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "id": "linkedin-4482524143",
+      "kind": "Adjacent",
+      "location": "Remote (UK)",
+      "mode": "Remote",
+      "modeNote": "\"Remote (UK) - Quarterly Team Meetups\"; \"Predominately remote working\"",
+      "notes": "Frontend-leaning full-stack; fully expensed quarterly meetups.",
+      "posted": "2026-10-28",
+      "region": "remote-uk",
+      "salary": "Up to £110,000",
+      "source": "LinkedIn",
+      "stack": "React, TypeScript, Python, AWS",
+      "title": "Frontend-Leaning Full Stack Engineer",
+      "url": "https://uk.linkedin.com/jobs/view/4482524143",
+      "via": "Agency",
+      "foundVia": [
+        "Tavily"
+      ],
+      "aiLevel": 2,
+      "aiNote": "\"Exposure to ... AI-assisted development workflows would be highly beneficial\" (also builds AI-powered products)",
+      "firstSeen": "2026-10-31T14:11:13.843Z",
+      "closedAt": "2026-11-13T14:26:40.093Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "id": "linkedin-4486232887",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/job-4486232887",
+      "posted": "2026-11-06",
+      "clearance": "eSC / eDV – eligible to obtain",
+      "clearanceNote": "Must be eligible for SC Clearance",
+      "contractNote": "",
+      "modeNote": "Option of fully remote or hybrid, plus ad hoc client-site travel",
+      "notes": "Consultant level covering junior to mid. Not a trainee-only advert. Visa sponsorship is not available.",
+      "title": ".Net Full Stack Developer (SC Eligible)",
+      "company": "Stealth iT Consulting (client: a digital consultancy)",
+      "via": "Agency",
+      "location": "United Kingdom (remote or hybrid)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "contract": "Permanent",
+      "salary": "Up to £55,000 + 10% pension",
+      "stack": "React, Angular or Blazor/Razor, .NET",
+      "kind": "Adjacent",
+      "foundVia": [
+        "LinkedIn search remote UK angular",
+        "LinkedIn search remote UK frontend 24h",
+        "LinkedIn search remote UK fullstack 24h",
+        "LinkedIn search: Liverpool",
+        "LinkedIn search: Preston",
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-07T11:36:39.956Z",
+      "closedAt": "2026-11-13T14:26:40.093Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "",
+      "modeNote": "\"Fully remote, with occasional in-person meetings in Chichester, London or Manchester\"",
+      "notes": "Lead the LocumDeck platform migration from legacy PHP to Laravel/React/TypeScript.",
+      "aiLevel": 3,
+      "aiNote": "\"Fluent, current use of AI coding assistants (Claude / Claude Code preferred) inside a test-driven workflow\"; AI-accelerated V2 migration.",
+      "id": "linkedin-4487735570",
+      "title": "Senior Developer",
+      "company": "NASGP (National Association of Sessional GPs)",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "contract": "Permanent",
+      "salary": "Up to £70,000",
+      "stack": "PHP 8, Laravel, MariaDB, React, TypeScript; Azure/AWS migration, CI/CD",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "posted": "2026-11-05",
+      "url": "https://uk.linkedin.com/jobs/view/senior-developer-at-nasgp-national-association-of-sessional-gps-4487735570",
+      "claudeMention": "AI coding assistants (Claude / Claude Code preferred)",
+      "foundVia": [
+        "LinkedIn posting re-check"
+      ],
+      "firstSeen": "2026-11-09T09:20:01.497Z",
+      "closedAt": "2026-11-13T14:26:40.093Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
     {
       "clearance": "None stated",
       "clearanceNote": "",
