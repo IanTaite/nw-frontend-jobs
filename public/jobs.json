@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-18T13:57:46.891Z",
+  "updatedAt": "2026-11-19T16:09:45.484Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -21,7 +21,7 @@
       "Technojobs"
     ],
     "counts": {
-      "LinkedIn": 196,
+      "LinkedIn": 195,
       "Reed": 26,
       "Totaljobs": 30,
       "OutsideIR35": 16,
@@ -31,14 +31,7 @@
     "verifiedOn": "2026-11-10",
     "notes": "18 Nov 2026 08:48 GMT refresh (previous 17 Nov 14:00 run was not published; its uncommitted output was stashed and its new roles re-checked in this run). Reed, Totaljobs/CWJobs, OutsideIR35 path filters and Tavily searched in parallel; LinkedIn searched one page at a time 3-5 s apart (45 search pages, 0 HTTP 429). 25 new (19 first found by the unpublished 17 Nov run, 6 found today), 20 moved to closed. Final verify: 4 postings could not be checked and were kept (LinkedIn: 1 HTTP 429 after retry, 2 timeouts; WeAreDevelopers HTTP 403)."
   },
-  "newSinceLastRun": [
-    "linkedin-4491799603",
-    "linkedin-4490875913",
-    "linkedin-4490885698",
-    "linkedin-4490880769",
-    "totaljobs-108340133",
-    "linkedin-4488595994"
-  ],
+  "newSinceLastRun": [],
   "jobs": [
     {
       "clearance": "None stated",
@@ -5277,34 +5270,6 @@
       "firstSeen": "2026-11-07T11:36:39.956Z"
     },
     {
-      "id": "linkedin-4486229267",
-      "source": "LinkedIn",
-      "url": "https://uk.linkedin.com/jobs/view/job-4486229267",
-      "posted": "2026-11-06",
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "contractNote": "contract",
-      "modeNote": "Remote flexibility depends on the project",
-      "notes": "Manchester contract. Responsive React apps. Workplace pattern depends on the project.",
-      "title": "Frontend Developer",
-      "company": "SThree (client not named)",
-      "via": "Agency",
-      "location": "Manchester",
-      "region": "north-west",
-      "mode": "Not stated",
-      "contract": "Contract",
-      "salary": "£500–£700/day",
-      "stack": "React, JavaScript",
-      "kind": "Frontend",
-      "foundVia": [
-        "LinkedIn search Manchester vue",
-        "Tavily"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-07T11:36:39.956Z"
-    },
-    {
       "id": "linkedin-4486230214",
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/job-4486230214",
@@ -8999,6 +8964,36 @@
     }
   ],
   "closed": [
+    {
+      "id": "linkedin-4486229267",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/job-4486229267",
+      "posted": "2026-11-06",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "contract",
+      "modeNote": "Remote flexibility depends on the project",
+      "notes": "Manchester contract. Responsive React apps. Workplace pattern depends on the project.",
+      "title": "Frontend Developer",
+      "company": "SThree (client not named)",
+      "via": "Agency",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Not stated",
+      "contract": "Contract",
+      "salary": "£500–£700/day",
+      "stack": "React, JavaScript",
+      "kind": "Frontend",
+      "foundVia": [
+        "LinkedIn search Manchester vue",
+        "Tavily"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-07T11:36:39.956Z",
+      "closedAt": "2026-11-19T16:09:45.484Z",
+      "closedReason": "Ian approved exclusion (19 Nov 2026). Advert says: \"Please note the content of this advert does not represent a live vacancy.\""
+    },
     {
       "id": "linkedin-4484320937",
       "title": "Full Stack Engineer",
