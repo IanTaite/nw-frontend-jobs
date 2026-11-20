@@ -19,6 +19,8 @@ const SORTS = ['newest', 'discovered', 'salary', 'company', 'ai'] as const;
 type Sort = (typeof SORTS)[number];
 /** Pause after the last keystroke before the search is applied. */
 const SEARCH_DEBOUNCE_MS = 300;
+/** Re-read jobs.json while the page stays open. Same cadence as the service-worker update poll. */
+const JOBS_REFRESH_MS = 5 * 60 * 1000;
 
 @Component({
   selector: 'app-root',
@@ -139,16 +141,34 @@ export class App {
   constructor() {
     syncQueryParams(this.queryParams);
     this.load();
-    const t = setInterval(() => this.now.set(Date.now()), 60_000);
+    const clock = setInterval(() => this.now.set(Date.now()), 60_000);
+    // The service worker only refreshes jobs.json when something requests it. An open
+    // tab used to keep the first response until the update banner reloaded the page.
+    const refresh = setInterval(() => this.load({ quiet: true }), JOBS_REFRESH_MS);
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') this.load({ quiet: true });
+    };
+    const onPageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) this.load({ quiet: true });
+    };
+    document.addEventListener('visibilitychange', onVisible);
+    window.addEventListener('pageshow', onPageShow);
     inject(DestroyRef).onDestroy(() => {
-      clearInterval(t);
+      clearInterval(clock);
+      clearInterval(refresh);
+      document.removeEventListener('visibilitychange', onVisible);
+      window.removeEventListener('pageshow', onPageShow);
       clearTimeout(this.searchTimer);
     });
   }
 
-  protected load() {
-    this.loading.set(true);
-    this.error.set(null);
+  /** `quiet` refreshes data already on screen without the loading overlay. */
+  protected load(options?: { quiet?: boolean }) {
+    const quiet = options?.quiet === true && this.data() !== null;
+    if (!quiet) {
+      this.loading.set(true);
+      this.error.set(null);
+    }
     // Relative URL so it works under any base path; cache-buster so an hourly refresh shows immediately.
     this.http.get<JobsFile>(`jobs.json?t=${Date.now()}`).subscribe({
       next: (d) => {
@@ -156,10 +176,11 @@ export class App {
         this.data.set(d);
         this.dropUnknownOptions();
         this.loading.set(false);
+        this.error.set(null);
       },
       error: () => {
-        this.error.set('Could not load jobs.json.');
         this.loading.set(false);
+        if (!quiet) this.error.set('Could not load jobs.json.');
       },
     });
   }
