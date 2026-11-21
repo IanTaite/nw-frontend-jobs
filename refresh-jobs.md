@@ -30,11 +30,11 @@ Leave out:
      - "frontend developer" "fully remote" UK, "remote UK" "front end developer", "react developer" remote "UK only"
      - the same query with site:totaljobs.com, site:cwjobs.co.uk and site:uk.linkedin.com/jobs/view
      - the same query with "front end developer", "angular developer", "react developer" and "vue developer"
-   - **Direct board pages** (curl with a browser user agent). These are more complete than search results:
-     - Reed: the search page's `__NEXT_DATA__` JSON. The detail pages give `jobContractType`, `inferredJobLocationType` and `isAgency`.
-     - Totaljobs and CWJobs: `__PRELOADED_STATE__["app-unifiedResultlist"]`.
-     - LinkedIn: `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=frontend%20developer&location=North%20West%20England&f_TPR=r2592000`, and for remote UK `...&location=United%20Kingdom&f_WT=2&f_TPR=r2592000`.
-   - OutsideIR35 (`https://outsideir35.org.uk/`): public contract (outside IR35) board. Path filters work, e.g. `/jobs/angular`, `/jobs/react/remote`, `/jobs/typescript/remote`, `/jobs/javascript/remote`, `/jobs/react/hybrid`, `/jobs/dotnet/remote`. Pagination uses `?po=50` (offset). Individual posts are `/jobs/<slug>/<alphanumericId>` and are readable without login; some newer rows show "Unlock to Apply" (OIR35+) where the company name is hidden but the overview/requirements remain visible. `robots.txt` allows `/`. Fetch **one page at a time** with a 2–3 second gap. Board job ids are alphanumeric (e.g. `7UMLyrNRil`), so role ids look like `outsideir35-7UMLyrNRil`. Query-string title/location filters are unreliable from curl (client-side); prefer the path filters above. No public RSS/API documented — HTML listings only.
+   - **Direct board pages** (curl with a browser user agent). Sort each search **newest first**, and stop paging that search when a page is entirely ids already in `jobs` or `closed`, or every posting on the page is older than this file's `updatedAt`. One new id on a page means you still fetch the next page.
+     - Reed: the search page's `__NEXT_DATA__` JSON, with `sortBy=displayDate`. The detail pages give `jobContractType`, `inferredJobLocationType` and `isAgency`. Page with `pageno`.
+     - Totaljobs and CWJobs: `__PRELOADED_STATE__["app-unifiedResultlist"]`, with `sort=date` on the search URL.
+     - LinkedIn: `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=frontend%20developer&location=North%20West%20England&f_TPR=r2592000&sortBy=DD`, and for remote UK `...&location=United%20Kingdom&f_WT=2&f_TPR=r2592000&sortBy=DD`. `sortBy=DD` is newest first. Page with `start`.
+   - OutsideIR35 (`https://outsideir35.org.uk/`): public contract (outside IR35) board. Path filters work, e.g. `/jobs/angular`, `/jobs/react/remote`, `/jobs/typescript/remote`, `/jobs/javascript/remote`, `/jobs/react/hybrid`, `/jobs/dotnet/remote`. The list is newest first; there is no sort parameter to add. Pagination uses `?po=50` (offset). Stop when a page is all known ids or older than `updatedAt`. Individual posts are `/jobs/<slug>/<alphanumericId>` and are readable without login; some newer rows show "Unlock to Apply" (OIR35+) where the company name is hidden but the overview/requirements remain visible. `robots.txt` allows `/`. Fetch **one page at a time** with a 2–3 second gap. Board job ids are alphanumeric (e.g. `7UMLyrNRil`), so role ids look like `outsideir35-7UMLyrNRil`. Query-string title/location filters are unreliable from curl (client-side); prefer the path filters above. No public RSS/API documented — HTML listings only.
    - Indeed, Adzuna, Jobserve and Technojobs blocked the box on 30 Oct 2026. Keep listing them under `sources.blocked` until they work.
 
 3. **For each new posting**, open the posting page and read the description:
@@ -69,12 +69,14 @@ Leave out:
    - **Unknown id**: `firstSeen` = now, and the id goes into `newSinceLastRun`.
    - A posting already in `jobs` but missing from this run's search results is **not** closed just because search missed it. It stays until its own URL shows it's closed.
    - `newSinceLastRun` is replaced on every run. It lists only the ids first found in that run, and is `[]` if there are none.
-   - It then re-fetches every open posting's URL and **moves** a posting to the `closed` array (with `closedAt` = now and a `closedReason`) on HTTP 404/410, a redirect away from the job id (Reed/Totaljobs), closed wording such as "No longer accepting applications", or an explicit not-a-real-vacancy phrase from `NOT_A_VACANCY`. The reason for that last case is `Advert says it is not a live vacancy ("…")`, quoting the matched words.
-   - A posting it can't check (blocked or timed out) is kept and logged. It isn't dropped on a guess.
+   - It then re-fetches **due** posting URLs, not every open one. Due means: a new candidate this run, a role that just reopened, an id in `scripts/excluded.json`, or an open role whose `lastChecked` is missing or more than 20 hours ago. Newest candidates go first, then the oldest `lastChecked`. `--full` treats every open role as due. The scheduled runs do not pass `--full`.
+   - LinkedIn checks stop after `--time-budget-min` (default **15**). The clock includes the fetch, the 3–5 second gap, and the 20 second wait after a 429. `--max-checks N` caps how many posting URLs are fetched. Roles past either limit stay as they are, with the same `lastChecked`. Other boards are not on that 15 minute clock.
+   - A fetched posting **moves** to `closed` (with `closedAt` = now and a `closedReason`) on HTTP 404/410, a redirect away from the job id (Reed/Totaljobs), closed wording such as "No longer accepting applications", or an explicit not-a-real-vacancy phrase from `NOT_A_VACANCY`. The reason for that last case is `Advert says it is not a live vacancy ("…")`, quoting the matched words. A fetch that was made, including a 429 or a timeout, sets `lastChecked` so the same URL is not hammered again inside 20 hours. The role stays open when the check did not show it was closed.
+   - Each check prints one line as it starts and one with the result, both flushed immediately, and the same lines go to `scripts/.verify-jobs.progress`. A run the box kills still leaves that file. `scripts/.verify-jobs.lock` holds the pid. If that pid is alive, a second run exits instead of starting another LinkedIn scrape. A lock whose pid is dead is removed.
    - Entries in `closed` older than 30 days (by `closedAt`) are removed.
-   - It sets `updatedAt` to the current ISO time, recounts `sources.counts`, and writes the file atomically.
-   - `--no-fetch` runs only the merge step, for testing offline.
-   - Use `--dry-run` to see the results without writing anything.
+   - It sets `updatedAt` to the current ISO time, recounts `sources.counts`, and writes the file atomically. `lastChecked` is stored on the role and is never shown in the UI.
+   - `--no-fetch` runs only the merge and the due-selection, for testing offline. It does not fetch and does not stamp `lastChecked`.
+   - Use `--dry-run` to see the results without writing `jobs.json`.
 
 7. **Validate against the schema** before publishing, with a local ajv 8 + ajv-formats install (`npm i --prefix /tmp/ajvv ajv@8 ajv-formats@3`, then validate with `Ajv2020` + `addFormats`). If it fails, **don't publish**. Keep the last good file.
 
@@ -89,6 +91,7 @@ Leave out:
 - **Region**: a "Region" filter (All / North West / Remote UK), a region label on each role, and North West / Remote UK counts in the summary. Roles without `region` count under All only.
 - **New badge**: shown only for ids listed in `newSinceLastRun`, i.e. roles that were not in the previous refresh. Known roles are unmarked on the next refresh. There's also a "New only" filter, a "Newest discovered" sort (by `firstSeen`) and a "New this refresh" count in the summary.
 - **Recently closed**: a collapsed section listing `closed` (newest `closedAt` first), with the reason and the source link.
+- **`lastChecked`**: when the posting URL was last fetched. The UI must never show it.
 
 ## Notes
 - Run times are UTC (`updatedAt` ends in `Z`). The site shows them in UK time.
@@ -100,6 +103,7 @@ Leave out:
 
 - Every candidate carries an optional `foundVia` array saying how the run found it, for example `"LinkedIn search: Manchester"`, `"LinkedIn search: remote UK"`, `"Reed search"`, `"Totaljobs search"`, `"outsideir35.org.uk"`, `"Tavily"` or `"Tavily extract"`. `verify-jobs.mjs` merges it with earlier values, so it grows over time. It is stored only. The UI must never show it. Existing roles have no `foundVia` until a later run finds them again; don't invent it.
 - LinkedIn is fetched **one page at a time** with a 3-5 second pause between pages, in the run's searches and in the posting checks. No parallel batches on LinkedIn. After a 429, wait 20 seconds and retry once, then keep the role open and log it. Other sources can still run in parallel with each other.
+- **Stay under about 35 minutes.** The box kills the routine at roughly 45 minutes, and a verify that rechecked every LinkedIn role through a string of 429s used 35 minutes by itself. A scheduled run should finish in about 35: the searches are newest-first and stop at the first page that is all known ids or older than `updatedAt`, and `verify-jobs.mjs` is left on its defaults (20 hour window, 15 minute LinkedIn budget, no `--full`). The first runs after `lastChecked` exists will spend that 15 minutes clearing the oldest unchecked LinkedIn roles, then later runs only recheck what is older than 20 hours plus that run's new candidates. Do not start a second verify while `scripts/.verify-jobs.lock` names a live pid. If a run is killed, read `scripts/.verify-jobs.progress` before trying again.
 
 ## AI usage rating (`aiLevel`, `aiNote`)
 
