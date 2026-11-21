@@ -61,13 +61,15 @@ Leave out:
 
 5. **Filter.** Keep only North West England postings (`north-west`) or fully remote roles open to UK residents (`remote-uk`), following the rules under Search scopes. Leave out duplicates (the same role and company on another board: keep the one with more detail), trainee or course ads, hybrid/office roles outside the North West, and EU-only or US-only remote roles.
 
+   **Not a real vacancy.** Some advertisers (SThree is one) post ads only to collect candidates, with no role behind them. On the full text from step 3, reject the posting when it says so explicitly. The phrases that count are the `NOT_A_VACANCY` list in `scripts/verify-jobs.mjs`, and that file is the only place they are defined. The list covers wording such as "does not represent a live vacancy", "not a live role", a speculative advert or application, "building a talent pool" or "talent pipeline", "register your interest" in future roles, "for future opportunities" said about the advert itself, "example of the roles we recruit for", and "this is a general application". Such postings are never candidates. A real role that tells people not to send speculative CVs or general applications stays in. Vague recruiter boilerplate stays in, including a "register your interest" button on a real job and "we keep a database of candidates".
+
 6. **Merge, verify and close**: write every posting found in steps 2–5 (open ones only, with the same field set and their stable `id`) to a temp file such as `/tmp/candidates.json` (a JSON array). Then run `node scripts/verify-jobs.mjs --candidates /tmp/candidates.json`. The script matches postings by `id`:
    - **Known id**: the fresh field values replace the old ones, but `firstSeen` is **kept** and never overwritten.
    - **Id in `closed`** (the posting came back): it moves back to `jobs` with its original `firstSeen`. It isn't counted as new.
    - **Unknown id**: `firstSeen` = now, and the id goes into `newSinceLastRun`.
    - A posting already in `jobs` but missing from this run's search results is **not** closed just because search missed it. It stays until its own URL shows it's closed.
    - `newSinceLastRun` is replaced on every run. It lists only the ids first found in that run, and is `[]` if there are none.
-   - It then re-fetches every open posting's URL and **moves** a posting to the `closed` array (with `closedAt` = now and a `closedReason`) on HTTP 404/410, a redirect away from the job id (Reed/Totaljobs), or closed wording such as "No longer accepting applications".
+   - It then re-fetches every open posting's URL and **moves** a posting to the `closed` array (with `closedAt` = now and a `closedReason`) on HTTP 404/410, a redirect away from the job id (Reed/Totaljobs), closed wording such as "No longer accepting applications", or an explicit not-a-real-vacancy phrase from `NOT_A_VACANCY`. The reason for that last case is `Advert says it is not a live vacancy ("…")`, quoting the matched words.
    - A posting it can't check (blocked or timed out) is kept and logged. It isn't dropped on a guess.
    - Entries in `closed` older than 30 days (by `closedAt`) are removed.
    - It sets `updatedAt` to the current ISO time, recounts `sources.counts`, and writes the file atomically.
@@ -125,4 +127,4 @@ Every role carries an optional `aiLevel` (integer 0-5) and `aiNote` (short strin
 
 - LinkedIn postings marked "No longer accepting applications" or "Not currently accepting applications" count as closed and must be excluded. Their wording is not always present on the public guest page, so when a posting's text or the user reports it, treat the role as closed.
 
-- `scripts/excluded.json` lists role ids to keep out (id → reason): the script closes them and ignores them if a search finds them again. Add an id there when the user reports a role as closed or unwanted.
+- `scripts/excluded.json` lists role ids to keep out (id → reason): the script closes them and ignores them if a search finds them again. Add an id there when the user reports a role as closed or unwanted, and when a posting is dropped because it is not a real vacancy, so a later search cannot bring it back.

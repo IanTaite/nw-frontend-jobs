@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-19T16:09:45.484Z",
+  "updatedAt": "2026-11-21T20:17:31.078Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -21,7 +21,7 @@
       "Technojobs"
     ],
     "counts": {
-      "LinkedIn": 195,
+      "LinkedIn": 194,
       "Reed": 26,
       "Totaljobs": 30,
       "OutsideIR35": 16,
@@ -5270,33 +5270,6 @@
       "firstSeen": "2026-11-07T11:36:39.956Z"
     },
     {
-      "id": "linkedin-4486230214",
-      "source": "LinkedIn",
-      "url": "https://uk.linkedin.com/jobs/view/job-4486230214",
-      "posted": "2026-11-06",
-      "foundVia": [
-        "LinkedIn search Manchester angular"
-      ],
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "contractNote": "contract",
-      "modeNote": "Hybrid working",
-      "notes": "Separate Manchester hybrid contract from SThree's React-only frontend advert.",
-      "aiLevel": 0,
-      "aiNote": "",
-      "title": "Full Stack Developer",
-      "company": "SThree (client not named)",
-      "via": "Agency",
-      "location": "Manchester",
-      "region": "north-west",
-      "mode": "Hybrid",
-      "contract": "Contract",
-      "salary": "£500–£700/day",
-      "stack": "React, .NET, ASP.NET, Java",
-      "kind": "Adjacent",
-      "firstSeen": "2026-11-07T11:36:39.956Z"
-    },
-    {
       "id": "linkedin-4488186318",
       "source": "LinkedIn",
       "url": "https://uk.linkedin.com/jobs/view/job-4488186318",
@@ -8964,6 +8937,35 @@
     }
   ],
   "closed": [
+    {
+      "id": "linkedin-4486230214",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/job-4486230214",
+      "posted": "2026-11-06",
+      "foundVia": [
+        "LinkedIn search Manchester angular"
+      ],
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "contract",
+      "modeNote": "Hybrid working",
+      "notes": "Separate Manchester hybrid contract from SThree's React-only frontend advert.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "title": "Full Stack Developer",
+      "company": "SThree (client not named)",
+      "via": "Agency",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "contract": "Contract",
+      "salary": "£500–£700/day",
+      "stack": "React, .NET, ASP.NET, Java",
+      "kind": "Adjacent",
+      "firstSeen": "2026-11-07T11:36:39.956Z",
+      "closedAt": "2026-11-21T20:17:31.078Z",
+      "closedReason": "Advert says it is not a live vacancy: \"Please note the content of this advert does not represent a live vacancy.\""
+    },
     {
       "id": "linkedin-4486229267",
       "source": "LinkedIn",
