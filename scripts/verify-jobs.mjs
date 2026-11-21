@@ -5,21 +5,32 @@
 //     - known id      -> keep its original firstSeen (never overwritten); other fields take the fresh values
 //     - id in closed  -> reopened: moves back to jobs with its original firstSeen (not counted as new)
 //     - unknown id    -> firstSeen = now, added to newSinceLastRun
-//  2. Re-checks every open posting URL; closed or dead ones move to `closed` with closedAt + closedReason.
+//  2. Re-checks open posting URLs that are new this run, or whose lastChecked is older than 20 hours.
+//     A LinkedIn time budget (default 15 min) and an optional --max-checks cap stop the run early.
+//     Roles that are not rechecked keep their current state. Closed or dead ones move to `closed`.
 //     Postings that can't be checked (blocked or timed out) are kept, never dropped on a guess.
+//     A role is never closed just because this run's search did not return it.
 //  3. Prunes `closed` entries older than 30 days, stamps updatedAt, recounts sources.counts, writes atomically.
-// Usage: node scripts/verify-jobs.mjs [--candidates new.json] [--dry-run] [--no-fetch] [--in f] [--out f]
-import { readFileSync, writeFileSync, renameSync } from 'node:fs';
-import { pathToFileURL } from 'node:url';
+// Usage: node scripts/verify-jobs.mjs [--candidates new.json] [--dry-run] [--no-fetch] [--full]
+//        [--max-checks N] [--time-budget-min N] [--in f] [--out f] [--lock f] [--progress f]
+import { readFileSync, writeFileSync, renameSync, openSync, closeSync, unlinkSync, writeSync } from 'node:fs';
+import { pathToFileURL, fileURLToPath } from 'node:url';
 
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
 const dry = args.includes('--dry-run');
 const noFetch = args.includes('--no-fetch'); // test the merge logic offline
+const full = args.includes('--full'); // recheck every open role, ignoring the 20-hour window
 const inFile = opt('--in', 'public/jobs.json');
 const outFile = opt('--out', inFile);
 const candFile = opt('--candidates', null);
+const maxChecksArg = opt('--max-checks', null);
+const maxChecks = maxChecksArg == null ? Infinity : Number(maxChecksArg);
+const timeBudgetMin = Number(opt('--time-budget-min', '15'));
+const lockPath = opt('--lock', fileURLToPath(new URL('./.verify-jobs.lock', import.meta.url)));
+const progressPath = opt('--progress', fileURLToPath(new URL('./.verify-jobs.progress', import.meta.url)));
 const CLOSED_KEEP_DAYS = 30;
+const STALE_MS = 20 * 60 * 60 * 1000;
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36';
 
 // Phrases that mean the posting is closed even if the page returns 200.
@@ -141,11 +152,78 @@ export function inferRegion(j) {
   return 'remote-uk';
 }
 
-const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
-if (isDirectRun) await main();
+function pidAlive(pid) {
+  if (!Number.isInteger(pid) || pid <= 0) return false;
+  try { process.kill(pid, 0); return true; } catch (e) { return e.code === 'EPERM'; }
+}
 
-async function main() {
+// One writer at a time. A lock whose pid has died is stale (the box kills a run, it does not get to clean up).
+function acquireLock() {
+  const body = JSON.stringify({ pid: process.pid, startedAt: new Date().toISOString() }) + '\n';
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      writeFileSync(lockPath, body, { flag: 'wx' });
+      return;
+    } catch (e) {
+      if (e.code !== 'EEXIST') throw e;
+      let info = {};
+      try { info = JSON.parse(readFileSync(lockPath, 'utf8')); } catch {}
+      if (pidAlive(info.pid)) {
+        writeSync(2, `verify-jobs.mjs is already running (pid ${info.pid}). Refusing to start a second LinkedIn scrape.\n`);
+        process.exit(1);
+      }
+      try { unlinkSync(lockPath); } catch {}
+    }
+  }
+  writeSync(2, `verify-jobs.mjs could not take the lock at ${lockPath}.\n`);
+  process.exit(1);
+}
+
+function releaseLock() {
+  try {
+    const info = JSON.parse(readFileSync(lockPath, 'utf8'));
+    if (info.pid === process.pid) unlinkSync(lockPath);
+  } catch {}
+}
+
+// New this run, then reopened, then oldest lastChecked. A missing lastChecked sorts first (never checked).
+export function checkOrder(jobs, { newIds = [], reopenedIds = [], excludedIds = [], nowMs = Date.now(), full = false } = {}) {
+  const isNew = new Set(newIds);
+  const isReopened = new Set(reopenedIds);
+  const isExcluded = new Set(excludedIds);
+  const due = jobs.filter(j => {
+    if (isExcluded.has(j.id) || full || isNew.has(j.id) || isReopened.has(j.id)) return true;
+    const t = Date.parse(j.lastChecked ?? '');
+    if (Number.isNaN(t)) return true;
+    return nowMs - t > STALE_MS;
+  });
+  const rank = j => isExcluded.has(j.id) ? -1 : isNew.has(j.id) ? 0 : isReopened.has(j.id) ? 1 : 2;
+  const seen = j => { const t = Date.parse(j.lastChecked ?? ''); return Number.isNaN(t) ? 0 : t; };
+  return due.sort((a, b) => rank(a) - rank(b) || seen(a) - seen(b) || String(a.firstSeen ?? '').localeCompare(String(b.firstSeen ?? '')) || a.id.localeCompare(b.id));
+}
+
+const isDirectRun = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isDirectRun) {
+  acquireLock();
+  let progressFd;
+  const progress = line => {
+    writeSync(1, line + '\n');
+    if (progressFd != null) writeSync(progressFd, line + '\n');
+  };
+  const release = () => { releaseLock(); try { if (progressFd != null) closeSync(progressFd); } catch {} };
+  process.on('SIGINT', () => { release(); process.exit(130); });
+  process.on('SIGTERM', () => { release(); process.exit(143); });
+  try {
+    progressFd = openSync(progressPath, 'w');
+    await main(progress);
+  } finally {
+    release();
+  }
+}
+
+async function main(progress) {
 const now = new Date().toISOString();
+const nowMs = Date.parse(now);
 const data = JSON.parse(readFileSync(inFile, 'utf8'));
 data.closed ??= [];
 const strip = ({ closedAt, closedReason, ...j }) => j;
@@ -180,12 +258,18 @@ if (candFile) {
     const known = byId.get(c.id);
     const wasClosed = closedById.get(c.id);
     if (known) {
-      byId.set(c.id, { ...withAi(withFoundVia(withRegion(strip(c), known), known), known), firstSeen: known.firstSeen });               // never overwrite firstSeen
+      const next = { ...withAi(withFoundVia(withRegion(strip(c), known), known), known), firstSeen: known.firstSeen }; // never overwrite firstSeen
+      if (known.lastChecked) next.lastChecked = known.lastChecked; else delete next.lastChecked;
+      byId.set(c.id, next);
     } else if (wasClosed) {
-      byId.set(c.id, { ...withAi(withFoundVia(withRegion(strip(c), wasClosed), wasClosed), wasClosed), firstSeen: wasClosed.firstSeen });           // reopened
+      const next = { ...withAi(withFoundVia(withRegion(strip(c), wasClosed), wasClosed), wasClosed), firstSeen: wasClosed.firstSeen };
+      if (wasClosed.lastChecked) next.lastChecked = wasClosed.lastChecked; else delete next.lastChecked;
+      byId.set(c.id, next);
       closedById.delete(c.id); reopened.push(c.id);
     } else {
-      byId.set(c.id, { ...withRegion(strip(c)), firstSeen: now }); newIds.push(c.id);        // newly discovered
+      const next = { ...withRegion(strip(c)), firstSeen: now };
+      delete next.lastChecked;
+      byId.set(c.id, next); newIds.push(c.id);        // newly discovered
     }
   }
 }
@@ -194,20 +278,37 @@ for (const j of byId.values()) if (!j.region) { j.region = inferRegion(j); conso
 // Any job missing firstSeen (hand-added) is treated as discovered now.
 for (const j of byId.values()) if (!j.firstSeen) { j.firstSeen = now; if (!newIds.includes(j.id)) newIds.push(j.id); }
 
-// 2. Verify every open posting.
-const results = [];
-// One at a time. LinkedIn is paced slowly (3-5 s between pages) and a 429 gets one retry after a longer wait; the rest keep the short delay.
+// 2. Verify the roles that are due. New and reopened first, then oldest lastChecked.
+// LinkedIn stays one page at a time. Its fetches, the 3-5 s gap, and a 429's 20 s retry all count
+// toward --time-budget-min (default 15). Other boards do not. Roles past the budget or --max-checks
+// are left as they are. Excluded ids are closed from the list and do not count as a fetch.
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-for (const job of byId.values()) {
-  const li = /linkedin/.test(job.url);
+const liBudgetMs = timeBudgetMin * 60 * 1000;
+const queue = checkOrder([...byId.values()], { newIds, reopenedIds: reopened, excludedIds: Object.keys(EXCLUDED), nowMs, full });
+const dueIds = new Set(queue.map(j => j.id));
+const checked = new Map();
+let checks = 0;
+let liMs = 0;
+progress(`# verify-jobs ${now} pid=${process.pid} full=${full} noFetch=${noFetch} budgetMin=${timeBudgetMin} maxChecks=${Number.isFinite(maxChecks) ? maxChecks : 'none'} due=${queue.length} fresh=${byId.size - queue.length}`);
+for (const job of queue) {
+  const li = /linkedin/i.test(job.url);
+  const excluded = Boolean(EXCLUDED[job.id]);
+  if (!excluded && checks >= maxChecks) { progress(`defer   ${job.id.padEnd(22)} ${job.company} — max-checks ${maxChecks}`); continue; }
+  if (!excluded && li && liMs >= liBudgetMs) { progress(`defer   ${job.id.padEnd(22)} ${job.company} — LinkedIn time budget (${timeBudgetMin} min)`); continue; }
+  progress(`check   ${job.id.padEnd(22)} ${job.company}${newIds.includes(job.id) ? ' [NEW]' : ''}`);
+  const t0 = Date.now();
   let r = await check(job);
   if (li && !noFetch && r.status === 'unknown' && /429/.test(r.why ?? '')) { await sleep(20000); r = await check(job); }
-  results.push(r);
-  if (!noFetch) await sleep(li ? 3000 + Math.random() * 2000 : 800);
+  if (!noFetch && !excluded) await sleep(li ? 3000 + Math.random() * 2000 : 800);
+  if (!excluded && li && !noFetch) liMs += Date.now() - t0;
+  if (!excluded) checks++;
+  if (!noFetch && !excluded) r.job.lastChecked = now;
+  checked.set(job.id, r);
+  progress(`${r.status.padEnd(7)} ${r.job.id.padEnd(22)} ${r.job.company}${r.why ? ' — ' + r.why : ''}${newIds.includes(r.job.id) ? ' [NEW]' : ''}`);
 }
-for (const r of results) console.log(`${r.status.padEnd(7)} ${r.job.id.padEnd(22)} ${r.job.company}${r.why ? ' — ' + r.why : ''}${newIds.includes(r.job.id) ? ' [NEW]' : ''}`);
+const results = [...byId.values()].map(job => checked.get(job.id) ?? { job, status: dueIds.has(job.id) ? 'deferred' : 'fresh' });
 
-const keep = results.filter(r => r.status === 'open' || r.status === 'unknown').map(r => r.job);
+const keep = results.filter(r => r.status === 'open' || r.status === 'unknown' || r.status === 'deferred' || r.status === 'fresh').map(r => r.job);
 const dropped = results.filter(r => r.status === 'gone' || r.status === 'closed')
   .map(r => ({ ...r.job, closedAt: now, closedReason: r.why }));
 
@@ -216,8 +317,11 @@ const cutoff = Date.now() - CLOSED_KEEP_DAYS * 864e5;
 const closed = [...dropped, ...closedById.values()].filter(j => Date.parse(j.closedAt) >= cutoff);
 const newSinceLastRun = newIds.filter(id => keep.some(j => j.id === id));
 
-console.log(`\n${keep.length} open (${newSinceLastRun.length} new, ${reopened.length} reopened), ${dropped.length} moved to closed, ` +
-  `${results.filter(r => r.status === 'unknown').length} could not be checked (kept), ${closed.length} in closed list.`);
+const freshN = results.filter(r => r.status === 'fresh').length;
+const deferredN = results.filter(r => r.status === 'deferred').length;
+progress(`\n${keep.length} open (${newSinceLastRun.length} new, ${reopened.length} reopened), ${dropped.length} moved to closed, ` +
+  `${results.filter(r => r.status === 'unknown').length} could not be checked (kept), ${freshN} skipped as fresh, ` +
+  `${deferredN} deferred by the recheck budget, ${closed.length} in closed list. Progress ${progressPath}`);
 
 if (!dry) {
   data.jobs = keep;
@@ -229,6 +333,6 @@ if (!dry) {
     newSinceLastRun: data.newSinceLastRun, jobs: data.jobs, closed: data.closed };
   writeFileSync(outFile + '.tmp', JSON.stringify(ordered, null, 2) + '\n');
   renameSync(outFile + '.tmp', outFile); // atomic swap so the live site never reads half a file
-  console.log(`Wrote ${outFile} (updatedAt ${data.updatedAt})`);
+  progress(`Wrote ${outFile} (updatedAt ${data.updatedAt})`);
 }
 }

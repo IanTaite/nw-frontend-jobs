@@ -215,6 +215,11 @@
           "format": "date-time",
           "description": "When this id was first discovered. Set once, never overwritten by later refreshes"
         },
+        "lastChecked": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When verify-jobs last fetched this posting URL. Optional. Missing means not checked yet. Stored only; the UI must never show it."
+        },
         "closedAt": {
           "type": "string",
           "format": "date-time",
