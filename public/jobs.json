@@ -1,6 +1,6 @@
 {
   "$schema": "./jobs.schema.json",
-  "updatedAt": "2026-11-23T13:54:41.305Z",
+  "updatedAt": "2026-11-24T09:00:48.354Z",
   "region": "North West England plus remote UK",
   "sources": {
     "searched": [
@@ -18,9 +18,9 @@
       "Technojobs"
     ],
     "counts": {
-      "LinkedIn": 186,
+      "LinkedIn": 184,
       "Reed": 29,
-      "Totaljobs": 44,
+      "Totaljobs": 42,
       "OutsideIR35": 19,
       "WeAreDevelopers": 1,
       "OpenTrain": 1
@@ -29,11 +29,10 @@
     "notes": "21 Nov 2026 20:25 GMT refresh (first published update since 18 Nov 14:25 GMT; 19–21 Nov scheduled runs were interrupted before publish). Reed, Totaljobs/CWJobs, OutsideIR35 and Tavily searched in parallel; LinkedIn searched one page at a time 3–5 s apart (45 search pages, 11 HTTP 429 after a 20 s retry, meaning rate-limited, then that page was given up). Paging used the last published refresh (18 Nov 13:57Z) as the age cutoff, because this file's updatedAt had been stamped by PR 11 at 20:17Z without a data refresh. Verify used the default 20-hour window and 15-minute LinkedIn budget (no --full). SThree Manchester Frontend Developer (linkedin-4491942236) was not added: the advert says it does not represent a live vacancy."
   },
   "newSinceLastRun": [
-    "linkedin-4493753357",
-    "totaljobs-108369975",
-    "totaljobs-108370811",
-    "outsideir35-58X7Qd9p5S",
-    "linkedin-4492947270"
+    "linkedin-4491604495",
+    "reed-57603978",
+    "totaljobs-108374885",
+    "outsideir35-WXfkjnwqFK"
   ],
   "jobs": [
     {
@@ -88,32 +87,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "DBS and financial checks only, not security clearance",
-      "company": "Acorn Group",
-      "contract": "Not stated",
-      "contractNote": "listed full-time",
-      "id": "linkedin-4474785765",
-      "kind": "Frontend",
-      "location": "Liverpool city centre",
-      "mode": "Hybrid",
-      "modeNote": "3 days in office",
-      "notes": "Insurance company, in-house squad; mid-level.",
-      "posted": "2026-10-26",
-      "region": "north-west",
-      "salary": "£45,000–£55,000",
-      "source": "LinkedIn",
-      "stack": "React, Next.js, TypeScript, Docker, Azure",
-      "title": "Frontend Developer",
-      "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-acorn-group-4474785765",
-      "via": "Direct",
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -161,7 +135,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "eSC / eDV – eligible to obtain",
@@ -209,7 +183,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -291,7 +265,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -321,7 +295,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "SC",
@@ -350,7 +324,7 @@
       "aiLevel": 0,
       "aiNote": "Asks for agentic AI development experience (OpenAI, Anthropic or Copilot frameworks); nothing on using AI tools to code",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -395,7 +369,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -425,7 +399,7 @@
       "aiNote": "Lists \"Claude Tokens\" as a benefit; nothing else on how AI tools are used",
       "claudeMention": "Benefits list includes \"Claude Tokens\"",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -461,7 +435,7 @@
       "aiLevel": 4,
       "aiNote": "\"AI-native consulting partner\"; role helps embed AI and automation in delivery and implement AI-driven engineering approaches",
       "firstSeen": "2026-10-30T13:10:52Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -504,7 +478,7 @@
       "aiLevel": 3,
       "aiNote": "\"We use an AI-first mindset as a force multiplier\"; wants proven experience using AI to streamline workflows",
       "firstSeen": "2026-10-30T16:07:39.719Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -545,7 +519,7 @@
       "aiLevel": 3,
       "aiNote": "\"Using modern AI development tools to ship significantly faster\" (also builds AI product UIs)",
       "firstSeen": "2026-10-30T16:07:39.719Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -579,7 +553,7 @@
       "aiLevel": 2,
       "aiNote": "Asks for \"ability to leverage AI workflows in an efficient manner to assist with development\"",
       "firstSeen": "2026-10-30T17:13:13.563Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -616,7 +590,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T17:13:13.563Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -655,7 +629,7 @@
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
       "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\"",
       "firstSeen": "2026-10-30T18:05:46.626Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -692,7 +666,7 @@
       "aiNote": "AI tools generate code, suggest fixes and review code; unlimited token budget; Claude, Cursor and Codex provided",
       "claudeMention": "\"access to Claude, Cursor, and Codex with generous token budgets\"",
       "firstSeen": "2026-10-30T18:05:46.626Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -724,7 +698,7 @@
       "aiLevel": 3,
       "aiNote": "Requires \"practical fluency with AI coding tools and agentic development workflows\"",
       "firstSeen": "2026-10-30T21:07:45.745Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -760,7 +734,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-30T21:07:45.745Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -786,7 +760,7 @@
       "aiNote": "Requires practical experience with Claude and Claude Code for AI-assisted development; use GenAI to speed up delivery",
       "claudeMention": "Practical experience with Anthropic Claude and Claude Code for AI-assisted development",
       "firstSeen": "2026-10-31T08:05:56.588Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -823,7 +797,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-31T09:07:31.273Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -849,7 +823,7 @@
       "aiNote": "Wants AI-powered development tools such as Claude and Claude Code (heading: \"AEM & Generative AI (Claude)\")",
       "claudeMention": "Heading: \"AEM & Generative AI (Claude)\"; AI dev tools such as Anthropic Claude and Claude Code",
       "firstSeen": "2026-10-31T10:08:51.262Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -882,7 +856,7 @@
       "aiNote": "Desirable: AI-assisted design/dev tools (Claude, Cursor, Figma Make); builds prototypes incl. with AI-assisted tools",
       "claudeMention": "Desirable: \"AI assisted design and development tools such as Claude, Cursor or Figma Make\"",
       "firstSeen": "2026-10-31T10:08:51.262Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -922,7 +896,7 @@
       "aiLevel": 4,
       "aiNote": "Engineering function \"uses agentic AI tools throughout its development process\"",
       "firstSeen": "2026-10-31T14:11:13.843Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -955,7 +929,7 @@
       "aiLevel": 4,
       "aiNote": "\"AI first by default, we're building our SDLC around AI Assisted engineering\"",
       "firstSeen": "2026-10-31T14:11:13.843Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -983,7 +957,7 @@
       "aiLevel": 0,
       "aiNote": "Contract work on an AI training project (recreating visuals in code); nothing on using AI tools",
       "firstSeen": "2026-10-31T15:08:48.149Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1013,7 +987,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-10-31T19:07:38.794Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "Clearance required – level not stated",
@@ -1043,7 +1017,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-01T09:04:32.000Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1071,7 +1045,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-01T10:36:58.151Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1121,7 +1095,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-01T11:55:01.640Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1154,35 +1128,7 @@
       "aiLevel": 0,
       "aiNote": "Only a company-wide line about teams harnessing AI; nothing on AI use in development",
       "firstSeen": "2026-11-02T08:18:37.626Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
-      "id": "linkedin-4485692558",
-      "title": "Senior Full Stack Engineer – .NET and React",
-      "company": "Netrolynx AI (for Tenth Revolution Group's retail client)",
-      "via": "Agency",
-      "location": "United Kingdom (remote)",
-      "region": "remote-uk",
-      "mode": "Remote",
-      "modeNote": "\"Fully remote\"",
-      "contract": "Contract",
-      "contractNote": "6 months, outside IR35",
-      "salary": "Up to £350/day",
-      "posted": "2026-11-01",
-      "stack": "React, TypeScript, C#/.NET, Azure",
-      "kind": "Adjacent",
-      "source": "LinkedIn",
-      "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-react-at-netrolynx-ai-4485692558",
-      "notes": "Listed on LinkedIn as \"Full Stack Developer - React\"; ecommerce order fulfilment platform.",
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "foundVia": [
-        "Tavily"
-      ],
-      "aiLevel": 4,
-      "aiNote": "Engineering uses \"agentic AI tools throughout the development process\"",
-      "firstSeen": "2026-11-02T09:27:33.383Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108206689",
@@ -1211,7 +1157,7 @@
       "aiLevel": 0,
       "aiNote": "No mention of AI use",
       "firstSeen": "2026-11-02T10:31:51.956Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1258,7 +1204,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-02T14:26:20.320Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4485772456",
@@ -1299,7 +1245,7 @@
       "aiLevel": 0,
       "aiNote": "No mention of AI tools or AI usage in the posting.",
       "firstSeen": "2026-11-02T20:23:29.028Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4484777781",
@@ -1330,7 +1276,7 @@
       "aiLevel": 0,
       "aiNote": "Product is an 'AI-driven insurance automation platform', but nothing on AI tool use in development.",
       "firstSeen": "2026-11-02T20:23:29.028Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1379,7 +1325,7 @@
       "aiLevel": 0,
       "aiNote": "Builds AI product features (ELI, Azure OpenAI) but says nothing about using AI coding tools.",
       "firstSeen": "2026-11-03T08:32:48.386Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1408,7 +1354,7 @@
       "aiLevel": 0,
       "aiNote": "Asks for experience integrating AI services (Textract, Bedrock) into products; no mention of AI coding tools.",
       "firstSeen": "2026-11-03T08:32:48.386Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1441,7 +1387,7 @@
       "aiLevel": 3,
       "aiNote": "\"all team members expected to incorporate AI into their daily workflows\"; AI described as \"a core productivity multiplier\".",
       "firstSeen": "2026-11-03T08:32:48.386Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1475,7 +1421,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1511,7 +1457,7 @@
       "aiLevel": 3,
       "aiNote": "Asks for \"practical experience applying best practices when working with AI coding assistants\".",
       "firstSeen": "2026-11-03T08:32:48.386Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1540,7 +1486,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-03T08:32:48.386Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1575,7 +1521,7 @@
       "aiLevel": 0,
       "aiNote": "Bonus for experience on AI-powered products; nothing on using AI tools to code.",
       "firstSeen": "2026-11-03T10:26:17.817Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1603,7 +1549,7 @@
       "aiLevel": 3,
       "aiNote": "Role is to \"promote approved AI tools and responsible usage patterns\" and improve developer productivity with AI.",
       "firstSeen": "2026-11-03T10:26:17.817Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "Eligible to obtain",
@@ -1631,7 +1577,7 @@
       "aiLevel": 0,
       "aiNote": "Builds GenAI/LLM products (RAG, agents) but says nothing about using AI tools to code.",
       "firstSeen": "2026-11-03T10:26:17.817Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1659,7 +1605,7 @@
       "aiLevel": 0,
       "aiNote": "No mention of AI tools for development; AI is only mentioned for the product and for interview transcription.",
       "firstSeen": "2026-11-03T12:29:42.906Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "Eligible to obtain",
@@ -1688,7 +1634,7 @@
       "aiLevel": 0,
       "aiNote": "Builds GenAI/LLM products (RAG, agents) but says nothing about using AI tools to code.",
       "firstSeen": "2026-11-03T14:26:21.576Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1733,7 +1679,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-03T16:27:48.092Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1767,7 +1713,7 @@
       "aiLevel": 3,
       "aiNote": "Lists \"Spec and AI driven development\" in the ideal candidate profile, with no more detail.",
       "firstSeen": "2026-11-03T16:27:48.092Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4487251627",
@@ -1801,7 +1747,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T12:18:04.380Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1843,7 +1789,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T14:24:16.847Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1871,7 +1817,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T16:23:57.803Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1899,7 +1845,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T16:23:57.803Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1932,7 +1878,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -1974,7 +1920,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -2007,7 +1953,7 @@
       "aiLevel": 3,
       "aiNote": "\"using AI tools to work faster while you stay in charge of every decision\"; \"We don't hire vibe coders\".",
       "firstSeen": "2026-11-04T18:27:45.920Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -2039,7 +1985,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-04T18:27:45.920Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -2067,7 +2013,7 @@
       "aiLevel": 4,
       "aiNote": "\"AI-native. You use AI tools to multiply your productivity and ship faster.\"",
       "firstSeen": "2026-11-05T08:43:46.053Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4484987883",
@@ -2100,7 +2046,7 @@
       "aiNote": "\"AI-native engineering culture\"; \"use AI throughout the development process\" and champion AI-native engineering across the SDLC",
       "claudeMention": "\"Proficiency with AI-assisted development tools (Claude Code, Cursor, Codex, or similar)\"",
       "firstSeen": "2026-11-05T13:55:36.420Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57481436",
@@ -2183,7 +2129,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-05T16:28:25.844Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4475983575",
@@ -2219,7 +2165,7 @@
       "aiNote": "\"Being genuinely tuned into AI tooling is core to the role… work AI-natively as a default\"; team AI infrastructure/plugins/CI",
       "claudeMention": "\"You work AI-natively as a default, using tools like Claude Code, plugins and skills fluently.\"",
       "firstSeen": "2026-11-05T16:28:25.844Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4456031749",
@@ -2256,7 +2202,7 @@
       "aiLevel": 2,
       "aiNote": "\"Apply AI tools to accelerate design, testing, and delivery, exercising judgement to validate and take ownership of the output.\"",
       "firstSeen": "2026-11-05T16:28:25.844Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4470846597",
@@ -2289,7 +2235,7 @@
       "aiLevel": 3,
       "aiNote": "Platform described as \"AI- and data-first\"; uses AI for source-attributed outputs from investment/client data",
       "firstSeen": "2026-11-05T16:28:25.844Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4485071516",
@@ -2318,7 +2264,7 @@
       "aiLevel": 4,
       "aiNote": "\"building and shipping AI-powered products\"; \"own AI features end-to-end\"; requires production LLM/AI application experience",
       "firstSeen": "2026-11-05T16:28:25.844Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4477667939",
@@ -2356,7 +2302,7 @@
       "aiLevel": 3,
       "aiNote": "Company is AI research/product (AI voice); role in Studio building product around AI capabilities",
       "firstSeen": "2026-11-05T16:28:25.844Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4486157409",
@@ -2384,7 +2330,7 @@
         "Tavily"
       ],
       "firstSeen": "2026-11-05T18:25:33.886Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4485851558",
@@ -2418,7 +2364,7 @@
       "aiLevel": 2,
       "aiNote": "Says the team explores \"emerging technologies, including AI, to improve the way we build and deliver solutions\"",
       "firstSeen": "2026-11-05T18:25:33.886Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4477895415",
@@ -2455,7 +2401,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-05T18:25:33.886Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57465746",
@@ -2522,7 +2468,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-05T20:24:33.107Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57474363",
@@ -2592,7 +2538,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-05T20:24:33.107Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4486547042",
@@ -2627,7 +2573,7 @@
       "aiLevel": 3,
       "aiNote": "\"daily development tooling, not optional Cursor / AI assistants\"; AI tools accelerate coding, test scaffolding and refactoring.",
       "firstSeen": "2026-11-05T20:24:33.107Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4463990625",
@@ -2660,7 +2606,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-05T20:24:33.107Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4476387989",
@@ -2688,7 +2634,7 @@
         "LinkedIn search: Manchester"
       ],
       "firstSeen": "2026-11-05T20:24:33.107Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57452686",
@@ -2749,7 +2695,7 @@
       "aiLevel": 3,
       "aiNote": "AI coding tools will be central to your workflow; regular use of AI coding tools in production development",
       "firstSeen": "2026-11-06T08:25:45.144Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57475100",
@@ -2779,7 +2725,7 @@
         "Reed search: remote",
         "Reed search: remote-react"
       ],
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57476991",
@@ -2837,7 +2783,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T08:25:45.144Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4453240100",
@@ -2875,7 +2821,7 @@
       "aiLevel": 3,
       "aiNote": "Constantly looking for ways to get AI to increase productivity on a daily basis",
       "firstSeen": "2026-11-06T08:25:45.144Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4487242983",
@@ -2904,7 +2850,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T08:25:45.144Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57478282",
@@ -2975,7 +2921,7 @@
       "aiNote": "AI-native judgement; fluent across AI-native engineering and AI-enabled tools; GenAI (Co-Pilot, ChatGPT or Claude) welcome",
       "claudeMention": "GenAI (Co-Pilot, ChatGPT or Claude etc) would be very welcome",
       "firstSeen": "2026-11-06T10:25:24.531Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57455047",
@@ -3010,7 +2956,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T10:25:24.531Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57518517",
@@ -3042,7 +2988,7 @@
       "aiLevel": 2,
       "aiNote": "Interest in AI-assisted software development practices",
       "firstSeen": "2026-11-06T10:25:24.531Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57467586",
@@ -3119,7 +3065,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T10:25:24.531Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57470709",
@@ -3187,7 +3133,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T10:25:24.531Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57496290",
@@ -3223,7 +3169,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T10:25:24.531Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4486842415",
@@ -3251,7 +3197,7 @@
         "LinkedIn search"
       ],
       "firstSeen": "2026-11-06T10:25:24.531Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "via": "Agency",
@@ -3295,7 +3241,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T10:56:33.582Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "via": "Agency",
@@ -3336,7 +3282,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T10:56:33.582Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "via": "Agency",
@@ -3375,7 +3321,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T10:56:33.582Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "via": "Direct",
@@ -3409,7 +3355,7 @@
       "aiLevel": 2,
       "aiNote": "Leveraging AI-assisted development tools as needed.",
       "firstSeen": "2026-11-06T10:56:33.582Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-tcM6S29PZr",
@@ -3446,7 +3392,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T12:26:13.983Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57538285",
@@ -3546,7 +3492,7 @@
         "Tavily"
       ],
       "firstSeen": "2026-11-06T12:26:13.983Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -3586,41 +3532,6 @@
     {
       "clearance": "None stated",
       "clearanceNote": "",
-      "contractNote": "Inside IR35 (Umbrella)",
-      "modeNote": "\"Manchester (2 days onsite)\"",
-      "notes": "Contract with a major online travel platform; mixes full-stack delivery with agentic AI tooling.",
-      "id": "linkedin-4483107549",
-      "title": "Full Stack Engineer",
-      "company": "Computer Futures (client: online travel platform, not named)",
-      "location": "Manchester",
-      "region": "north-west",
-      "mode": "Hybrid",
-      "contract": "Contract",
-      "salary": "£550/day",
-      "stack": "React, TypeScript, NestJS; Agentic AI tools (Claude, Codex)",
-      "kind": "Adjacent",
-      "via": "Agency",
-      "source": "LinkedIn",
-      "posted": "2026-10-23",
-      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-at-computer-futures-4483107549",
-      "foundVia": [
-        "LinkedIn search: Manchester",
-        "LinkedIn search: Warrington",
-        "LinkedIn search Manchester angular",
-        "LinkedIn search Manchester fullstack",
-        "LinkedIn search Warrington",
-        "LinkedIn search Manchester",
-        "LinkedIn search Manchester front end"
-      ],
-      "aiLevel": 4,
-      "aiNote": "Uses Agentic AI tools such as Claude, Codex and other AI agents to accelerate development.",
-      "claudeMention": "Agentic AI tools such as Claude, Codex, and other AI agents",
-      "firstSeen": "2026-11-06T16:48:39.574Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
       "contractNote": "",
       "modeNote": "\"Work from our Manchester office with hybrid flexibility\"",
       "notes": "Ratings Technology team building workflow and analytical apps used by analysts worldwide.",
@@ -3653,7 +3564,7 @@
       "aiLevel": 0,
       "aiNote": "Mentions emerging AI technologies in the stack offer, not day-to-day AI coding tools.",
       "firstSeen": "2026-11-06T16:48:39.574Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "Eligible to obtain",
@@ -3692,7 +3603,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T16:48:39.574Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -3726,7 +3637,7 @@
       "aiLevel": 0,
       "aiNote": "Product integrates AI capabilities; no AI coding-tool requirement stated.",
       "firstSeen": "2026-11-06T16:48:39.574Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -3893,7 +3804,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T18:34:04.365Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -3935,50 +3846,7 @@
       "aiNote": "Leveraging AI-assisted tools like Claude Code as part of delivery.",
       "claudeMention": "leveraging AI-assisted tools like Claude Code",
       "firstSeen": "2026-11-06T18:34:04.365Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "contractNote": "Outside IR35; about six months",
-      "modeNote": "fully remote",
-      "notes": "Digital order fulfilment / ecommerce platform for a retail company.",
-      "id": "outsideir35-uM87jjxtdt",
-      "title": "Full Stack Developer",
-      "company": "Netrolynx AI",
-      "location": "United Kingdom (remote)",
-      "region": "remote-uk",
-      "mode": "Remote",
-      "contract": "Contract",
-      "salary": "£350/day",
-      "stack": "React, TypeScript, C#/.NET, Azure, microservices",
-      "kind": "Adjacent",
-      "via": "Agency",
-      "source": "OutsideIR35",
-      "posted": "2026-10-31",
-      "url": "https://outsideir35.org.uk/jobs/full-stack-developer/uM87jjxtdt",
-      "foundVia": [
-        "outsideir35.org.uk",
-        "outsideir35.org.uk/jobs/react",
-        "outsideir35.org.uk/jobs/react/remote",
-        "outsideir35.org.uk/jobs/typescript/remote",
-        "outsideir35.org.uk/jobs/dotnet/remote",
-        "outsideir35.org.uk/jobs/vue/remote",
-        "outsideir35.org.uk/jobs/frontend/remote",
-        "outsideir35.org.uk/jobs/full-stack/remote",
-        "outsideir35.org.uk/jobs/nextjs/remote",
-        "outsideir35.org.uk/jobs/node/remote",
-        "outsideir35.org.uk/jobs/typescript",
-        "outsideir35.org.uk/typescript",
-        "outsideir35.org.uk/typescript/remote",
-        "outsideir35.org.uk/react",
-        "outsideir35.org.uk/react/remote",
-        "OutsideIR35 search"
-      ],
-      "aiLevel": 4,
-      "aiNote": "Technologies list includes Agentic AI alongside React/.NET for this contract.",
-      "firstSeen": "2026-11-06T18:34:04.365Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -4011,7 +3879,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T18:34:04.365Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -4043,7 +3911,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-06T18:34:04.365Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57459241",
@@ -4078,7 +3946,7 @@
       "aiLevel": 4,
       "aiNote": "AI-first engineering culture; actively embracing modern AI-assisted software engineering practices",
       "firstSeen": "2026-11-06T20:31:50.510Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "title": "Staff Software Engineer, Product Engineering - UK",
@@ -4927,7 +4795,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-07T13:25:37.403Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4488721224",
@@ -5016,7 +4884,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-08T11:26:25.374Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "clearance": "None stated",
@@ -5327,36 +5195,6 @@
       "lastChecked": "2026-11-23T13:54:41.305Z"
     },
     {
-      "id": "totaljobs-108302936",
-      "title": "Software Developer",
-      "company": "TEAM via Candidate Source (client: construction safety software company, not named)",
-      "location": "Liverpool (L2)",
-      "region": "north-west",
-      "mode": "Hybrid",
-      "modeNote": "office-based initially; \"3/2 office and home working split\" after probation",
-      "contract": "Permanent",
-      "contractNote": "full-time",
-      "salary": "£30,000–£39,000",
-      "stack": "C#, .NET, React, Entity Framework, SQL; Angular/React Native/Ionic a plus",
-      "kind": "Adjacent",
-      "via": "Agency",
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "source": "Totaljobs",
-      "posted": "2026-11-09",
-      "url": "https://www.totaljobs.com/job/software-developer/team-job108302936",
-      "notes": "Asset management and health and safety software; must live within commuting distance of Liverpool. Also on Reed.",
-      "foundVia": [
-        "Totaljobs search",
-        "Reed search",
-        "CWJobs search"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-09T14:26:13.353Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
       "id": "linkedin-4488875842",
       "title": "Full Stack Developer",
       "company": "AeroCloud",
@@ -5446,7 +5284,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-10T14:19:55.364Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108308664",
@@ -5475,7 +5313,7 @@
       "aiNote": "\"Leverage AI-powered development tools to improve productivity\"; wants practical experience with AI-assisted tools and an \"AI-Driven Development Mindset\".",
       "claudeMention": "\"AI-assisted development tools such as Claude, GitHub Copilot, or similar platforms\"",
       "firstSeen": "2026-11-10T14:19:55.364Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108175938",
@@ -5504,7 +5342,7 @@
       "aiNote": "Claude Code is listed in the technology stack; agentic AI development tools desirable.",
       "claudeMention": "Stack: \"... Microsoft Graph · Claude Code\"; desirable: \"Agentic AI development tools, such as Claude Code\"",
       "firstSeen": "2026-11-10T14:19:55.364Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57552688",
@@ -5534,7 +5372,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-10T14:19:55.364Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4489919035",
@@ -5595,7 +5433,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-11T14:20:23.242Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108312930",
@@ -5625,7 +5463,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-11T14:20:23.242Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4489930909",
@@ -5687,7 +5525,7 @@
       "aiLevel": 2,
       "aiNote": "Lists \"experience with AI-assisted development tools and IDE integrations, such as GitHub Copilot\" among wanted experience.",
       "firstSeen": "2026-11-12T09:26:52.372Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57558641",
@@ -5716,7 +5554,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-12T09:26:52.372Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57558410",
@@ -5744,7 +5582,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-12T09:26:52.372Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4489017664",
@@ -6008,11 +5846,11 @@
       "notes": "Owns front-end and back-end of the in-house Shopify storefront (themes, apps, integrations, performance). Part-time.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 0,
-      "aiNote": "",
       "foundVia": [
         "LinkedIn search: Liverpool"
       ],
+      "aiLevel": 0,
+      "aiNote": "",
       "firstSeen": "2026-11-12T14:21:56.354Z",
       "lastChecked": "2026-11-23T13:54:41.305Z"
     },
@@ -6071,7 +5909,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-13T09:23:26.851Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108318204",
@@ -6100,7 +5938,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-13T09:23:26.851Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4488571575",
@@ -6675,7 +6513,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-16T09:18:42.899Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108325604",
@@ -6705,7 +6543,7 @@
       "aiNote": "\"Focus: AI-assisted software development\"; role uses \"Agentic AI tools such as Claude, Codex, and other AI agents to accelerate development\"; AI-tool experience wanted",
       "claudeMention": "\"use of Agentic AI tools such as Claude, Codex, and other AI agents to accelerate development\"",
       "firstSeen": "2026-11-16T14:05:54.047Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4489756544",
@@ -6926,7 +6764,7 @@
       "aiLevel": 3,
       "aiNote": "Responsibilities include \"review AI-generated frontend code\"; wants interest in \"AI-assisted engineering tools and coding agents\" as part of development",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4490962109",
@@ -7073,7 +6911,7 @@
       "aiLevel": 2,
       "aiNote": "Desirable: \"Experience with AI tooling or AI coding assistants\"",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57573994",
@@ -7101,7 +6939,7 @@
       "aiLevel": 4,
       "aiNote": "\"AI native development\": proficient with Cursor, GitHub Copilot and agentic AI workflows; plans first, then uses AI to accelerate execution and reviews all AI output",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108328813",
@@ -7129,7 +6967,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108337623",
@@ -7157,7 +6995,7 @@
       "aiLevel": 3,
       "aiNote": "Wants \"Hands-on AI development using modern tools and IDEs (e.g., Windsurf)\"; Windsurf listed in team tooling",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-4u9v4boXHa",
@@ -7191,7 +7029,7 @@
       "aiNote": "\"Utilize AI coding tools for enhancing development efficiency and quality\"; requires \"Proven hands-on use of AI tools in development workflows\"",
       "claudeMention": "Technologies list includes \"Claude\"",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4491135426",
@@ -7273,7 +7111,7 @@
       "aiNote": "Work \"directly with Agentic AI (e.g., Claude, Codex, and internal agents)\", defining specs and acceptance criteria \"for AI agents to generate code\", then reviewing, testing and shipping",
       "claudeMention": "\"work directly with Agentic AI (e.g., Claude, Codex, and internal agents)\"",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4490691448",
@@ -7429,7 +7267,7 @@
       "aiLevel": 0,
       "aiNote": "AI mentioned only as a product idea (\"explore where AI can make the experience simpler\"); nothing on using AI tools",
       "firstSeen": "2026-11-18T08:57:47.922Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4491799603",
@@ -7462,7 +7300,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-18T13:57:46.891Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4490875913",
@@ -7490,7 +7328,7 @@
         "LinkedIn search: Preston"
       ],
       "firstSeen": "2026-11-18T13:57:46.891Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4490885698",
@@ -7519,7 +7357,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-18T13:57:46.891Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4490880769",
@@ -7547,7 +7385,7 @@
         "LinkedIn search: Manchester"
       ],
       "firstSeen": "2026-11-18T13:57:46.891Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108340133",
@@ -7570,12 +7408,13 @@
       "clearance": "None stated",
       "clearanceNote": "",
       "foundVia": [
-        "Totaljobs search"
+        "Totaljobs search",
+        "Tavily"
       ],
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-18T13:57:46.891Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4491383811",
@@ -7792,7 +7631,7 @@
       "aiLevel": 3,
       "aiNote": "\"You'll use AI coding tools in your day-to-day work\"; \"Confidence using AI coding tools in a commercial development workflow\" required.",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57597023",
@@ -7822,36 +7661,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
-      "id": "totaljobs-108354701",
-      "title": "Lead Software Engineer",
-      "company": "Northrop Grumman UK",
-      "location": "Manchester",
-      "region": "north-west",
-      "mode": "Hybrid",
-      "modeNote": "\"Manchester – hybrid\"",
-      "contract": "Not stated",
-      "contractNote": "Totaljobs lists full-time",
-      "salary": "£58,000–£86,000 DOE",
-      "posted": "2026-11-19",
-      "stack": "Java, Spring Boot, Maven or React, npm; Jenkins, Kubernetes, Docker, AWS",
-      "kind": "Adjacent",
-      "via": "Direct",
-      "source": "Totaljobs",
-      "url": "https://www.totaljobs.com/job/lead-software-engineer/northrop-grumman-uk-job108354701",
-      "notes": "UK citizenship required; 10% travel. Strong focus on either backend Java or frontend React; leads a team.",
-      "clearance": "Clearance required – level not stated",
-      "clearanceNote": "\"You must currently hold the highest level of UK Government clearance\"",
-      "foundVia": [
-        "Totaljobs search",
-        "Tavily"
-      ],
-      "aiLevel": 0,
-      "aiNote": "",
-      "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108354703",
@@ -7879,7 +7689,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108347128",
@@ -7908,7 +7718,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108346659",
@@ -7937,7 +7747,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108348249",
@@ -7966,7 +7776,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4492474709",
@@ -8136,7 +7946,7 @@
         "previous unpublished run"
       ],
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4492172547",
@@ -8335,7 +8145,7 @@
         "previous unpublished run"
       ],
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4489731413",
@@ -8363,7 +8173,7 @@
         "previous unpublished run"
       ],
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4492151685",
@@ -8419,7 +8229,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57562516",
@@ -8447,7 +8257,7 @@
         "Reed search"
       ],
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108358397",
@@ -8476,7 +8286,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-cP5ROyHgNb",
@@ -8506,7 +8316,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-vAgjCQ16Tc",
@@ -8535,7 +8345,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-biw8dnmSAb",
@@ -8564,7 +8374,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-27KMdeXh0q",
@@ -8593,7 +8403,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4459928943",
@@ -8624,7 +8434,7 @@
       "aiNote": "\"hand day-to-day anymore - agents do; we direct\"; \"Directing parallel agent sessions to deliver work\"; \"You work AI-natively as a default, using tools like Claude Code, plugins and skills fluently.\"",
       "claudeMention": "\"You work AI-natively as a default, using tools like Claude Code, plugins and skills fluently.\"",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4492167168",
@@ -8681,7 +8491,7 @@
       "aiLevel": 4,
       "aiNote": "\"Significant experience using agentic coding tools\" is essential; interview includes \"60 minutes agentic pairing\". \"AI tooling is not the job.\"",
       "firstSeen": "2026-11-21T20:40:04.725Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4492805001",
@@ -8738,7 +8548,7 @@
         "Reed search"
       ],
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57552447",
@@ -8766,7 +8576,7 @@
         "Reed search"
       ],
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "reed-57519183",
@@ -8794,35 +8604,7 @@
         "Reed search"
       ],
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
-      "id": "reed-57544178",
-      "url": "https://www.reed.co.uk/jobs/software-developer/57544178",
-      "source": "Reed",
-      "title": "Software Developer",
-      "company": "Candidate Source - TEAM",
-      "location": "Liverpool",
-      "region": "north-west",
-      "mode": "Hybrid",
-      "modeNote": "\"office-based initially, with hybrid working available after successful completion of probation\"; 3/2 office and home split",
-      "contract": "Permanent",
-      "contractNote": "Full-time",
-      "salary": "£30,000–£39,000 per annum",
-      "posted": "2026-11-09",
-      "stack": "C#/.NET, React, Entity Framework, SQL; React Native, Xamarin, AngularJS, Angular 6+ or Ionic advantageous",
-      "kind": "Adjacent",
-      "via": "Agency",
-      "clearance": "None stated",
-      "clearanceNote": "",
-      "notes": "Asset management and health & safety software for the construction sector; small dev team with mentoring. Must live within commuting distance of Liverpool and have full right to work in the UK.",
-      "aiLevel": 0,
-      "aiNote": "",
-      "foundVia": [
-        "Reed search"
-      ],
-      "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108322522",
@@ -8850,7 +8632,7 @@
       "aiLevel": 3,
       "aiNote": "\"AI and automation: Evaluate AI coding tools, build repeatable workflows, coach the team and measure the impact on delivery\"",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108313377",
@@ -8879,7 +8661,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108349328",
@@ -8908,7 +8690,7 @@
       "aiLevel": 3,
       "aiNote": "\"You'll use AI coding tools in your day-to-day work\"; confidence using AI coding tools in a commercial workflow required",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108316744",
@@ -8937,7 +8719,7 @@
       "aiLevel": 2,
       "aiNote": "\"Interest in applying AI to the development lifecycle\"",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108296885",
@@ -8966,35 +8748,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
-    },
-    {
-      "id": "totaljobs-108336166",
-      "title": "Fullstack Developer - £420p/d Inside IR35 - Remote",
-      "company": "Exalto Consulting ltd",
-      "location": "South East London (SE1)",
-      "region": "remote-uk",
-      "mode": "Remote",
-      "modeNote": "\"Expected to be fully remote, subject to confirmation\"",
-      "contract": "Contract",
-      "contractNote": "Inside IR35; 1 Dec 2026–31 Mar 2027, up to 61 working days",
-      "salary": "£420/day",
-      "posted": "2026-11-17",
-      "stack": "Node.js, Express.js, Azure, Java, Terraform",
-      "kind": "Adjacent",
-      "via": "Agency",
-      "clearance": "eSC / eDV – eligible to obtain",
-      "clearanceNote": "Must be eligible for SC clearance",
-      "notes": "Developer and Lead Developer roles building a secure, accessible new digital service.",
-      "url": "https://www.totaljobs.com/job/fullstack-developer-420p-d-inside-ir35-remote/exalto-consulting-ltd-job108336166",
-      "source": "Totaljobs",
-      "aiLevel": 3,
-      "aiNote": "\"using AI development tools to support delivery\"; experience with Codex or GitHub Copilot required",
-      "foundVia": [
-        "CWJobs search"
-      ],
-      "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108336142",
@@ -9022,7 +8776,7 @@
       "aiLevel": 2,
       "aiNote": "\"Experience in using AI tools for development (e.g., Codex, GitHub Copilot)\" listed as experience",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-Pj0aNnWZrN",
@@ -9051,7 +8805,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "outsideir35-62PKs1hpuB",
@@ -9080,7 +8834,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4491912909",
@@ -9108,7 +8862,7 @@
         "Tavily"
       ],
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4483467006",
@@ -9140,7 +8894,7 @@
       "aiLevel": 0,
       "aiNote": "",
       "firstSeen": "2026-11-22T09:19:57.091Z",
-      "lastChecked": "2026-11-22T09:19:57.091Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "totaljobs-108347943",
@@ -9168,7 +8922,7 @@
         "Tavily"
       ],
       "firstSeen": "2026-11-23T08:57:59.680Z",
-      "lastChecked": "2026-11-23T08:57:59.680Z"
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     },
     {
       "id": "linkedin-4493753357",
@@ -9221,12 +8975,12 @@
       "notes": "Customer-facing web apps for the Tote; 5+ years TypeScript/React. Discretionary bonus, pension, 25 days holiday.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 4,
-      "aiNote": "\"AI-first approach... agentic development\"; Claude Code as \"your default way of working\", reviewing and validating AI-generated output before merge",
-      "claudeMention": "\"Our engineers use Claude Code daily\"",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 4,
+      "aiNote": "\"AI-first approach... agentic development\"; Claude Code as \"your default way of working\", reviewing and validating AI-generated output before merge",
+      "claudeMention": "\"Our engineers use Claude Code daily\"",
       "firstSeen": "2026-11-23T13:54:41.305Z",
       "lastChecked": "2026-11-23T13:54:41.305Z"
     },
@@ -9250,11 +9004,11 @@
       "notes": "Fitch Ratings (advertised via The National Magazine Company/Hearst) Ratings Technology team; lead full-stack Python/React role, Manchester or London.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 3,
-      "aiNote": "Champion responsible AI adoption: \"promote approved AI tools and responsible usage patterns\", AI/developer productivity tooling, LLM APIs and agents",
       "foundVia": [
         "Totaljobs search"
       ],
+      "aiLevel": 3,
+      "aiNote": "Champion responsible AI adoption: \"promote approved AI tools and responsible usage patterns\", AI/developer productivity tooling, LLM APIs and agents",
       "firstSeen": "2026-11-23T13:54:41.305Z",
       "lastChecked": "2026-11-23T13:54:41.305Z"
     },
@@ -9278,12 +9032,12 @@
       "notes": "Hands-on lead for a literary and entertainment business building AI-native products; client name hidden on the board.",
       "clearance": "None stated",
       "clearanceNote": "",
-      "aiLevel": 3,
-      "aiNote": "\"Drive the adoption of AI tools and coding agents across the development lifecycle\"; practical Claude Code/Codex/Cursor experience required",
-      "claudeMention": "\"Practical experience using Claude Code, Codex, and/or Cursor in real development environments\"",
       "foundVia": [
         "OutsideIR35 search"
       ],
+      "aiLevel": 3,
+      "aiNote": "\"Drive the adoption of AI tools and coding agents across the development lifecycle\"; practical Claude Code/Codex/Cursor experience required",
+      "claudeMention": "\"Practical experience using Claude Code, Codex, and/or Cursor in real development environments\"",
       "firstSeen": "2026-11-23T13:54:41.305Z",
       "lastChecked": "2026-11-23T13:54:41.305Z"
     },
@@ -9314,9 +9068,383 @@
       ],
       "firstSeen": "2026-11-23T13:54:41.305Z",
       "lastChecked": "2026-11-23T13:54:41.305Z"
+    },
+    {
+      "id": "linkedin-4491604495",
+      "title": "Senior Full Stack Software Engineer",
+      "company": "Gamma",
+      "location": "Manchester, England, United Kingdom",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"based at our Arbeta office in Manchester, with a hybrid working pattern\"",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "salary": "Not stated",
+      "posted": "2026-11-20",
+      "stack": "TypeScript, Node.js, React (or Angular), HTML/CSS, REST APIs, Jest, Playwright, AWS, Kubernetes, SQL/NoSQL",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/4491604495",
+      "notes": "Senior full-stack role on Gamma's Group Products suite (OSS/BSS, UCaaS, CCaaS); mentoring juniors. Basic DBS check required.",
+      "clearance": "None stated",
+      "clearanceNote": "Basic DBS check (not a security clearance)",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "LinkedIn search: Manchester"
+      ],
+      "firstSeen": "2026-11-24T09:00:48.354Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z"
+    },
+    {
+      "id": "reed-57603978",
+      "title": "Front End Developer",
+      "company": "SF Partners (client: global supply chain organisation, not named)",
+      "location": "Warrington, Cheshire",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"long term hybrid working (two/ three days a week on-site)\"",
+      "contract": "Permanent",
+      "contractNote": "Reed: Permanent",
+      "salary": "£60,000–£70,000",
+      "posted": "2026-11-23",
+      "stack": "JavaScript, React, TypeScript, REST APIs, data visualisation, Git, CI/CD, Microsoft Fabric (nice to have)",
+      "kind": "Frontend",
+      "via": "Agency",
+      "source": "Reed",
+      "url": "https://www.reed.co.uk/jobs/front-end-developer/57603978",
+      "notes": "Front-end role building data-heavy applications and visualisations for an unnamed global supply chain business; bonus and private healthcare.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search"
+      ],
+      "firstSeen": "2026-11-24T09:00:48.354Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z"
+    },
+    {
+      "id": "totaljobs-108374885",
+      "title": "Senior Software Engineer, Full-Stack Applications (Python)",
+      "company": "Fitch Ratings",
+      "location": "Manchester, Greater Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Work from our Manchester office with hybrid flexibility\"",
+      "contract": "Permanent",
+      "contractNote": "Totaljobs: Permanent",
+      "salary": "Competitive",
+      "posted": "2026-11-24",
+      "stack": "Python (FastAPI/Flask, Pandas), Java, React, Node.js, TypeScript/JavaScript, RDBMS, AWS, Kubernetes, CI/CD",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/senior-software-engineer-full-stack-applications-python/the-national-magazine-company-job108374885",
+      "notes": "Fitch Ratings (advertised via The National Magazine Company/Hearst) Ratings Technology team in Manchester; 7+ years full-stack experience.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 0,
+      "aiNote": "Mentions LLMs/prompt engineering only as product skills to stand out, not AI coding tools",
+      "foundVia": [
+        "Totaljobs search"
+      ],
+      "firstSeen": "2026-11-24T09:00:48.354Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z"
+    },
+    {
+      "id": "outsideir35-WXfkjnwqFK",
+      "title": "Staff Full Stack Engineer",
+      "company": "Not stated",
+      "location": "United Kingdom (Remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"This fully remote position\"; board lists Type: Remote, Location: United Kingdom",
+      "contract": "Contract",
+      "contractNote": "12-month contract; Outside IR35 board",
+      "salary": "£500–£600/day",
+      "posted": "2026-11-23",
+      "stack": "Rust, Java, React, Python, REST APIs, microservices, cloud-native",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "source": "OutsideIR35",
+      "url": "https://outsideir35.org.uk/jobs/staff-full-stack-engineer/WXfkjnwqFK",
+      "notes": "Backend-heavy staff full-stack contract (Rust/Java) with React customer-facing apps, for an unnamed globally distributed tech business.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "aiLevel": 3,
+      "aiNote": "\"Utilize AI-assisted development tools for coding, testing, and debugging\" listed as a responsibility",
+      "foundVia": [
+        "OutsideIR35 search"
+      ],
+      "firstSeen": "2026-11-24T09:00:48.354Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z"
     }
   ],
   "closed": [
+    {
+      "clearance": "None stated",
+      "clearanceNote": "DBS and financial checks only, not security clearance",
+      "company": "Acorn Group",
+      "contract": "Not stated",
+      "contractNote": "listed full-time",
+      "id": "linkedin-4474785765",
+      "kind": "Frontend",
+      "location": "Liverpool city centre",
+      "mode": "Hybrid",
+      "modeNote": "3 days in office",
+      "notes": "Insurance company, in-house squad; mid-level.",
+      "posted": "2026-10-26",
+      "region": "north-west",
+      "salary": "£45,000–£55,000",
+      "source": "LinkedIn",
+      "stack": "React, Next.js, TypeScript, Docker, Azure",
+      "title": "Frontend Developer",
+      "url": "https://uk.linkedin.com/jobs/view/frontend-developer-at-acorn-group-4474785765",
+      "via": "Direct",
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-10-30T13:10:52Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "id": "linkedin-4485692558",
+      "title": "Senior Full Stack Engineer – .NET and React",
+      "company": "Netrolynx AI (for Tenth Revolution Group's retail client)",
+      "via": "Agency",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Fully remote\"",
+      "contract": "Contract",
+      "contractNote": "6 months, outside IR35",
+      "salary": "Up to £350/day",
+      "posted": "2026-11-01",
+      "stack": "React, TypeScript, C#/.NET, Azure",
+      "kind": "Adjacent",
+      "source": "LinkedIn",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-developer-react-at-netrolynx-ai-4485692558",
+      "notes": "Listed on LinkedIn as \"Full Stack Developer - React\"; ecommerce order fulfilment platform.",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "foundVia": [
+        "Tavily"
+      ],
+      "aiLevel": 4,
+      "aiNote": "Engineering uses \"agentic AI tools throughout the development process\"",
+      "firstSeen": "2026-11-02T09:27:33.383Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "Inside IR35 (Umbrella)",
+      "modeNote": "\"Manchester (2 days onsite)\"",
+      "notes": "Contract with a major online travel platform; mixes full-stack delivery with agentic AI tooling.",
+      "id": "linkedin-4483107549",
+      "title": "Full Stack Engineer",
+      "company": "Computer Futures (client: online travel platform, not named)",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "contract": "Contract",
+      "salary": "£550/day",
+      "stack": "React, TypeScript, NestJS; Agentic AI tools (Claude, Codex)",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "source": "LinkedIn",
+      "posted": "2026-10-23",
+      "url": "https://uk.linkedin.com/jobs/view/full-stack-engineer-at-computer-futures-4483107549",
+      "foundVia": [
+        "LinkedIn search: Manchester",
+        "LinkedIn search: Warrington",
+        "LinkedIn search Manchester angular",
+        "LinkedIn search Manchester fullstack",
+        "LinkedIn search Warrington",
+        "LinkedIn search Manchester",
+        "LinkedIn search Manchester front end"
+      ],
+      "aiLevel": 4,
+      "aiNote": "Uses Agentic AI tools such as Claude, Codex and other AI agents to accelerate development.",
+      "claudeMention": "Agentic AI tools such as Claude, Codex, and other AI agents",
+      "firstSeen": "2026-11-06T16:48:39.574Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "page says \"No longer accepting applications\""
+    },
+    {
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "contractNote": "Outside IR35; about six months",
+      "modeNote": "fully remote",
+      "notes": "Digital order fulfilment / ecommerce platform for a retail company.",
+      "id": "outsideir35-uM87jjxtdt",
+      "title": "Full Stack Developer",
+      "company": "Netrolynx AI",
+      "location": "United Kingdom (remote)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "contract": "Contract",
+      "salary": "£350/day",
+      "stack": "React, TypeScript, C#/.NET, Azure, microservices",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "source": "OutsideIR35",
+      "posted": "2026-10-31",
+      "url": "https://outsideir35.org.uk/jobs/full-stack-developer/uM87jjxtdt",
+      "foundVia": [
+        "outsideir35.org.uk",
+        "outsideir35.org.uk/jobs/react",
+        "outsideir35.org.uk/jobs/react/remote",
+        "outsideir35.org.uk/jobs/typescript/remote",
+        "outsideir35.org.uk/jobs/dotnet/remote",
+        "outsideir35.org.uk/jobs/vue/remote",
+        "outsideir35.org.uk/jobs/frontend/remote",
+        "outsideir35.org.uk/jobs/full-stack/remote",
+        "outsideir35.org.uk/jobs/nextjs/remote",
+        "outsideir35.org.uk/jobs/node/remote",
+        "outsideir35.org.uk/jobs/typescript",
+        "outsideir35.org.uk/typescript",
+        "outsideir35.org.uk/typescript/remote",
+        "outsideir35.org.uk/react",
+        "outsideir35.org.uk/react/remote",
+        "OutsideIR35 search"
+      ],
+      "aiLevel": 4,
+      "aiNote": "Technologies list includes Agentic AI alongside React/.NET for this contract.",
+      "firstSeen": "2026-11-06T18:34:04.365Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "page says \"no longer accepting applications\""
+    },
+    {
+      "id": "totaljobs-108302936",
+      "title": "Software Developer",
+      "company": "TEAM via Candidate Source (client: construction safety software company, not named)",
+      "location": "Liverpool (L2)",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "office-based initially; \"3/2 office and home working split\" after probation",
+      "contract": "Permanent",
+      "contractNote": "full-time",
+      "salary": "£30,000–£39,000",
+      "stack": "C#, .NET, React, Entity Framework, SQL; Angular/React Native/Ionic a plus",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "source": "Totaljobs",
+      "posted": "2026-11-09",
+      "url": "https://www.totaljobs.com/job/software-developer/team-job108302936",
+      "notes": "Asset management and health and safety software; must live within commuting distance of Liverpool. Also on Reed.",
+      "foundVia": [
+        "Totaljobs search",
+        "Reed search",
+        "CWJobs search"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-09T14:26:13.353Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "HTTP 410"
+    },
+    {
+      "id": "totaljobs-108354701",
+      "title": "Lead Software Engineer",
+      "company": "Northrop Grumman UK",
+      "location": "Manchester",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"Manchester – hybrid\"",
+      "contract": "Not stated",
+      "contractNote": "Totaljobs lists full-time",
+      "salary": "£58,000–£86,000 DOE",
+      "posted": "2026-11-19",
+      "stack": "Java, Spring Boot, Maven or React, npm; Jenkins, Kubernetes, Docker, AWS",
+      "kind": "Adjacent",
+      "via": "Direct",
+      "source": "Totaljobs",
+      "url": "https://www.totaljobs.com/job/lead-software-engineer/northrop-grumman-uk-job108354701",
+      "notes": "UK citizenship required; 10% travel. Strong focus on either backend Java or frontend React; leads a team.",
+      "clearance": "Clearance required – level not stated",
+      "clearanceNote": "\"You must currently hold the highest level of UK Government clearance\"",
+      "foundVia": [
+        "Totaljobs search",
+        "Tavily"
+      ],
+      "aiLevel": 0,
+      "aiNote": "",
+      "firstSeen": "2026-11-21T20:40:04.725Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "HTTP 410"
+    },
+    {
+      "id": "reed-57544178",
+      "url": "https://www.reed.co.uk/jobs/software-developer/57544178",
+      "source": "Reed",
+      "title": "Software Developer",
+      "company": "Candidate Source - TEAM",
+      "location": "Liverpool",
+      "region": "north-west",
+      "mode": "Hybrid",
+      "modeNote": "\"office-based initially, with hybrid working available after successful completion of probation\"; 3/2 office and home split",
+      "contract": "Permanent",
+      "contractNote": "Full-time",
+      "salary": "£30,000–£39,000 per annum",
+      "posted": "2026-11-09",
+      "stack": "C#/.NET, React, Entity Framework, SQL; React Native, Xamarin, AngularJS, Angular 6+ or Ionic advantageous",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "None stated",
+      "clearanceNote": "",
+      "notes": "Asset management and health & safety software for the construction sector; small dev team with mentoring. Must live within commuting distance of Liverpool and have full right to work in the UK.",
+      "aiLevel": 0,
+      "aiNote": "",
+      "foundVia": [
+        "Reed search"
+      ],
+      "firstSeen": "2026-11-22T09:19:57.091Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "HTTP 404"
+    },
+    {
+      "id": "totaljobs-108336166",
+      "title": "Fullstack Developer - £420p/d Inside IR35 - Remote",
+      "company": "Exalto Consulting ltd",
+      "location": "South East London (SE1)",
+      "region": "remote-uk",
+      "mode": "Remote",
+      "modeNote": "\"Expected to be fully remote, subject to confirmation\"",
+      "contract": "Contract",
+      "contractNote": "Inside IR35; 1 Dec 2026–31 Mar 2027, up to 61 working days",
+      "salary": "£420/day",
+      "posted": "2026-11-17",
+      "stack": "Node.js, Express.js, Azure, Java, Terraform",
+      "kind": "Adjacent",
+      "via": "Agency",
+      "clearance": "eSC / eDV – eligible to obtain",
+      "clearanceNote": "Must be eligible for SC clearance",
+      "notes": "Developer and Lead Developer roles building a secure, accessible new digital service.",
+      "url": "https://www.totaljobs.com/job/fullstack-developer-420p-d-inside-ir35-remote/exalto-consulting-ltd-job108336166",
+      "source": "Totaljobs",
+      "aiLevel": 3,
+      "aiNote": "\"using AI development tools to support delivery\"; experience with Codex or GitHub Copilot required",
+      "foundVia": [
+        "CWJobs search"
+      ],
+      "firstSeen": "2026-11-22T09:19:57.091Z",
+      "lastChecked": "2026-11-24T09:00:48.354Z",
+      "closedAt": "2026-11-24T09:00:48.354Z",
+      "closedReason": "HTTP 410"
+    },
     {
       "id": "linkedin-4487238794",
       "source": "LinkedIn",
