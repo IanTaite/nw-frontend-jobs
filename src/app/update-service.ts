@@ -1,6 +1,6 @@
 import { ApplicationRef, Service, inject, signal } from '@angular/core';
 import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
-import { concat, filter, first, interval } from 'rxjs';
+import { concat, filter, first, fromEvent, interval, merge } from 'rxjs';
 
 @Service()
 export class UpdateService {
@@ -17,9 +17,19 @@ export class UpdateService {
       .pipe(filter((e): e is VersionReadyEvent => e.type === 'VERSION_READY'))
       .subscribe(() => this.updateAvailable.set(true));
 
-    // Poll every 5 minutes, but only after the app is stable
+    // Poll every 5 minutes once the app is stable. A suspended page (installed
+    // PWA, background tab) does not run that timer, so also check when it is shown again.
     const appIsStable$ = this.appRef.isStable.pipe(first((stable) => stable));
-    concat(appIsStable$, interval(5 * 60 * 1000)).subscribe(async () => {
+    const poll$ = concat(appIsStable$, interval(5 * 60 * 1000));
+    const resumed$ = merge(
+      fromEvent(document, 'visibilitychange').pipe(
+        filter(() => document.visibilityState === 'visible'),
+      ),
+      fromEvent(window, 'pageshow').pipe(
+        filter((event) => (event as PageTransitionEvent).persisted),
+      ),
+    );
+    merge(poll$, resumed$).subscribe(async () => {
       try {
         await this.swUpdate.checkForUpdate();
       } catch (err) {
